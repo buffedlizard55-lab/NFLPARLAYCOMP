@@ -1,0 +1,61 @@
+name: Data collection cycle
+
+# Automated, read-only collection of verified market data for the paper-trading
+# competition. Every cycle reads ONLY public endpoints (Kalshi Trade API v2,
+# ESPN keyless APIs, NWS) and commits raw snapshots + the fetch manifest back to
+# the repository. Nothing here can place a real order: no credentials exist
+# anywhere in this project and the client is strictly read-only.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "universe | events | candles | live | nfl | weather | full"
+        required: false
+        default: "full"
+  schedule:
+    # Forward-desk cadence: four cycles a day (times UTC, offset from round
+    # minutes to reduce GitHub's scheduler congestion). Games settle late
+    # Sunday/Monnight US time; the 06:12 cycle picks up Monday results.
+    - cron: "12 6,12,18 * * *"
+    - cron: "42 22 * * 4,6,7,1"   # extra cycles around NFL game windows (Thu/Sat/Sun/Mon)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run collector
+        run: |
+          MODE="${{ github.event.inputs.mode || 'full' }}"
+          python3 scripts/collect.py --mode "$MODE"
+
+      - name: Verify manifest integrity (every fetch must be logged with a hash)
+        run: python3 scripts/check_manifest.py
+
+      - name: Commit collected data
+        run: |
+          git config user.name "parlaycomp-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/raw
+          if git diff --cached --quiet; then
+            echo "No new data to commit"
+          else
+            git commit -m "data: collection cycle $(date -u +%Y%m%dT%H%M%SZ) [collector]"
+            git push
+          fi
