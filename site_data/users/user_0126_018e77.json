@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0126_018e77",
+    "username": "CoachVega_145",
+    "strategy_id": "STRAT_RIVALRY_OVER_021_VAR126",
+    "strategy_name": "Rivalry Game Over v126",
+    "strategy_description": "High-scoring rivalries over trend (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, historic rivalry totals. Entry rivalry game with avg 50+ pts last 5 meetings, total price under >0.52. Position 1%. Why work: familiarity breeds offensive success late. Why fail: defensive adjustments. Evidence: rivalry over 54% when avg 50+.",
+    "starting_bankroll": 11741.06,
+    "current_bankroll": 12026.78,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_d153ef65cb32"
+    ],
+    "total_pnl": 285.72,
+    "roi_percent": 2.43,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 8,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11741.06,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 12026.78,
+        "pnl": 285.72
+      }
+    ],
+    "explanation": "User CoachVega_145 uses Rivalry Game Over v126: High-scoring rivalries over trend (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06898989541588024,
+      "fees": 21.5061,
+      "flags": [],
+      "hash": "db6f7256995304a6156db69ca58fcdb490c01f3652ab5120f78ca230d14364b6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.42101010458411975,
+          "quantity": 539,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.3177000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 231.77,
+      "prev_hash": "414345a7f290fff086791b34107f04a1687ad76b8d92908377e8487ff93d1817",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.3177,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR126",
+      "trade_id": "trade_d153ef65cb32",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0126_018e77",
+      "username": "CoachVega_145",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": -0.06898989541588024,
+      "fees": 21.5061,
+      "flags": [],
+      "hash": "5ad3c93052c45bac0606940336df52bc2d30e1e9e9d20d9c6ca3eaf94663ebb7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.42101010458411975,
+          "quantity": 539,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.3177000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": 285.7239,
+      "position_size_dollars": 231.77,
+      "prev_hash": "c7de5449d7194aa6f2d7373670666d70691cf49440a8239b4a44c38a9563fc63",
+      "result": "WIN",
+      "roi_percent": 123.28,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.3177,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR126",
+      "trade_id": "trade_d153ef65cb32",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0126_018e77",
+      "username": "CoachVega_145",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06898989541588024,
+      "fees": 21.5061,
+      "flags": [],
+      "hash": "db6f7256995304a6156db69ca58fcdb490c01f3652ab5120f78ca230d14364b6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.42101010458411975,
+          "quantity": 539,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.3177000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 231.77,
+      "prev_hash": "414345a7f290fff086791b34107f04a1687ad76b8d92908377e8487ff93d1817",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.3177,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR126",
+      "trade_id": "trade_d153ef65cb32",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0126_018e77",
+      "username": "CoachVega_145",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": -0.06898989541588024,
+      "fees": 21.5061,
+      "flags": [],
+      "hash": "5ad3c93052c45bac0606940336df52bc2d30e1e9e9d20d9c6ca3eaf94663ebb7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.42101010458411975,
+          "quantity": 539,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.3177000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": 285.7239,
+      "position_size_dollars": 231.77,
+      "prev_hash": "c7de5449d7194aa6f2d7373670666d70691cf49440a8239b4a44c38a9563fc63",
+      "result": "WIN",
+      "roi_percent": 123.28,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.3177,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR126",
+      "trade_id": "trade_d153ef65cb32",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0126_018e77",
+      "username": "CoachVega_145",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11741.06,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 12026.78,
+      "pnl": 285.72
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 2.43,
+    "pnl": 285.72,
+    "open_exposure": 231.77,
+    "total_volume": 463.54
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

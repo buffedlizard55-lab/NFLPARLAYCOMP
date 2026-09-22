@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0086_86d639",
+    "username": "DeltaGammaX_9795",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR86",
+    "strategy_name": "Home Field Momentum vR86",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 10677.1,
+    "current_bankroll": 10500.75,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_9a2231173684"
+    ],
+    "total_pnl": -176.35,
+    "roi_percent": -1.65,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 485,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10677.1,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 10500.75,
+        "pnl": -176.35
+      }
+    ],
+    "explanation": "User DeltaGammaX_9795 uses Home Field Momentum vR86: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.07000000000000006,
+      "fees": 14.4256,
+      "flags": [],
+      "hash": "d722a5f76f7ad56774ae2360a41569319a3a832433906e44119740b6a018b795",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFBAL",
+          "exec_price": 0.44,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 8238.494635663359,
+          "market_ticker": "KXNFLGAME-26SEP28SFBAL-BAL",
+          "model_prob": 0.65,
+          "quantity": 368,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6192000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+          "spread": 0.06,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 161.92,
+      "prev_hash": "bff9ba496b9ca92bdbd93d210fdc549fe4f913e8f0b873cd5fca93dc1a6c6230",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6192,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR86",
+      "trade_id": "trade_9a2231173684",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0086_86d639",
+      "username": "DeltaGammaX_9795",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.07000000000000006,
+      "fees": 14.4256,
+      "flags": [],
+      "hash": "a85ebe555ddcd9d6472ac897eea7a2d3e53a9d96197b3cf4c45b1677dc6aef33",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFBAL",
+          "exec_price": 0.44,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 8238.494635663359,
+          "market_ticker": "KXNFLGAME-26SEP28SFBAL-BAL",
+          "model_prob": 0.65,
+          "quantity": 368,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6192000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+          "spread": 0.06,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+      ],
+      "pnl_dollars": -176.3456,
+      "position_size_dollars": 161.92,
+      "prev_hash": "0a13d604b3689ed3b89918c0dd09c9110c27ce66ff7a27c90b0e96e15cb7abec",
+      "result": "LOSS",
+      "roi_percent": -108.91,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.6192,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR86",
+      "trade_id": "trade_9a2231173684",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0086_86d639",
+      "username": "DeltaGammaX_9795",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.07000000000000006,
+      "fees": 14.4256,
+      "flags": [],
+      "hash": "d722a5f76f7ad56774ae2360a41569319a3a832433906e44119740b6a018b795",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFBAL",
+          "exec_price": 0.44,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 8238.494635663359,
+          "market_ticker": "KXNFLGAME-26SEP28SFBAL-BAL",
+          "model_prob": 0.65,
+          "quantity": 368,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6192000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+          "spread": 0.06,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 161.92,
+      "prev_hash": "bff9ba496b9ca92bdbd93d210fdc549fe4f913e8f0b873cd5fca93dc1a6c6230",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6192,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR86",
+      "trade_id": "trade_9a2231173684",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0086_86d639",
+      "username": "DeltaGammaX_9795",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.07000000000000006,
+      "fees": 14.4256,
+      "flags": [],
+      "hash": "a85ebe555ddcd9d6472ac897eea7a2d3e53a9d96197b3cf4c45b1677dc6aef33",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFBAL",
+          "exec_price": 0.44,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 8238.494635663359,
+          "market_ticker": "KXNFLGAME-26SEP28SFBAL-BAL",
+          "model_prob": 0.65,
+          "quantity": 368,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6192000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+          "spread": 0.06,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFBAL-BAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFBAL-BAL"
+      ],
+      "pnl_dollars": -176.3456,
+      "position_size_dollars": 161.92,
+      "prev_hash": "0a13d604b3689ed3b89918c0dd09c9110c27ce66ff7a27c90b0e96e15cb7abec",
+      "result": "LOSS",
+      "roi_percent": -108.91,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.6192,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR86",
+      "trade_id": "trade_9a2231173684",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0086_86d639",
+      "username": "DeltaGammaX_9795",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10677.1,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 10500.75,
+      "pnl": -176.35
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.65,
+    "pnl": -176.35,
+    "open_exposure": 161.92,
+    "total_volume": 323.84
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

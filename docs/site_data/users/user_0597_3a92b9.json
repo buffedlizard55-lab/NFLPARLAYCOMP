@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0597_3a92b9",
+    "username": "QuantBetaX_7744",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR597",
+    "strategy_name": "Injury Impact Fade v597",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 10744.09,
+    "current_bankroll": 10279.72,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_016918a26a30"
+    ],
+    "total_pnl": -464.37,
+    "roi_percent": -4.32,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 984,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10744.09,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:21Z",
+        "bankroll": 10279.72,
+        "pnl": -464.37
+      }
+    ],
+    "explanation": "User QuantBetaX_7744 uses Injury Impact Fade v597: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.56,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.2088,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7bffc217aa008217df14b7bcf15c07d1e38ee41eb06188598e207320687068eb",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.56,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 786,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 4.401600000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 440.16,
+      "prev_hash": "bad132336b5d82c71cc3f68e33945736082b80328ed7099d07a39889088b116a",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.4016,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR597",
+      "trade_id": "trade_016918a26a30",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0597_3a92b9",
+      "username": "QuantBetaX_7744",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.56,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.12,
+      "fees": 24.2088,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "87e764eb7c5bb47a568a77bb6e1ae626ac8565ed3898858686b3f59a8a848d18",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.56,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 786,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 4.401600000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": -464.3688,
+      "position_size_dollars": 440.16,
+      "prev_hash": "617968e37738b83a9bf2149b42a428254e96be54a29258bb5b77ddfbffed26fb",
+      "result": "LOSS",
+      "roi_percent": -105.5,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.4016,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR597",
+      "trade_id": "trade_016918a26a30",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0597_3a92b9",
+      "username": "QuantBetaX_7744",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.56,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.2088,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7bffc217aa008217df14b7bcf15c07d1e38ee41eb06188598e207320687068eb",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.56,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 786,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 4.401600000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 440.16,
+      "prev_hash": "bad132336b5d82c71cc3f68e33945736082b80328ed7099d07a39889088b116a",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.4016,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR597",
+      "trade_id": "trade_016918a26a30",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0597_3a92b9",
+      "username": "QuantBetaX_7744",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.56,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.12,
+      "fees": 24.2088,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "87e764eb7c5bb47a568a77bb6e1ae626ac8565ed3898858686b3f59a8a848d18",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.56,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 786,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 4.401600000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": -464.3688,
+      "position_size_dollars": 440.16,
+      "prev_hash": "617968e37738b83a9bf2149b42a428254e96be54a29258bb5b77ddfbffed26fb",
+      "result": "LOSS",
+      "roi_percent": -105.5,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.4016,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR597",
+      "trade_id": "trade_016918a26a30",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0597_3a92b9",
+      "username": "QuantBetaX_7744",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10744.09,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:21Z",
+      "bankroll": 10279.72,
+      "pnl": -464.37
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -4.32,
+    "pnl": -464.37,
+    "open_exposure": 440.16,
+    "total_volume": 880.32
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

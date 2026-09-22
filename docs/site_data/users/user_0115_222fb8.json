@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0115_222fb8",
+    "username": "LiquidityQuantX_7186",
+    "strategy_id": "STRAT_ELO_MODEL_028_VAR115",
+    "strategy_name": "Elo Model Quant v115",
+    "strategy_description": "Pure Elo rating model vs market (variation)",
+    "strategy_long_explanation": "Uses Elo ratings from nflverse, KXNFLGAME. Entry Elo implied > market +4%. Position Kelly 2%. Why work: Elo efficient long-term. Why fail: injuries not in Elo. Evidence: Elo 55% vs closing 2020-2024.",
+    "starting_bankroll": 11282.32,
+    "current_bankroll": 11019.58,
+    "open_trades": [
+      "trade_daaf6e05d8cd"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 125,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11282.32,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User LiquidityQuantX_7186 uses Elo Model Quant v115: Pure Elo rating model vs market (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10475236383619013,
+      "fees": 13.3182,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $271.8 >10% of liquidity $1386.7520433511809 for KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "e657f43abcd64733f79d0a2732a3f54476c09957e03180e5071dca2749b5d1e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP27NYGTB",
+          "exec_price": 0.58,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1386.7520433511809,
+          "market_ticker": "KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "model_prob": 0.7047523638361901,
+          "quantity": 453,
+          "reason": "Elo Model Quant signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.3136999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27NYGTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 262.74,
+      "prev_hash": "f8bc4e6acd7cc9dd34615186362dedd50b2907682c5f1fd975517a89be7cd648",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3137,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ELO_MODEL_028_VAR115",
+      "trade_id": "trade_daaf6e05d8cd",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0115_222fb8",
+      "username": "LiquidityQuantX_7186",
+      "verification_notes": "",
+      "why_entered": "Elo Model Quant triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10475236383619013,
+      "fees": 13.3182,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $271.8 >10% of liquidity $1386.7520433511809 for KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "e657f43abcd64733f79d0a2732a3f54476c09957e03180e5071dca2749b5d1e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP27NYGTB",
+          "exec_price": 0.58,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1386.7520433511809,
+          "market_ticker": "KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "model_prob": 0.7047523638361901,
+          "quantity": 453,
+          "reason": "Elo Model Quant signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.3136999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27NYGTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 262.74,
+      "prev_hash": "f8bc4e6acd7cc9dd34615186362dedd50b2907682c5f1fd975517a89be7cd648",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3137,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ELO_MODEL_028_VAR115",
+      "trade_id": "trade_daaf6e05d8cd",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0115_222fb8",
+      "username": "LiquidityQuantX_7186",
+      "verification_notes": "",
+      "why_entered": "Elo Model Quant triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11282.32,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 262.74,
+    "total_volume": 262.74
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

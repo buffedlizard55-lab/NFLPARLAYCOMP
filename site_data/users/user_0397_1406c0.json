@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0397_1406c0",
+    "username": "StreakDeltaX_2329",
+    "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR397",
+    "strategy_name": "Contrarian Public Fade v397",
+    "strategy_description": "Fade heavy public side >70% tickets (variation)",
+    "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+    "starting_bankroll": 9802.02,
+    "current_bankroll": 9802.02,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 368,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9802.02,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User StreakDeltaX_2329 uses Contrarian Public Fade v397: Fade heavy public side >70% tickets (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9802.02,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

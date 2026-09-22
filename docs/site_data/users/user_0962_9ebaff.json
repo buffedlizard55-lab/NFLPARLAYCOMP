@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0962_9ebaff",
+    "username": "WeatherModel_5581",
+    "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR962",
+    "strategy_name": "Alt Line Value v962",
+    "strategy_description": "Alt spread lines mispriced vs main (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD alt lines, compares to main line price. Entry alt line -2.5 vs main -6.5 with price diff > implied. Position 1%. Why work: alt lines less liquid, mispriced. Why fail: correlation. Evidence: alt line arb 3% of time 2025.",
+    "starting_bankroll": 10530.82,
+    "current_bankroll": 10433.93,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_9e71e3d56066"
+    ],
+    "total_pnl": -96.89,
+    "roi_percent": -0.92,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 942,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10530.82,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 10433.93,
+        "pnl": -96.89
+      }
+    ],
+    "explanation": "User WeatherModel_5581 uses Alt Line Value v962: Alt spread lines mispriced vs main (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.09552487808007121,
+      "fees": 4.6746,
+      "flags": [],
+      "hash": "07041855645995330af98c68aa653cc92fd5eadde13f54b8a530e8bf95d48345",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.5055248780800712,
+          "quantity": 159,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9221999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 92.22,
+      "prev_hash": "95c262db9b82086463ca7402c35a3a51c1041ff8eae8428e8c767265f8e27da2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.9222,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR962",
+      "trade_id": "trade_9e71e3d56066",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0962_9ebaff",
+      "username": "WeatherModel_5581",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.09552487808007121,
+      "fees": 4.6746,
+      "flags": [],
+      "hash": "4cd7cd4c8c493a8558db76eb6f2e7af34f4a22831082bf777e9e0bdf055d3d65",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.5055248780800712,
+          "quantity": 159,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9221999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": -96.8946,
+      "position_size_dollars": 92.22,
+      "prev_hash": "daabc169bd9818323b2f5a6601d8c4ee8100b9608cae13aef756729fea2f0516",
+      "result": "LOSS",
+      "roi_percent": -105.07,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.9222,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR962",
+      "trade_id": "trade_9e71e3d56066",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0962_9ebaff",
+      "username": "WeatherModel_5581",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.09552487808007121,
+      "fees": 4.6746,
+      "flags": [],
+      "hash": "07041855645995330af98c68aa653cc92fd5eadde13f54b8a530e8bf95d48345",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.5055248780800712,
+          "quantity": 159,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9221999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 92.22,
+      "prev_hash": "95c262db9b82086463ca7402c35a3a51c1041ff8eae8428e8c767265f8e27da2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.9222,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR962",
+      "trade_id": "trade_9e71e3d56066",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0962_9ebaff",
+      "username": "WeatherModel_5581",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.09552487808007121,
+      "fees": 4.6746,
+      "flags": [],
+      "hash": "4cd7cd4c8c493a8558db76eb6f2e7af34f4a22831082bf777e9e0bdf055d3d65",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.5055248780800712,
+          "quantity": 159,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9221999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": -96.8946,
+      "position_size_dollars": 92.22,
+      "prev_hash": "daabc169bd9818323b2f5a6601d8c4ee8100b9608cae13aef756729fea2f0516",
+      "result": "LOSS",
+      "roi_percent": -105.07,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.9222,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR962",
+      "trade_id": "trade_9e71e3d56066",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0962_9ebaff",
+      "username": "WeatherModel_5581",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10530.82,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 10433.93,
+      "pnl": -96.89
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.92,
+    "pnl": -96.89,
+    "open_exposure": 92.22,
+    "total_volume": 184.44
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

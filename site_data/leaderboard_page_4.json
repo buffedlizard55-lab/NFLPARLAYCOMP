@@ -1,0 +1,826 @@
+{
+  "page": 4,
+  "page_size": 25,
+  "total": 100,
+  "total_pages": 4,
+  "users": [
+    {
+      "user_id": "user_0079_13bd76",
+      "username": "TDDeltaX_1079",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR79",
+      "strategy_name": "Liquidity Provision vR79",
+      "strategy_description": "Place both sides near mid when spread wide (variation)",
+      "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+      "starting_bankroll": 10984.75,
+      "current_bankroll": 10984.75,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 76,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10984.75,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TDDeltaX_1079 uses Liquidity Provision vR79: Place both sides near mid when spread wide (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0080_b91815",
+      "username": "TDTrader_7494",
+      "strategy_id": "STRAT_REST_003_VAR80",
+      "strategy_name": "Rest & Schedule Difficulty vR80",
+      "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+      "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+      "starting_bankroll": 9542.83,
+      "current_bankroll": 9328.33,
+      "open_trades": [
+        "trade_2b52108d2a44"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 77,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9542.83,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TDTrader_7494 uses Rest & Schedule Difficulty vR80: Teams with 3+ extra rest days vs opponent (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0081_1a4667",
+      "username": "TotalEdge_8922",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR81",
+      "strategy_name": "Win Streak Fade vR81",
+      "strategy_description": "Fade teams on 4+ win streak vs market (variation)",
+      "strategy_long_explanation": "Uses win streak, KXNFLGAME. Entry team 4+ win streak, moneyline >0.70, bet NO. Position 1%. Why work: market overvalues streak, regression. Why fail: good teams keep winning. Evidence: 4+ streak teams win next 58% vs 70% implied (fade profitable).",
+      "starting_bankroll": 11820.49,
+      "current_bankroll": 11820.49,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 78,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11820.49,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TotalEdge_8922 uses Win Streak Fade vR81: Fade teams on 4+ win streak vs market (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0082_542890",
+      "username": "TotalLambda_415",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR82",
+      "strategy_name": "Injury Impact Fade vR82",
+      "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+      "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+      "starting_bankroll": 11937.81,
+      "current_bankroll": 11730.09,
+      "open_trades": [
+        "trade_8f762a771952"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 79,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11937.81,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TotalLambda_415 uses Injury Impact Fade vR82: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0083_7c7ef2",
+      "username": "TotalRho_3554",
+      "strategy_id": "STRAT_1H_DIVERGE_010_VAR83",
+      "strategy_name": "1H vs Full Game Divergence vR83",
+      "strategy_description": "When 1H price diverges >10% from full game price, arbitrage or value (variation)",
+      "strategy_long_explanation": "\nUses: KXNFL1H and KXNFLGAME markets same event\nEntry: abs(1H implied - full game implied) >10% and both liquid\nAvoid: low liquidity 1H markets, close_time mismatch\nPosition size: 1% bankroll\nEV: 1H and full game correlated ~0.78, divergence >10% reverts 60% (n=120)\nWhy work: 1H markets less liquid, slower to update\nWhy fail: Different game scripts (team starts slow)\nEvidence: Kalshi 1H markets 2025 season\nSources: Kalshi KXNFL1H series\n            ",
+      "starting_bankroll": 11352.76,
+      "current_bankroll": 11352.76,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 80,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11352.76,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TotalRho_3554 uses 1H vs Full Game Divergence vR83: When 1H price diverges >10% from full game price, arbitrage or value (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0084_ff830f",
+      "username": "TotalShark_3208",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR84",
+      "strategy_name": "Coaching Mismatch vR84",
+      "strategy_description": "Top 5 coaching vs bottom 5 per DVOA (variation)",
+      "strategy_long_explanation": "Uses coaching rankings, KXNFLGAME. Entry top 5 coach vs bottom 5, moneyline <0.65. Position 2%. Why work: coaching matters in close games. Why fail: subjective ranking. Evidence: top vs bottom coach win 62% vs 55% baseline.",
+      "starting_bankroll": 11523.92,
+      "current_bankroll": 11523.92,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 81,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11523.92,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User TotalShark_3208 uses Coaching Mismatch vR84: Top 5 coaching vs bottom 5 per DVOA (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0085_a85958",
+      "username": "UnderQuantX_2530",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR85",
+      "strategy_name": "DVOA Value vR85",
+      "strategy_description": "DVOA efficiency vs market (variation)",
+      "strategy_long_explanation": "Uses FTN DVOA, KXNFLGAME. Entry DVOA top 5 vs bottom 5, market <60%. Position 2%. Why work: DVOA more predictive than record. Why fail: DVOA lag. Evidence: DVOA top vs bottom 62% win 2020-2024.",
+      "starting_bankroll": 9891.33,
+      "current_bankroll": 9891.33,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 82,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9891.33,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User UnderQuantX_2530 uses DVOA Value vR85: DVOA efficiency vs market (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0086_116a52",
+      "username": "UnderZeta_9464",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR86",
+      "strategy_name": "Liquidity Provision vR86",
+      "strategy_description": "Place both sides near mid when spread wide (variation)",
+      "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+      "starting_bankroll": 10838.32,
+      "current_bankroll": 10838.32,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 83,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10838.32,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User UnderZeta_9464 uses Liquidity Provision vR86: Place both sides near mid when spread wide (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0087_24c7bc",
+      "username": "ValueBetaX_9119",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR87",
+      "strategy_name": "Liquidity Provision vR87",
+      "strategy_description": "Place both sides near mid when spread wide (variation)",
+      "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+      "starting_bankroll": 8073.3,
+      "current_bankroll": 8073.3,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 84,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8073.3,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ValueBetaX_9119 uses Liquidity Provision vR87: Place both sides near mid when spread wide (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0089_64efae",
+      "username": "ValueWolf_807",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR89",
+      "strategy_name": "Cross-Market Arb vR89",
+      "strategy_description": "Moneyline vs spread vs total arb when misaligned (variation)",
+      "strategy_long_explanation": "Uses KXNFLGAME, KXNFLSPREAD, KXNFLTOTAL same event. Entry implied win prob from spread vs moneyline diff >8%. Position 0.5% arb. Why work: different market makers, lag. Why fail: fees, correlation. Evidence: arb exists 1-2% of time.",
+      "starting_bankroll": 8140.19,
+      "current_bankroll": 8140.19,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 85,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8140.19,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ValueWolf_807 uses Cross-Market Arb vR89: Moneyline vs spread vs total arb when misaligned (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0090_0380a7",
+      "username": "VeteranEdge_6355",
+      "strategy_id": "STRAT_1H_DIVERGE_010_VAR90",
+      "strategy_name": "1H vs Full Game Divergence vR90",
+      "strategy_description": "When 1H price diverges >10% from full game price, arbitrage or value (variation)",
+      "strategy_long_explanation": "\nUses: KXNFL1H and KXNFLGAME markets same event\nEntry: abs(1H implied - full game implied) >10% and both liquid\nAvoid: low liquidity 1H markets, close_time mismatch\nPosition size: 1% bankroll\nEV: 1H and full game correlated ~0.78, divergence >10% reverts 60% (n=120)\nWhy work: 1H markets less liquid, slower to update\nWhy fail: Different game scripts (team starts slow)\nEvidence: Kalshi 1H markets 2025 season\nSources: Kalshi KXNFL1H series\n            ",
+      "starting_bankroll": 11605.04,
+      "current_bankroll": 11605.04,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 86,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11605.04,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranEdge_6355 uses 1H vs Full Game Divergence vR90: When 1H price diverges >10% from full game price, arbitrage or value (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0091_620296",
+      "username": "VeteranHawk_9303",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR91",
+      "strategy_name": "Total + Underdog Correlation vR91",
+      "strategy_description": "Underdog moneyline + Under total when underdog is defensive team (variation)",
+      "strategy_long_explanation": "\nUses: KXNFLGAME moneyline (underdog) + KXNFLTOTAL under\nEntry: underdog with top-10 defense vs top offense, total >48, underdog price 0.30-0.45\nAvoid: high total already underpriced, indoor shootouts\nPosition size: 1% bankroll\nEV: defensive underdogs win + under hits 31% vs market 26% implied\nWhy work: Defensive game script favors underdog keeping it low scoring\nWhy fail: Underdog may need shootout to win\nEvidence: 2018-2023, 67 games matching, 31% hit\nSources: ESPN team stats, Kalshi totals\n            ",
+      "starting_bankroll": 9584.54,
+      "current_bankroll": 9347.72,
+      "open_trades": [
+        "trade_152e49b94863"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 87,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9584.54,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranHawk_9303 uses Total + Underdog Correlation vR91: Underdog moneyline + Under total when underdog is defensive team (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0092_de557e",
+      "username": "VeteranShark_4073",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR92",
+      "strategy_name": "Anytime TD Value vR92",
+      "strategy_description": "Player anytime TD market when odds > model (variation)",
+      "strategy_long_explanation": "Uses KXNFLANYTD markets, player usage, red zone opportunities. Entry when model prob > market +7%. Position 1% bankroll. Why work: public overvalues big names, undervalues role players. Why fail: variance high. Evidence: 2023 anytime TD 52% model edge n=200.",
+      "starting_bankroll": 8239.45,
+      "current_bankroll": 8239.45,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 88,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8239.45,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranShark_4073 uses Anytime TD Value vR92: Player anytime TD market when odds > model (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0093_938cb7",
+      "username": "VeteranShark_6779",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR93",
+      "strategy_name": "Cross-Market Arb vR93",
+      "strategy_description": "Moneyline vs spread vs total arb when misaligned (variation)",
+      "strategy_long_explanation": "Uses KXNFLGAME, KXNFLSPREAD, KXNFLTOTAL same event. Entry implied win prob from spread vs moneyline diff >8%. Position 0.5% arb. Why work: different market makers, lag. Why fail: fees, correlation. Evidence: arb exists 1-2% of time.",
+      "starting_bankroll": 8018.45,
+      "current_bankroll": 8018.45,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 89,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8018.45,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranShark_6779 uses Cross-Market Arb vR93: Moneyline vs spread vs total arb when misaligned (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0094_44db69",
+      "username": "VeteranTheta_2843",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR94",
+      "strategy_name": "Liquidity Provision vR94",
+      "strategy_description": "Place both sides near mid when spread wide (variation)",
+      "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+      "starting_bankroll": 10267.9,
+      "current_bankroll": 10267.9,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 90,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10267.9,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranTheta_2843 uses Liquidity Provision vR94: Place both sides near mid when spread wide (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0095_d4512d",
+      "username": "VeteranTrader_7751",
+      "strategy_id": "STRAT_WEATHER_UNDER_004_VAR95",
+      "strategy_name": "Bad Weather Under vR95",
+      "strategy_description": "Under on game totals when wind >20mph or temp <25F (variation)",
+      "strategy_long_explanation": "\nUses: NWS forecast (wind, temp), Kalshi KXNFLTOTAL markets\nEntry: wind >20mph or temp <25F or heavy snow/rain forecast\nAvoid: indoor stadiums, dome games\nPosition size: 2% bankroll\nEV: historical under hits 57% in 20+mph wind games (n=89, 2015-2023)\nWhy work: Passing and kicking degraded, market slow to adjust to late forecast shifts\nWhy fail: Totals already adjust; weather forecasts change\nEvidence: NWS api.weather.gov + ESPN indoor flag; backtest 2015-2023\nSources: https://api.weather.gov, https://www.weather.gov\n            ",
+      "starting_bankroll": 11340.46,
+      "current_bankroll": 11340.46,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 91,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11340.46,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User VeteranTrader_7751 uses Bad Weather Under vR95: Under on game totals when wind >20mph or temp <25F (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0096_bdcb3f",
+      "username": "WeatherHawk_8365",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR96",
+      "strategy_name": "Contrarian Public Fade vR96",
+      "strategy_description": "Fade heavy public side >70% tickets (variation)",
+      "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+      "starting_bankroll": 8342.09,
+      "current_bankroll": 8342.09,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 92,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8342.09,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User WeatherHawk_8365 uses Contrarian Public Fade vR96: Fade heavy public side >70% tickets (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0097_65d37c",
+      "username": "WeatherLion_7983",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR97",
+      "strategy_name": "DVOA Value vR97",
+      "strategy_description": "DVOA efficiency vs market (variation)",
+      "strategy_long_explanation": "Uses FTN DVOA, KXNFLGAME. Entry DVOA top 5 vs bottom 5, market <60%. Position 2%. Why work: DVOA more predictive than record. Why fail: DVOA lag. Evidence: DVOA top vs bottom 62% win 2020-2024.",
+      "starting_bankroll": 11424.67,
+      "current_bankroll": 11424.67,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 93,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11424.67,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User WeatherLion_7983 uses DVOA Value vR97: DVOA efficiency vs market (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0098_0488ea",
+      "username": "WeatherTraderX_3271",
+      "strategy_id": "STRAT_LINE_MOVE_008_VAR98",
+      "strategy_name": "Line Movement Momentum vR98",
+      "strategy_description": "Follow sharp money: if price moved 5c+ in last 2h toward favorite, follow (variation)",
+      "strategy_long_explanation": "\nUses: Kalshi candlesticks hourly, last_price vs 2h ago\nEntry: price moved >=5c in direction of favorite in last 2 hours, volume spike >2x avg\nAvoid: news-driven move (injury), close_time <1h\nPosition size: 1.5% bankroll\nEV: momentum persists 54% next hour in NFL markets (n=1,200 moves)\nWhy work: Informed money moves line, retail lags\nWhy fail: Mean reversion after overreaction\nEvidence: Kalshi candle archive analysis (if available)\nSources: Kalshi candlesticks API, trading community momentum research\n            ",
+      "starting_bankroll": 8884.73,
+      "current_bankroll": 8884.73,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 94,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8884.73,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User WeatherTraderX_3271 uses Line Movement Momentum vR98: Follow sharp money: if price moved 5c+ in last 2h toward favorite, follow (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0099_e7e953",
+      "username": "WeatherWolf_8501",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR99",
+      "strategy_name": "Spread + Moneyline Correlation vR99",
+      "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+      "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+      "starting_bankroll": 9861.17,
+      "current_bankroll": 9595.08,
+      "open_trades": [
+        "trade_55fa71041144"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 95,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9861.17,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User WeatherWolf_8501 uses Spread + Moneyline Correlation vR99: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0026_3f3626",
+      "username": "EloHawk_2772",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+      "strategy_name": "Contrarian Public Fade",
+      "strategy_description": "Fade heavy public side >70% tickets",
+      "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+      "starting_bankroll": 8194.94,
+      "current_bankroll": 8161.32,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_ffc1d106bfe4"
+      ],
+      "total_pnl": -33.62,
+      "roi_percent": -0.41,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 96,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8194.94,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8161.32,
+          "pnl": -33.62
+        }
+      ],
+      "explanation": "User EloHawk_2772 uses Contrarian Public Fade: Fade heavy public side >70% tickets",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0088_e01e05",
+      "username": "ValueSignal_6713",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR88",
+      "strategy_name": "Spread + Moneyline Correlation vR88",
+      "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+      "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+      "starting_bankroll": 8406.32,
+      "current_bankroll": 8353.01,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_8139169d0c02"
+      ],
+      "total_pnl": -53.31,
+      "roi_percent": -0.63,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 97,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8406.32,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8353.01,
+          "pnl": -53.31
+        }
+      ],
+      "explanation": "User ValueSignal_6713 uses Spread + Moneyline Correlation vR88: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0032_9e0878",
+      "username": "GammaBetaX_1945",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033",
+      "strategy_name": "Liquidity Provision",
+      "strategy_description": "Place both sides near mid when spread wide",
+      "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+      "starting_bankroll": 10149.88,
+      "current_bankroll": 10043.48,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_7b7558f60e7c"
+      ],
+      "total_pnl": -106.4,
+      "roi_percent": -1.05,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 98,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10149.88,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10043.48,
+          "pnl": -106.4
+        }
+      ],
+      "explanation": "User GammaBetaX_1945 uses Liquidity Provision: Place both sides near mid when spread wide",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0034_a578c3",
+      "username": "GammaZeta_2761",
+      "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035",
+      "strategy_name": "First TD Longshot Value",
+      "strategy_description": "First TD market longshots overvalued",
+      "strategy_long_explanation": "Uses KXNFLFIRSTTD, longshot >0.15. Entry first TD market with 10+ players, longshot 15%+ but usage suggests 18%. Position 0.5%. Why work: public bets big names, value on role players. Why fail: variance. Evidence: longshot first TD 17% actual vs 13% implied.",
+      "starting_bankroll": 10942.74,
+      "current_bankroll": 10781.19,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_a263e7b212d0"
+      ],
+      "total_pnl": -161.55,
+      "roi_percent": -1.48,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 99,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10942.74,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10781.19,
+          "pnl": -161.55
+        }
+      ],
+      "explanation": "User GammaZeta_2761 uses First TD Longshot Value: First TD market longshots overvalued",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0041_93a25e",
+      "username": "LiquidityTraderX_4021",
+      "strategy_id": "STRAT_2H_COMEBACK_025_VAR41",
+      "strategy_name": "Second Half Comeback vR41",
+      "strategy_description": "Team down at half but strong 2H team (variation)",
+      "strategy_long_explanation": "Uses KXNFL2H markets, halftime score. Entry team down 1-7 at half, 2H moneyline >0.50 but team top 10 2H scoring. Position 1%. Why work: adjustments. Why fail: game script. Evidence: 2H comeback 52% for top 2H teams.",
+      "starting_bankroll": 10632.96,
+      "current_bankroll": 10467.6,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_811ecf5953f4"
+      ],
+      "total_pnl": -165.36,
+      "roi_percent": -1.56,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 100,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10632.96,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10467.6,
+          "pnl": -165.36
+        }
+      ],
+      "explanation": "User LiquidityTraderX_4021 uses Second Half Comeback vR41: Team down at half but strong 2H team (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    }
+  ]
+}

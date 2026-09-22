@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0678_45eb5a",
+    "username": "RookieGammaX_2765",
+    "strategy_id": "STRAT_WEATHER_OVER_030_VAR678",
+    "strategy_name": "Indoor Over v678",
+    "strategy_description": "Indoor/dome games over due to perfect conditions (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, indoor flag from ESPN venue. Entry indoor game, total <48, bet over. Position 1.5%. Why work: no wind, fast track. Why fail: defensive indoor teams. Evidence: indoor over 53% when total <48.",
+    "starting_bankroll": 11746.26,
+    "current_bankroll": 11863.44,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_1d77ba577a5c"
+    ],
+    "total_pnl": 117.18,
+    "roi_percent": 1.0,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 48,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11746.26,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:21Z",
+        "bankroll": 11863.44,
+        "pnl": 117.18
+      }
+    ],
+    "explanation": "User RookieGammaX_2765 uses Indoor Over v678: Indoor/dome games over due to perfect conditions (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.007547991244149399,
+      "fees": 8.82,
+      "flags": [],
+      "hash": "84ade7bdc6757ab5115f009c3f38f8594db98ac84c2f19c39c7d14c48bab7127",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.5575479912441494,
+          "quantity": 360,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.34,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 234.0,
+      "prev_hash": "e18cb3b39372787e79ffec4eee4dcb745df5590a3865ec0fda4113fe4193e95f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.34,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR678",
+      "trade_id": "trade_1d77ba577a5c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0678_45eb5a",
+      "username": "RookieGammaX_2765",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.007547991244149399,
+      "fees": 8.82,
+      "flags": [],
+      "hash": "d566c8adc5f776dae0b72ad480e598c8e697086586feb04168352d070a07cc04",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.5575479912441494,
+          "quantity": 360,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.34,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": 117.18,
+      "position_size_dollars": 234.0,
+      "prev_hash": "75d8adf14a27e3f8b9e31e99e95ce7bdf93d4827c1337f5ea1130f62be459987",
+      "result": "WIN",
+      "roi_percent": 50.08,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.34,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR678",
+      "trade_id": "trade_1d77ba577a5c",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0678_45eb5a",
+      "username": "RookieGammaX_2765",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.007547991244149399,
+      "fees": 8.82,
+      "flags": [],
+      "hash": "84ade7bdc6757ab5115f009c3f38f8594db98ac84c2f19c39c7d14c48bab7127",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.5575479912441494,
+          "quantity": 360,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.34,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 234.0,
+      "prev_hash": "e18cb3b39372787e79ffec4eee4dcb745df5590a3865ec0fda4113fe4193e95f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.34,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR678",
+      "trade_id": "trade_1d77ba577a5c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0678_45eb5a",
+      "username": "RookieGammaX_2765",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.007547991244149399,
+      "fees": 8.82,
+      "flags": [],
+      "hash": "d566c8adc5f776dae0b72ad480e598c8e697086586feb04168352d070a07cc04",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.5575479912441494,
+          "quantity": 360,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.34,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": 117.18,
+      "position_size_dollars": 234.0,
+      "prev_hash": "75d8adf14a27e3f8b9e31e99e95ce7bdf93d4827c1337f5ea1130f62be459987",
+      "result": "WIN",
+      "roi_percent": 50.08,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.34,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR678",
+      "trade_id": "trade_1d77ba577a5c",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0678_45eb5a",
+      "username": "RookieGammaX_2765",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11746.26,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:21Z",
+      "bankroll": 11863.44,
+      "pnl": 117.18
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.0,
+    "pnl": 117.18,
+    "open_exposure": 234.0,
+    "total_volume": 468.0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

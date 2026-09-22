@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0929_2e4a1e",
+    "username": "VeteranDeltaX_2719",
+    "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR929",
+    "strategy_name": "Team Total Over v929",
+    "strategy_description": "Team total over when implied < model based on offensive efficiency (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL, offensive EPA/play. Entry team EPA top 10 vs bottom 10 defense and total price <0.50. Position 1.5%. Why work: efficiency metrics lead totals. Why fail: game script. Evidence: EPA-based totals 54% 2022-2024.",
+    "starting_bankroll": 11140.02,
+    "current_bankroll": 11140.02,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 849,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11140.02,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User VeteranDeltaX_2719 uses Team Total Over v929: Team total over when implied < model based on offensive efficiency (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11140.02,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

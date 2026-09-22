@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0231_9c2f65",
+    "username": "DvoaBettor_5600",
+    "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR231",
+    "strategy_name": "Implied Probability Value v231",
+    "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+    "starting_bankroll": 11802.12,
+    "current_bankroll": 12173.97,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_ba30e92796b2"
+    ],
+    "total_pnl": 371.85,
+    "roi_percent": 3.15,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 4,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11802.12,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 12173.97,
+        "pnl": 371.85
+      }
+    ],
+    "explanation": "User DvoaBettor_5600 uses Implied Probability Value v231: Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11624824474668849,
+      "fees": 27.9888,
+      "flags": [],
+      "hash": "209695c9cc423f811316ea7ac50a2ffb49627705d2855e8768f22805d08f9759",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22CINLAR",
+          "exec_price": 0.44,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 14720.987294779177,
+          "market_ticker": "KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "model_prob": 0.5962482447466885,
+          "quantity": 714,
+          "reason": "Edge 11.62% model 59.62% vs market 48.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.1416000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CINLAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 314.16,
+      "prev_hash": "2fdb7fcd28c9d81d68aac1e72c11563e4f9d93eb32c59e7287ba7fd7852eba3c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.1416,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR231",
+      "trade_id": "trade_ba30e92796b2",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0231_9c2f65",
+      "username": "DvoaBettor_5600",
+      "verification_notes": "",
+      "why_entered": "Edge 11.62% model 59.62% vs market 48.00%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.11624824474668849,
+      "fees": 27.9888,
+      "flags": [],
+      "hash": "549129359ec2b7d6570d6c0472a81530b3e634d1ec01eab40be4f14f3da43898",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22CINLAR",
+          "exec_price": 0.44,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 14720.987294779177,
+          "market_ticker": "KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "model_prob": 0.5962482447466885,
+          "quantity": 714,
+          "reason": "Edge 11.62% model 59.62% vs market 48.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.1416000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CINLAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+      ],
+      "pnl_dollars": 371.8512,
+      "position_size_dollars": 314.16,
+      "prev_hash": "6717418123428479c71e4b7e2429be774b49d3a2d99e1ed6325875af3b0ac27d",
+      "result": "WIN",
+      "roi_percent": 118.36,
+      "settlement_price": 1.0,
+      "slippage_assumed": 3.1416,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR231",
+      "trade_id": "trade_ba30e92796b2",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0231_9c2f65",
+      "username": "DvoaBettor_5600",
+      "verification_notes": "",
+      "why_entered": "Edge 11.62% model 59.62% vs market 48.00%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11624824474668849,
+      "fees": 27.9888,
+      "flags": [],
+      "hash": "209695c9cc423f811316ea7ac50a2ffb49627705d2855e8768f22805d08f9759",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22CINLAR",
+          "exec_price": 0.44,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 14720.987294779177,
+          "market_ticker": "KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "model_prob": 0.5962482447466885,
+          "quantity": 714,
+          "reason": "Edge 11.62% model 59.62% vs market 48.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.1416000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CINLAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 314.16,
+      "prev_hash": "2fdb7fcd28c9d81d68aac1e72c11563e4f9d93eb32c59e7287ba7fd7852eba3c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.1416,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR231",
+      "trade_id": "trade_ba30e92796b2",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0231_9c2f65",
+      "username": "DvoaBettor_5600",
+      "verification_notes": "",
+      "why_entered": "Edge 11.62% model 59.62% vs market 48.00%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.44,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.11624824474668849,
+      "fees": 27.9888,
+      "flags": [],
+      "hash": "549129359ec2b7d6570d6c0472a81530b3e634d1ec01eab40be4f14f3da43898",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.44,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22CINLAR",
+          "exec_price": 0.44,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 14720.987294779177,
+          "market_ticker": "KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "model_prob": 0.5962482447466885,
+          "quantity": 714,
+          "reason": "Edge 11.62% model 59.62% vs market 48.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.1416000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CINLAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22CINLAR-LAR-3.5"
+      ],
+      "pnl_dollars": 371.8512,
+      "position_size_dollars": 314.16,
+      "prev_hash": "6717418123428479c71e4b7e2429be774b49d3a2d99e1ed6325875af3b0ac27d",
+      "result": "WIN",
+      "roi_percent": 118.36,
+      "settlement_price": 1.0,
+      "slippage_assumed": 3.1416,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR231",
+      "trade_id": "trade_ba30e92796b2",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0231_9c2f65",
+      "username": "DvoaBettor_5600",
+      "verification_notes": "",
+      "why_entered": "Edge 11.62% model 59.62% vs market 48.00%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11802.12,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 12173.97,
+      "pnl": 371.85
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 3.15,
+    "pnl": 371.85,
+    "open_exposure": 314.16,
+    "total_volume": 628.32
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

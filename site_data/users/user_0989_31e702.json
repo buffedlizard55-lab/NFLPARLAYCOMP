@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0989_31e702",
+    "username": "ZetaModel_4996",
+    "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR989",
+    "strategy_name": "Liquidity Provision v989",
+    "strategy_description": "Place both sides near mid when spread wide (variation)",
+    "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+    "starting_bankroll": 11933.31,
+    "current_bankroll": 11933.31,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 897,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11933.31,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ZetaModel_4996 uses Liquidity Provision v989: Place both sides near mid when spread wide (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11933.31,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

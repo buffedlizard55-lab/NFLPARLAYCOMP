@@ -1,0 +1,236 @@
+{
+  "user": {
+    "user_id": "user_0356_eac173",
+    "username": "SecondBetaX_1540",
+    "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR356",
+    "strategy_name": "Spread + Moneyline Correlation v356",
+    "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+    "starting_bankroll": 11967.73,
+    "current_bankroll": 11643.12,
+    "open_trades": [
+      "trade_92f7d85d2b8d"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 333,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11967.73,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User SecondBetaX_1540 uses Spread + Moneyline Correlation v356: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3484,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 13.638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "b5de7a82284c620ccb3c6ec0d035342f6ac50041887a75af73a42528f6d983e0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.67,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 7403.391565298829,
+          "market_ticker": "KXNFLGAME-26SEP26CLEPHI-PHI",
+          "model_prob": 0.71,
+          "quantity": 299,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.0033,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26CLEPHI-PHI",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26CLEPHI-PHI"
+        },
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.52,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 19572.5094852918,
+          "market_ticker": "KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+          "model_prob": 0.65,
+          "quantity": 239,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2428,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+          "spread": 0.06999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26CLEPHI-PHI",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26CLEPHI-PHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 324.61,
+      "prev_hash": "281afe56d1517e646a2326d0f906435916757b2fa4e9056366f2e600639974b5",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.2461,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR356",
+      "trade_id": "trade_92f7d85d2b8d",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0356_eac173",
+      "username": "SecondBetaX_1540",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3484,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 13.638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "b5de7a82284c620ccb3c6ec0d035342f6ac50041887a75af73a42528f6d983e0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.67,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 7403.391565298829,
+          "market_ticker": "KXNFLGAME-26SEP26CLEPHI-PHI",
+          "model_prob": 0.71,
+          "quantity": 299,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.0033,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26CLEPHI-PHI",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26CLEPHI-PHI"
+        },
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.52,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 19572.5094852918,
+          "market_ticker": "KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+          "model_prob": 0.65,
+          "quantity": 239,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2428,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+          "spread": 0.06999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26CLEPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26CLEPHI-PHI",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26CLEPHI-PHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 324.61,
+      "prev_hash": "281afe56d1517e646a2326d0f906435916757b2fa4e9056366f2e600639974b5",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.2461,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR356",
+      "trade_id": "trade_92f7d85d2b8d",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0356_eac173",
+      "username": "SecondBetaX_1540",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11967.73,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 324.61,
+    "total_volume": 324.61
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

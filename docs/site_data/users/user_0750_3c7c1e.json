@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0750_3c7c1e",
+    "username": "SharpVega_7669",
+    "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR750",
+    "strategy_name": "Team Total Under v750",
+    "strategy_description": "Team total under when wind/bad weather or strong opposing D (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+    "starting_bankroll": 9767.89,
+    "current_bankroll": 9718.08,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_847ab900ab44"
+    ],
+    "total_pnl": -49.81,
+    "roi_percent": -0.51,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 910,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9767.89,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:21Z",
+        "bankroll": 9718.08,
+        "pnl": -49.81
+      }
+    ],
+    "explanation": "User SharpVega_7669 uses Team Total Under v750: Team total under when wind/bad weather or strong opposing D (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08204144865887386,
+      "fees": 4.2294,
+      "flags": [],
+      "hash": "e67e5fdd6c034c7377b5d90965431a5e41001ae121f460d0fcdd3cba8fd84fbd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.7520414486588739,
+          "quantity": 106,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.4558,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 45.58,
+      "prev_hash": "6cb88b7d98a9fddbfded37f008e54786041f83252d8e2f6fc8133b12c5fdc5d3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.4558,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR750",
+      "trade_id": "trade_847ab900ab44",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0750_3c7c1e",
+      "username": "SharpVega_7669",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.08204144865887386,
+      "fees": 4.2294,
+      "flags": [],
+      "hash": "f2b09586aa6b4773a878000bbcc348dff04a9d00e499a8fe6a102456c38f37c2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.7520414486588739,
+          "quantity": 106,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.4558,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": -49.8094,
+      "position_size_dollars": 45.58,
+      "prev_hash": "2d3c7f16a167d312f7b6e4210a32acf47fcc3b13d3c384c54b0a172b42c76397",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.4558,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR750",
+      "trade_id": "trade_847ab900ab44",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0750_3c7c1e",
+      "username": "SharpVega_7669",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08204144865887386,
+      "fees": 4.2294,
+      "flags": [],
+      "hash": "e67e5fdd6c034c7377b5d90965431a5e41001ae121f460d0fcdd3cba8fd84fbd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.7520414486588739,
+          "quantity": 106,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.4558,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 45.58,
+      "prev_hash": "6cb88b7d98a9fddbfded37f008e54786041f83252d8e2f6fc8133b12c5fdc5d3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.4558,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR750",
+      "trade_id": "trade_847ab900ab44",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0750_3c7c1e",
+      "username": "SharpVega_7669",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.08204144865887386,
+      "fees": 4.2294,
+      "flags": [],
+      "hash": "f2b09586aa6b4773a878000bbcc348dff04a9d00e499a8fe6a102456c38f37c2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.7520414486588739,
+          "quantity": 106,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.4558,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": -49.8094,
+      "position_size_dollars": 45.58,
+      "prev_hash": "2d3c7f16a167d312f7b6e4210a32acf47fcc3b13d3c384c54b0a172b42c76397",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.4558,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR750",
+      "trade_id": "trade_847ab900ab44",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0750_3c7c1e",
+      "username": "SharpVega_7669",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9767.89,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:21Z",
+      "bankroll": 9718.08,
+      "pnl": -49.81
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.51,
+    "pnl": -49.81,
+    "open_exposure": 45.58,
+    "total_volume": 91.16
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

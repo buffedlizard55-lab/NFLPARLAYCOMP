@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0864_8221b8",
+    "username": "UnderAlphaX_2673",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR864",
+    "strategy_name": "Injury Impact Fade v864",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 9770.1,
+    "current_bankroll": 10162.76,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_00e62e3428ec"
+    ],
+    "total_pnl": 392.66,
+    "roi_percent": 4.02,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 3,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9770.1,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 10162.76,
+        "pnl": 392.66
+      }
+    ],
+    "explanation": "User UnderAlphaX_2673 uses Injury Impact Fade v864: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.38,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 29.5554,
+      "flags": [],
+      "hash": "4f5d0bd82552a6ea22d158e9560c57775545d21f6e64840001f97ce6841d109f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.38,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14132.051273857618,
+          "market_ticker": "KXNFLGAME-26SEP28SFNYG-NYG",
+          "model_prob": 0.62,
+          "quantity": 681,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5878,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 258.78,
+      "prev_hash": "d5827707ebe9f7e3745fafa2c3cec497db08606933e95ae5b8d99f55c8f879f0",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5878,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR864",
+      "trade_id": "trade_00e62e3428ec",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0864_8221b8",
+      "username": "UnderAlphaX_2673",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.38,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.12,
+      "fees": 29.5554,
+      "flags": [],
+      "hash": "13883516a59398faf5e66c82b313590561b65714bc0ff1f15b570ff8281795cb",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.38,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14132.051273857618,
+          "market_ticker": "KXNFLGAME-26SEP28SFNYG-NYG",
+          "model_prob": 0.62,
+          "quantity": 681,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5878,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+      ],
+      "pnl_dollars": 392.6646,
+      "position_size_dollars": 258.78,
+      "prev_hash": "f8f10a6d84950e6482d9cd1397899c1f7ad8e61f8b3f1a49871ce6304f668147",
+      "result": "WIN",
+      "roi_percent": 151.74,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.5878,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR864",
+      "trade_id": "trade_00e62e3428ec",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0864_8221b8",
+      "username": "UnderAlphaX_2673",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.38,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 29.5554,
+      "flags": [],
+      "hash": "4f5d0bd82552a6ea22d158e9560c57775545d21f6e64840001f97ce6841d109f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.38,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14132.051273857618,
+          "market_ticker": "KXNFLGAME-26SEP28SFNYG-NYG",
+          "model_prob": 0.62,
+          "quantity": 681,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5878,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 258.78,
+      "prev_hash": "d5827707ebe9f7e3745fafa2c3cec497db08606933e95ae5b8d99f55c8f879f0",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5878,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR864",
+      "trade_id": "trade_00e62e3428ec",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0864_8221b8",
+      "username": "UnderAlphaX_2673",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.38,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.12,
+      "fees": 29.5554,
+      "flags": [],
+      "hash": "13883516a59398faf5e66c82b313590561b65714bc0ff1f15b570ff8281795cb",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.38,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14132.051273857618,
+          "market_ticker": "KXNFLGAME-26SEP28SFNYG-NYG",
+          "model_prob": 0.62,
+          "quantity": 681,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5878,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP28SFNYG-NYG",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP28SFNYG-NYG"
+      ],
+      "pnl_dollars": 392.6646,
+      "position_size_dollars": 258.78,
+      "prev_hash": "f8f10a6d84950e6482d9cd1397899c1f7ad8e61f8b3f1a49871ce6304f668147",
+      "result": "WIN",
+      "roi_percent": 151.74,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.5878,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR864",
+      "trade_id": "trade_00e62e3428ec",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0864_8221b8",
+      "username": "UnderAlphaX_2673",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9770.1,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 10162.76,
+      "pnl": 392.66
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 4.02,
+    "pnl": 392.66,
+    "open_exposure": 258.78,
+    "total_volume": 517.56
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0226_1a0329",
+    "username": "DivisionalWolf_3041",
+    "strategy_id": "STRAT_REST_003_VAR226",
+    "strategy_name": "Rest & Schedule Difficulty v226",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 11423.96,
+    "current_bankroll": 11246.93,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_7617495c6e51"
+    ],
+    "total_pnl": -177.03,
+    "roi_percent": -1.55,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 955,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11423.96,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 11246.93,
+        "pnl": -177.03
+      }
+    ],
+    "explanation": "User DivisionalWolf_3041 uses Rest & Schedule Difficulty v226: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 8.8795,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP25TENBAL-BAL",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2fdb7fcd28c9d81d68aac1e72c11563e4f9d93eb32c59e7287ba7fd7852eba3c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 10411.659004888117,
+          "market_ticker": "KXNFLGAME-26SEP25TENBAL-BAL",
+          "model_prob": 0.58,
+          "quantity": 295,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6814999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+          "spread": 0.1100000000000001,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 168.15,
+      "prev_hash": "fb974b51ce7798aa803ef6dbda19c8b251bce47f3be591ae663203f3594a95bf",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6815,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR226",
+      "trade_id": "trade_7617495c6e51",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0226_1a0329",
+      "username": "DivisionalWolf_3041",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 8.8795,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP25TENBAL-BAL",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "6717418123428479c71e4b7e2429be774b49d3a2d99e1ed6325875af3b0ac27d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 10411.659004888117,
+          "market_ticker": "KXNFLGAME-26SEP25TENBAL-BAL",
+          "model_prob": 0.58,
+          "quantity": 295,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6814999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+          "spread": 0.1100000000000001,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+      ],
+      "pnl_dollars": -177.0295,
+      "position_size_dollars": 168.15,
+      "prev_hash": "0df4937267e9fc4d4d70476370c300fdfc2f1183a9191685f1458c713e5f9841",
+      "result": "LOSS",
+      "roi_percent": -105.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.6815,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR226",
+      "trade_id": "trade_7617495c6e51",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0226_1a0329",
+      "username": "DivisionalWolf_3041",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 8.8795,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP25TENBAL-BAL",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2fdb7fcd28c9d81d68aac1e72c11563e4f9d93eb32c59e7287ba7fd7852eba3c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 10411.659004888117,
+          "market_ticker": "KXNFLGAME-26SEP25TENBAL-BAL",
+          "model_prob": 0.58,
+          "quantity": 295,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6814999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+          "spread": 0.1100000000000001,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 168.15,
+      "prev_hash": "fb974b51ce7798aa803ef6dbda19c8b251bce47f3be591ae663203f3594a95bf",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6815,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR226",
+      "trade_id": "trade_7617495c6e51",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0226_1a0329",
+      "username": "DivisionalWolf_3041",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 8.8795,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP25TENBAL-BAL",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "6717418123428479c71e4b7e2429be774b49d3a2d99e1ed6325875af3b0ac27d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 10411.659004888117,
+          "market_ticker": "KXNFLGAME-26SEP25TENBAL-BAL",
+          "model_prob": 0.58,
+          "quantity": 295,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.6814999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+          "spread": 0.1100000000000001,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25TENBAL-BAL",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25TENBAL-BAL"
+      ],
+      "pnl_dollars": -177.0295,
+      "position_size_dollars": 168.15,
+      "prev_hash": "0df4937267e9fc4d4d70476370c300fdfc2f1183a9191685f1458c713e5f9841",
+      "result": "LOSS",
+      "roi_percent": -105.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.6815,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR226",
+      "trade_id": "trade_7617495c6e51",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0226_1a0329",
+      "username": "DivisionalWolf_3041",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11423.96,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 11246.93,
+      "pnl": -177.03
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.55,
+    "pnl": -177.03,
+    "open_exposure": 168.15,
+    "total_volume": 336.3
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

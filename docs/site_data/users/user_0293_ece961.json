@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0293_ece961",
+    "username": "PropEdge_77",
+    "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR293",
+    "strategy_name": "Win Streak Fade v293",
+    "strategy_description": "Fade teams on 4+ win streak vs market (variation)",
+    "strategy_long_explanation": "Uses win streak, KXNFLGAME. Entry team 4+ win streak, moneyline >0.70, bet NO. Position 1%. Why work: market overvalues streak, regression. Why fail: good teams keep winning. Evidence: 4+ streak teams win next 58% vs 70% implied (fade profitable).",
+    "starting_bankroll": 11785.23,
+    "current_bankroll": 11670.15,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_22593f50cee7"
+    ],
+    "total_pnl": -115.08,
+    "roi_percent": -0.98,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 479,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11785.23,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 11670.15,
+        "pnl": -115.08
+      }
+    ],
+    "explanation": "User PropEdge_77 uses Win Streak Fade v293: Fade teams on 4+ win streak vs market (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05582743315481675,
+      "fees": 4.3596,
+      "flags": [],
+      "hash": "11c4ca2a6dda47a695780f74f8cd85c782f17b08a1029c42e6b423537675669e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.64,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11184.265259538566,
+          "market_ticker": "KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "model_prob": 0.49582743315481675,
+          "quantity": 173,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1072,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "spread": 0.07999999999999996,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 110.72,
+      "prev_hash": "671f7ba1535378e3dcdd6eb912465715225a2300414feb597bdefd7fcafe9a36",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1072,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR293",
+      "trade_id": "trade_22593f50cee7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0293_ece961",
+      "username": "PropEdge_77",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.05582743315481675,
+      "fees": 4.3596,
+      "flags": [],
+      "hash": "f4d2b18e82c590c8150a36e9334fd6dd8551a201dbf15499988ed66e4314f588",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.64,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11184.265259538566,
+          "market_ticker": "KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "model_prob": 0.49582743315481675,
+          "quantity": 173,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1072,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "spread": 0.07999999999999996,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+      ],
+      "pnl_dollars": -115.0796,
+      "position_size_dollars": 110.72,
+      "prev_hash": "75bffa8ec56b6b76e6d2586fcf70a1c2457fb8470d793874bf28788df8992a71",
+      "result": "LOSS",
+      "roi_percent": -103.94,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.1072,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR293",
+      "trade_id": "trade_22593f50cee7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0293_ece961",
+      "username": "PropEdge_77",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05582743315481675,
+      "fees": 4.3596,
+      "flags": [],
+      "hash": "11c4ca2a6dda47a695780f74f8cd85c782f17b08a1029c42e6b423537675669e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.64,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11184.265259538566,
+          "market_ticker": "KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "model_prob": 0.49582743315481675,
+          "quantity": 173,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1072,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "spread": 0.07999999999999996,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 110.72,
+      "prev_hash": "671f7ba1535378e3dcdd6eb912465715225a2300414feb597bdefd7fcafe9a36",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1072,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR293",
+      "trade_id": "trade_22593f50cee7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0293_ece961",
+      "username": "PropEdge_77",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.05582743315481675,
+      "fees": 4.3596,
+      "flags": [],
+      "hash": "f4d2b18e82c590c8150a36e9334fd6dd8551a201dbf15499988ed66e4314f588",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.64,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11184.265259538566,
+          "market_ticker": "KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "model_prob": 0.49582743315481675,
+          "quantity": 173,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1072,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+          "spread": 0.07999999999999996,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22KCBAL-BAL-3.5"
+      ],
+      "pnl_dollars": -115.0796,
+      "position_size_dollars": 110.72,
+      "prev_hash": "75bffa8ec56b6b76e6d2586fcf70a1c2457fb8470d793874bf28788df8992a71",
+      "result": "LOSS",
+      "roi_percent": -103.94,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.1072,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR293",
+      "trade_id": "trade_22593f50cee7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0293_ece961",
+      "username": "PropEdge_77",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11785.23,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 11670.15,
+      "pnl": -115.08
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.98,
+    "pnl": -115.08,
+    "open_exposure": 110.72,
+    "total_volume": 221.44
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

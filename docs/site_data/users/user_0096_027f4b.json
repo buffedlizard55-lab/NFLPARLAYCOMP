@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0096_027f4b",
+    "username": "VeteranOmega_4441",
+    "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR96",
+    "strategy_name": "Implied Probability Value vR96",
+    "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+    "starting_bankroll": 11306.17,
+    "current_bankroll": 10543.31,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_65ace9ff8f85"
+    ],
+    "total_pnl": -762.86,
+    "roi_percent": -6.75,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 100,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 11306.17,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 10543.31,
+        "pnl": -762.86
+      }
+    ],
+    "explanation": "User VeteranOmega_4441 uses Implied Probability Value vR96: Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": "2026-09-22T22:52:12Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.52,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.2300321055898495,
+      "fees": 46.3008,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $564.98 >10% of liquidity $5466.722057609984 for KXNFLGAME-26SEP26DETBUF-BUF",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "99893ccde46083a54b81e7c7df71d2836bfd09503c1603977a98ab6571b991e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP26DETBUF",
+          "exec_price": 0.52,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 5466.722057609984,
+          "market_ticker": "KXNFLGAME-26SEP26DETBUF-BUF",
+          "model_prob": 0.6400321055898495,
+          "quantity": 1378,
+          "reason": "Edge 23.00% model 64.00% vs market 41.00%",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.5827999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26DETBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 716.56,
+      "prev_hash": "4ff2b41a98f045ec27e60b27272403902a500cf8a29c0190d22dc32371ed8ffa",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.5828,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR96",
+      "trade_id": "trade_65ace9ff8f85",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0096_027f4b",
+      "username": "VeteranOmega_4441",
+      "verification_notes": "",
+      "why_entered": "Edge 23.00% model 64.00% vs market 41.00%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.52,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:12Z",
+      "expected_value": 0.2300321055898495,
+      "fees": 46.3008,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $564.98 >10% of liquidity $5466.722057609984 for KXNFLGAME-26SEP26DETBUF-BUF",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "57e633f02db592d5691bb051f895b5ac8200f8375cf23dc0fa81d6256dec5f05",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP26DETBUF",
+          "exec_price": 0.52,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 5466.722057609984,
+          "market_ticker": "KXNFLGAME-26SEP26DETBUF-BUF",
+          "model_prob": 0.6400321055898495,
+          "quantity": 1378,
+          "reason": "Edge 23.00% model 64.00% vs market 41.00%",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.5827999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26DETBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+      ],
+      "pnl_dollars": -762.8608,
+      "position_size_dollars": 716.56,
+      "prev_hash": "25b5517dc5377f1ca149c681a844cf560a2a30319931498a5412a55b2e73c440",
+      "result": "LOSS",
+      "roi_percent": -106.46,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.5828,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR96",
+      "trade_id": "trade_65ace9ff8f85",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0096_027f4b",
+      "username": "VeteranOmega_4441",
+      "verification_notes": "",
+      "why_entered": "Edge 23.00% model 64.00% vs market 41.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.52,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.2300321055898495,
+      "fees": 46.3008,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $564.98 >10% of liquidity $5466.722057609984 for KXNFLGAME-26SEP26DETBUF-BUF",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "99893ccde46083a54b81e7c7df71d2836bfd09503c1603977a98ab6571b991e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP26DETBUF",
+          "exec_price": 0.52,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 5466.722057609984,
+          "market_ticker": "KXNFLGAME-26SEP26DETBUF-BUF",
+          "model_prob": 0.6400321055898495,
+          "quantity": 1378,
+          "reason": "Edge 23.00% model 64.00% vs market 41.00%",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.5827999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26DETBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 716.56,
+      "prev_hash": "4ff2b41a98f045ec27e60b27272403902a500cf8a29c0190d22dc32371ed8ffa",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.5828,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR96",
+      "trade_id": "trade_65ace9ff8f85",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0096_027f4b",
+      "username": "VeteranOmega_4441",
+      "verification_notes": "",
+      "why_entered": "Edge 23.00% model 64.00% vs market 41.00%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.52,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:12Z",
+      "expected_value": 0.2300321055898495,
+      "fees": 46.3008,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $564.98 >10% of liquidity $5466.722057609984 for KXNFLGAME-26SEP26DETBUF-BUF",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "57e633f02db592d5691bb051f895b5ac8200f8375cf23dc0fa81d6256dec5f05",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP26DETBUF",
+          "exec_price": 0.52,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 5466.722057609984,
+          "market_ticker": "KXNFLGAME-26SEP26DETBUF-BUF",
+          "model_prob": 0.6400321055898495,
+          "quantity": 1378,
+          "reason": "Edge 23.00% model 64.00% vs market 41.00%",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.5827999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26DETBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26DETBUF-BUF",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26DETBUF-BUF"
+      ],
+      "pnl_dollars": -762.8608,
+      "position_size_dollars": 716.56,
+      "prev_hash": "25b5517dc5377f1ca149c681a844cf560a2a30319931498a5412a55b2e73c440",
+      "result": "LOSS",
+      "roi_percent": -106.46,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.5828,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR96",
+      "trade_id": "trade_65ace9ff8f85",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0096_027f4b",
+      "username": "VeteranOmega_4441",
+      "verification_notes": "",
+      "why_entered": "Edge 23.00% model 64.00% vs market 41.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 11306.17,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 10543.31,
+      "pnl": -762.86
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -6.75,
+    "pnl": -762.86,
+    "open_exposure": 716.56,
+    "total_volume": 1433.12
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

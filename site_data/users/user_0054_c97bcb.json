@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0054_c97bcb",
+    "username": "ParlayLambda_2327",
+    "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR54",
+    "strategy_name": "Divisional Underdog Value vR54",
+    "strategy_description": "Divisional underdogs cover 53%+ (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD, divisional games underdog +3 to +7. Entry divisional underdog +3 to +7, price <0.52. Position 2%. Why work: familiarity reduces blowouts. Why fail: market knows. Evidence: 53.2% cover 2015-2024.",
+    "starting_bankroll": 10499.53,
+    "current_bankroll": 10499.53,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 53,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 10499.53,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ParlayLambda_2327 uses Divisional Underdog Value vR54: Divisional underdogs cover 53%+ (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 10499.53,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

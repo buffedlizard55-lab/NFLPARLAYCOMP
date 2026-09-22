@@ -1,0 +1,457 @@
+{
+  "user": {
+    "user_id": "user_0195_c1a344",
+    "username": "HomeSignal_2372",
+    "strategy_id": "STRAT_TOTAL_DOG_007_VAR195",
+    "strategy_name": "Total + Underdog Correlation v195",
+    "strategy_description": "Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline (underdog) + KXNFLTOTAL under\nEntry: underdog with top-10 defense vs top offense, total >48, underdog price 0.30-0.45\nAvoid: high total already underpriced, indoor shootouts\nPosition size: 1% bankroll\nEV: defensive underdogs win + under hits 31% vs market 26% implied\nWhy work: Defensive game script favors underdog keeping it low scoring\nWhy fail: Underdog may need shootout to win\nEvidence: 2018-2023, 67 games matching, 31% hit\nSources: ESPN team stats, Kalshi totals\n            ",
+    "starting_bankroll": 11339.02,
+    "current_bankroll": 11283.7,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_126f6731ddab"
+    ],
+    "total_pnl": -55.32,
+    "roi_percent": -0.49,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 464,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11339.02,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 11283.7,
+        "pnl": -55.32
+      }
+    ],
+    "explanation": "User HomeSignal_2372 uses Total + Underdog Correlation v195: Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.1419,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 16.158,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLGAME-26SEP21CLECHI-CHI",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8d7f39582a2d8315f6ec4fcd0e57e6c92b768263789cbfbc254eadbda93b96c8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 5797.8215121265985,
+          "market_ticker": "KXNFLGAME-26SEP21CLECHI-CHI",
+          "model_prob": 0.38,
+          "quantity": 269,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.1567,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+        },
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.32999999999999996,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4023.6900501488944,
+          "market_ticker": "KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "model_prob": 0.57,
+          "quantity": 283,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.9338999999999997,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 209.06,
+      "prev_hash": "2b2876efeebe804270b3477dea073999ccd11b343772db2e3fcda4d4fa4196a8",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.0906,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR195",
+      "trade_id": "trade_126f6731ddab",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0195_c1a344",
+      "username": "HomeSignal_2372",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.1419,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.04,
+      "fees": 16.158,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLGAME-26SEP21CLECHI-CHI",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "f1c440e1efc5de37431298836a4cb4b4da901400caf160f0194cd50bcf4399bc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 5797.8215121265985,
+          "market_ticker": "KXNFLGAME-26SEP21CLECHI-CHI",
+          "model_prob": 0.38,
+          "quantity": 269,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.1567,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+        },
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.32999999999999996,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4023.6900501488944,
+          "market_ticker": "KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "model_prob": 0.57,
+          "quantity": 283,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.9338999999999997,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+      ],
+      "pnl_dollars": -55.3224,
+      "position_size_dollars": 209.06,
+      "prev_hash": "2cd44da717b07414d5609d8f217b3ac07cec4d453ab104dc09179b8f638e54be",
+      "result": "LOSS",
+      "roi_percent": -141.26,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.0906,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR195",
+      "trade_id": "trade_126f6731ddab",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0195_c1a344",
+      "username": "HomeSignal_2372",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.1419,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 16.158,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLGAME-26SEP21CLECHI-CHI",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8d7f39582a2d8315f6ec4fcd0e57e6c92b768263789cbfbc254eadbda93b96c8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 5797.8215121265985,
+          "market_ticker": "KXNFLGAME-26SEP21CLECHI-CHI",
+          "model_prob": 0.38,
+          "quantity": 269,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.1567,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+        },
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.32999999999999996,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4023.6900501488944,
+          "market_ticker": "KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "model_prob": 0.57,
+          "quantity": 283,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.9338999999999997,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 209.06,
+      "prev_hash": "2b2876efeebe804270b3477dea073999ccd11b343772db2e3fcda4d4fa4196a8",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.0906,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR195",
+      "trade_id": "trade_126f6731ddab",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0195_c1a344",
+      "username": "HomeSignal_2372",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.1419,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.04,
+      "fees": 16.158,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLGAME-26SEP21CLECHI-CHI",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "f1c440e1efc5de37431298836a4cb4b4da901400caf160f0194cd50bcf4399bc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 5797.8215121265985,
+          "market_ticker": "KXNFLGAME-26SEP21CLECHI-CHI",
+          "model_prob": 0.38,
+          "quantity": 269,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.1567,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+        },
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.32999999999999996,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4023.6900501488944,
+          "market_ticker": "KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "model_prob": 0.57,
+          "quantity": 283,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.9338999999999997,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+          "spread": 0.030000000000000027,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CLECHI-CHI",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21CLECHI-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CLECHI-CHI"
+      ],
+      "pnl_dollars": -55.3224,
+      "position_size_dollars": 209.06,
+      "prev_hash": "2cd44da717b07414d5609d8f217b3ac07cec4d453ab104dc09179b8f638e54be",
+      "result": "LOSS",
+      "roi_percent": -141.26,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.0906,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR195",
+      "trade_id": "trade_126f6731ddab",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0195_c1a344",
+      "username": "HomeSignal_2372",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11339.02,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 11283.7,
+      "pnl": -55.32
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.49,
+    "pnl": -55.32,
+    "open_exposure": 209.06,
+    "total_volume": 418.12
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

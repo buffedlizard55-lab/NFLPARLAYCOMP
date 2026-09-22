@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0350_260e2d",
+    "username": "RookieRho_6391",
+    "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR350",
+    "strategy_name": "Short Week Under v350",
+    "strategy_description": "Thursday games under due to short prep (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, TNF games. Entry Thursday game total >45, bet under. Position 1.5%. Why work: short week hurts offense more. Why fail: totals already lower. Evidence: TNF under 54% 2018-2024.",
+    "starting_bankroll": 10309.47,
+    "current_bankroll": 10379.63,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_966e20b9134a"
+    ],
+    "total_pnl": 70.16,
+    "roi_percent": 0.68,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 30,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10309.47,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:15Z",
+        "bankroll": 10379.63,
+        "pnl": 70.16
+      }
+    ],
+    "explanation": "User RookieRho_6391 uses Short Week Under v350: Thursday games under due to short prep (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.00011103002548118468,
+      "fees": 5.2808,
+      "flags": [],
+      "hash": "281afe56d1517e646a2326d0f906435916757b2fa4e9056366f2e600639974b5",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6598889699745188,
+          "quantity": 164,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.8856,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 88.56,
+      "prev_hash": "085e77db05d5630e4b1e25af40c11b6f882eb96339a0f451d6a12e012edc9cfd",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.8856,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR350",
+      "trade_id": "trade_966e20b9134a",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0350_260e2d",
+      "username": "RookieRho_6391",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.00011103002548118468,
+      "fees": 5.2808,
+      "flags": [],
+      "hash": "a0ec6057a592a67700d4a876f80c89aff35e1d706609bb173fd5736b690743d2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6598889699745188,
+          "quantity": 164,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.8856,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": 70.1592,
+      "position_size_dollars": 88.56,
+      "prev_hash": "23cf985ec595be714b127483481f72c4de80cf3fe01ad7263ec8c9ccab48ca45",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.8856,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR350",
+      "trade_id": "trade_966e20b9134a",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0350_260e2d",
+      "username": "RookieRho_6391",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.00011103002548118468,
+      "fees": 5.2808,
+      "flags": [],
+      "hash": "281afe56d1517e646a2326d0f906435916757b2fa4e9056366f2e600639974b5",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6598889699745188,
+          "quantity": 164,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.8856,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 88.56,
+      "prev_hash": "085e77db05d5630e4b1e25af40c11b6f882eb96339a0f451d6a12e012edc9cfd",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.8856,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR350",
+      "trade_id": "trade_966e20b9134a",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0350_260e2d",
+      "username": "RookieRho_6391",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.00011103002548118468,
+      "fees": 5.2808,
+      "flags": [],
+      "hash": "a0ec6057a592a67700d4a876f80c89aff35e1d706609bb173fd5736b690743d2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6598889699745188,
+          "quantity": 164,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.8856,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": 70.1592,
+      "position_size_dollars": 88.56,
+      "prev_hash": "23cf985ec595be714b127483481f72c4de80cf3fe01ad7263ec8c9ccab48ca45",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.8856,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR350",
+      "trade_id": "trade_966e20b9134a",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0350_260e2d",
+      "username": "RookieRho_6391",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10309.47,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:15Z",
+      "bankroll": 10379.63,
+      "pnl": 70.16
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.68,
+    "pnl": 70.16,
+    "open_exposure": 88.56,
+    "total_volume": 177.12
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

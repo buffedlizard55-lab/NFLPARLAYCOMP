@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0460_9bde85",
+    "username": "MoneylineLambda_9884",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR460",
+    "strategy_name": "Home Field Momentum v460",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 11276.12,
+    "current_bankroll": 11015.0,
+    "open_trades": [
+      "trade_a59d1f05016d"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 458,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11276.12,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User MoneylineLambda_9884 uses Home Field Momentum v460: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.21000000000000002,
+      "fees": 17.5616,
+      "flags": [],
+      "hash": "260f223036fab6cf492749a2bafe959fb309f314a1de6c774b0658aac3a6aa61",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21CHIWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11264.07976105176,
+          "market_ticker": "KXNFLGAME-26SEP21CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 512,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.6112,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CHIWAS-WAS",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 261.12,
+      "prev_hash": "b568bcc4965feed2082d294b03ffc0067ca7bd27adc7e6f43e6852c3a2432290",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.6112,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR460",
+      "trade_id": "trade_a59d1f05016d",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0460_9bde85",
+      "username": "MoneylineLambda_9884",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.21000000000000002,
+      "fees": 17.5616,
+      "flags": [],
+      "hash": "260f223036fab6cf492749a2bafe959fb309f314a1de6c774b0658aac3a6aa61",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21CHIWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 11264.07976105176,
+          "market_ticker": "KXNFLGAME-26SEP21CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 512,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.6112,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CHIWAS-WAS",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 261.12,
+      "prev_hash": "b568bcc4965feed2082d294b03ffc0067ca7bd27adc7e6f43e6852c3a2432290",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.6112,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR460",
+      "trade_id": "trade_a59d1f05016d",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0460_9bde85",
+      "username": "MoneylineLambda_9884",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11276.12,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 261.12,
+    "total_volume": 261.12
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

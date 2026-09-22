@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0485_837ad0",
+    "username": "OverModel_6990",
+    "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR485",
+    "strategy_name": "Divisional Underdog Value v485",
+    "strategy_description": "Divisional underdogs cover 53%+ (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD, divisional games underdog +3 to +7. Entry divisional underdog +3 to +7, price <0.52. Position 2%. Why work: familiarity reduces blowouts. Why fail: market knows. Evidence: 53.2% cover 2015-2024.",
+    "starting_bankroll": 8986.02,
+    "current_bankroll": 9077.65,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_e697278475eb"
+    ],
+    "total_pnl": 91.63,
+    "roi_percent": 1.02,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 58,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8986.02,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:20Z",
+        "bankroll": 9077.65,
+        "pnl": 91.63
+      }
+    ],
+    "explanation": "User OverModel_6990 uses Divisional Underdog Value v485: Divisional underdogs cover 53%+ (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07588084241016751,
+      "fees": 6.8971,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b9973382fc7051e653b54b4239d998fbfc9a0155fa1683efbe191fc42a09d7ad",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.3541191575898325,
+          "quantity": 167,
+          "reason": "Divisional Underdog Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.6847000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 68.47,
+      "prev_hash": "c03a3a9c8e0368262a86d8125ef8ff5cf9a0406eb0874566597096364c002499",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.6847,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR485",
+      "trade_id": "trade_e697278475eb",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0485_837ad0",
+      "username": "OverModel_6990",
+      "verification_notes": "",
+      "why_entered": "Divisional Underdog Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": -0.07588084241016751,
+      "fees": 6.8971,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "a5daf82dddca33d105a1fb1fa53f14f9b92977726ae6c401f1eefa668e9c3e01",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.3541191575898325,
+          "quantity": 167,
+          "reason": "Divisional Underdog Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.6847000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": 91.6329,
+      "position_size_dollars": 68.47,
+      "prev_hash": "58e0bff595f6df5164703279fca92aedba9d92d2493c5c2947e7458b1ace7242",
+      "result": "WIN",
+      "roi_percent": 133.83,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.6847,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR485",
+      "trade_id": "trade_e697278475eb",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0485_837ad0",
+      "username": "OverModel_6990",
+      "verification_notes": "",
+      "why_entered": "Divisional Underdog Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07588084241016751,
+      "fees": 6.8971,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b9973382fc7051e653b54b4239d998fbfc9a0155fa1683efbe191fc42a09d7ad",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.3541191575898325,
+          "quantity": 167,
+          "reason": "Divisional Underdog Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.6847000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 68.47,
+      "prev_hash": "c03a3a9c8e0368262a86d8125ef8ff5cf9a0406eb0874566597096364c002499",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.6847,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR485",
+      "trade_id": "trade_e697278475eb",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0485_837ad0",
+      "username": "OverModel_6990",
+      "verification_notes": "",
+      "why_entered": "Divisional Underdog Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": -0.07588084241016751,
+      "fees": 6.8971,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "a5daf82dddca33d105a1fb1fa53f14f9b92977726ae6c401f1eefa668e9c3e01",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.3541191575898325,
+          "quantity": 167,
+          "reason": "Divisional Underdog Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.6847000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": 91.6329,
+      "position_size_dollars": 68.47,
+      "prev_hash": "58e0bff595f6df5164703279fca92aedba9d92d2493c5c2947e7458b1ace7242",
+      "result": "WIN",
+      "roi_percent": 133.83,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.6847,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR485",
+      "trade_id": "trade_e697278475eb",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0485_837ad0",
+      "username": "OverModel_6990",
+      "verification_notes": "",
+      "why_entered": "Divisional Underdog Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8986.02,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:20Z",
+      "bankroll": 9077.65,
+      "pnl": 91.63
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.02,
+    "pnl": 91.63,
+    "open_exposure": 68.47,
+    "total_volume": 136.94
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

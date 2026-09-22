@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0154_7bad8a",
+    "username": "ContrarianLambda_4183",
+    "strategy_id": "STRAT_DIVISIONAL_DOG_016_VAR154",
+    "strategy_name": "Divisional Underdog Value v154",
+    "strategy_description": "Divisional underdogs cover 53%+ (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD, divisional games underdog +3 to +7. Entry divisional underdog +3 to +7, price <0.52. Position 2%. Why work: familiarity reduces blowouts. Why fail: market knows. Evidence: 53.2% cover 2015-2024.",
+    "starting_bankroll": 11376.06,
+    "current_bankroll": 11376.06,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 207,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11376.06,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ContrarianLambda_4183 uses Divisional Underdog Value v154: Divisional underdogs cover 53%+ (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11376.06,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

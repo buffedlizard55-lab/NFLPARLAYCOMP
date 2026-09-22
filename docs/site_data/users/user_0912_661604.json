@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0912_661604",
+    "username": "ValueRho_6188",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR912",
+    "strategy_name": "Injury Impact Fade v912",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 8257.23,
+    "current_bankroll": 8045.77,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_ecff42bd0849"
+    ],
+    "total_pnl": -211.46,
+    "roi_percent": -2.56,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 959,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8257.23,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 8045.77,
+        "pnl": -211.46
+      }
+    ],
+    "explanation": "User ValueRho_6188 uses Injury Impact Fade v912: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 17.955,
+      "flags": [],
+      "hash": "61639c311eb81e359785f5aee41b106b5b55322f49932b2ceda2114310363858",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.62,
+          "quantity": 450,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.9350000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 193.5,
+      "prev_hash": "d329e6753bf1b64b1d703d73e699675a80180743a550ea71cce3fe19c206c23b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.935,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR912",
+      "trade_id": "trade_ecff42bd0849",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0912_661604",
+      "username": "ValueRho_6188",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.12,
+      "fees": 17.955,
+      "flags": [],
+      "hash": "961e1552d9afb6d4c9650a2d3d517facc1dcaffefd00930da083030193418887",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.62,
+          "quantity": 450,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.9350000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": -211.455,
+      "position_size_dollars": 193.5,
+      "prev_hash": "fbce5fd2284fa90d6992abbde22da5675e11c44928bbeb12e2ff1c91064edb48",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.935,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR912",
+      "trade_id": "trade_ecff42bd0849",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0912_661604",
+      "username": "ValueRho_6188",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 17.955,
+      "flags": [],
+      "hash": "61639c311eb81e359785f5aee41b106b5b55322f49932b2ceda2114310363858",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.62,
+          "quantity": 450,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.9350000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 193.5,
+      "prev_hash": "d329e6753bf1b64b1d703d73e699675a80180743a550ea71cce3fe19c206c23b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.935,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR912",
+      "trade_id": "trade_ecff42bd0849",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0912_661604",
+      "username": "ValueRho_6188",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.12,
+      "fees": 17.955,
+      "flags": [],
+      "hash": "961e1552d9afb6d4c9650a2d3d517facc1dcaffefd00930da083030193418887",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.62,
+          "quantity": 450,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.9350000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": -211.455,
+      "position_size_dollars": 193.5,
+      "prev_hash": "fbce5fd2284fa90d6992abbde22da5675e11c44928bbeb12e2ff1c91064edb48",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.935,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR912",
+      "trade_id": "trade_ecff42bd0849",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0912_661604",
+      "username": "ValueRho_6188",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8257.23,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 8045.77,
+      "pnl": -211.46
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -2.56,
+    "pnl": -211.46,
+    "open_exposure": 193.5,
+    "total_volume": 387.0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

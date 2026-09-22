@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0416_493017",
+    "username": "TDLambda_624",
+    "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR416",
+    "strategy_name": "Liquidity Provision v416",
+    "strategy_description": "Place both sides near mid when spread wide (variation)",
+    "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+    "starting_bankroll": 9610.54,
+    "current_bankroll": 9715.58,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_795bca99fb01"
+    ],
+    "total_pnl": 105.04,
+    "roi_percent": 1.09,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 28,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9610.54,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:15Z",
+        "bankroll": 9715.58,
+        "pnl": 105.04
+      }
+    ],
+    "explanation": "User TDLambda_624 uses Liquidity Provision v416: Place both sides near mid when spread wide (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05492142589302218,
+      "fees": 7.9065,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "86bb66106911a20eb5f4589714aac9f80d1527afd001c71ffb92d5991a01673b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.3750785741069778,
+          "quantity": 251,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.3805,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 138.05,
+      "prev_hash": "bd832af21048a118af1a4b8fd55cc004033eff79949a7612eb26ce156261a88b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3805,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR416",
+      "trade_id": "trade_795bca99fb01",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0416_493017",
+      "username": "TDLambda_624",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.05492142589302218,
+      "fees": 7.9065,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "186466db354648e3a14be5024b50e8bc349155da02ed037533fa7c1c91621c8c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.3750785741069778,
+          "quantity": 251,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.3805,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 105.0435,
+      "position_size_dollars": 138.05,
+      "prev_hash": "caa15bc0cc50ba081023047b881dac341ae0c7cd78e2d399797f464c9b6a09ea",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.3805,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR416",
+      "trade_id": "trade_795bca99fb01",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0416_493017",
+      "username": "TDLambda_624",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05492142589302218,
+      "fees": 7.9065,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "86bb66106911a20eb5f4589714aac9f80d1527afd001c71ffb92d5991a01673b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.3750785741069778,
+          "quantity": 251,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.3805,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 138.05,
+      "prev_hash": "bd832af21048a118af1a4b8fd55cc004033eff79949a7612eb26ce156261a88b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3805,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR416",
+      "trade_id": "trade_795bca99fb01",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0416_493017",
+      "username": "TDLambda_624",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.05492142589302218,
+      "fees": 7.9065,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "186466db354648e3a14be5024b50e8bc349155da02ed037533fa7c1c91621c8c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.3750785741069778,
+          "quantity": 251,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.3805,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 105.0435,
+      "position_size_dollars": 138.05,
+      "prev_hash": "caa15bc0cc50ba081023047b881dac341ae0c7cd78e2d399797f464c9b6a09ea",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.3805,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR416",
+      "trade_id": "trade_795bca99fb01",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0416_493017",
+      "username": "TDLambda_624",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9610.54,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:15Z",
+      "bankroll": 9715.58,
+      "pnl": 105.04
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.09,
+    "pnl": 105.04,
+    "open_exposure": 138.05,
+    "total_volume": 276.1
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

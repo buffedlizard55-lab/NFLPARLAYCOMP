@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0884_2dddbb",
+    "username": "UnderModel_8024",
+    "strategy_id": "STRAT_REST_003_VAR884",
+    "strategy_name": "Rest & Schedule Difficulty v884",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 9698.2,
+    "current_bankroll": 9784.13,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_f3b251ecfe94"
+    ],
+    "total_pnl": 85.93,
+    "roi_percent": 0.89,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 63,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9698.2,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 9784.13,
+        "pnl": 85.93
+      }
+    ],
+    "explanation": "User UnderModel_8024 uses Rest & Schedule Difficulty v884: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.468,
+      "flags": [],
+      "hash": "08eda3b47489711915b22e46c1fed65823ecdc543b7220cca2d2e5288abbd101",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.58,
+          "quantity": 264,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.716,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 171.6,
+      "prev_hash": "c50859b9d50a84ef8d704f6e888c9006786da373848f40f44710fdb0b7528c01",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.716,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR884",
+      "trade_id": "trade_f3b251ecfe94",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0884_2dddbb",
+      "username": "UnderModel_8024",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.08,
+      "fees": 6.468,
+      "flags": [],
+      "hash": "365339e9154513ede0dd0046b3a573968d90be9b0edd9ddec9506caaef3377e0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.58,
+          "quantity": 264,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.716,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": 85.932,
+      "position_size_dollars": 171.6,
+      "prev_hash": "03b83273b95b20f2b20d0b21d17fb4560a14da92d1e27384b5cb4fa8c66d9ec9",
+      "result": "WIN",
+      "roi_percent": 50.08,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.716,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR884",
+      "trade_id": "trade_f3b251ecfe94",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0884_2dddbb",
+      "username": "UnderModel_8024",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.468,
+      "flags": [],
+      "hash": "08eda3b47489711915b22e46c1fed65823ecdc543b7220cca2d2e5288abbd101",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.58,
+          "quantity": 264,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.716,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 171.6,
+      "prev_hash": "c50859b9d50a84ef8d704f6e888c9006786da373848f40f44710fdb0b7528c01",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.716,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR884",
+      "trade_id": "trade_f3b251ecfe94",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0884_2dddbb",
+      "username": "UnderModel_8024",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.08,
+      "fees": 6.468,
+      "flags": [],
+      "hash": "365339e9154513ede0dd0046b3a573968d90be9b0edd9ddec9506caaef3377e0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.65,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 2640.109208591145,
+          "market_ticker": "KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "model_prob": 0.58,
+          "quantity": 264,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.716,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20PITWAS-O45.5"
+      ],
+      "pnl_dollars": 85.932,
+      "position_size_dollars": 171.6,
+      "prev_hash": "03b83273b95b20f2b20d0b21d17fb4560a14da92d1e27384b5cb4fa8c66d9ec9",
+      "result": "WIN",
+      "roi_percent": 50.08,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.716,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR884",
+      "trade_id": "trade_f3b251ecfe94",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0884_2dddbb",
+      "username": "UnderModel_8024",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9698.2,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 9784.13,
+      "pnl": 85.93
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.89,
+    "pnl": 85.93,
+    "open_exposure": 171.6,
+    "total_volume": 343.2
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

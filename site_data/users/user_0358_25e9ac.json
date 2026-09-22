@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0358_25e9ac",
+    "username": "SecondDeltaX_7406",
+    "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR358",
+    "strategy_name": "Win Streak Fade v358",
+    "strategy_description": "Fade teams on 4+ win streak vs market (variation)",
+    "strategy_long_explanation": "Uses win streak, KXNFLGAME. Entry team 4+ win streak, moneyline >0.70, bet NO. Position 1%. Why work: market overvalues streak, regression. Why fail: good teams keep winning. Evidence: 4+ streak teams win next 58% vs 70% implied (fade profitable).",
+    "starting_bankroll": 9208.79,
+    "current_bankroll": 9400.04,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_4d432f2426a3"
+    ],
+    "total_pnl": 191.25,
+    "roi_percent": 2.08,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 12,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9208.79,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:15Z",
+        "bankroll": 9400.04,
+        "pnl": 191.25
+      }
+    ],
+    "explanation": "User SecondDeltaX_7406 uses Win Streak Fade v358: Fade teams on 4+ win streak vs market (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.028744875019170002,
+      "fees": 14.3955,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "82cb1b9d4e279703a55977108b4e27ba1d86f27311d8662906451b1012a8893f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.40125512498083,
+          "quantity": 457,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 2.5135,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 251.35,
+      "prev_hash": "b5de7a82284c620ccb3c6ec0d035342f6ac50041887a75af73a42528f6d983e0",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5135,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR358",
+      "trade_id": "trade_4d432f2426a3",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0358_25e9ac",
+      "username": "SecondDeltaX_7406",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.028744875019170002,
+      "fees": 14.3955,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "89f01f8b6cf99e75b22386419a330ae063b60e3d17788cc1159095ba138b098c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.40125512498083,
+          "quantity": 457,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 2.5135,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 191.2545,
+      "position_size_dollars": 251.35,
+      "prev_hash": "a0ec6057a592a67700d4a876f80c89aff35e1d706609bb173fd5736b690743d2",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.5135,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR358",
+      "trade_id": "trade_4d432f2426a3",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0358_25e9ac",
+      "username": "SecondDeltaX_7406",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.028744875019170002,
+      "fees": 14.3955,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "82cb1b9d4e279703a55977108b4e27ba1d86f27311d8662906451b1012a8893f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.40125512498083,
+          "quantity": 457,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 2.5135,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 251.35,
+      "prev_hash": "b5de7a82284c620ccb3c6ec0d035342f6ac50041887a75af73a42528f6d983e0",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5135,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR358",
+      "trade_id": "trade_4d432f2426a3",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0358_25e9ac",
+      "username": "SecondDeltaX_7406",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": -0.028744875019170002,
+      "fees": 14.3955,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "89f01f8b6cf99e75b22386419a330ae063b60e3d17788cc1159095ba138b098c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.40125512498083,
+          "quantity": 457,
+          "reason": "Win Streak Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 2.5135,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 191.2545,
+      "position_size_dollars": 251.35,
+      "prev_hash": "a0ec6057a592a67700d4a876f80c89aff35e1d706609bb173fd5736b690743d2",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.5135,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR358",
+      "trade_id": "trade_4d432f2426a3",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0358_25e9ac",
+      "username": "SecondDeltaX_7406",
+      "verification_notes": "",
+      "why_entered": "Win Streak Fade triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9208.79,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:15Z",
+      "bankroll": 9400.04,
+      "pnl": 191.25
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 2.08,
+    "pnl": 191.25,
+    "open_exposure": 251.35,
+    "total_volume": 502.7
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

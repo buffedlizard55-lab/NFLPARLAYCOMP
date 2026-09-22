@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0138_6d8d03",
+    "username": "ComboLion_791",
+    "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR138",
+    "strategy_name": "Contrarian Public Fade v138",
+    "strategy_description": "Fade heavy public side >70% tickets (variation)",
+    "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+    "starting_bankroll": 11453.28,
+    "current_bankroll": 11122.45,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_6139367ed219"
+    ],
+    "total_pnl": -330.83,
+    "roi_percent": -2.89,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 971,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11453.28,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 11122.45,
+        "pnl": -330.83
+      }
+    ],
+    "explanation": "User ComboLion_791 uses Contrarian Public Fade v138: Fade heavy public side >70% tickets (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11314946785746721,
+      "fees": 9.1959,
+      "flags": [],
+      "hash": "bd4c76f13cbbcfa345844af4e459dcb86265c44938ea91120fecce260cbe8f2e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5631494678574672,
+          "quantity": 453,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 3.2163000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 321.63,
+      "prev_hash": "44111c64fc3786a6a00510ae4cdb6501a756680fcecd20d3377be07410a16722",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.2163,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR138",
+      "trade_id": "trade_6139367ed219",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0138_6d8d03",
+      "username": "ComboLion_791",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.11314946785746721,
+      "fees": 9.1959,
+      "flags": [],
+      "hash": "5ec5785e37a7c16811efc1b574d460efe89657c4647849c979776c9783f9e0dd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5631494678574672,
+          "quantity": 453,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 3.2163000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": -330.8259,
+      "position_size_dollars": 321.63,
+      "prev_hash": "6c0884b7fbf91e8fc31fdbcd92b4b42cc6d521bf8301fff75cc79f6b8acaaba4",
+      "result": "LOSS",
+      "roi_percent": -102.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.2163,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR138",
+      "trade_id": "trade_6139367ed219",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0138_6d8d03",
+      "username": "ComboLion_791",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11314946785746721,
+      "fees": 9.1959,
+      "flags": [],
+      "hash": "bd4c76f13cbbcfa345844af4e459dcb86265c44938ea91120fecce260cbe8f2e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5631494678574672,
+          "quantity": 453,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 3.2163000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 321.63,
+      "prev_hash": "44111c64fc3786a6a00510ae4cdb6501a756680fcecd20d3377be07410a16722",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.2163,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR138",
+      "trade_id": "trade_6139367ed219",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0138_6d8d03",
+      "username": "ComboLion_791",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.11314946785746721,
+      "fees": 9.1959,
+      "flags": [],
+      "hash": "5ec5785e37a7c16811efc1b574d460efe89657c4647849c979776c9783f9e0dd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5631494678574672,
+          "quantity": 453,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 3.2163000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": -330.8259,
+      "position_size_dollars": 321.63,
+      "prev_hash": "6c0884b7fbf91e8fc31fdbcd92b4b42cc6d521bf8301fff75cc79f6b8acaaba4",
+      "result": "LOSS",
+      "roi_percent": -102.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.2163,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR138",
+      "trade_id": "trade_6139367ed219",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0138_6d8d03",
+      "username": "ComboLion_791",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11453.28,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 11122.45,
+      "pnl": -330.83
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -2.89,
+    "pnl": -330.83,
+    "open_exposure": 321.63,
+    "total_volume": 643.26
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

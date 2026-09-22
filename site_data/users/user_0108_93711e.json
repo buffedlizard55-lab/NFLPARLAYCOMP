@@ -1,0 +1,252 @@
+{
+  "user": {
+    "user_id": "user_0108_93711e",
+    "username": "BlowoutWolf_8213",
+    "strategy_id": "STRAT_TOTAL_DOG_007_VAR108",
+    "strategy_name": "Total + Underdog Correlation v108",
+    "strategy_description": "Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline (underdog) + KXNFLTOTAL under\nEntry: underdog with top-10 defense vs top offense, total >48, underdog price 0.30-0.45\nAvoid: high total already underpriced, indoor shootouts\nPosition size: 1% bankroll\nEV: defensive underdogs win + under hits 31% vs market 26% implied\nWhy work: Defensive game script favors underdog keeping it low scoring\nWhy fail: Underdog may need shootout to win\nEvidence: 2018-2023, 67 games matching, 31% hit\nSources: ESPN team stats, Kalshi totals\n            ",
+    "starting_bankroll": 10174.07,
+    "current_bankroll": 9994.59,
+    "open_trades": [
+      "trade_cc06679fc8f2"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 173,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10174.07,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User BlowoutWolf_8213 uses Total + Underdog Correlation v108: Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2058,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 13.1202,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP29PHIDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2c67d263f6d7df838bc0cc181d70497097a720b825f36491b98507371dcc15f3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29PHIDEN",
+          "exec_price": 0.42,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14679.187249614408,
+          "market_ticker": "KXNFLGAME-26SEP29PHIDEN-DEN",
+          "model_prob": 0.38,
+          "quantity": 236,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9912,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PHIDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PHIDEN-DEN",
+          "spread": 0.13000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PHIDEN-DEN"
+        },
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.51,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29PHIDEN",
+          "exec_price": 0.49,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 12846.774078238357,
+          "market_ticker": "KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+          "model_prob": 0.57,
+          "quantity": 164,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.8036,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PHIDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PHIDEN-DEN",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PHIDEN-DEN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 179.48,
+      "prev_hash": "c1360a5ba2081a77c24c55a613787f8c9bb66b55acdc7a7079f287134ae269f1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.7948,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR108",
+      "trade_id": "trade_cc06679fc8f2",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0108_93711e",
+      "username": "BlowoutWolf_8213",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2058,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 13.1202,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP29PHIDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2c67d263f6d7df838bc0cc181d70497097a720b825f36491b98507371dcc15f3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29PHIDEN",
+          "exec_price": 0.42,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 14679.187249614408,
+          "market_ticker": "KXNFLGAME-26SEP29PHIDEN-DEN",
+          "model_prob": 0.38,
+          "quantity": 236,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 0.9912,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PHIDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PHIDEN-DEN",
+          "spread": 0.13000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PHIDEN-DEN"
+        },
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.51,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29PHIDEN",
+          "exec_price": 0.49,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 12846.774078238357,
+          "market_ticker": "KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+          "model_prob": 0.57,
+          "quantity": 164,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.8036,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PHIDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PHIDEN-DEN",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29PHIDEN-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PHIDEN-DEN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 179.48,
+      "prev_hash": "c1360a5ba2081a77c24c55a613787f8c9bb66b55acdc7a7079f287134ae269f1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.7948,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR108",
+      "trade_id": "trade_cc06679fc8f2",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0108_93711e",
+      "username": "BlowoutWolf_8213",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10174.07,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 179.48,
+    "total_volume": 179.48
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

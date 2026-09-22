@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0985_f12289",
+    "username": "ZetaGammaX_7395",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR985",
+    "strategy_name": "Injury Impact Fade v985",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 11955.26,
+    "current_bankroll": 11700.32,
+    "open_trades": [
+      "trade_d6231a819e68"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 894,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11955.26,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ZetaGammaX_7395 uses Injury Impact Fade v985: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.6442,
+      "flags": [],
+      "hash": "26958ed8087b97088a20f276296571aeb0ae78bcf56d72ca85b34cadc03299a5",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.42000000000000004,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.62,
+          "quantity": 607,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5494000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 254.94,
+      "prev_hash": "d1f0fc3702550c30219bc8e4b1f7e92ed4f5d74c9513a7df08d33cad99a5bd5b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5494,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR985",
+      "trade_id": "trade_d6231a819e68",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0985_f12289",
+      "username": "ZetaGammaX_7395",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.6442,
+      "flags": [],
+      "hash": "26958ed8087b97088a20f276296571aeb0ae78bcf56d72ca85b34cadc03299a5",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.42000000000000004,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.62,
+          "quantity": 607,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.5494000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 254.94,
+      "prev_hash": "d1f0fc3702550c30219bc8e4b1f7e92ed4f5d74c9513a7df08d33cad99a5bd5b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5494,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR985",
+      "trade_id": "trade_d6231a819e68",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0985_f12289",
+      "username": "ZetaGammaX_7395",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11955.26,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 254.94,
+    "total_volume": 254.94
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

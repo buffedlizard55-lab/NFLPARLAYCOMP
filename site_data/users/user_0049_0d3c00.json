@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0049_0d3c00",
+    "username": "ArbSignal_3666",
+    "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR49",
+    "strategy_name": "Team Total Under vR49",
+    "strategy_description": "Team total under when wind/bad weather or strong opposing D (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+    "starting_bankroll": 8339.34,
+    "current_bankroll": 8411.43,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_916af9fae597"
+    ],
+    "total_pnl": 72.09,
+    "roi_percent": 0.86,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 73,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8339.34,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:18Z",
+        "bankroll": 8411.43,
+        "pnl": 72.09
+      }
+    ],
+    "explanation": "User ArbSignal_3666 uses Team Total Under vR49: Team total under when wind/bad weather or strong opposing D (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.022853123099615014,
+      "fees": 5.4264,
+      "flags": [],
+      "hash": "75bbba601147ac5f853c3d4ee391f1a8d6d32b7910d854f20a50ce202567b16b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.467146876900385,
+          "quantity": 136,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5848000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 58.48,
+      "prev_hash": "c44ba656efe2a6c8fd036b530701da02aa1cb614eccdba1f2ee7f72898faa325",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5848,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR49",
+      "trade_id": "trade_916af9fae597",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0049_0d3c00",
+      "username": "ArbSignal_3666",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": -0.022853123099615014,
+      "fees": 5.4264,
+      "flags": [],
+      "hash": "c9511b463ce05dbb0c4e2df52cd0ea26441e4afc97974bd63e6dec11d2e61a41",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.467146876900385,
+          "quantity": 136,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5848000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": 72.0936,
+      "position_size_dollars": 58.48,
+      "prev_hash": "e0be8100cb9b22fd5a1c61f262fd712fca23888362a0d9f4baf7a9157630364d",
+      "result": "WIN",
+      "roi_percent": 123.28,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.5848,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR49",
+      "trade_id": "trade_916af9fae597",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0049_0d3c00",
+      "username": "ArbSignal_3666",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.022853123099615014,
+      "fees": 5.4264,
+      "flags": [],
+      "hash": "75bbba601147ac5f853c3d4ee391f1a8d6d32b7910d854f20a50ce202567b16b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.467146876900385,
+          "quantity": 136,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5848000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 58.48,
+      "prev_hash": "c44ba656efe2a6c8fd036b530701da02aa1cb614eccdba1f2ee7f72898faa325",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5848,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR49",
+      "trade_id": "trade_916af9fae597",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0049_0d3c00",
+      "username": "ArbSignal_3666",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": -0.022853123099615014,
+      "fees": 5.4264,
+      "flags": [],
+      "hash": "c9511b463ce05dbb0c4e2df52cd0ea26441e4afc97974bd63e6dec11d2e61a41",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.52,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4375.920648278432,
+          "market_ticker": "KXNFLGAME-26SEP27GBARI-ARI",
+          "model_prob": 0.467146876900385,
+          "quantity": 136,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5848000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP27GBARI-ARI",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP27GBARI-ARI"
+      ],
+      "pnl_dollars": 72.0936,
+      "position_size_dollars": 58.48,
+      "prev_hash": "e0be8100cb9b22fd5a1c61f262fd712fca23888362a0d9f4baf7a9157630364d",
+      "result": "WIN",
+      "roi_percent": 123.28,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.5848,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR49",
+      "trade_id": "trade_916af9fae597",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0049_0d3c00",
+      "username": "ArbSignal_3666",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8339.34,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:18Z",
+      "bankroll": 8411.43,
+      "pnl": 72.09
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.86,
+    "pnl": 72.09,
+    "open_exposure": 58.48,
+    "total_volume": 116.96
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

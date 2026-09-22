@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0234_c0cc76",
+    "username": "MomentumModel_5556",
+    "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR234",
+    "strategy_name": "Team Total Under v234",
+    "strategy_description": "Team total under when wind/bad weather or strong opposing D (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+    "starting_bankroll": 11225.4,
+    "current_bankroll": 11058.51,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_90726750bdc8"
+    ],
+    "total_pnl": -166.89,
+    "roi_percent": -1.49,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 484,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11225.4,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 11058.51,
+        "pnl": -166.89
+      }
+    ],
+    "explanation": "User MomentumModel_5556 uses Team Total Under v234: Team total under when wind/bad weather or strong opposing D (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04150878834103866,
+      "fees": 9.0405,
+      "flags": [],
+      "hash": "86e418d3dc3bb74a9014dc44277934ff32efe2172ffabc4d53d170667ce86582",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.7015087883410387,
+          "quantity": 287,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5785000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 157.85,
+      "prev_hash": "5dbba11f75e422ba2c896786a7c993f97b6332d84cc0a4092e72c116d7cae18e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5785,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR234",
+      "trade_id": "trade_90726750bdc8",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0234_c0cc76",
+      "username": "MomentumModel_5556",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.04150878834103866,
+      "fees": 9.0405,
+      "flags": [],
+      "hash": "92b9f151ff6d4ba4b78ceb4464d1018d3bc27987c6bbaf67236059867158f79d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.7015087883410387,
+          "quantity": 287,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5785000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": -166.8905,
+      "position_size_dollars": 157.85,
+      "prev_hash": "73a8aa126496be99fa0d7fc5cda2d861866cdac7c2430f43900c89bfd773b10d",
+      "result": "LOSS",
+      "roi_percent": -105.73,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.5785,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR234",
+      "trade_id": "trade_90726750bdc8",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0234_c0cc76",
+      "username": "MomentumModel_5556",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04150878834103866,
+      "fees": 9.0405,
+      "flags": [],
+      "hash": "86e418d3dc3bb74a9014dc44277934ff32efe2172ffabc4d53d170667ce86582",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.7015087883410387,
+          "quantity": 287,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5785000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 157.85,
+      "prev_hash": "5dbba11f75e422ba2c896786a7c993f97b6332d84cc0a4092e72c116d7cae18e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5785,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR234",
+      "trade_id": "trade_90726750bdc8",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0234_c0cc76",
+      "username": "MomentumModel_5556",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.04150878834103866,
+      "fees": 9.0405,
+      "flags": [],
+      "hash": "92b9f151ff6d4ba4b78ceb4464d1018d3bc27987c6bbaf67236059867158f79d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.7015087883410387,
+          "quantity": 287,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5785000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": -166.8905,
+      "position_size_dollars": 157.85,
+      "prev_hash": "73a8aa126496be99fa0d7fc5cda2d861866cdac7c2430f43900c89bfd773b10d",
+      "result": "LOSS",
+      "roi_percent": -105.73,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.5785,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR234",
+      "trade_id": "trade_90726750bdc8",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0234_c0cc76",
+      "username": "MomentumModel_5556",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11225.4,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 11058.51,
+      "pnl": -166.89
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.49,
+    "pnl": -166.89,
+    "open_exposure": 157.85,
+    "total_volume": 315.7
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

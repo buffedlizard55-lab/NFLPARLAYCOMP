@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0346_0e65d5",
+    "username": "GammaSignal_8869",
+    "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR346",
+    "strategy_name": "Cross-Market Arb v346",
+    "strategy_description": "Moneyline vs spread vs total arb when misaligned (variation)",
+    "strategy_long_explanation": "Uses KXNFLGAME, KXNFLSPREAD, KXNFLTOTAL same event. Entry implied win prob from spread vs moneyline diff >8%. Position 0.5% arb. Why work: different market makers, lag. Why fail: fees, correlation. Evidence: arb exists 1-2% of time.",
+    "starting_bankroll": 11755.31,
+    "current_bankroll": 11627.0,
+    "open_trades": [
+      "trade_85c0e4ebae2c"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 367,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11755.31,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User GammaSignal_8869 uses Cross-Market Arb v346: Moneyline vs spread vs total arb when misaligned (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.39,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.04894313530864025,
+      "fees": 14.0483,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b517f4afa2472429ecf572feb513f5a0345ef92ff14250b1cf030460b652b8fd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.61,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.39,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 10100.144567084746,
+          "market_ticker": "KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "model_prob": 0.40105686469135976,
+          "quantity": 329,
+          "reason": "Cross-Market Arb signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.2831,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 128.31,
+      "prev_hash": "b61b24f38670309205a4e780aa2942d687c4110a9544a52c7a7c06e02655c81f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2831,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR346",
+      "trade_id": "trade_85c0e4ebae2c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0346_0e65d5",
+      "username": "GammaSignal_8869",
+      "verification_notes": "",
+      "why_entered": "Cross-Market Arb triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.39,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.04894313530864025,
+      "fees": 14.0483,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b517f4afa2472429ecf572feb513f5a0345ef92ff14250b1cf030460b652b8fd",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.61,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.39,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 10100.144567084746,
+          "market_ticker": "KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "model_prob": 0.40105686469135976,
+          "quantity": 329,
+          "reason": "Cross-Market Arb signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.2831,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22DENDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 128.31,
+      "prev_hash": "b61b24f38670309205a4e780aa2942d687c4110a9544a52c7a7c06e02655c81f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2831,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR346",
+      "trade_id": "trade_85c0e4ebae2c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0346_0e65d5",
+      "username": "GammaSignal_8869",
+      "verification_notes": "",
+      "why_entered": "Cross-Market Arb triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11755.31,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 128.31,
+    "total_volume": 128.31
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

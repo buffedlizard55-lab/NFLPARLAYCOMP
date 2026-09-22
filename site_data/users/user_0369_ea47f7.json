@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0369_ea47f7",
+    "username": "InjuryBetaX_4424",
+    "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR369",
+    "strategy_name": "Alt Line Value v369",
+    "strategy_description": "Alt spread lines mispriced vs main (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD alt lines, compares to main line price. Entry alt line -2.5 vs main -6.5 with price diff > implied. Position 1%. Why work: alt lines less liquid, mispriced. Why fail: correlation. Evidence: alt line arb 3% of time 2025.",
+    "starting_bankroll": 8867.05,
+    "current_bankroll": 8742.81,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_14c93667b28b"
+    ],
+    "total_pnl": -124.24,
+    "roi_percent": -1.4,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 951,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8867.05,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:20Z",
+        "bankroll": 8742.81,
+        "pnl": -124.24
+      }
+    ],
+    "explanation": "User InjuryBetaX_4424 uses Alt Line Value v369: Alt spread lines mispriced vs main (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05568273220027925,
+      "fees": 9.0895,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ff63c66c5397409151fd6020d91d3500aed734cac2df14a164745af805cc731e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.34431726779972077,
+          "quantity": 245,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.1515,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 115.15,
+      "prev_hash": "992cc8f7f802c8d79cd01529eacd3a40dbd85910cb6059d22c09d2770e8e7f76",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1515,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR369",
+      "trade_id": "trade_14c93667b28b",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0369_ea47f7",
+      "username": "InjuryBetaX_4424",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": -0.05568273220027925,
+      "fees": 9.0895,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e14ff1251cd1cb6a143a52c570f41d3c6dc7e37e9612345e66bbda7085ed58a4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.34431726779972077,
+          "quantity": 245,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.1515,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": -124.2395,
+      "position_size_dollars": 115.15,
+      "prev_hash": "6ef18cbd5f5f725f9720510ce3ee06b00de841a4fd6395ec66d368809d58831f",
+      "result": "LOSS",
+      "roi_percent": -107.89,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.1515,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR369",
+      "trade_id": "trade_14c93667b28b",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0369_ea47f7",
+      "username": "InjuryBetaX_4424",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05568273220027925,
+      "fees": 9.0895,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ff63c66c5397409151fd6020d91d3500aed734cac2df14a164745af805cc731e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.34431726779972077,
+          "quantity": 245,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.1515,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 115.15,
+      "prev_hash": "992cc8f7f802c8d79cd01529eacd3a40dbd85910cb6059d22c09d2770e8e7f76",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1515,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR369",
+      "trade_id": "trade_14c93667b28b",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0369_ea47f7",
+      "username": "InjuryBetaX_4424",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": -0.05568273220027925,
+      "fees": 9.0895,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e14ff1251cd1cb6a143a52c570f41d3c6dc7e37e9612345e66bbda7085ed58a4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.34431726779972077,
+          "quantity": 245,
+          "reason": "Alt Line Value signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.1515,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": -124.2395,
+      "position_size_dollars": 115.15,
+      "prev_hash": "6ef18cbd5f5f725f9720510ce3ee06b00de841a4fd6395ec66d368809d58831f",
+      "result": "LOSS",
+      "roi_percent": -107.89,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.1515,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR369",
+      "trade_id": "trade_14c93667b28b",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0369_ea47f7",
+      "username": "InjuryBetaX_4424",
+      "verification_notes": "",
+      "why_entered": "Alt Line Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8867.05,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:20Z",
+      "bankroll": 8742.81,
+      "pnl": -124.24
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.4,
+    "pnl": -124.24,
+    "open_exposure": 115.15,
+    "total_volume": 230.3
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

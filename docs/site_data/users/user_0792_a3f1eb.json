@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0792_a3f1eb",
+    "username": "StreakLion_8173",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR792",
+    "strategy_name": "Home Field Momentum v792",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 10222.5,
+    "current_bankroll": 10421.65,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_1afe28912e38"
+    ],
+    "total_pnl": 199.15,
+    "roi_percent": 1.95,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 14,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10222.5,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 10421.65,
+        "pnl": 199.15
+      }
+    ],
+    "explanation": "User StreakLion_8173 uses Home Field Momentum v792: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.24000000000000005,
+      "fees": 14.9898,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8f512d443824acf13a90d82343fd2353ec63f9ec9297523118ca3341ef594974",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 498,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.8385999999999996,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 283.86,
+      "prev_hash": "2c588b0a26c160f085f01828048ab70226f742bb9691efa95fd3c16b0a837db1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.8386,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR792",
+      "trade_id": "trade_1afe28912e38",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0792_a3f1eb",
+      "username": "StreakLion_8173",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.24000000000000005,
+      "fees": 14.9898,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "113aca1ec4ec950bf842463bb40ebf21d03f7fecc16aa8f3f2a9f8b42105d2a3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 498,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.8385999999999996,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 199.1502,
+      "position_size_dollars": 283.86,
+      "prev_hash": "c5c85e3dea7801d56a4c21c6e48760606e5c59ad46d561f4e06781d8898161ad",
+      "result": "WIN",
+      "roi_percent": 70.16,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.8386,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR792",
+      "trade_id": "trade_1afe28912e38",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0792_a3f1eb",
+      "username": "StreakLion_8173",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.24000000000000005,
+      "fees": 14.9898,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8f512d443824acf13a90d82343fd2353ec63f9ec9297523118ca3341ef594974",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 498,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.8385999999999996,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 283.86,
+      "prev_hash": "2c588b0a26c160f085f01828048ab70226f742bb9691efa95fd3c16b0a837db1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.8386,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR792",
+      "trade_id": "trade_1afe28912e38",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0792_a3f1eb",
+      "username": "StreakLion_8173",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.24000000000000005,
+      "fees": 14.9898,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "113aca1ec4ec950bf842463bb40ebf21d03f7fecc16aa8f3f2a9f8b42105d2a3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 498,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.8385999999999996,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 199.1502,
+      "position_size_dollars": 283.86,
+      "prev_hash": "c5c85e3dea7801d56a4c21c6e48760606e5c59ad46d561f4e06781d8898161ad",
+      "result": "WIN",
+      "roi_percent": 70.16,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.8386,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR792",
+      "trade_id": "trade_1afe28912e38",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0792_a3f1eb",
+      "username": "StreakLion_8173",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10222.5,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 10421.65,
+      "pnl": 199.15
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.95,
+    "pnl": 199.15,
+    "open_exposure": 283.86,
+    "total_volume": 567.72
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

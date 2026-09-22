@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0044_d1ba8b",
+    "username": "LiquiditySignal_3709",
+    "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR44",
+    "strategy_name": "First TD Longshot Value vR44",
+    "strategy_description": "First TD market longshots overvalued (variation)",
+    "strategy_long_explanation": "Uses KXNFLFIRSTTD, longshot >0.15. Entry first TD market with 10+ players, longshot 15%+ but usage suggests 18%. Position 0.5%. Why work: public bets big names, value on role players. Why fail: variance. Evidence: longshot first TD 17% actual vs 13% implied.",
+    "starting_bankroll": 8126.35,
+    "current_bankroll": 8238.28,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_8af957e4d94d"
+    ],
+    "total_pnl": 111.93,
+    "roi_percent": 1.38,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 1,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 8126.35,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 8238.28,
+        "pnl": 111.93
+      }
+    ],
+    "explanation": "User LiquiditySignal_3709 uses First TD Longshot Value vR44: First TD market longshots overvalued (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": "2026-09-22T22:52:12Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.32,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07624529311417133,
+      "fees": 8.4252,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP25NYJNYG-NYG",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "576662eb61d7ecbc5bda82c6dc1551c362a7a514d900793fbb1e2a0dd1c63ef2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.54,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25NYJNYG",
+          "exec_price": 0.31999999999999995,
+          "implied_prob": 0.54,
+          "liquidity_at_entry": 14389.525692409603,
+          "market_ticker": "KXNFLGAME-26SEP25NYJNYG-NYG",
+          "model_prob": 0.4637547068858287,
+          "quantity": 177,
+          "reason": "First TD Longshot Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5663999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NYJNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 56.64,
+      "prev_hash": "3d24f7702df96ab47e76bb21061384702b6543cd446b7f12b1f0fffc6d75ba47",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5664,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR44",
+      "trade_id": "trade_8af957e4d94d",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0044_d1ba8b",
+      "username": "LiquiditySignal_3709",
+      "verification_notes": "",
+      "why_entered": "First TD Longshot Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.32,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:12Z",
+      "expected_value": -0.07624529311417133,
+      "fees": 8.4252,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP25NYJNYG-NYG",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "0a947ce7afb442fb8cc81b1babddbd4563b13aa84f697aed97d63789d997652a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.54,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25NYJNYG",
+          "exec_price": 0.31999999999999995,
+          "implied_prob": 0.54,
+          "liquidity_at_entry": 14389.525692409603,
+          "market_ticker": "KXNFLGAME-26SEP25NYJNYG-NYG",
+          "model_prob": 0.4637547068858287,
+          "quantity": 177,
+          "reason": "First TD Longshot Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5663999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NYJNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+      ],
+      "pnl_dollars": 111.9348,
+      "position_size_dollars": 56.64,
+      "prev_hash": "a1165a16f882a58a12dda315f2d0918f78d2c962e6db4c9eec1efc129f90e08e",
+      "result": "WIN",
+      "roi_percent": 197.62,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.5664,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR44",
+      "trade_id": "trade_8af957e4d94d",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0044_d1ba8b",
+      "username": "LiquiditySignal_3709",
+      "verification_notes": "",
+      "why_entered": "First TD Longshot Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.32,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07624529311417133,
+      "fees": 8.4252,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP25NYJNYG-NYG",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "576662eb61d7ecbc5bda82c6dc1551c362a7a514d900793fbb1e2a0dd1c63ef2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.54,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25NYJNYG",
+          "exec_price": 0.31999999999999995,
+          "implied_prob": 0.54,
+          "liquidity_at_entry": 14389.525692409603,
+          "market_ticker": "KXNFLGAME-26SEP25NYJNYG-NYG",
+          "model_prob": 0.4637547068858287,
+          "quantity": 177,
+          "reason": "First TD Longshot Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5663999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NYJNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 56.64,
+      "prev_hash": "3d24f7702df96ab47e76bb21061384702b6543cd446b7f12b1f0fffc6d75ba47",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5664,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR44",
+      "trade_id": "trade_8af957e4d94d",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0044_d1ba8b",
+      "username": "LiquiditySignal_3709",
+      "verification_notes": "",
+      "why_entered": "First TD Longshot Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.32,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:12Z",
+      "expected_value": -0.07624529311417133,
+      "fees": 8.4252,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP25NYJNYG-NYG",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "0a947ce7afb442fb8cc81b1babddbd4563b13aa84f697aed97d63789d997652a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.54,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25NYJNYG",
+          "exec_price": 0.31999999999999995,
+          "implied_prob": 0.54,
+          "liquidity_at_entry": 14389.525692409603,
+          "market_ticker": "KXNFLGAME-26SEP25NYJNYG-NYG",
+          "model_prob": 0.4637547068858287,
+          "quantity": 177,
+          "reason": "First TD Longshot Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.5663999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NYJNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25NYJNYG-NYG",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25NYJNYG-NYG"
+      ],
+      "pnl_dollars": 111.9348,
+      "position_size_dollars": 56.64,
+      "prev_hash": "a1165a16f882a58a12dda315f2d0918f78d2c962e6db4c9eec1efc129f90e08e",
+      "result": "WIN",
+      "roi_percent": 197.62,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.5664,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR44",
+      "trade_id": "trade_8af957e4d94d",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0044_d1ba8b",
+      "username": "LiquiditySignal_3709",
+      "verification_notes": "",
+      "why_entered": "First TD Longshot Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 8126.35,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 8238.28,
+      "pnl": 111.93
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.38,
+    "pnl": 111.93,
+    "open_exposure": 56.64,
+    "total_volume": 113.28
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0438_c63340",
+    "username": "UnderLambda_4335",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR438",
+    "strategy_name": "Injury Impact Fade v438",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 9990.57,
+    "current_bankroll": 9740.87,
+    "open_trades": [
+      "trade_92393c68178f"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 402,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9990.57,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User UnderLambda_4335 uses Injury Impact Fade v438: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 14.301,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 25.00% for KXNFLGAME-26SEP24SEAWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "cb7182a02496806ea284354e060836c30b04edc30d3c55916a169d4e8d59bcc3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP24SEAWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 6734.026537341739,
+          "market_ticker": "KXNFLGAME-26SEP24SEAWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.4970000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24SEAWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24SEAWAS-WAS",
+          "spread": 0.24999999999999994,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24SEAWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24SEAWAS-WAS",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24SEAWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 249.7,
+      "prev_hash": "98a39d1893534889c48ed43c9e7ce7d20ece417d6434f49c7774d346e95ad488",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.497,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR438",
+      "trade_id": "trade_92393c68178f",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0438_c63340",
+      "username": "UnderLambda_4335",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 14.301,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 25.00% for KXNFLGAME-26SEP24SEAWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "cb7182a02496806ea284354e060836c30b04edc30d3c55916a169d4e8d59bcc3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP24SEAWAS",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 6734.026537341739,
+          "market_ticker": "KXNFLGAME-26SEP24SEAWAS-WAS",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 2.4970000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24SEAWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24SEAWAS-WAS",
+          "spread": 0.24999999999999994,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24SEAWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24SEAWAS-WAS",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24SEAWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 249.7,
+      "prev_hash": "98a39d1893534889c48ed43c9e7ce7d20ece417d6434f49c7774d346e95ad488",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.497,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR438",
+      "trade_id": "trade_92393c68178f",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0438_c63340",
+      "username": "UnderLambda_4335",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9990.57,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 249.7,
+    "total_volume": 249.7
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

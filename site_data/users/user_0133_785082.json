@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0133_785082",
+    "username": "EloLambda_7345",
+    "strategy_id": "STRAT_WEATHER_OVER_030_VAR133",
+    "strategy_name": "Indoor Over v133",
+    "strategy_description": "Indoor/dome games over due to perfect conditions (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, indoor flag from ESPN venue. Entry indoor game, total <48, bet over. Position 1.5%. Why work: no wind, fast track. Why fail: defensive indoor teams. Evidence: indoor over 53% when total <48.",
+    "starting_bankroll": 10806.82,
+    "current_bankroll": 10806.82,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 147,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10806.82,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User EloLambda_7345 uses Indoor Over v133: Indoor/dome games over due to perfect conditions (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10806.82,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

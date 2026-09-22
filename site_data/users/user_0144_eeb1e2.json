@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0144_eeb1e2",
+    "username": "ComboSignal_9217",
+    "strategy_id": "STRAT_REST_003_VAR144",
+    "strategy_name": "Rest & Schedule Difficulty v144",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 9296.53,
+    "current_bankroll": 9143.13,
+    "open_trades": [
+      "trade_b389ffc2cee1"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 199,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9296.53,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ComboSignal_9217 uses Rest & Schedule Difficulty v144: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.782,
+      "flags": [],
+      "hash": "8bcb10992b65e5254e26214e4006682c440672a42d7ea74fa97607156213337a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.58,
+          "quantity": 236,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.534,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.4,
+      "prev_hash": "47251dbd3b4e820539df7d690675f5adbf0d7c425bd86d7872d858e9b910cf71",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.534,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR144",
+      "trade_id": "trade_b389ffc2cee1",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0144_eeb1e2",
+      "username": "ComboSignal_9217",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.782,
+      "flags": [],
+      "hash": "8bcb10992b65e5254e26214e4006682c440672a42d7ea74fa97607156213337a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.58,
+          "quantity": 236,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.534,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.4,
+      "prev_hash": "47251dbd3b4e820539df7d690675f5adbf0d7c425bd86d7872d858e9b910cf71",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.534,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR144",
+      "trade_id": "trade_b389ffc2cee1",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0144_eeb1e2",
+      "username": "ComboSignal_9217",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9296.53,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 153.4,
+    "total_volume": 153.4
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

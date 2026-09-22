@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0092_7e8679",
+    "username": "GammaTrader_1897",
+    "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR92",
+    "strategy_name": "Coaching Mismatch vR92",
+    "strategy_description": "Top 5 coaching vs bottom 5 per DVOA (variation)",
+    "strategy_long_explanation": "Uses coaching rankings, KXNFLGAME. Entry top 5 coach vs bottom 5, moneyline <0.65. Position 2%. Why work: coaching matters in close games. Why fail: subjective ranking. Evidence: top vs bottom coach win 62% vs 55% baseline.",
+    "starting_bankroll": 11463.61,
+    "current_bankroll": 11516.76,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_1706541ce024"
+    ],
+    "total_pnl": 53.15,
+    "roi_percent": 0.46,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 18,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11463.61,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11516.76,
+        "pnl": 53.15
+      }
+    ],
+    "explanation": "User GammaTrader_1897 uses Coaching Mismatch vR92: Top 5 coaching vs bottom 5 per DVOA (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.09644626852413751,
+      "fees": 4.0005,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8fdcd6c1e2b9d588e7a65f88280cb96a7ce999689c50f90206d40008f5a85dc1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.63,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP23DETNE",
+          "exec_price": 0.55,
+          "implied_prob": 0.63,
+          "liquidity_at_entry": 18056.629657968002,
+          "market_ticker": "KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "model_prob": 0.7264462685241375,
+          "quantity": 127,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.6985000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DETNE.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 69.85,
+      "prev_hash": "e6378f0973b4f8f13d62273c1525d12868b2fb3269ae6ea7248b463da907ca3f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.6985,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR92",
+      "trade_id": "trade_1706541ce024",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0092_7e8679",
+      "username": "GammaTrader_1897",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.09644626852413751,
+      "fees": 4.0005,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "4124b905727fb10e2366898cae080327c9680d3c937f62e8406aa46f0afb6fc2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.63,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP23DETNE",
+          "exec_price": 0.55,
+          "implied_prob": 0.63,
+          "liquidity_at_entry": 18056.629657968002,
+          "market_ticker": "KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "model_prob": 0.7264462685241375,
+          "quantity": 127,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.6985000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DETNE.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+      ],
+      "pnl_dollars": 53.1495,
+      "position_size_dollars": 69.85,
+      "prev_hash": "40a79350e2293bc2f625a43094b814b9d3bf8e3900dc5465c6bfdf8f795605fc",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.6985,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR92",
+      "trade_id": "trade_1706541ce024",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0092_7e8679",
+      "username": "GammaTrader_1897",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.09644626852413751,
+      "fees": 4.0005,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "8fdcd6c1e2b9d588e7a65f88280cb96a7ce999689c50f90206d40008f5a85dc1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.63,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP23DETNE",
+          "exec_price": 0.55,
+          "implied_prob": 0.63,
+          "liquidity_at_entry": 18056.629657968002,
+          "market_ticker": "KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "model_prob": 0.7264462685241375,
+          "quantity": 127,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.6985000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DETNE.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 69.85,
+      "prev_hash": "e6378f0973b4f8f13d62273c1525d12868b2fb3269ae6ea7248b463da907ca3f",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.6985,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR92",
+      "trade_id": "trade_1706541ce024",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0092_7e8679",
+      "username": "GammaTrader_1897",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.09644626852413751,
+      "fees": 4.0005,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "4124b905727fb10e2366898cae080327c9680d3c937f62e8406aa46f0afb6fc2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.63,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP23DETNE",
+          "exec_price": 0.55,
+          "implied_prob": 0.63,
+          "liquidity_at_entry": 18056.629657968002,
+          "market_ticker": "KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "model_prob": 0.7264462685241375,
+          "quantity": 127,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.6985000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DETNE.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DETNE-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DETNE-O45.5"
+      ],
+      "pnl_dollars": 53.1495,
+      "position_size_dollars": 69.85,
+      "prev_hash": "40a79350e2293bc2f625a43094b814b9d3bf8e3900dc5465c6bfdf8f795605fc",
+      "result": "WIN",
+      "roi_percent": 76.09,
+      "settlement_price": 1.0,
+      "slippage_assumed": 0.6985,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR92",
+      "trade_id": "trade_1706541ce024",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0092_7e8679",
+      "username": "GammaTrader_1897",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11463.61,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11516.76,
+      "pnl": 53.15
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.46,
+    "pnl": 53.15,
+    "open_exposure": 69.85,
+    "total_volume": 139.7
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

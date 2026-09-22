@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0070_e740f4",
+    "username": "EpsilonHawk_1623",
+    "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR70",
+    "strategy_name": "Short Week Under vR70",
+    "strategy_description": "Thursday games under due to short prep (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, TNF games. Entry Thursday game total >45, bet under. Position 1.5%. Why work: short week hurts offense more. Why fail: totals already lower. Evidence: TNF under 54% 2018-2024.",
+    "starting_bankroll": 11551.23,
+    "current_bankroll": 11551.23,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 82,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11551.23,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User EpsilonHawk_1623 uses Short Week Under vR70: Thursday games under due to short prep (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11551.23,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

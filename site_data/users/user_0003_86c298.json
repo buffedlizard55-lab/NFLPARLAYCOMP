@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0003_86c298",
+    "username": "AlphaShark_6965",
+    "strategy_id": "STRAT_WEATHER_UNDER_004",
+    "strategy_name": "Bad Weather Under",
+    "strategy_description": "Under on game totals when wind >20mph or temp <25F",
+    "strategy_long_explanation": "\nUses: NWS forecast (wind, temp), Kalshi KXNFLTOTAL markets\nEntry: wind >20mph or temp <25F or heavy snow/rain forecast\nAvoid: indoor stadiums, dome games\nPosition size: 2% bankroll\nEV: historical under hits 57% in 20+mph wind games (n=89, 2015-2023)\nWhy work: Passing and kicking degraded, market slow to adjust to late forecast shifts\nWhy fail: Totals already adjust; weather forecasts change\nEvidence: NWS api.weather.gov + ESPN indoor flag; backtest 2015-2023\nSources: https://api.weather.gov, https://www.weather.gov\n            ",
+    "starting_bankroll": 11983.34,
+    "current_bankroll": 11983.34,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 22,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11983.34,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User AlphaShark_6965 uses Bad Weather Under: Under on game totals when wind >20mph or temp <25F",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11983.34,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

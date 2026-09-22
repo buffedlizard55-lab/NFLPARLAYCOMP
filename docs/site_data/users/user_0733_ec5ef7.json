@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0733_ec5ef7",
+    "username": "SharpGammaX_2713",
+    "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR733",
+    "strategy_name": "Coaching Mismatch v733",
+    "strategy_description": "Top 5 coaching vs bottom 5 per DVOA (variation)",
+    "strategy_long_explanation": "Uses coaching rankings, KXNFLGAME. Entry top 5 coach vs bottom 5, moneyline <0.65. Position 2%. Why work: coaching matters in close games. Why fail: subjective ranking. Evidence: top vs bottom coach win 62% vs 55% baseline.",
+    "starting_bankroll": 8328.72,
+    "current_bankroll": 8201.87,
+    "open_trades": [
+      "trade_54e84da29319"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 690,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8328.72,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User SharpGammaX_2713 uses Coaching Mismatch v733: Top 5 coaching vs bottom 5 per DVOA (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07702917417396793,
+      "fees": 6.1705,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 24.00% for KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "1b2baf6055c7314e49cddd6128cb7835bac5bc8c07200b8dcf9a2520e6d9dca0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.5900000000000001,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 2651.2763128321026,
+          "market_ticker": "KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "model_prob": 0.42297082582603207,
+          "quantity": 215,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.2685000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "spread": 0.24000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 126.85,
+      "prev_hash": "1d6d6c07e401e87c3c6883b806392c2d943fdb8c20214bcd155d940f10128a0c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2685,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR733",
+      "trade_id": "trade_54e84da29319",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0733_ec5ef7",
+      "username": "SharpGammaX_2713",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.07702917417396793,
+      "fees": 6.1705,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 24.00% for KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "1b2baf6055c7314e49cddd6128cb7835bac5bc8c07200b8dcf9a2520e6d9dca0",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP25TENBAL",
+          "exec_price": 0.5900000000000001,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 2651.2763128321026,
+          "market_ticker": "KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "model_prob": 0.42297082582603207,
+          "quantity": 215,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.2685000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25TENBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5",
+          "spread": 0.24000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP25TENBAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 126.85,
+      "prev_hash": "1d6d6c07e401e87c3c6883b806392c2d943fdb8c20214bcd155d940f10128a0c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2685,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020_VAR733",
+      "trade_id": "trade_54e84da29319",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0733_ec5ef7",
+      "username": "SharpGammaX_2713",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8328.72,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 126.85,
+    "total_volume": 126.85
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

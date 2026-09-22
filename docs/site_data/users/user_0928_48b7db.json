@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0928_48b7db",
+    "username": "VeteranBettor_3827",
+    "strategy_id": "STRAT_ELO_MODEL_028_VAR928",
+    "strategy_name": "Elo Model Quant v928",
+    "strategy_description": "Pure Elo rating model vs market (variation)",
+    "strategy_long_explanation": "Uses Elo ratings from nflverse, KXNFLGAME. Entry Elo implied > market +4%. Position Kelly 2%. Why work: Elo efficient long-term. Why fail: injuries not in Elo. Evidence: Elo 55% vs closing 2020-2024.",
+    "starting_bankroll": 9251.71,
+    "current_bankroll": 9144.5,
+    "open_trades": [
+      "trade_c5c28e5fd7f7"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 848,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9251.71,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User VeteranBettor_3827 uses Elo Model Quant v928: Pure Elo rating model vs market (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06130025710885889,
+      "fees": 3.0653,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "516cef7a2046206c5d0a83900811a4d4e31e685590b6e4c46b15d10b93832233",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6713002571088589,
+          "quantity": 151,
+          "reason": "Elo Model Quant signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.0721,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 107.21,
+      "prev_hash": "127d06417c74835c4abb33ddafbb3c96be592f43ef4c83df45d30844fed4f2f9",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.0721,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ELO_MODEL_028_VAR928",
+      "trade_id": "trade_c5c28e5fd7f7",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0928_48b7db",
+      "username": "VeteranBettor_3827",
+      "verification_notes": "",
+      "why_entered": "Elo Model Quant triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06130025710885889,
+      "fees": 3.0653,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "516cef7a2046206c5d0a83900811a4d4e31e685590b6e4c46b15d10b93832233",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6713002571088589,
+          "quantity": 151,
+          "reason": "Elo Model Quant signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.0721,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 107.21,
+      "prev_hash": "127d06417c74835c4abb33ddafbb3c96be592f43ef4c83df45d30844fed4f2f9",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.0721,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ELO_MODEL_028_VAR928",
+      "trade_id": "trade_c5c28e5fd7f7",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0928_48b7db",
+      "username": "VeteranBettor_3827",
+      "verification_notes": "",
+      "why_entered": "Elo Model Quant triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9251.71,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 107.21,
+    "total_volume": 107.21
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

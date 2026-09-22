@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0472_763c77",
+    "username": "VeteranSignal_8723",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR472",
+    "strategy_name": "Home Field Momentum v472",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 8188.09,
+    "current_bankroll": 8340.03,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_296112e8ec38"
+    ],
+    "total_pnl": 151.94,
+    "roi_percent": 1.86,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 15,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8188.09,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:15Z",
+        "bankroll": 8340.03,
+        "pnl": 151.94
+      }
+    ],
+    "explanation": "User VeteranSignal_8723 uses Home Field Momentum v472: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.23000000000000004,
+      "fees": 11.4366,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9a47d1e6d91033a077976d8d56333259c3145c3cf68a7fabd9b34c22d5228380",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 389,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.2561999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 225.62,
+      "prev_hash": "5ee75f9f4bdb334626ba22e3561c7854c166853652e034961f40af79a7ffa844",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.2562,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR472",
+      "trade_id": "trade_296112e8ec38",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0472_763c77",
+      "username": "VeteranSignal_8723",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": 0.23000000000000004,
+      "fees": 11.4366,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "4ad53db35c0821719d762a071bfcd927ebf98f2bb2454deeb85ffc84ddb6df7e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 389,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.2561999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": 151.9434,
+      "position_size_dollars": 225.62,
+      "prev_hash": "3f63e31c286fb7867964fee80254665cfffc5899811677572de34134cb532de8",
+      "result": "WIN",
+      "roi_percent": 67.34,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.2562,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR472",
+      "trade_id": "trade_296112e8ec38",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0472_763c77",
+      "username": "VeteranSignal_8723",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.23000000000000004,
+      "fees": 11.4366,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9a47d1e6d91033a077976d8d56333259c3145c3cf68a7fabd9b34c22d5228380",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 389,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.2561999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 225.62,
+      "prev_hash": "5ee75f9f4bdb334626ba22e3561c7854c166853652e034961f40af79a7ffa844",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.2562,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR472",
+      "trade_id": "trade_296112e8ec38",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0472_763c77",
+      "username": "VeteranSignal_8723",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": 0.23000000000000004,
+      "fees": 11.4366,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "4ad53db35c0821719d762a071bfcd927ebf98f2bb2454deeb85ffc84ddb6df7e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.65,
+          "quantity": 389,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.2561999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": 151.9434,
+      "position_size_dollars": 225.62,
+      "prev_hash": "3f63e31c286fb7867964fee80254665cfffc5899811677572de34134cb532de8",
+      "result": "WIN",
+      "roi_percent": 67.34,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.2562,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR472",
+      "trade_id": "trade_296112e8ec38",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0472_763c77",
+      "username": "VeteranSignal_8723",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8188.09,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:15Z",
+      "bankroll": 8340.03,
+      "pnl": 151.94
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.86,
+    "pnl": 151.94,
+    "open_exposure": 225.62,
+    "total_volume": 451.24
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

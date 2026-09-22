@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0486_d1783d",
+    "username": "OverModel_8163",
+    "strategy_id": "STRAT_TD_ANYTIME_011_VAR486",
+    "strategy_name": "Anytime TD Value v486",
+    "strategy_description": "Player anytime TD market when odds > model (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD markets, player usage, red zone opportunities. Entry when model prob > market +7%. Position 1% bankroll. Why work: public overvalues big names, undervalues role players. Why fail: variance high. Evidence: 2023 anytime TD 52% model edge n=200.",
+    "starting_bankroll": 10199.84,
+    "current_bankroll": 10309.81,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_96312bc83a70"
+    ],
+    "total_pnl": 109.97,
+    "roi_percent": 1.08,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 50,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10199.84,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:20Z",
+        "bankroll": 10309.81,
+        "pnl": 109.97
+      }
+    ],
+    "explanation": "User OverModel_8163 uses Anytime TD Value v486: Player anytime TD market when odds > model (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.034461985062857414,
+      "fees": 8.2775,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "85b5f24ddf61d56f97a3c2a7eceea5d4664f340ee997961034df57fe13db8327",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.4444619850628574,
+          "quantity": 275,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5675,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 156.75,
+      "prev_hash": "b9973382fc7051e653b54b4239d998fbfc9a0155fa1683efbe191fc42a09d7ad",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5675,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR486",
+      "trade_id": "trade_96312bc83a70",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0486_d1783d",
+      "username": "OverModel_8163",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.034461985062857414,
+      "fees": 8.2775,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "5061dfff080ba8e82e60b10e5bf73cb0d50c3e21b61a1debbe90b63ff1d66436",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.4444619850628574,
+          "quantity": 275,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5675,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 109.9725,
+      "position_size_dollars": 156.75,
+      "prev_hash": "a5daf82dddca33d105a1fb1fa53f14f9b92977726ae6c401f1eefa668e9c3e01",
+      "result": "WIN",
+      "roi_percent": 70.16,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.5675,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR486",
+      "trade_id": "trade_96312bc83a70",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0486_d1783d",
+      "username": "OverModel_8163",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.034461985062857414,
+      "fees": 8.2775,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "85b5f24ddf61d56f97a3c2a7eceea5d4664f340ee997961034df57fe13db8327",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.4444619850628574,
+          "quantity": 275,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5675,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 156.75,
+      "prev_hash": "b9973382fc7051e653b54b4239d998fbfc9a0155fa1683efbe191fc42a09d7ad",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5675,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR486",
+      "trade_id": "trade_96312bc83a70",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0486_d1783d",
+      "username": "OverModel_8163",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.034461985062857414,
+      "fees": 8.2775,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "5061dfff080ba8e82e60b10e5bf73cb0d50c3e21b61a1debbe90b63ff1d66436",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.4444619850628574,
+          "quantity": 275,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.5675,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 109.9725,
+      "position_size_dollars": 156.75,
+      "prev_hash": "a5daf82dddca33d105a1fb1fa53f14f9b92977726ae6c401f1eefa668e9c3e01",
+      "result": "WIN",
+      "roi_percent": 70.16,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.5675,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR486",
+      "trade_id": "trade_96312bc83a70",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0486_d1783d",
+      "username": "OverModel_8163",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10199.84,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:20Z",
+      "bankroll": 10309.81,
+      "pnl": 109.97
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.08,
+    "pnl": 109.97,
+    "open_exposure": 156.75,
+    "total_volume": 313.5
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

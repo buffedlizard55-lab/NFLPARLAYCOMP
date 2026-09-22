@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0093_637b97",
+    "username": "BlowoutKappa_6085",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR93",
+    "strategy_name": "Home Field Momentum vR93",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 10830.63,
+    "current_bankroll": 10592.08,
+    "open_trades": [
+      "trade_c450f94ad1a4"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 159,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10830.63,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User BlowoutKappa_6085 uses Home Field Momentum vR93: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06000000000000005,
+      "fees": 8.9915,
+      "flags": [],
+      "hash": "9310f68497842f7a2d6a53e06f75107edfee21fbc53f3401ddd1493e6b9163e2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.65,
+          "quantity": 367,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.3855,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 238.55,
+      "prev_hash": "43133f26b1e1a266b3edd1ae757f95736e29f8e144e7e08fb7b51235945e89d7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.3855,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR93",
+      "trade_id": "trade_c450f94ad1a4",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0093_637b97",
+      "username": "BlowoutKappa_6085",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06000000000000005,
+      "fees": 8.9915,
+      "flags": [],
+      "hash": "9310f68497842f7a2d6a53e06f75107edfee21fbc53f3401ddd1493e6b9163e2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.65,
+          "quantity": 367,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.3855,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 238.55,
+      "prev_hash": "43133f26b1e1a266b3edd1ae757f95736e29f8e144e7e08fb7b51235945e89d7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.3855,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR93",
+      "trade_id": "trade_c450f94ad1a4",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0093_637b97",
+      "username": "BlowoutKappa_6085",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10830.63,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 238.55,
+    "total_volume": 238.55
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

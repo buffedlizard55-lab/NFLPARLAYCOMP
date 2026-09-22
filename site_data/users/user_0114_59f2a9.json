@@ -1,0 +1,252 @@
+{
+  "user": {
+    "user_id": "user_0114_59f2a9",
+    "username": "CoachGammaX_8884",
+    "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR114",
+    "strategy_name": "Spread + Moneyline Correlation v114",
+    "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+    "starting_bankroll": 9762.39,
+    "current_bankroll": 9507.39,
+    "open_trades": [
+      "trade_34aee7294986"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 178,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9762.39,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User CoachGammaX_8884 uses Spread + Moneyline Correlation v114: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.3468,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 9.8764,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 10.00% for KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "72837740c079b68e5eca9d5ee6c8d70a549d45330fe47451c4bc6ca10f2fd632",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.68,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29DENTB",
+          "exec_price": 0.68,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6553.0793442582835,
+          "market_ticker": "KXNFLGAME-26SEP29DENTB-TB",
+          "model_prob": 0.71,
+          "quantity": 216,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4687999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29DENTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29DENTB-TB",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29DENTB-TB"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.46,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29DENTB",
+          "exec_price": 0.51,
+          "implied_prob": 0.46,
+          "liquidity_at_entry": 19965.529949658157,
+          "market_ticker": "KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "model_prob": 0.65,
+          "quantity": 212,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.0812000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29DENTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "spread": 0.10000000000000003,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29DENTB-TB",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29DENTB-TB",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 255.0,
+      "prev_hash": "f15579062afb613fa98d01cd7f3fcd92b99bcdf1500c0cd73d40c4b0e494a4d1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.55,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR114",
+      "trade_id": "trade_34aee7294986",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0114_59f2a9",
+      "username": "CoachGammaX_8884",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.3468,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 9.8764,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 10.00% for KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "72837740c079b68e5eca9d5ee6c8d70a549d45330fe47451c4bc6ca10f2fd632",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.68,
+          "bid_at_entry": 0.62,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29DENTB",
+          "exec_price": 0.68,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6553.0793442582835,
+          "market_ticker": "KXNFLGAME-26SEP29DENTB-TB",
+          "model_prob": 0.71,
+          "quantity": 216,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4687999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29DENTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29DENTB-TB",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29DENTB-TB"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.46,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP29DENTB",
+          "exec_price": 0.51,
+          "implied_prob": 0.46,
+          "liquidity_at_entry": 19965.529949658157,
+          "market_ticker": "KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "model_prob": 0.65,
+          "quantity": 212,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.0812000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29DENTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+          "spread": 0.10000000000000003,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29DENTB-TB",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29DENTB-TB",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP29DENTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 255.0,
+      "prev_hash": "f15579062afb613fa98d01cd7f3fcd92b99bcdf1500c0cd73d40c4b0e494a4d1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.55,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR114",
+      "trade_id": "trade_34aee7294986",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0114_59f2a9",
+      "username": "CoachGammaX_8884",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9762.39,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 255.0,
+    "total_volume": 255.0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

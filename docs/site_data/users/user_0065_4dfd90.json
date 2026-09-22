@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0065_4dfd90",
+    "username": "EloDeltaX_5449",
+    "strategy_id": "STRAT_Q1_UNDER_014_VAR65",
+    "strategy_name": "First Quarter Under vR65",
+    "strategy_description": "Q1 under in low-scoring divisional games (variation)",
+    "strategy_long_explanation": "Uses KXNFL1QTOTAL, divisional games historically start slow. Entry divisional matchup, total Q1 >7.5 points price over >0.55. Position 1%. Why work: feeling out period. Why fail: early TD. Evidence: Q1 under 54% divisional 2019-2024.",
+    "starting_bankroll": 8883.2,
+    "current_bankroll": 8659.76,
+    "open_trades": [
+      "trade_ae6fe65c601f"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 78,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8883.2,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User EloDeltaX_5449 uses First Quarter Under vR65: Q1 under in low-scoring divisional games (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11373162205267379,
+      "fees": 11.7992,
+      "flags": [],
+      "hash": "ffe93666d0999bcf794dd895bdd102419492bced280813125cd8d9eb9560a3e1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP29SFDAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 6637.100303926887,
+          "market_ticker": "KXNFLTOTAL-26SEP29SFDAL-O45.5",
+          "model_prob": 0.5437316220526738,
+          "quantity": 392,
+          "reason": "First Quarter Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.2344,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29SFDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 223.44,
+      "prev_hash": "a18f995a29ea01b25fc7417a1a64d20e99b896370ee375ef223acb4512ba6a18",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.2344,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_Q1_UNDER_014_VAR65",
+      "trade_id": "trade_ae6fe65c601f",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0065_4dfd90",
+      "username": "EloDeltaX_5449",
+      "verification_notes": "",
+      "why_entered": "First Quarter Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11373162205267379,
+      "fees": 11.7992,
+      "flags": [],
+      "hash": "ffe93666d0999bcf794dd895bdd102419492bced280813125cd8d9eb9560a3e1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP29SFDAL",
+          "exec_price": 0.57,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 6637.100303926887,
+          "market_ticker": "KXNFLTOTAL-26SEP29SFDAL-O45.5",
+          "model_prob": 0.5437316220526738,
+          "quantity": 392,
+          "reason": "First Quarter Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.2344,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29SFDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP29SFDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 223.44,
+      "prev_hash": "a18f995a29ea01b25fc7417a1a64d20e99b896370ee375ef223acb4512ba6a18",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.2344,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_Q1_UNDER_014_VAR65",
+      "trade_id": "trade_ae6fe65c601f",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0065_4dfd90",
+      "username": "EloDeltaX_5449",
+      "verification_notes": "",
+      "why_entered": "First Quarter Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8883.2,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 223.44,
+    "total_volume": 223.44
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

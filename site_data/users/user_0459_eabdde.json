@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0459_eabdde",
+    "username": "MoneylineHawk_833",
+    "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR459",
+    "strategy_name": "Liquidity Provision v459",
+    "strategy_description": "Place both sides near mid when spread wide (variation)",
+    "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+    "starting_bankroll": 9463.21,
+    "current_bankroll": 9551.76,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_d0132af3611c"
+    ],
+    "total_pnl": 88.55,
+    "roi_percent": 0.94,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 61,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9463.21,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:20Z",
+        "bankroll": 9551.76,
+        "pnl": 88.55
+      }
+    ],
+    "explanation": "User MoneylineHawk_833 uses Liquidity Provision v459: Place both sides near mid when spread wide (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.01984375783075243,
+      "fees": 6.6654,
+      "flags": [],
+      "hash": "b568bcc4965feed2082d294b03ffc0067ca7bd27adc7e6f43e6852c3a2432290",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.54,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 15334.26973767109,
+          "market_ticker": "KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "model_prob": 0.7098437578307524,
+          "quantity": 207,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1178000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 111.78,
+      "prev_hash": "a7072e16252195188dd319f2cf32797d0c271d8a06c56313e5d3ccc60d08af26",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1178,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR459",
+      "trade_id": "trade_d0132af3611c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0459_eabdde",
+      "username": "MoneylineHawk_833",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.01984375783075243,
+      "fees": 6.6654,
+      "flags": [],
+      "hash": "58e0bff595f6df5164703279fca92aedba9d92d2493c5c2947e7458b1ace7242",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.54,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 15334.26973767109,
+          "market_ticker": "KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "model_prob": 0.7098437578307524,
+          "quantity": 207,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1178000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+      ],
+      "pnl_dollars": 88.5546,
+      "position_size_dollars": 111.78,
+      "prev_hash": "bb1a7e8e8e6826dfeaef9acc54047a9da588b0f3f8538c3ff647f440df6f4ce2",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.1178,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR459",
+      "trade_id": "trade_d0132af3611c",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0459_eabdde",
+      "username": "MoneylineHawk_833",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.01984375783075243,
+      "fees": 6.6654,
+      "flags": [],
+      "hash": "b568bcc4965feed2082d294b03ffc0067ca7bd27adc7e6f43e6852c3a2432290",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.54,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 15334.26973767109,
+          "market_ticker": "KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "model_prob": 0.7098437578307524,
+          "quantity": 207,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1178000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 111.78,
+      "prev_hash": "a7072e16252195188dd319f2cf32797d0c271d8a06c56313e5d3ccc60d08af26",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1178,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR459",
+      "trade_id": "trade_d0132af3611c",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0459_eabdde",
+      "username": "MoneylineHawk_833",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.01984375783075243,
+      "fees": 6.6654,
+      "flags": [],
+      "hash": "58e0bff595f6df5164703279fca92aedba9d92d2493c5c2947e7458b1ace7242",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.54,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 15334.26973767109,
+          "market_ticker": "KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "model_prob": 0.7098437578307524,
+          "quantity": 207,
+          "reason": "Liquidity Provision signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1178000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+          "spread": 0.06000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26ARIIND-IND-3.5"
+      ],
+      "pnl_dollars": 88.5546,
+      "position_size_dollars": 111.78,
+      "prev_hash": "bb1a7e8e8e6826dfeaef9acc54047a9da588b0f3f8538c3ff647f440df6f4ce2",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.1178,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR459",
+      "trade_id": "trade_d0132af3611c",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0459_eabdde",
+      "username": "MoneylineHawk_833",
+      "verification_notes": "",
+      "why_entered": "Liquidity Provision triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9463.21,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:20Z",
+      "bankroll": 9551.76,
+      "pnl": 88.55
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.94,
+    "pnl": 88.55,
+    "open_exposure": 111.78,
+    "total_volume": 223.56
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

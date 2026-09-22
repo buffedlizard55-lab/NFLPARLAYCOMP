@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0200_649391",
+    "username": "SpreadBetaX_4585",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR200",
+    "strategy_name": "Injury Impact Fade v200",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 8643.66,
+    "current_bankroll": 8430.33,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_f6666b7668f0"
+    ],
+    "total_pnl": -213.33,
+    "roi_percent": -2.47,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 247,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8643.66,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8430.33,
+        "pnl": -213.33
+      }
+    ],
+    "explanation": "User SpreadBetaX_4585 uses Injury Impact Fade v200: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 18.1146,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLGAME-26SEP20DALDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "a8610f32c6fdcd54e3c852b8c735fc72fc27aa755c6aded38c6dc097e03a06f7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.57,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP20DALDEN",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.57,
+          "liquidity_at_entry": 16812.22783034855,
+          "market_ticker": "KXNFLGAME-26SEP20DALDEN-DEN",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.9522000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DALDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 195.22,
+      "prev_hash": "e90bff69f50104253eaae56f23e050f4e06d66a41fcedf828385308914642cdc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.9522,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR200",
+      "trade_id": "trade_f6666b7668f0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0200_649391",
+      "username": "SpreadBetaX_4585",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.12,
+      "fees": 18.1146,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLGAME-26SEP20DALDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e2caa7342a0bab3c8df4c466b8d885643493d773428e69e9262e077ff41f2e6d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.57,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP20DALDEN",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.57,
+          "liquidity_at_entry": 16812.22783034855,
+          "market_ticker": "KXNFLGAME-26SEP20DALDEN-DEN",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.9522000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DALDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+      ],
+      "pnl_dollars": -213.3346,
+      "position_size_dollars": 195.22,
+      "prev_hash": "227fddffcb051d6dafcf8bc7ab3cab7d746dfab4829a5f1e1121d27d3bb4034b",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.9522,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR200",
+      "trade_id": "trade_f6666b7668f0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0200_649391",
+      "username": "SpreadBetaX_4585",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 18.1146,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLGAME-26SEP20DALDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "a8610f32c6fdcd54e3c852b8c735fc72fc27aa755c6aded38c6dc097e03a06f7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.57,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP20DALDEN",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.57,
+          "liquidity_at_entry": 16812.22783034855,
+          "market_ticker": "KXNFLGAME-26SEP20DALDEN-DEN",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.9522000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DALDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 195.22,
+      "prev_hash": "e90bff69f50104253eaae56f23e050f4e06d66a41fcedf828385308914642cdc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.9522,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR200",
+      "trade_id": "trade_f6666b7668f0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0200_649391",
+      "username": "SpreadBetaX_4585",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.12,
+      "fees": 18.1146,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 14.00% for KXNFLGAME-26SEP20DALDEN-DEN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e2caa7342a0bab3c8df4c466b8d885643493d773428e69e9262e077ff41f2e6d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.57,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP20DALDEN",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.57,
+          "liquidity_at_entry": 16812.22783034855,
+          "market_ticker": "KXNFLGAME-26SEP20DALDEN-DEN",
+          "model_prob": 0.62,
+          "quantity": 454,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.9522000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DALDEN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+          "spread": 0.14,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DALDEN-DEN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DALDEN-DEN"
+      ],
+      "pnl_dollars": -213.3346,
+      "position_size_dollars": 195.22,
+      "prev_hash": "227fddffcb051d6dafcf8bc7ab3cab7d746dfab4829a5f1e1121d27d3bb4034b",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.9522,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR200",
+      "trade_id": "trade_f6666b7668f0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0200_649391",
+      "username": "SpreadBetaX_4585",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8643.66,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8430.33,
+      "pnl": -213.33
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -2.47,
+    "pnl": -213.33,
+    "open_exposure": 195.22,
+    "total_volume": 390.44
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0239_eb6c0d",
+    "username": "MomentumSigma_6041",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR239",
+    "strategy_name": "Blowout Reversion v239",
+    "strategy_description": "Team blown out last week bounces back ATS (variation)",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 8734.97,
+    "current_bankroll": 8616.0,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_5cf2d1d4dd5b"
+    ],
+    "total_pnl": -118.97,
+    "roi_percent": -1.36,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 480,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8734.97,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 8616.0,
+        "pnl": -118.97
+      }
+    ],
+    "explanation": "User MomentumSigma_6041 uses Blowout Reversion v239: Team blown out last week bounces back ATS (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.46,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.03432703112470181,
+      "fees": 9.0342,
+      "flags": [],
+      "hash": "df2b5a9be9dd21be31c8e8f3efca6778ccfd5ca8c0f80e8ddfdb8c95a1b55ad2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP29PITTB",
+          "exec_price": 0.46,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 15235.901303751363,
+          "market_ticker": "KXNFLGAME-26SEP29PITTB-TB",
+          "model_prob": 0.6343270311247018,
+          "quantity": 239,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.0994,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PITTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+          "spread": 0.03999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 109.94,
+      "prev_hash": "86e418d3dc3bb74a9014dc44277934ff32efe2172ffabc4d53d170667ce86582",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.0994,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR239",
+      "trade_id": "trade_5cf2d1d4dd5b",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0239_eb6c0d",
+      "username": "MomentumSigma_6041",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.46,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.03432703112470181,
+      "fees": 9.0342,
+      "flags": [],
+      "hash": "ea9fc71243517402403305a6278563280c0aefe6ee4ed2b333e5dcfc61a292e1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP29PITTB",
+          "exec_price": 0.46,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 15235.901303751363,
+          "market_ticker": "KXNFLGAME-26SEP29PITTB-TB",
+          "model_prob": 0.6343270311247018,
+          "quantity": 239,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.0994,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PITTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+          "spread": 0.03999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+      ],
+      "pnl_dollars": -118.9742,
+      "position_size_dollars": 109.94,
+      "prev_hash": "92b9f151ff6d4ba4b78ceb4464d1018d3bc27987c6bbaf67236059867158f79d",
+      "result": "LOSS",
+      "roi_percent": -108.22,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.0994,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR239",
+      "trade_id": "trade_5cf2d1d4dd5b",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0239_eb6c0d",
+      "username": "MomentumSigma_6041",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.46,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.03432703112470181,
+      "fees": 9.0342,
+      "flags": [],
+      "hash": "df2b5a9be9dd21be31c8e8f3efca6778ccfd5ca8c0f80e8ddfdb8c95a1b55ad2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP29PITTB",
+          "exec_price": 0.46,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 15235.901303751363,
+          "market_ticker": "KXNFLGAME-26SEP29PITTB-TB",
+          "model_prob": 0.6343270311247018,
+          "quantity": 239,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.0994,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PITTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+          "spread": 0.03999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 109.94,
+      "prev_hash": "86e418d3dc3bb74a9014dc44277934ff32efe2172ffabc4d53d170667ce86582",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.0994,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR239",
+      "trade_id": "trade_5cf2d1d4dd5b",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0239_eb6c0d",
+      "username": "MomentumSigma_6041",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.46,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.03432703112470181,
+      "fees": 9.0342,
+      "flags": [],
+      "hash": "ea9fc71243517402403305a6278563280c0aefe6ee4ed2b333e5dcfc61a292e1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP29PITTB",
+          "exec_price": 0.46,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 15235.901303751363,
+          "market_ticker": "KXNFLGAME-26SEP29PITTB-TB",
+          "model_prob": 0.6343270311247018,
+          "quantity": 239,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.0994,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29PITTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+          "spread": 0.03999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29PITTB-TB",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29PITTB-TB"
+      ],
+      "pnl_dollars": -118.9742,
+      "position_size_dollars": 109.94,
+      "prev_hash": "92b9f151ff6d4ba4b78ceb4464d1018d3bc27987c6bbaf67236059867158f79d",
+      "result": "LOSS",
+      "roi_percent": -108.22,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.0994,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR239",
+      "trade_id": "trade_5cf2d1d4dd5b",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0239_eb6c0d",
+      "username": "MomentumSigma_6041",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8734.97,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 8616.0,
+      "pnl": -118.97
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.36,
+    "pnl": -118.97,
+    "open_exposure": 109.94,
+    "total_volume": 219.88
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

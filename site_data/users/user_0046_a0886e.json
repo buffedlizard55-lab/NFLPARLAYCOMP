@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0046_a0886e",
+    "username": "ArbShark_6117",
+    "strategy_id": "STRAT_REST_003_VAR46",
+    "strategy_name": "Rest & Schedule Difficulty vR46",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 8383.07,
+    "current_bankroll": 8471.29,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_862473343575"
+    ],
+    "total_pnl": 88.22,
+    "roi_percent": 1.05,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 62,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8383.07,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:18Z",
+        "bankroll": 8471.29,
+        "pnl": 88.22
+      }
+    ],
+    "explanation": "User ArbShark_6117 uses Rest & Schedule Difficulty vR46: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.6402,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c44ba656efe2a6c8fd036b530701da02aa1cb614eccdba1f2ee7f72898faa325",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.58,
+          "quantity": 306,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.1114,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 211.14,
+      "prev_hash": "b0e520295c195485ace08e82e8f7fa58e96a1903e05f709fa7a3bb15f86f8ae2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.1114,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR46",
+      "trade_id": "trade_862473343575",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0046_a0886e",
+      "username": "ArbShark_6117",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": 0.08,
+      "fees": 6.6402,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e0be8100cb9b22fd5a1c61f262fd712fca23888362a0d9f4baf7a9157630364d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.58,
+          "quantity": 306,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.1114,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+      ],
+      "pnl_dollars": 88.2198,
+      "position_size_dollars": 211.14,
+      "prev_hash": "0092f66a53a33c6fdc550e9cde0b6522f342bb90a86578afc2e2c7b148cd0f97",
+      "result": "WIN",
+      "roi_percent": 41.78,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.1114,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR46",
+      "trade_id": "trade_862473343575",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0046_a0886e",
+      "username": "ArbShark_6117",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.6402,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c44ba656efe2a6c8fd036b530701da02aa1cb614eccdba1f2ee7f72898faa325",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.58,
+          "quantity": 306,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.1114,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 211.14,
+      "prev_hash": "b0e520295c195485ace08e82e8f7fa58e96a1903e05f709fa7a3bb15f86f8ae2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.1114,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR46",
+      "trade_id": "trade_862473343575",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0046_a0886e",
+      "username": "ArbShark_6117",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": 0.08,
+      "fees": 6.6402,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e0be8100cb9b22fd5a1c61f262fd712fca23888362a0d9f4baf7a9157630364d",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.58,
+          "quantity": 306,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.1114,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+      ],
+      "pnl_dollars": 88.2198,
+      "position_size_dollars": 211.14,
+      "prev_hash": "0092f66a53a33c6fdc550e9cde0b6522f342bb90a86578afc2e2c7b148cd0f97",
+      "result": "WIN",
+      "roi_percent": 41.78,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.1114,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR46",
+      "trade_id": "trade_862473343575",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0046_a0886e",
+      "username": "ArbShark_6117",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8383.07,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:18Z",
+      "bankroll": 8471.29,
+      "pnl": 88.22
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.05,
+    "pnl": 88.22,
+    "open_exposure": 211.14,
+    "total_volume": 422.28
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

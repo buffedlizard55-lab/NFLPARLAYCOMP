@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0214_b36f2f",
+    "username": "TDVega_2172",
+    "strategy_id": "STRAT_TD_CORRELATION_034_VAR214",
+    "strategy_name": "TD + Game Correlation v214",
+    "strategy_description": "Anytime TD + team win correlation parlay (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD + KXNFLGAME same team. Entry star RB/WR TD + team win, correlation 0.65, product pricing assumes 0.5. Position 0.5% parlay. Why work: TD correlates with win. Why fail: correlation priced. Evidence: TD+win 38% vs 32% implied.",
+    "starting_bankroll": 10457.28,
+    "current_bankroll": 10287.42,
+    "open_trades": [
+      "trade_921d6514cda0"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 208,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10457.28,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User TDVega_2172 uses TD + Game Correlation v214: Anytime TD + team win correlation parlay (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.0007188296733997568,
+      "fees": 8.9698,
+      "flags": [],
+      "hash": "d3a87ab586bf9fd6b1dd224538c266d8611a79a9fb88a290463d9a7a8559714c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.48,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP22HOUBUF",
+          "exec_price": 0.5700000000000001,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 7457.603606697829,
+          "market_ticker": "KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "model_prob": 0.6392811703266003,
+          "quantity": 298,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.6986000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22HOUBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 169.86,
+      "prev_hash": "9d32c174203403352b91cc876a2d0585f9461383124f6fcf9094414d9692ae89",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6986,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR214",
+      "trade_id": "trade_921d6514cda0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0214_b36f2f",
+      "username": "TDVega_2172",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.57,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.0007188296733997568,
+      "fees": 8.9698,
+      "flags": [],
+      "hash": "d3a87ab586bf9fd6b1dd224538c266d8611a79a9fb88a290463d9a7a8559714c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.48,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP22HOUBUF",
+          "exec_price": 0.5700000000000001,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 7457.603606697829,
+          "market_ticker": "KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "model_prob": 0.6392811703266003,
+          "quantity": 298,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.6986000000000003,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22HOUBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 169.86,
+      "prev_hash": "9d32c174203403352b91cc876a2d0585f9461383124f6fcf9094414d9692ae89",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6986,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR214",
+      "trade_id": "trade_921d6514cda0",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0214_b36f2f",
+      "username": "TDVega_2172",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10457.28,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 169.86,
+    "total_volume": 169.86
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

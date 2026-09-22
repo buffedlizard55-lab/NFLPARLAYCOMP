@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0161_c8076d",
+    "username": "ContrarianOmega_2008",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR161",
+    "strategy_name": "Injury Impact Fade v161",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 8832.89,
+    "current_bankroll": 8605.42,
+    "open_trades": [
+      "trade_f2838773345e"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 212,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8832.89,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ContrarianOmega_2008 uses Injury Impact Fade v161: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 21.1071,
+      "flags": [],
+      "hash": "88f9f8d5399e8c06b464e72a12d1883ec7d05d802ed806983022aa3ed0df4063",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 17311.660387882832,
+          "market_ticker": "KXNFLGAME-26SEP23DALPHI-PHI",
+          "model_prob": 0.62,
+          "quantity": 529,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.1146030000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23DALPHI-PHI",
+          "spread": 0.009999999999999898,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23DALPHI-PHI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23DALPHI-PHI",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23DALPHI-PHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 227.47,
+      "prev_hash": "d32f90fc2fb28354eadf79e3aabd4bc81715eb39ea55e408e3e80045a5bfec8a",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1146,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR161",
+      "trade_id": "trade_f2838773345e",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0161_c8076d",
+      "username": "ContrarianOmega_2008",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 21.1071,
+      "flags": [],
+      "hash": "88f9f8d5399e8c06b464e72a12d1883ec7d05d802ed806983022aa3ed0df4063",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.56,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.5,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.5,
+          "liquidity_at_entry": 17311.660387882832,
+          "market_ticker": "KXNFLGAME-26SEP23DALPHI-PHI",
+          "model_prob": 0.62,
+          "quantity": 529,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.1146030000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23DALPHI-PHI",
+          "spread": 0.009999999999999898,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23DALPHI-PHI"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23DALPHI-PHI",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23DALPHI-PHI"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 227.47,
+      "prev_hash": "d32f90fc2fb28354eadf79e3aabd4bc81715eb39ea55e408e3e80045a5bfec8a",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1146,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR161",
+      "trade_id": "trade_f2838773345e",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0161_c8076d",
+      "username": "ContrarianOmega_2008",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8832.89,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 227.47,
+    "total_volume": 227.47
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

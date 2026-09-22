@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0640_467136",
+    "username": "RivalryModel_1052",
+    "strategy_id": "STRAT_RIVALRY_OVER_021_VAR640",
+    "strategy_name": "Rivalry Game Over v640",
+    "strategy_description": "High-scoring rivalries over trend (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, historic rivalry totals. Entry rivalry game with avg 50+ pts last 5 meetings, total price under >0.52. Position 1%. Why work: familiarity breeds offensive success late. Why fail: defensive adjustments. Evidence: rivalry over 54% when avg 50+.",
+    "starting_bankroll": 11613.8,
+    "current_bankroll": 11276.55,
+    "open_trades": [
+      "trade_74378c745936"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 611,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11613.8,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RivalryModel_1052 uses Rivalry Game Over v640: High-scoring rivalries over trend (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.013926763899523187,
+      "fees": 9.6425,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7e23d79d5f3b739fdba1d103636677e5afe00a9d7cb9a77e09b0e3d121f3c1b9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6239267638995232,
+          "quantity": 475,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.3725,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 337.25,
+      "prev_hash": "f756bc5e91d05d6b03af974d45f3def9a7b6e4c750d85981f9ec8b6e482aa829",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.3725,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR640",
+      "trade_id": "trade_74378c745936",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0640_467136",
+      "username": "RivalryModel_1052",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.013926763899523187,
+      "fees": 9.6425,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7e23d79d5f3b739fdba1d103636677e5afe00a9d7cb9a77e09b0e3d121f3c1b9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6239267638995232,
+          "quantity": 475,
+          "reason": "Rivalry Game Over signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 3.3725,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 337.25,
+      "prev_hash": "f756bc5e91d05d6b03af974d45f3def9a7b6e4c750d85981f9ec8b6e482aa829",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.3725,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_RIVALRY_OVER_021_VAR640",
+      "trade_id": "trade_74378c745936",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0640_467136",
+      "username": "RivalryModel_1052",
+      "verification_notes": "",
+      "why_entered": "Rivalry Game Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11613.8,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 337.25,
+    "total_volume": 337.25
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

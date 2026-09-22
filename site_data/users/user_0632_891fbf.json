@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0632_891fbf",
+    "username": "RivalryFalcon_513",
+    "strategy_id": "STRAT_TD_CORRELATION_034_VAR632",
+    "strategy_name": "TD + Game Correlation v632",
+    "strategy_description": "Anytime TD + team win correlation parlay (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD + KXNFLGAME same team. Entry star RB/WR TD + team win, correlation 0.65, product pricing assumes 0.5. Position 0.5% parlay. Why work: TD correlates with win. Why fail: correlation priced. Evidence: TD+win 38% vs 32% implied.",
+    "starting_bankroll": 11565.69,
+    "current_bankroll": 11565.69,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 605,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11565.69,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RivalryFalcon_513 uses TD + Game Correlation v632: Anytime TD + team win correlation parlay (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11565.69,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

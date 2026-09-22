@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0002_f5d581",
+    "username": "AlphaQuantX_7237",
+    "strategy_id": "STRAT_REST_003",
+    "strategy_name": "Rest & Schedule Difficulty",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 11714.93,
+    "current_bankroll": 11583.41,
+    "open_trades": [
+      "trade_8bcaed77ac4e"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 21,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11714.93,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User AlphaQuantX_7237 uses Rest & Schedule Difficulty: Teams with 3+ extra rest days vs opponent",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.48,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.9736,
+      "flags": [],
+      "hash": "9ae07b63c8cedd58c05aac03daf69d528ec621146cbf222db6e3d4c48732966e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.48,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP22HOUBUF",
+          "exec_price": 0.48,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 7457.603606697829,
+          "market_ticker": "KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "model_prob": 0.58,
+          "quantity": 274,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.3152,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22HOUBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 131.52,
+      "prev_hash": "8ab4f7766055114f176c3216289eb4569ddf814756598b01512c175dc580bc99",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3152,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003",
+      "trade_id": "trade_8bcaed77ac4e",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0002_f5d581",
+      "username": "AlphaQuantX_7237",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.48,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.9736,
+      "flags": [],
+      "hash": "9ae07b63c8cedd58c05aac03daf69d528ec621146cbf222db6e3d4c48732966e",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.48,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP22HOUBUF",
+          "exec_price": 0.48,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 7457.603606697829,
+          "market_ticker": "KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "model_prob": 0.58,
+          "quantity": 274,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.3152,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22HOUBUF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+          "spread": 0.04999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP22HOUBUF-BUF-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 131.52,
+      "prev_hash": "8ab4f7766055114f176c3216289eb4569ddf814756598b01512c175dc580bc99",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.3152,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003",
+      "trade_id": "trade_8bcaed77ac4e",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0002_f5d581",
+      "username": "AlphaQuantX_7237",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11714.93,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 131.52,
+    "total_volume": 131.52
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

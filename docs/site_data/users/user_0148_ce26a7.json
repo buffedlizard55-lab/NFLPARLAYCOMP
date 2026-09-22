@@ -1,0 +1,489 @@
+{
+  "user": {
+    "user_id": "user_0148_ce26a7",
+    "username": "EpsilonFalcon_5371",
+    "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR148",
+    "strategy_name": "Spread + Moneyline Correlation v148",
+    "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+    "starting_bankroll": 9039.24,
+    "current_bankroll": 8952.22,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_8edbb5e1f30c"
+    ],
+    "total_pnl": -87.02,
+    "roi_percent": -0.96,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 474,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9039.24,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 8952.22,
+        "pnl": -87.02
+      }
+    ],
+    "explanation": "User EpsilonFalcon_5371 uses Spread + Moneyline Correlation v148: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3654,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 9.5507,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "fde042c4539390dd06965747dd3402706f1ed7ef6d6daa1349558d43456d8836",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 215,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.2469999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.63,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 210,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.323,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 257.0,
+      "prev_hash": "92c8df3d6683fab215e60b6d09c24dc2887db5da8f83377e3c46c3f02eba55fe",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.57,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR148",
+      "trade_id": "trade_8edbb5e1f30c",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0148_ce26a7",
+      "username": "EpsilonFalcon_5371",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3654,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.05,
+      "fees": 9.5507,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "88922c59edf065bf5d40f423985ba9453708f1b85b96c80dc0c3b3b70e30a2e2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 215,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.2469999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.63,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 210,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.323,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": -87.0155,
+      "position_size_dollars": 257.0,
+      "prev_hash": "c27ae2370bdae4d74a880e71925a941d12d945fb4997f7b797df8e826be49d30",
+      "result": "LOSS",
+      "roi_percent": -112.33,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.57,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR148",
+      "trade_id": "trade_8edbb5e1f30c",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0148_ce26a7",
+      "username": "EpsilonFalcon_5371",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3654,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 9.5507,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "fde042c4539390dd06965747dd3402706f1ed7ef6d6daa1349558d43456d8836",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 215,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.2469999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.63,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 210,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.323,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 257.0,
+      "prev_hash": "92c8df3d6683fab215e60b6d09c24dc2887db5da8f83377e3c46c3f02eba55fe",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.57,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR148",
+      "trade_id": "trade_8edbb5e1f30c",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0148_ce26a7",
+      "username": "EpsilonFalcon_5371",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.3654,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.05,
+      "fees": 9.5507,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "88922c59edf065bf5d40f423985ba9453708f1b85b96c80dc0c3b3b70e30a2e2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 215,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.2469999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.63,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 16671.48585199025,
+          "market_ticker": "KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 210,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.323,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+          "spread": 0.18,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23CHIWAS-WAS-3.5"
+      ],
+      "pnl_dollars": -87.0155,
+      "position_size_dollars": 257.0,
+      "prev_hash": "c27ae2370bdae4d74a880e71925a941d12d945fb4997f7b797df8e826be49d30",
+      "result": "LOSS",
+      "roi_percent": -112.33,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.57,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR148",
+      "trade_id": "trade_8edbb5e1f30c",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0148_ce26a7",
+      "username": "EpsilonFalcon_5371",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9039.24,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 8952.22,
+      "pnl": -87.02
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.96,
+    "pnl": -87.02,
+    "open_exposure": 257.0,
+    "total_volume": 514.0
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

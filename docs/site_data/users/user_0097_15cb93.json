@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0097_15cb93",
+    "username": "HomeRho_9527",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR97",
+    "strategy_name": "Blowout Reversion vR97",
+    "strategy_description": "Team blown out last week bounces back ATS (variation)",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 9652.09,
+    "current_bankroll": 9488.85,
+    "open_trades": [
+      "trade_9c35268dac5f"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 107,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9652.09,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User HomeRho_9527 uses Blowout Reversion vR97: Team blown out last week bounces back ATS (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.53,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10036744812469767,
+      "fees": 10.1332,
+      "flags": [],
+      "hash": "2b6cb863a20f84de884528e6eb984ec78334a78735576c2a8b0370c66a55bdb7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.53,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP29SFDAL",
+          "exec_price": 0.53,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 18201.41237453934,
+          "market_ticker": "KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+          "model_prob": 0.6803674481246976,
+          "quantity": 308,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.6324,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29SFDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 163.24,
+      "prev_hash": "2353613bd8d58223424801a9716d1b6f3c6bff2a9650d7ecc2113393be981614",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6324,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR97",
+      "trade_id": "trade_9c35268dac5f",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0097_15cb93",
+      "username": "HomeRho_9527",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.53,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10036744812469767,
+      "fees": 10.1332,
+      "flags": [],
+      "hash": "2b6cb863a20f84de884528e6eb984ec78334a78735576c2a8b0370c66a55bdb7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.53,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.58,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP29SFDAL",
+          "exec_price": 0.53,
+          "implied_prob": 0.58,
+          "liquidity_at_entry": 18201.41237453934,
+          "market_ticker": "KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+          "model_prob": 0.6803674481246976,
+          "quantity": 308,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.6324,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29SFDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP29SFDAL-DAL-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 163.24,
+      "prev_hash": "2353613bd8d58223424801a9716d1b6f3c6bff2a9650d7ecc2113393be981614",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.6324,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR97",
+      "trade_id": "trade_9c35268dac5f",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0097_15cb93",
+      "username": "HomeRho_9527",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9652.09,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 163.24,
+    "total_volume": 163.24
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

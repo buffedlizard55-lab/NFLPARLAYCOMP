@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0626_dfa846",
+    "username": "RivalryBettor_267",
+    "strategy_id": "STRAT_WEATHER_OVER_030_VAR626",
+    "strategy_name": "Indoor Over v626",
+    "strategy_description": "Indoor/dome games over due to perfect conditions (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, indoor flag from ESPN venue. Entry indoor game, total <48, bet over. Position 1.5%. Why work: no wind, fast track. Why fail: defensive indoor teams. Evidence: indoor over 53% when total <48.",
+    "starting_bankroll": 9850.17,
+    "current_bankroll": 9850.17,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 599,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9850.17,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RivalryBettor_267 uses Indoor Over v626: Indoor/dome games over due to perfect conditions (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9850.17,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

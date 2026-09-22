@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0077_09fd13",
+    "username": "SpreadSignal_7536",
+    "strategy_id": "STRAT_REST_003_VAR77",
+    "strategy_name": "Rest & Schedule Difficulty vR77",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 8382.5,
+    "current_bankroll": 8228.9,
+    "open_trades": [
+      "trade_386aee3573ae"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 75,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 8382.5,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User SpreadSignal_7536 uses Rest & Schedule Difficulty vR77: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": "2026-09-22T22:52:12Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.6,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.168,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP22CHISF-SF",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e65ca6ef7a4995d535b94e5739e2c3a8b006e215a65e37de0821acdcf56b79be",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.6,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP22CHISF",
+          "exec_price": 0.6,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 5151.679077104179,
+          "market_ticker": "KXNFLGAME-26SEP22CHISF-SF",
+          "model_prob": 0.58,
+          "quantity": 256,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.536,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CHISF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22CHISF-SF",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22CHISF-SF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22CHISF-SF",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22CHISF-SF"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.6,
+      "prev_hash": "31255b315748598c259b4de451e18adfbc926225a24597553fb8ab5d00c2aee3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.536,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR77",
+      "trade_id": "trade_386aee3573ae",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0077_09fd13",
+      "username": "SpreadSignal_7536",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.6,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.168,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLGAME-26SEP22CHISF-SF",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e65ca6ef7a4995d535b94e5739e2c3a8b006e215a65e37de0821acdcf56b79be",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.6,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP22CHISF",
+          "exec_price": 0.6,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 5151.679077104179,
+          "market_ticker": "KXNFLGAME-26SEP22CHISF-SF",
+          "model_prob": 0.58,
+          "quantity": 256,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.536,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22CHISF.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22CHISF-SF",
+          "spread": 0.12,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22CHISF-SF"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22CHISF-SF",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22CHISF-SF"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.6,
+      "prev_hash": "31255b315748598c259b4de451e18adfbc926225a24597553fb8ab5d00c2aee3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.536,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR77",
+      "trade_id": "trade_386aee3573ae",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0077_09fd13",
+      "username": "SpreadSignal_7536",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 8382.5,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 153.6,
+    "total_volume": 153.6
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

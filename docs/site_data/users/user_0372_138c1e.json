@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0372_138c1e",
+    "username": "InjuryEagle_6874",
+    "strategy_id": "STRAT_TD_CORRELATION_034_VAR372",
+    "strategy_name": "TD + Game Correlation v372",
+    "strategy_description": "Anytime TD + team win correlation parlay (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD + KXNFLGAME same team. Entry star RB/WR TD + team win, correlation 0.65, product pricing assumes 0.5. Position 0.5% parlay. Why work: TD correlates with win. Why fail: correlation priced. Evidence: TD+win 38% vs 32% implied.",
+    "starting_bankroll": 9849.38,
+    "current_bankroll": 10011.61,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_d2fe3b62f92a"
+    ],
+    "total_pnl": 162.23,
+    "roi_percent": 1.65,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 25,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9849.38,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:20Z",
+        "bankroll": 10011.61,
+        "pnl": 162.23
+      }
+    ],
+    "explanation": "User InjuryEagle_6874 uses TD + Game Correlation v372: Anytime TD + team win correlation parlay (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.03004780864541945,
+      "fees": 12.2108,
+      "flags": [],
+      "hash": "c737b86ed229801417907e28b034712bac8f2a073c38d927dddfd80d897d45da",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.51,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 5741.743798018466,
+          "market_ticker": "KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "model_prob": 0.5100478086454194,
+          "quantity": 356,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.8156,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "spread": 0.08000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 181.56,
+      "prev_hash": "ff63c66c5397409151fd6020d91d3500aed734cac2df14a164745af805cc731e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.8156,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR372",
+      "trade_id": "trade_d2fe3b62f92a",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0372_138c1e",
+      "username": "InjuryEagle_6874",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.03004780864541945,
+      "fees": 12.2108,
+      "flags": [],
+      "hash": "cace23b3d375e18f71b5d3923507f682b57469e448023d7a205032fac866ca39",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.51,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 5741.743798018466,
+          "market_ticker": "KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "model_prob": 0.5100478086454194,
+          "quantity": 356,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.8156,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "spread": 0.08000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+      ],
+      "pnl_dollars": 162.2292,
+      "position_size_dollars": 181.56,
+      "prev_hash": "e14ff1251cd1cb6a143a52c570f41d3c6dc7e37e9612345e66bbda7085ed58a4",
+      "result": "WIN",
+      "roi_percent": 89.35,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.8156,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR372",
+      "trade_id": "trade_d2fe3b62f92a",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0372_138c1e",
+      "username": "InjuryEagle_6874",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.03004780864541945,
+      "fees": 12.2108,
+      "flags": [],
+      "hash": "c737b86ed229801417907e28b034712bac8f2a073c38d927dddfd80d897d45da",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.51,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 5741.743798018466,
+          "market_ticker": "KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "model_prob": 0.5100478086454194,
+          "quantity": 356,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.8156,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "spread": 0.08000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 181.56,
+      "prev_hash": "ff63c66c5397409151fd6020d91d3500aed734cac2df14a164745af805cc731e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.8156,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR372",
+      "trade_id": "trade_d2fe3b62f92a",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0372_138c1e",
+      "username": "InjuryEagle_6874",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:20Z",
+      "expected_value": 0.03004780864541945,
+      "fees": 12.2108,
+      "flags": [],
+      "hash": "cace23b3d375e18f71b5d3923507f682b57469e448023d7a205032fac866ca39",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.48,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.51,
+          "implied_prob": 0.48,
+          "liquidity_at_entry": 5741.743798018466,
+          "market_ticker": "KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "model_prob": 0.5100478086454194,
+          "quantity": 356,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.8156,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+          "spread": 0.08000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24CLENYJ-NYJ-3.5"
+      ],
+      "pnl_dollars": 162.2292,
+      "position_size_dollars": 181.56,
+      "prev_hash": "e14ff1251cd1cb6a143a52c570f41d3c6dc7e37e9612345e66bbda7085ed58a4",
+      "result": "WIN",
+      "roi_percent": 89.35,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.8156,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR372",
+      "trade_id": "trade_d2fe3b62f92a",
+      "updated_at": "2026-09-22T22:52:20Z",
+      "user_id": "user_0372_138c1e",
+      "username": "InjuryEagle_6874",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9849.38,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:20Z",
+      "bankroll": 10011.61,
+      "pnl": 162.23
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.65,
+    "pnl": 162.23,
+    "open_exposure": 181.56,
+    "total_volume": 363.12
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0001_a73dd9",
+    "username": "BetaTraderX_9682",
+    "strategy_id": "STRAT_HOME_ADV_002",
+    "strategy_name": "Home Field Momentum",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 11012.75,
+    "current_bankroll": 11012.75,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 2,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:51:44Z",
+        "bankroll": 11012.75,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User BetaTraderX_9682 uses Home Field Momentum: Favors home teams with >65% home win rate last 8 games",
+    "created_at": "2026-09-22T22:51:44Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:51:44Z",
+      "bankroll": 11012.75,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:51:44Z"
+}

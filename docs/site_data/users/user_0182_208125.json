@@ -1,0 +1,457 @@
+{
+  "user": {
+    "user_id": "user_0182_208125",
+    "username": "DeltaLambda_2",
+    "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR182",
+    "strategy_name": "Spread + Moneyline Correlation v182",
+    "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+    "starting_bankroll": 10434.92,
+    "current_bankroll": 10598.22,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_bd03c07dcef3"
+    ],
+    "total_pnl": 163.29,
+    "roi_percent": 1.56,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 22,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10434.92,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 10598.22,
+        "pnl": 163.29
+      }
+    ],
+    "explanation": "User DeltaLambda_2 uses Spread + Moneyline Correlation v182: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5 (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2907,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 12.6114,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "485593c51ca6a08ce81537872e45b90fd8bdf1ff54ab9ec06d0ab0a17141a3b7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 254,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4477999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 242,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2342000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 268.2,
+      "prev_hash": "48b7e3a0194413f8d054938729774337c288fd085bd6aa22681037ef0163e51c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.682,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR182",
+      "trade_id": "trade_bd03c07dcef3",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0182_208125",
+      "username": "DeltaLambda_2",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2907,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.05,
+      "fees": 12.6114,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e132df2f8c89eabacc1fa819d2afa64d47ae403ef236b94dc48c5a323fcfbd47",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 254,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4477999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 242,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2342000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 163.295,
+      "position_size_dollars": 268.2,
+      "prev_hash": "c1540624d8145d5d451dbb2de942ce64907d67ff775fa988b712e321002323db",
+      "result": "WIN",
+      "roi_percent": 226.5,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.682,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR182",
+      "trade_id": "trade_bd03c07dcef3",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0182_208125",
+      "username": "DeltaLambda_2",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2907,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 12.6114,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "485593c51ca6a08ce81537872e45b90fd8bdf1ff54ab9ec06d0ab0a17141a3b7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 254,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4477999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 242,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2342000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 268.2,
+      "prev_hash": "48b7e3a0194413f8d054938729774337c288fd085bd6aa22681037ef0163e51c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.682,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR182",
+      "trade_id": "trade_bd03c07dcef3",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0182_208125",
+      "username": "DeltaLambda_2",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.2907,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.05,
+      "fees": 12.6114,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 13.00% for KXNFLGAME-26SEP20PITWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e132df2f8c89eabacc1fa819d2afa64d47ae403ef236b94dc48c5a323fcfbd47",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.57,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 14012.922559033466,
+          "market_ticker": "KXNFLGAME-26SEP20PITWAS-WAS",
+          "model_prob": 0.71,
+          "quantity": 254,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4477999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+          "spread": 0.12999999999999995,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.65,
+          "quantity": 242,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2342000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20PITWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20PITWAS-WAS"
+      ],
+      "pnl_dollars": 163.295,
+      "position_size_dollars": 268.2,
+      "prev_hash": "c1540624d8145d5d451dbb2de942ce64907d67ff775fa988b712e321002323db",
+      "result": "WIN",
+      "roi_percent": 226.5,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.682,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006_VAR182",
+      "trade_id": "trade_bd03c07dcef3",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0182_208125",
+      "username": "DeltaLambda_2",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10434.92,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 10598.22,
+      "pnl": 163.29
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.56,
+    "pnl": 163.29,
+    "open_exposure": 268.2,
+    "total_volume": 536.4
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

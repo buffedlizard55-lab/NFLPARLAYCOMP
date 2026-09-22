@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0231_98292c",
+    "username": "ValueRho_2302",
+    "strategy_id": "STRAT_2H_COMEBACK_025_VAR231",
+    "strategy_name": "Second Half Comeback v231",
+    "strategy_description": "Team down at half but strong 2H team (variation)",
+    "strategy_long_explanation": "Uses KXNFL2H markets, halftime score. Entry team down 1-7 at half, 2H moneyline >0.50 but team top 10 2H scoring. Position 1%. Why work: adjustments. Why fail: game script. Evidence: 2H comeback 52% for top 2H teams.",
+    "starting_bankroll": 8932.26,
+    "current_bankroll": 8932.26,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 223,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8932.26,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ValueRho_2302 uses Second Half Comeback v231: Team down at half but strong 2H team (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8932.26,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

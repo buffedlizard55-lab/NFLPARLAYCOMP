@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0052_2d4ecd",
+    "username": "DivisionalEdge_3926",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR52",
+    "strategy_name": "Injury Impact Fade vR52",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 8477.16,
+    "current_bankroll": 8686.35,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_2cb7a8202b95"
+    ],
+    "total_pnl": 209.19,
+    "roi_percent": 2.47,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 5,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8477.16,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8686.35,
+        "pnl": 209.19
+      }
+    ],
+    "explanation": "User DivisionalEdge_3926 uses Injury Impact Fade vR52: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 15.7458,
+      "flags": [],
+      "hash": "9dc2807fb6f0893af6284a1e714dbcbe1bf4cce9ff0abec2fcd72607d5a8d630",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.52,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP21TENNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.52,
+          "liquidity_at_entry": 5724.901508102766,
+          "market_ticker": "KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "model_prob": 0.62,
+          "quantity": 489,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.2938939999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21TENNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "spread": 0.009999999999999953,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 264.06,
+      "prev_hash": "0f963404c2e52174659b94da83cf52f5e6a5cbc4d0f61f42ea3ffad42fc9dfec",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2939,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR52",
+      "trade_id": "trade_2cb7a8202b95",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0052_2d4ecd",
+      "username": "DivisionalEdge_3926",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.12,
+      "fees": 15.7458,
+      "flags": [],
+      "hash": "818569a08234b9e498411e656b3986b842afbaadfb25850f00579c9784989ddc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.52,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP21TENNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.52,
+          "liquidity_at_entry": 5724.901508102766,
+          "market_ticker": "KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "model_prob": 0.62,
+          "quantity": 489,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.2938939999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21TENNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "spread": 0.009999999999999953,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+      ],
+      "pnl_dollars": 209.1942,
+      "position_size_dollars": 264.06,
+      "prev_hash": "33a621c64e08456f91ee5d003a2cbed2a401d4c3b68f76849576409a1dd2dedc",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.2939,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR52",
+      "trade_id": "trade_2cb7a8202b95",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0052_2d4ecd",
+      "username": "DivisionalEdge_3926",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 15.7458,
+      "flags": [],
+      "hash": "9dc2807fb6f0893af6284a1e714dbcbe1bf4cce9ff0abec2fcd72607d5a8d630",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.52,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP21TENNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.52,
+          "liquidity_at_entry": 5724.901508102766,
+          "market_ticker": "KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "model_prob": 0.62,
+          "quantity": 489,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.2938939999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21TENNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "spread": 0.009999999999999953,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 264.06,
+      "prev_hash": "0f963404c2e52174659b94da83cf52f5e6a5cbc4d0f61f42ea3ffad42fc9dfec",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2939,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR52",
+      "trade_id": "trade_2cb7a8202b95",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0052_2d4ecd",
+      "username": "DivisionalEdge_3926",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.12,
+      "fees": 15.7458,
+      "flags": [],
+      "hash": "818569a08234b9e498411e656b3986b842afbaadfb25850f00579c9784989ddc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.47,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.52,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP21TENNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.52,
+          "liquidity_at_entry": 5724.901508102766,
+          "market_ticker": "KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "model_prob": 0.62,
+          "quantity": 489,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.2938939999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21TENNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+          "spread": 0.009999999999999953,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21TENNO-NO-3.5"
+      ],
+      "pnl_dollars": 209.1942,
+      "position_size_dollars": 264.06,
+      "prev_hash": "33a621c64e08456f91ee5d003a2cbed2a401d4c3b68f76849576409a1dd2dedc",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.2939,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR52",
+      "trade_id": "trade_2cb7a8202b95",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0052_2d4ecd",
+      "username": "DivisionalEdge_3926",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8477.16,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8686.35,
+      "pnl": 209.19
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 2.47,
+    "pnl": 209.19,
+    "open_exposure": 264.06,
+    "total_volume": 528.12
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

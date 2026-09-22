@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0019_c3b7f4",
+    "username": "ArbBettor_6835",
+    "strategy_id": "STRAT_COACH_CHALLENGE_020",
+    "strategy_name": "Coaching Mismatch",
+    "strategy_description": "Top 5 coaching vs bottom 5 per DVOA",
+    "strategy_long_explanation": "Uses coaching rankings, KXNFLGAME. Entry top 5 coach vs bottom 5, moneyline <0.65. Position 2%. Why work: coaching matters in close games. Why fail: subjective ranking. Evidence: top vs bottom coach win 62% vs 55% baseline.",
+    "starting_bankroll": 8343.84,
+    "current_bankroll": 8241.54,
+    "open_trades": [
+      "trade_89bd50e6bf1a"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 48,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8343.84,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ArbBettor_6835 uses Coaching Mismatch: Top 5 coaching vs bottom 5 per DVOA",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -3.501276272188658e-05,
+      "fees": 5.859,
+      "flags": [],
+      "hash": "47889ea4d88da83da9299b286752e371f6e93a95eb74ee748ea0d85638635a77",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.56,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.55,
+          "implied_prob": 0.56,
+          "liquidity_at_entry": 17333.60319840627,
+          "market_ticker": "KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+          "model_prob": 0.5599649872372782,
+          "quantity": 186,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.5115000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 102.3,
+      "prev_hash": "ebd2393b7878752c8ad03cb538c4d170ecf975e57ad1b428fc129b10909e6762",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5115,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020",
+      "trade_id": "trade_89bd50e6bf1a",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0019_c3b7f4",
+      "username": "ArbBettor_6835",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -3.501276272188658e-05,
+      "fees": 5.859,
+      "flags": [],
+      "hash": "47889ea4d88da83da9299b286752e371f6e93a95eb74ee748ea0d85638635a77",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.46,
+          "bid_at_entry": 0.45,
+          "entry_price": 0.56,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP21CLECHI",
+          "exec_price": 0.55,
+          "implied_prob": 0.56,
+          "liquidity_at_entry": 17333.60319840627,
+          "market_ticker": "KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+          "model_prob": 0.5599649872372782,
+          "quantity": 186,
+          "reason": "Coaching Mismatch signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.5115000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21CLECHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21CLECHI-CHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 102.3,
+      "prev_hash": "ebd2393b7878752c8ad03cb538c4d170ecf975e57ad1b428fc129b10909e6762",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.5115,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020",
+      "trade_id": "trade_89bd50e6bf1a",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0019_c3b7f4",
+      "username": "ArbBettor_6835",
+      "verification_notes": "",
+      "why_entered": "Coaching Mismatch triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8343.84,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 102.3,
+    "total_volume": 102.3
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

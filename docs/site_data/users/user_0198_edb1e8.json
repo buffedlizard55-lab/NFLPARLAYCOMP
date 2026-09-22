@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0198_edb1e8",
+    "username": "SharpSignal_7649",
+    "strategy_id": "STRAT_DVOA_VALUE_029_VAR198",
+    "strategy_name": "DVOA Value v198",
+    "strategy_description": "DVOA efficiency vs market (variation)",
+    "strategy_long_explanation": "Uses FTN DVOA, KXNFLGAME. Entry DVOA top 5 vs bottom 5, market <60%. Position 2%. Why work: DVOA more predictive than record. Why fail: DVOA lag. Evidence: DVOA top vs bottom 62% win 2020-2024.",
+    "starting_bankroll": 9373.34,
+    "current_bankroll": 9436.31,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_40639747707a"
+    ],
+    "total_pnl": 62.97,
+    "roi_percent": 0.67,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 16,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9373.34,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9436.31,
+        "pnl": 62.97
+      }
+    ],
+    "explanation": "User SharpSignal_7649 uses DVOA Value v198: DVOA efficiency vs market (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.63,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.02524373957377357,
+      "fees": 4.7397,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e90bff69f50104253eaae56f23e050f4e06d66a41fcedf828385308914642cdc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.4,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.63,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 17383.066954476166,
+          "market_ticker": "KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "model_prob": 0.6752437395737736,
+          "quantity": 183,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1529,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "spread": 0.22999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 115.29,
+      "prev_hash": "0be2e00525b3f7cacbf583246472bcbd3c51b313b05d8b6e4d0837d54b558b79",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1529,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR198",
+      "trade_id": "trade_40639747707a",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0198_edb1e8",
+      "username": "SharpSignal_7649",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.63,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.02524373957377357,
+      "fees": 4.7397,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "227fddffcb051d6dafcf8bc7ab3cab7d746dfab4829a5f1e1121d27d3bb4034b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.4,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.63,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 17383.066954476166,
+          "market_ticker": "KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "model_prob": 0.6752437395737736,
+          "quantity": 183,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1529,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "spread": 0.22999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+      ],
+      "pnl_dollars": 62.9703,
+      "position_size_dollars": 115.29,
+      "prev_hash": "4a22240cea8ab21e7a1a58663c444ac7214fb9199c45929bf085f30d0430f526",
+      "result": "WIN",
+      "roi_percent": 54.62,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.1529,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR198",
+      "trade_id": "trade_40639747707a",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0198_edb1e8",
+      "username": "SharpSignal_7649",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.63,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.02524373957377357,
+      "fees": 4.7397,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e90bff69f50104253eaae56f23e050f4e06d66a41fcedf828385308914642cdc",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.4,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.63,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 17383.066954476166,
+          "market_ticker": "KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "model_prob": 0.6752437395737736,
+          "quantity": 183,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1529,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "spread": 0.22999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 115.29,
+      "prev_hash": "0be2e00525b3f7cacbf583246472bcbd3c51b313b05d8b6e4d0837d54b558b79",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1529,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR198",
+      "trade_id": "trade_40639747707a",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0198_edb1e8",
+      "username": "SharpSignal_7649",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.63,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:13Z",
+      "expected_value": 0.02524373957377357,
+      "fees": 4.7397,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "227fddffcb051d6dafcf8bc7ab3cab7d746dfab4829a5f1e1121d27d3bb4034b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.4,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.63,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 17383.066954476166,
+          "market_ticker": "KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "model_prob": 0.6752437395737736,
+          "quantity": 183,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.1529,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+          "spread": 0.22999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP26SFIND-IND-3.5"
+      ],
+      "pnl_dollars": 62.9703,
+      "position_size_dollars": 115.29,
+      "prev_hash": "4a22240cea8ab21e7a1a58663c444ac7214fb9199c45929bf085f30d0430f526",
+      "result": "WIN",
+      "roi_percent": 54.62,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.1529,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR198",
+      "trade_id": "trade_40639747707a",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0198_edb1e8",
+      "username": "SharpSignal_7649",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9373.34,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9436.31,
+      "pnl": 62.97
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.67,
+    "pnl": 62.97,
+    "open_exposure": 115.29,
+    "total_volume": 230.58
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

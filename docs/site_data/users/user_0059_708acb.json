@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0059_708acb",
+    "username": "DvoaGammaX_7158",
+    "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR59",
+    "strategy_name": "Team Total Under vR59",
+    "strategy_description": "Team total under when wind/bad weather or strong opposing D (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+    "starting_bankroll": 10432.01,
+    "current_bankroll": 10376.97,
+    "open_trades": [
+      "trade_c21495d884d1"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 72,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10432.01,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User DvoaGammaX_7158 uses Team Total Under vR59: Team total under when wind/bad weather or strong opposing D (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.04596031428819636,
+      "fees": 5.1072,
+      "flags": [],
+      "hash": "a18f995a29ea01b25fc7417a1a64d20e99b896370ee375ef223acb4512ba6a18",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP27NYGTB",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1386.7520433511809,
+          "market_ticker": "KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "model_prob": 0.5540396857118036,
+          "quantity": 128,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.27520000000000006,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27NYGTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 55.04,
+      "prev_hash": "3df1ac5aad75b366c931686edad47e2afc70faf8da0cdde85090b4e9a0ebcba3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.2752,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR59",
+      "trade_id": "trade_c21495d884d1",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0059_708acb",
+      "username": "DvoaGammaX_7158",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.04596031428819636,
+      "fees": 5.1072,
+      "flags": [],
+      "hash": "a18f995a29ea01b25fc7417a1a64d20e99b896370ee375ef223acb4512ba6a18",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.57,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP27NYGTB",
+          "exec_price": 0.43000000000000005,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1386.7520433511809,
+          "market_ticker": "KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "model_prob": 0.5540396857118036,
+          "quantity": 128,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 0.27520000000000006,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27NYGTB.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+          "spread": 0.010000000000000009,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27NYGTB-TB-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 55.04,
+      "prev_hash": "3df1ac5aad75b366c931686edad47e2afc70faf8da0cdde85090b4e9a0ebcba3",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.2752,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013_VAR59",
+      "trade_id": "trade_c21495d884d1",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0059_708acb",
+      "username": "DvoaGammaX_7158",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10432.01,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 55.04,
+    "total_volume": 55.04
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

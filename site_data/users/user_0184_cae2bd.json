@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0184_cae2bd",
+    "username": "RookieZeta_3582",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR184",
+    "strategy_name": "Injury Impact Fade v184",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 11774.07,
+    "current_bankroll": 11472.58,
+    "open_trades": [
+      "trade_51253d2be98b"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 184,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11774.07,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RookieZeta_3582 uses Injury Impact Fade v184: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 14.6657,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "422aee51f5a03b31dd69a1d06d05c3345d10b0b82daad7f56ca1ffdefda0e7a8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP25NEMIA",
+          "exec_price": 0.5900000000000001,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 5854.311980395208,
+          "market_ticker": "KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "model_prob": 0.62,
+          "quantity": 511,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.0149000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NEMIA.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 301.49,
+      "prev_hash": "3dcf1cb0f4c23c5465c4789911ace5b89cd5d550f22262b786f851fb7feaa4fc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.0149,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR184",
+      "trade_id": "trade_51253d2be98b",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0184_cae2bd",
+      "username": "RookieZeta_3582",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 14.6657,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 16.00% for KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "422aee51f5a03b31dd69a1d06d05c3345d10b0b82daad7f56ca1ffdefda0e7a8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.57,
+          "bid_at_entry": 0.41,
+          "entry_price": 0.69,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP25NEMIA",
+          "exec_price": 0.5900000000000001,
+          "implied_prob": 0.69,
+          "liquidity_at_entry": 5854.311980395208,
+          "market_ticker": "KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "model_prob": 0.62,
+          "quantity": 511,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.0149000000000004,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25NEMIA.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5",
+          "spread": 0.15999999999999998,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP25NEMIA-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 301.49,
+      "prev_hash": "3dcf1cb0f4c23c5465c4789911ace5b89cd5d550f22262b786f851fb7feaa4fc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.0149,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR184",
+      "trade_id": "trade_51253d2be98b",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0184_cae2bd",
+      "username": "RookieZeta_3582",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11774.07,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 301.49,
+    "total_volume": 301.49
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

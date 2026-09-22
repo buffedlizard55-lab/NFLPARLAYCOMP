@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0241_c33409",
+    "username": "DvoaLion_4680",
+    "strategy_id": "STRAT_REST_003_VAR241",
+    "strategy_name": "Rest & Schedule Difficulty v241",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 9362.28,
+    "current_bankroll": 9264.07,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_bc1347775a18"
+    ],
+    "total_pnl": -98.21,
+    "roi_percent": -1.05,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 943,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9362.28,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 9264.07,
+        "pnl": -98.21
+      }
+    ],
+    "explanation": "User DvoaLion_4680 uses Rest & Schedule Difficulty v241: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 8.3391,
+      "flags": [],
+      "hash": "de074f63a34b2829c619801142fa74cc2cbb953d0a60af681e2ec63c29b90058",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.58,
+          "quantity": 209,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.8987,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 89.87,
+      "prev_hash": "c0dafafa9ac9d437978b564f8ea2c99e5a4728e75a45a7991e4d44b827f30b8c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.8987,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR241",
+      "trade_id": "trade_bc1347775a18",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0241_c33409",
+      "username": "DvoaLion_4680",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 8.3391,
+      "flags": [],
+      "hash": "2ddef4573443582a8cd091e8bc1758f46886943c0d85ce18aa15e4e76a4c5272",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.58,
+          "quantity": 209,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.8987,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": -98.2091,
+      "position_size_dollars": 89.87,
+      "prev_hash": "a760febeeea9ba9750e02874d37a3499b10456b56979fd4cb539dd04e060a222",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.8987,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR241",
+      "trade_id": "trade_bc1347775a18",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0241_c33409",
+      "username": "DvoaLion_4680",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 8.3391,
+      "flags": [],
+      "hash": "de074f63a34b2829c619801142fa74cc2cbb953d0a60af681e2ec63c29b90058",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.58,
+          "quantity": 209,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.8987,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 89.87,
+      "prev_hash": "c0dafafa9ac9d437978b564f8ea2c99e5a4728e75a45a7991e4d44b827f30b8c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.8987,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR241",
+      "trade_id": "trade_bc1347775a18",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0241_c33409",
+      "username": "DvoaLion_4680",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 8.3391,
+      "flags": [],
+      "hash": "2ddef4573443582a8cd091e8bc1758f46886943c0d85ce18aa15e4e76a4c5272",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.52,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.43,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 11957.90229366505,
+          "market_ticker": "KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "model_prob": 0.58,
+          "quantity": 209,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 0.8987,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23DALPHI-O45.5"
+      ],
+      "pnl_dollars": -98.2091,
+      "position_size_dollars": 89.87,
+      "prev_hash": "a760febeeea9ba9750e02874d37a3499b10456b56979fd4cb539dd04e060a222",
+      "result": "LOSS",
+      "roi_percent": -109.28,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.8987,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR241",
+      "trade_id": "trade_bc1347775a18",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0241_c33409",
+      "username": "DvoaLion_4680",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9362.28,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 9264.07,
+      "pnl": -98.21
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.05,
+    "pnl": -98.21,
+    "open_exposure": 89.87,
+    "total_volume": 179.74
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

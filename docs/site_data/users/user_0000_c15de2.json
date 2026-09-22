@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0000_c15de2",
+    "username": "AlphaAlphaX_9160",
+    "strategy_id": "STRAT_IMPLIED_VALUE_001",
+    "strategy_name": "Implied Probability Value",
+    "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge",
+    "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+    "starting_bankroll": 9275.98,
+    "current_bankroll": 8794.01,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_425d250f2d13"
+    ],
+    "total_pnl": -481.97,
+    "roi_percent": -5.2,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 985,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9275.98,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:18Z",
+        "bankroll": 8794.01,
+        "pnl": -481.97
+      }
+    ],
+    "explanation": "User AlphaAlphaX_9160 uses Implied Probability Value: Buys YES when market implied prob < model prob by 5%+ edge",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.15124681475237328,
+      "fees": 22.3573,
+      "flags": [],
+      "hash": "4d97db7e8fb0d427c950cc343d2c6f23310b02d0a15ed21199c3470e32b5040f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.59,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20LACKC",
+          "exec_price": 0.59,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 5485.639147395181,
+          "market_ticker": "KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "model_prob": 0.6012468147523733,
+          "quantity": 779,
+          "reason": "Edge 15.12% model 60.12% vs market 45.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 4.5961,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20LACKC.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 459.61,
+      "prev_hash": "e0b7bf2bbac99fc73912298c07b1d52637fb14df6adbf442c96f8c14f95b51c7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.5961,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001",
+      "trade_id": "trade_425d250f2d13",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0000_c15de2",
+      "username": "AlphaAlphaX_9160",
+      "verification_notes": "",
+      "why_entered": "Edge 15.12% model 60.12% vs market 45.00%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": 0.15124681475237328,
+      "fees": 22.3573,
+      "flags": [],
+      "hash": "b32a1fea2123945b985cac0cc2d725750c1ea8ceb2f91352457a4183cea36200",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.59,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20LACKC",
+          "exec_price": 0.59,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 5485.639147395181,
+          "market_ticker": "KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "model_prob": 0.6012468147523733,
+          "quantity": 779,
+          "reason": "Edge 15.12% model 60.12% vs market 45.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 4.5961,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20LACKC.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+      ],
+      "pnl_dollars": -481.9673,
+      "position_size_dollars": 459.61,
+      "prev_hash": "60c345c4fdc58c39d331efb5f0763441add85ec9ab97a24649bcb4d482e40917",
+      "result": "LOSS",
+      "roi_percent": -104.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.5961,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001",
+      "trade_id": "trade_425d250f2d13",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0000_c15de2",
+      "username": "AlphaAlphaX_9160",
+      "verification_notes": "",
+      "why_entered": "Edge 15.12% model 60.12% vs market 45.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.15124681475237328,
+      "fees": 22.3573,
+      "flags": [],
+      "hash": "4d97db7e8fb0d427c950cc343d2c6f23310b02d0a15ed21199c3470e32b5040f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.59,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20LACKC",
+          "exec_price": 0.59,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 5485.639147395181,
+          "market_ticker": "KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "model_prob": 0.6012468147523733,
+          "quantity": 779,
+          "reason": "Edge 15.12% model 60.12% vs market 45.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 4.5961,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20LACKC.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 459.61,
+      "prev_hash": "e0b7bf2bbac99fc73912298c07b1d52637fb14df6adbf442c96f8c14f95b51c7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.5961,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001",
+      "trade_id": "trade_425d250f2d13",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0000_c15de2",
+      "username": "AlphaAlphaX_9160",
+      "verification_notes": "",
+      "why_entered": "Edge 15.12% model 60.12% vs market 45.00%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.59,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": 0.15124681475237328,
+      "fees": 22.3573,
+      "flags": [],
+      "hash": "b32a1fea2123945b985cac0cc2d725750c1ea8ceb2f91352457a4183cea36200",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.59,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20LACKC",
+          "exec_price": 0.59,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 5485.639147395181,
+          "market_ticker": "KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "model_prob": 0.6012468147523733,
+          "quantity": 779,
+          "reason": "Edge 15.12% model 60.12% vs market 45.00%",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 4.5961,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20LACKC.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20LACKC-KC-3.5"
+      ],
+      "pnl_dollars": -481.9673,
+      "position_size_dollars": 459.61,
+      "prev_hash": "60c345c4fdc58c39d331efb5f0763441add85ec9ab97a24649bcb4d482e40917",
+      "result": "LOSS",
+      "roi_percent": -104.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.5961,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001",
+      "trade_id": "trade_425d250f2d13",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0000_c15de2",
+      "username": "AlphaAlphaX_9160",
+      "verification_notes": "",
+      "why_entered": "Edge 15.12% model 60.12% vs market 45.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9275.98,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:18Z",
+      "bankroll": 8794.01,
+      "pnl": -481.97
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -5.2,
+    "pnl": -481.97,
+    "open_exposure": 459.61,
+    "total_volume": 919.22
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

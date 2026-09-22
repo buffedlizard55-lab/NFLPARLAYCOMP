@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0493_cc36ba",
+    "username": "ZetaKappa_3225",
+    "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR493",
+    "strategy_name": "Cross-Market Arb v493",
+    "strategy_description": "Moneyline vs spread vs total arb when misaligned (variation)",
+    "strategy_long_explanation": "Uses KXNFLGAME, KXNFLSPREAD, KXNFLTOTAL same event. Entry implied win prob from spread vs moneyline diff >8%. Position 0.5% arb. Why work: different market makers, lag. Why fail: fees, correlation. Evidence: arb exists 1-2% of time.",
+    "starting_bankroll": 11516.67,
+    "current_bankroll": 11360.28,
+    "open_trades": [
+      "trade_ff2dba2ab83f"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 453,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11516.67,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ZetaKappa_3225 uses Cross-Market Arb v493: Moneyline vs spread vs total arb when misaligned (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.39,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05827488511041168,
+      "fees": 17.1227,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 19.00% for KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7bb6a8ab2e332a3ca2526eb0a0c2de3ba3fdae1200c57fda890a89b142136530",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.61,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.39,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 7896.786885401931,
+          "market_ticker": "KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "model_prob": 0.5417251148895883,
+          "quantity": 401,
+          "reason": "Cross-Market Arb signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.5638999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "spread": 0.19,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 156.39,
+      "prev_hash": "a2df35a5e22022c3328e73fb943bcbdd28a5a66d665c8eb1f50dbb6a650c071e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5639,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR493",
+      "trade_id": "trade_ff2dba2ab83f",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0493_cc36ba",
+      "username": "ZetaKappa_3225",
+      "verification_notes": "",
+      "why_entered": "Cross-Market Arb triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.39,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05827488511041168,
+      "fees": 17.1227,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 19.00% for KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "7bb6a8ab2e332a3ca2526eb0a0c2de3ba3fdae1200c57fda890a89b142136530",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.61,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP26CLEPHI",
+          "exec_price": 0.39,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 7896.786885401931,
+          "market_ticker": "KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "model_prob": 0.5417251148895883,
+          "quantity": 401,
+          "reason": "Cross-Market Arb signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 1.5638999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26CLEPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+          "spread": 0.19,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26CLEPHI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 156.39,
+      "prev_hash": "a2df35a5e22022c3328e73fb943bcbdd28a5a66d665c8eb1f50dbb6a650c071e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5639,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR493",
+      "trade_id": "trade_ff2dba2ab83f",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0493_cc36ba",
+      "username": "ZetaKappa_3225",
+      "verification_notes": "",
+      "why_entered": "Cross-Market Arb triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11516.67,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 156.39,
+    "total_volume": 156.39
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

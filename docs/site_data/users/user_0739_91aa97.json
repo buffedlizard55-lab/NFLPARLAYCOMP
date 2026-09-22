@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0739_91aa97",
+    "username": "SharpLion_1760",
+    "strategy_id": "STRAT_DVOA_VALUE_029_VAR739",
+    "strategy_name": "DVOA Value v739",
+    "strategy_description": "DVOA efficiency vs market (variation)",
+    "strategy_long_explanation": "Uses FTN DVOA, KXNFLGAME. Entry DVOA top 5 vs bottom 5, market <60%. Position 2%. Why work: DVOA more predictive than record. Why fail: DVOA lag. Evidence: DVOA top vs bottom 62% win 2020-2024.",
+    "starting_bankroll": 8824.78,
+    "current_bankroll": 8711.45,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_10bafff28254"
+    ],
+    "total_pnl": -113.33,
+    "roi_percent": -1.28,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 948,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8824.78,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:21Z",
+        "bankroll": 8711.45,
+        "pnl": -113.33
+      }
+    ],
+    "explanation": "User SharpLion_1760 uses DVOA Value v739: DVOA efficiency vs market (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.45,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.03315719875059231,
+      "fees": 8.932,
+      "flags": [],
+      "hash": "31a4e0752e4fd1dc2bf7630f18741c9319cb58d1cf01b4b27a16f5c0aa1d4d36",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.44999999999999996,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 10951.584122736032,
+          "market_ticker": "KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "model_prob": 0.6368428012494077,
+          "quantity": 232,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.0439999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 104.4,
+      "prev_hash": "fed2e2aadef6d791cd6de08b283e27e61bc024c0811c2e6a26002ba26fdacadc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.044,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR739",
+      "trade_id": "trade_10bafff28254",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0739_91aa97",
+      "username": "SharpLion_1760",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.45,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": -0.03315719875059231,
+      "fees": 8.932,
+      "flags": [],
+      "hash": "8ba0938e6ba4ec5009697e14c1bace08b180baf2a149ba52eb499dde8576ed7a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.44999999999999996,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 10951.584122736032,
+          "market_ticker": "KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "model_prob": 0.6368428012494077,
+          "quantity": 232,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.0439999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+      ],
+      "pnl_dollars": -113.332,
+      "position_size_dollars": 104.4,
+      "prev_hash": "1e062181cea65b1e1cce6f0ddff2c16241e8749a07044ddaedb9df233ad16dd0",
+      "result": "LOSS",
+      "roi_percent": -108.56,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.044,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR739",
+      "trade_id": "trade_10bafff28254",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0739_91aa97",
+      "username": "SharpLion_1760",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.45,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.03315719875059231,
+      "fees": 8.932,
+      "flags": [],
+      "hash": "31a4e0752e4fd1dc2bf7630f18741c9319cb58d1cf01b4b27a16f5c0aa1d4d36",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.44999999999999996,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 10951.584122736032,
+          "market_ticker": "KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "model_prob": 0.6368428012494077,
+          "quantity": 232,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.0439999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 104.4,
+      "prev_hash": "fed2e2aadef6d791cd6de08b283e27e61bc024c0811c2e6a26002ba26fdacadc",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.044,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR739",
+      "trade_id": "trade_10bafff28254",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0739_91aa97",
+      "username": "SharpLion_1760",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.45,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": -0.03315719875059231,
+      "fees": 8.932,
+      "flags": [],
+      "hash": "8ba0938e6ba4ec5009697e14c1bace08b180baf2a149ba52eb499dde8576ed7a",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.67,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP28SFNYG",
+          "exec_price": 0.44999999999999996,
+          "implied_prob": 0.67,
+          "liquidity_at_entry": 10951.584122736032,
+          "market_ticker": "KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "model_prob": 0.6368428012494077,
+          "quantity": 232,
+          "reason": "DVOA Value signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.0439999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP28SFNYG.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+          "spread": 0.040000000000000036,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP28SFNYG-NYG-3.5"
+      ],
+      "pnl_dollars": -113.332,
+      "position_size_dollars": 104.4,
+      "prev_hash": "1e062181cea65b1e1cce6f0ddff2c16241e8749a07044ddaedb9df233ad16dd0",
+      "result": "LOSS",
+      "roi_percent": -108.56,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.044,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_DVOA_VALUE_029_VAR739",
+      "trade_id": "trade_10bafff28254",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0739_91aa97",
+      "username": "SharpLion_1760",
+      "verification_notes": "",
+      "why_entered": "DVOA Value triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8824.78,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:21Z",
+      "bankroll": 8711.45,
+      "pnl": -113.33
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.28,
+    "pnl": -113.33,
+    "open_exposure": 104.4,
+    "total_volume": 208.8
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

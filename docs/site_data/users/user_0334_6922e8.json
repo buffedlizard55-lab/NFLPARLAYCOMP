@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0334_6922e8",
+    "username": "RivalrySystem_1377",
+    "strategy_id": "STRAT_REST_003_VAR334",
+    "strategy_name": "Rest & Schedule Difficulty v334",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 8453.81,
+    "current_bankroll": 8342.16,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_e09ac0899fe7"
+    ],
+    "total_pnl": -111.65,
+    "roi_percent": -1.32,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 478,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 8453.81,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:15Z",
+        "bankroll": 8342.16,
+        "pnl": -111.65
+      }
+    ],
+    "explanation": "User RivalrySystem_1377 uses Rest & Schedule Difficulty v334: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.048,
+      "flags": [],
+      "hash": "ffaf6401766ce33fbf442230fb25e3055635eebb11ea3aabc2a1f1b8b7264e67",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.58,
+          "quantity": 192,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.056,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 105.6,
+      "prev_hash": "021c7f46472c2d4765a0a1845566cec145e7c8378d4ba56c52fce87eca37e573",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.056,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR334",
+      "trade_id": "trade_e09ac0899fe7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0334_6922e8",
+      "username": "RivalrySystem_1377",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": 0.08,
+      "fees": 6.048,
+      "flags": [],
+      "hash": "23cf985ec595be714b127483481f72c4de80cf3fe01ad7263ec8c9ccab48ca45",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.58,
+          "quantity": 192,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.056,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": -111.648,
+      "position_size_dollars": 105.6,
+      "prev_hash": "a55990429dc20542cb9309e813a86e81b93e1f028151244c1086de6e9e7afd13",
+      "result": "LOSS",
+      "roi_percent": -105.73,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.056,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR334",
+      "trade_id": "trade_e09ac0899fe7",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0334_6922e8",
+      "username": "RivalrySystem_1377",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 6.048,
+      "flags": [],
+      "hash": "ffaf6401766ce33fbf442230fb25e3055635eebb11ea3aabc2a1f1b8b7264e67",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.58,
+          "quantity": 192,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.056,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 105.6,
+      "prev_hash": "021c7f46472c2d4765a0a1845566cec145e7c8378d4ba56c52fce87eca37e573",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.056,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR334",
+      "trade_id": "trade_e09ac0899fe7",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0334_6922e8",
+      "username": "RivalrySystem_1377",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.55,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:15Z",
+      "expected_value": 0.08,
+      "fees": 6.048,
+      "flags": [],
+      "hash": "23cf985ec595be714b127483481f72c4de80cf3fe01ad7263ec8c9ccab48ca45",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.55,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.58,
+          "quantity": 192,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.056,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": -111.648,
+      "position_size_dollars": 105.6,
+      "prev_hash": "a55990429dc20542cb9309e813a86e81b93e1f028151244c1086de6e9e7afd13",
+      "result": "LOSS",
+      "roi_percent": -105.73,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.056,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR334",
+      "trade_id": "trade_e09ac0899fe7",
+      "updated_at": "2026-09-22T22:52:15Z",
+      "user_id": "user_0334_6922e8",
+      "username": "RivalrySystem_1377",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 8453.81,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:15Z",
+      "bankroll": 8342.16,
+      "pnl": -111.65
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.32,
+    "pnl": -111.65,
+    "open_exposure": 105.6,
+    "total_volume": 211.2
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

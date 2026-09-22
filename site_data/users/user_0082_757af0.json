@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0082_757af0",
+    "username": "BetaTrader_756",
+    "strategy_id": "STRAT_ROOKIE_QB_UNDER_022_VAR82",
+    "strategy_name": "Rookie QB Under vR82",
+    "strategy_description": "Under when rookie QB starting (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, rookie QB starts. Entry rookie QB first 3 starts, total >43, bet under. Position 1.5%. Why work: rookie mistakes, conservative play. Why fail: rookie may be good. Evidence: rookie QB unders 57% first 3 starts 2020-2024.",
+    "starting_bankroll": 9718.7,
+    "current_bankroll": 9677.14,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_8baed49a5bec"
+    ],
+    "total_pnl": -41.56,
+    "roi_percent": -0.43,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 907,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9718.7,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:18Z",
+        "bankroll": 9677.14,
+        "pnl": -41.56
+      }
+    ],
+    "explanation": "User BetaTrader_756 uses Rookie QB Under vR82: Under when rookie QB starting (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.31,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.054199874951405325,
+      "fees": 5.6028,
+      "flags": [],
+      "hash": "2f1c3831a908ec576ec0d4e70b060739d25e7580ef87a48c9dc13039f88803b3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.4958001250485947,
+          "quantity": 116,
+          "reason": "Rookie QB Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.3596000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 35.96,
+      "prev_hash": "93fc4ffc5a48da43854a00b4a96697ecf541bfc8de9d895ffc194ae66aec4c53",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.3596,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ROOKIE_QB_UNDER_022_VAR82",
+      "trade_id": "trade_8baed49a5bec",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0082_757af0",
+      "username": "BetaTrader_756",
+      "verification_notes": "",
+      "why_entered": "Rookie QB Under triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.31,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": -0.054199874951405325,
+      "fees": 5.6028,
+      "flags": [],
+      "hash": "6d3050a06ad410f9d273af324f94044352bafeb6289f0fa0f05025e254a3d695",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.4958001250485947,
+          "quantity": 116,
+          "reason": "Rookie QB Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.3596000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": -41.5628,
+      "position_size_dollars": 35.96,
+      "prev_hash": "46db7eab1d31f65cc52a4e608551f825844baf6f7d65f687ab94cd6bf8c8514d",
+      "result": "LOSS",
+      "roi_percent": -115.58,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.3596,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ROOKIE_QB_UNDER_022_VAR82",
+      "trade_id": "trade_8baed49a5bec",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0082_757af0",
+      "username": "BetaTrader_756",
+      "verification_notes": "",
+      "why_entered": "Rookie QB Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.31,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.054199874951405325,
+      "fees": 5.6028,
+      "flags": [],
+      "hash": "2f1c3831a908ec576ec0d4e70b060739d25e7580ef87a48c9dc13039f88803b3",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.4958001250485947,
+          "quantity": 116,
+          "reason": "Rookie QB Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.3596000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 35.96,
+      "prev_hash": "93fc4ffc5a48da43854a00b4a96697ecf541bfc8de9d895ffc194ae66aec4c53",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.3596,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_ROOKIE_QB_UNDER_022_VAR82",
+      "trade_id": "trade_8baed49a5bec",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0082_757af0",
+      "username": "BetaTrader_756",
+      "verification_notes": "",
+      "why_entered": "Rookie QB Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.31,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:18Z",
+      "expected_value": -0.054199874951405325,
+      "fees": 5.6028,
+      "flags": [],
+      "hash": "6d3050a06ad410f9d273af324f94044352bafeb6289f0fa0f05025e254a3d695",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.4958001250485947,
+          "quantity": 116,
+          "reason": "Rookie QB Under signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.3596000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": -41.5628,
+      "position_size_dollars": 35.96,
+      "prev_hash": "46db7eab1d31f65cc52a4e608551f825844baf6f7d65f687ab94cd6bf8c8514d",
+      "result": "LOSS",
+      "roi_percent": -115.58,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.3596,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_ROOKIE_QB_UNDER_022_VAR82",
+      "trade_id": "trade_8baed49a5bec",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0082_757af0",
+      "username": "BetaTrader_756",
+      "verification_notes": "",
+      "why_entered": "Rookie QB Under triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9718.7,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:18Z",
+      "bankroll": 9677.14,
+      "pnl": -41.56
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.43,
+    "pnl": -41.56,
+    "open_exposure": 35.96,
+    "total_volume": 71.92
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

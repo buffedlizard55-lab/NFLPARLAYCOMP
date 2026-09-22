@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0964_0ab0ea",
+    "username": "WeatherQuantX_2074",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR964",
+    "strategy_name": "Blowout Reversion v964",
+    "strategy_description": "Team blown out last week bounces back ATS (variation)",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 11034.83,
+    "current_bankroll": 10884.31,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_bfafd6a9f7bf"
+    ],
+    "total_pnl": -150.52,
+    "roi_percent": -1.36,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 952,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11034.83,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 10884.31,
+        "pnl": -150.52
+      }
+    ],
+    "explanation": "User WeatherQuantX_2074 uses Blowout Reversion v964: Team blown out last week bounces back ATS (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08466640698836614,
+      "fees": 7.2618,
+      "flags": [],
+      "hash": "08f94b3279a13b3b1f81f42613a73d27ce9d0273aeb6e26f89c5673b6fa919d4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.4946664069883661,
+          "quantity": 247,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4325999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 143.26,
+      "prev_hash": "07041855645995330af98c68aa653cc92fd5eadde13f54b8a530e8bf95d48345",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.4326,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR964",
+      "trade_id": "trade_bfafd6a9f7bf",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0964_0ab0ea",
+      "username": "WeatherQuantX_2074",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.08466640698836614,
+      "fees": 7.2618,
+      "flags": [],
+      "hash": "419b99070994fa5f61a671dbbfe8338e2f0b531ad9ff65a6c603aa0d01f627ae",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.4946664069883661,
+          "quantity": 247,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4325999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": -150.5218,
+      "position_size_dollars": 143.26,
+      "prev_hash": "4cd7cd4c8c493a8558db76eb6f2e7af34f4a22831082bf777e9e0bdf055d3d65",
+      "result": "LOSS",
+      "roi_percent": -105.07,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.4326,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR964",
+      "trade_id": "trade_bfafd6a9f7bf",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0964_0ab0ea",
+      "username": "WeatherQuantX_2074",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08466640698836614,
+      "fees": 7.2618,
+      "flags": [],
+      "hash": "08f94b3279a13b3b1f81f42613a73d27ce9d0273aeb6e26f89c5673b6fa919d4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.4946664069883661,
+          "quantity": 247,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4325999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 143.26,
+      "prev_hash": "07041855645995330af98c68aa653cc92fd5eadde13f54b8a530e8bf95d48345",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.4326,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR964",
+      "trade_id": "trade_bfafd6a9f7bf",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0964_0ab0ea",
+      "username": "WeatherQuantX_2074",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.08466640698836614,
+      "fees": 7.2618,
+      "flags": [],
+      "hash": "419b99070994fa5f61a671dbbfe8338e2f0b531ad9ff65a6c603aa0d01f627ae",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.63,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.58,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 11034.351937636005,
+          "market_ticker": "KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "model_prob": 0.4946664069883661,
+          "quantity": 247,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.4325999999999999,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24CLENYJ-NYJ",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24CLENYJ-NYJ"
+      ],
+      "pnl_dollars": -150.5218,
+      "position_size_dollars": 143.26,
+      "prev_hash": "4cd7cd4c8c493a8558db76eb6f2e7af34f4a22831082bf777e9e0bdf055d3d65",
+      "result": "LOSS",
+      "roi_percent": -105.07,
+      "settlement_price": 0.0,
+      "slippage_assumed": 1.4326,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR964",
+      "trade_id": "trade_bfafd6a9f7bf",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0964_0ab0ea",
+      "username": "WeatherQuantX_2074",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11034.83,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 10884.31,
+      "pnl": -150.52
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -1.36,
+    "pnl": -150.52,
+    "open_exposure": 143.26,
+    "total_volume": 286.52
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

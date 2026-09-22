@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0026_3f3626",
+    "username": "EloHawk_2772",
+    "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+    "strategy_name": "Contrarian Public Fade",
+    "strategy_description": "Fade heavy public side >70% tickets",
+    "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+    "starting_bankroll": 8194.94,
+    "current_bankroll": 8161.32,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_ffc1d106bfe4"
+    ],
+    "total_pnl": -33.62,
+    "roi_percent": -0.41,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 96,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8194.94,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8161.32,
+        "pnl": -33.62
+      }
+    ],
+    "explanation": "User EloHawk_2772 uses Contrarian Public Fade: Fade heavy public side >70% tickets",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10558525937714613,
+      "fees": 2.9638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e215b0b86e5a588f89197b91cffee9702e8224ce91cef49091baf6584a055ae7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP21BUFIND",
+          "exec_price": 0.42,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 14279.859875952292,
+          "market_ticker": "KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "model_prob": 0.7455852593771461,
+          "quantity": 73,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 0.3066,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21BUFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "spread": 0.23000000000000004,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 30.66,
+      "prev_hash": "f2bcd5ad362c0803a077b631331e52b860dfd3f11a77d3a925c06ee670069588",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.3066,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+      "trade_id": "trade_ffc1d106bfe4",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0026_3f3626",
+      "username": "EloHawk_2772",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:42Z",
+      "expected_value": 0.10558525937714613,
+      "fees": 2.9638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "221300ba33461e323c7d2498dad12d4924abe8aaae1d84ce90e65950704e6191",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP21BUFIND",
+          "exec_price": 0.42,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 14279.859875952292,
+          "market_ticker": "KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "model_prob": 0.7455852593771461,
+          "quantity": 73,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 0.3066,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21BUFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "spread": 0.23000000000000004,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+      ],
+      "pnl_dollars": -33.6238,
+      "position_size_dollars": 30.66,
+      "prev_hash": "25defdadb46abfc075c9d952841bda02bb4a288dc1fc04b6cbcfeb7edb69b8ce",
+      "result": "LOSS",
+      "roi_percent": -109.67,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.3066,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+      "trade_id": "trade_ffc1d106bfe4",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0026_3f3626",
+      "username": "EloHawk_2772",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10558525937714613,
+      "fees": 2.9638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "e215b0b86e5a588f89197b91cffee9702e8224ce91cef49091baf6584a055ae7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP21BUFIND",
+          "exec_price": 0.42,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 14279.859875952292,
+          "market_ticker": "KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "model_prob": 0.7455852593771461,
+          "quantity": 73,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 0.3066,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21BUFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "spread": 0.23000000000000004,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 30.66,
+      "prev_hash": "f2bcd5ad362c0803a077b631331e52b860dfd3f11a77d3a925c06ee670069588",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.3066,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+      "trade_id": "trade_ffc1d106bfe4",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0026_3f3626",
+      "username": "EloHawk_2772",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:42Z",
+      "expected_value": 0.10558525937714613,
+      "fees": 2.9638,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 23.00% for KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "221300ba33461e323c7d2498dad12d4924abe8aaae1d84ce90e65950704e6191",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.42,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP21BUFIND",
+          "exec_price": 0.42,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 14279.859875952292,
+          "market_ticker": "KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "model_prob": 0.7455852593771461,
+          "quantity": 73,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 0.3066,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21BUFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+          "spread": 0.23000000000000004,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP21BUFIND-IND-3.5"
+      ],
+      "pnl_dollars": -33.6238,
+      "position_size_dollars": 30.66,
+      "prev_hash": "25defdadb46abfc075c9d952841bda02bb4a288dc1fc04b6cbcfeb7edb69b8ce",
+      "result": "LOSS",
+      "roi_percent": -109.67,
+      "settlement_price": 0.0,
+      "slippage_assumed": 0.3066,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027",
+      "trade_id": "trade_ffc1d106bfe4",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0026_3f3626",
+      "username": "EloHawk_2772",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8194.94,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8161.32,
+      "pnl": -33.62
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.41,
+    "pnl": -33.62,
+    "open_exposure": 30.66,
+    "total_volume": 61.32
+  },
+  "updated_at": "2026-09-22T22:52:45Z"
+}

@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0297_a396e9",
+    "username": "PropKappa_917",
+    "strategy_id": "STRAT_TD_ANYTIME_011_VAR297",
+    "strategy_name": "Anytime TD Value v297",
+    "strategy_description": "Player anytime TD market when odds > model (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD markets, player usage, red zone opportunities. Entry when model prob > market +7%. Position 1% bankroll. Why work: public overvalues big names, undervalues role players. Why fail: variance high. Evidence: 2023 anytime TD 52% model edge n=200.",
+    "starting_bankroll": 9277.21,
+    "current_bankroll": 9399.13,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_f8895e9d5ae0"
+    ],
+    "total_pnl": 121.92,
+    "roi_percent": 1.31,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 22,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9277.21,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 9399.13,
+        "pnl": 121.92
+      }
+    ],
+    "explanation": "User PropKappa_917 uses Anytime TD Value v297: Player anytime TD market when odds > model (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.004070105367994792,
+      "fees": 9.177,
+      "flags": [],
+      "hash": "0aadec382414292309b4ba2b273bddbf93cdce5c594fea2bb4fb6f27b4fc17bf",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6559298946320052,
+          "quantity": 285,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.5390000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.9,
+      "prev_hash": "223fa16e6bd749fc0892fd9447f549f2b78d8ed8c759a68793e597977197def8",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.539,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR297",
+      "trade_id": "trade_f8895e9d5ae0",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0297_a396e9",
+      "username": "PropKappa_917",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": -0.004070105367994792,
+      "fees": 9.177,
+      "flags": [],
+      "hash": "0865e392af33b620e783517f17494032416aa2dc09097afe13bcb09db45d4c6b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6559298946320052,
+          "quantity": 285,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.5390000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": 121.923,
+      "position_size_dollars": 153.9,
+      "prev_hash": "2cddbc906dc2360dc433c96185be709bb68f930d59b70d7ecd7515292d151fbc",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.539,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR297",
+      "trade_id": "trade_f8895e9d5ae0",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0297_a396e9",
+      "username": "PropKappa_917",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.004070105367994792,
+      "fees": 9.177,
+      "flags": [],
+      "hash": "0aadec382414292309b4ba2b273bddbf93cdce5c594fea2bb4fb6f27b4fc17bf",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6559298946320052,
+          "quantity": 285,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.5390000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 153.9,
+      "prev_hash": "223fa16e6bd749fc0892fd9447f549f2b78d8ed8c759a68793e597977197def8",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.539,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR297",
+      "trade_id": "trade_f8895e9d5ae0",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0297_a396e9",
+      "username": "PropKappa_917",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.54,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": -0.004070105367994792,
+      "fees": 9.177,
+      "flags": [],
+      "hash": "0865e392af33b620e783517f17494032416aa2dc09097afe13bcb09db45d4c6b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.55,
+          "bid_at_entry": 0.46,
+          "entry_price": 0.66,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.54,
+          "implied_prob": 0.66,
+          "liquidity_at_entry": 4893.635618959278,
+          "market_ticker": "KXNFLGAME-26SEP20DETNO-NO",
+          "model_prob": 0.6559298946320052,
+          "quantity": 285,
+          "reason": "Anytime TD Value signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.5390000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20DETNO-NO",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20DETNO-NO"
+      ],
+      "pnl_dollars": 121.923,
+      "position_size_dollars": 153.9,
+      "prev_hash": "2cddbc906dc2360dc433c96185be709bb68f930d59b70d7ecd7515292d151fbc",
+      "result": "WIN",
+      "roi_percent": 79.22,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.539,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_ANYTIME_011_VAR297",
+      "trade_id": "trade_f8895e9d5ae0",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0297_a396e9",
+      "username": "PropKappa_917",
+      "verification_notes": "",
+      "why_entered": "Anytime TD Value triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9277.21,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 9399.13,
+      "pnl": 121.92
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.31,
+    "pnl": 121.92,
+    "open_exposure": 153.9,
+    "total_volume": 307.8
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

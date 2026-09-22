@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0096_bdcb3f",
+    "username": "WeatherHawk_8365",
+    "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR96",
+    "strategy_name": "Contrarian Public Fade vR96",
+    "strategy_description": "Fade heavy public side >70% tickets (variation)",
+    "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+    "starting_bankroll": 8342.09,
+    "current_bankroll": 8342.09,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 92,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8342.09,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User WeatherHawk_8365 uses Contrarian Public Fade vR96: Fade heavy public side >70% tickets (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8342.09,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:45Z"
+}

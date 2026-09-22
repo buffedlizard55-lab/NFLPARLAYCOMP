@@ -1,0 +1,361 @@
+{
+  "user": {
+    "user_id": "user_0820_d89862",
+    "username": "TDFalcon_364",
+    "strategy_id": "STRAT_TD_CORRELATION_034_VAR820",
+    "strategy_name": "TD + Game Correlation v820",
+    "strategy_description": "Anytime TD + team win correlation parlay (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD + KXNFLGAME same team. Entry star RB/WR TD + team win, correlation 0.65, product pricing assumes 0.5. Position 0.5% parlay. Why work: TD correlates with win. Why fail: correlation priced. Evidence: TD+win 38% vs 32% implied.",
+    "starting_bankroll": 9792.47,
+    "current_bankroll": 10006.46,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_d876a652afbf"
+    ],
+    "total_pnl": 213.99,
+    "roi_percent": 2.19,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 11,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9792.47,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 10006.46,
+        "pnl": 213.99
+      }
+    ],
+    "explanation": "User TDFalcon_364 uses TD + Game Correlation v820: Anytime TD + team win correlation parlay (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06762313293000155,
+      "fees": 16.107,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $167.7 >10% of liquidity $848.528147573114 for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2e8ac112fe9d057e4850b6818bd0c10b79a8f6c9a1e4f4187af91bce7aa5e0e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.36237686706999844,
+          "quantity": 390,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.5990000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 159.9,
+      "prev_hash": "d9248187ab19a993d12c0d778e102b96674c6fcdfc1630510f158e8dd6a13c0c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.599,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR820",
+      "trade_id": "trade_d876a652afbf",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0820_d89862",
+      "username": "TDFalcon_364",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": -0.06762313293000155,
+      "fees": 16.107,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $167.7 >10% of liquidity $848.528147573114 for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "de73872a5e0dc3b8dfc18d1ead25c8ba636520bb1dcb92a5ccbda07c8f5ac7a6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.36237686706999844,
+          "quantity": 390,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.5990000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": 213.993,
+      "position_size_dollars": 159.9,
+      "prev_hash": "62a22228544afd72c3a233a9d648dc9f6906a9b835cd5cb3c05e8b4a944f3896",
+      "result": "WIN",
+      "roi_percent": 133.83,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.599,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR820",
+      "trade_id": "trade_d876a652afbf",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0820_d89862",
+      "username": "TDFalcon_364",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06762313293000155,
+      "fees": 16.107,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $167.7 >10% of liquidity $848.528147573114 for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "2e8ac112fe9d057e4850b6818bd0c10b79a8f6c9a1e4f4187af91bce7aa5e0e9",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.36237686706999844,
+          "quantity": 390,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.5990000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 159.9,
+      "prev_hash": "d9248187ab19a993d12c0d778e102b96674c6fcdfc1630510f158e8dd6a13c0c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.599,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR820",
+      "trade_id": "trade_d876a652afbf",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0820_d89862",
+      "username": "TDFalcon_364",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.41,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": -0.06762313293000155,
+      "fees": 16.107,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $167.7 >10% of liquidity $848.528147573114 for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "de73872a5e0dc3b8dfc18d1ead25c8ba636520bb1dcb92a5ccbda07c8f5ac7a6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.59,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.41000000000000003,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 848.528147573114,
+          "market_ticker": "KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "model_prob": 0.36237686706999844,
+          "quantity": 390,
+          "reason": "TD + Game Correlation signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "NO",
+          "slippage": 1.5990000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP27GBARI-ARI-3.5"
+      ],
+      "pnl_dollars": 213.993,
+      "position_size_dollars": 159.9,
+      "prev_hash": "62a22228544afd72c3a233a9d648dc9f6906a9b835cd5cb3c05e8b4a944f3896",
+      "result": "WIN",
+      "roi_percent": 133.83,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.599,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TD_CORRELATION_034_VAR820",
+      "trade_id": "trade_d876a652afbf",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0820_d89862",
+      "username": "TDFalcon_364",
+      "verification_notes": "",
+      "why_entered": "TD + Game Correlation triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9792.47,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 10006.46,
+      "pnl": 213.99
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 2.19,
+    "pnl": 213.99,
+    "open_exposure": 159.9,
+    "total_volume": 319.8
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

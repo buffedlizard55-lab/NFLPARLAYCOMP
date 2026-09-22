@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0016_252b32",
+    "username": "AlphaLion_1271",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017",
+    "strategy_name": "Blowout Reversion",
+    "strategy_description": "Team blown out last week bounces back ATS",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 8079.85,
+    "current_bankroll": 8079.85,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 95,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8079.85,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User AlphaLion_1271 uses Blowout Reversion: Team blown out last week bounces back ATS",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8079.85,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

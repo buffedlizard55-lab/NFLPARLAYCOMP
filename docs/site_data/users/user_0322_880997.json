@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0322_880997",
+    "username": "RivalryEdge_7274",
+    "strategy_id": "STRAT_REST_003_VAR322",
+    "strategy_name": "Rest & Schedule Difficulty v322",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 9420.63,
+    "current_bankroll": 9263.18,
+    "open_trades": [
+      "trade_48c37e2ced45"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 302,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 9420.63,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RivalryEdge_7274 uses Rest & Schedule Difficulty v322: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.67,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.4285,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $141.0 >10% of liquidity $1042.30234828224 for KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "328ab7d7a727fb9690cbbfa18b24fb9c54ee286875995dde34d9f3130182dab1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.6,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.67,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1042.30234828224,
+          "market_ticker": "KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "model_prob": 0.58,
+          "quantity": 235,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.5745,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 157.45,
+      "prev_hash": "4d7c7d3b00e48e3c4cefa531ffb76497872c93e89526265792776f2040ba1a53",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5745,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR322",
+      "trade_id": "trade_48c37e2ced45",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0322_880997",
+      "username": "RivalryEdge_7274",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.67,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.4285,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Position $141.0 >10% of liquidity $1042.30234828224 for KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "severity": "medium",
+          "trade_id": null
+        }
+      ],
+      "hash": "328ab7d7a727fb9690cbbfa18b24fb9c54ee286875995dde34d9f3130182dab1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.67,
+          "bid_at_entry": 0.6,
+          "entry_price": 0.6,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP22KCBAL",
+          "exec_price": 0.67,
+          "implied_prob": 0.6,
+          "liquidity_at_entry": 1042.30234828224,
+          "market_ticker": "KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "model_prob": 0.58,
+          "quantity": 235,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.5745,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22KCBAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP22KCBAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 157.45,
+      "prev_hash": "4d7c7d3b00e48e3c4cefa531ffb76497872c93e89526265792776f2040ba1a53",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.5745,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR322",
+      "trade_id": "trade_48c37e2ced45",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0322_880997",
+      "username": "RivalryEdge_7274",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 9420.63,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 157.45,
+    "total_volume": 157.45
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

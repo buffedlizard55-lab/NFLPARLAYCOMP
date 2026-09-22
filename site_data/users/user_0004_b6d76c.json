@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0004_b6d76c",
+    "username": "AlphaSigma_959",
+    "strategy_id": "STRAT_INJURY_FADE_005",
+    "strategy_name": "Injury Impact Fade",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 11295.68,
+    "current_bankroll": 11104.58,
+    "open_trades": [
+      "trade_90d8cbe758d6"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 23,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11295.68,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User AlphaSigma_959 uses Injury Impact Fade: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:13Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.35,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.843,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP26SFIND-IND",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ba14823cd6850d1dff89c8c6c8e2a911f857b1315659ca24decebd309745ab40",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.35,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 7732.806196232371,
+          "market_ticker": "KXNFLGAME-26SEP26SFIND-IND",
+          "model_prob": 0.62,
+          "quantity": 546,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.911,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26SFIND-IND",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26SFIND-IND"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26SFIND-IND",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26SFIND-IND"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 191.1,
+      "prev_hash": "9ae07b63c8cedd58c05aac03daf69d528ec621146cbf222db6e3d4c48732966e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.911,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005",
+      "trade_id": "trade_90d8cbe758d6",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0004_b6d76c",
+      "username": "AlphaSigma_959",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:13Z",
+      "entry_price_combined": 0.35,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 24.843,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:13Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 11.00% for KXNFLGAME-26SEP26SFIND-IND",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ba14823cd6850d1dff89c8c6c8e2a911f857b1315659ca24decebd309745ab40",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.54,
+          "bid_at_entry": 0.65,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:13Z",
+          "event_ticker": "KXNFLGAME-26SEP26SFIND",
+          "exec_price": 0.35,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 7732.806196232371,
+          "market_ticker": "KXNFLGAME-26SEP26SFIND-IND",
+          "model_prob": 0.62,
+          "quantity": 546,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.911,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26SFIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26SFIND-IND",
+          "spread": 0.10999999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26SFIND-IND"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26SFIND-IND",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26SFIND-IND"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 191.1,
+      "prev_hash": "9ae07b63c8cedd58c05aac03daf69d528ec621146cbf222db6e3d4c48732966e",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.911,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005",
+      "trade_id": "trade_90d8cbe758d6",
+      "updated_at": "2026-09-22T22:52:13Z",
+      "user_id": "user_0004_b6d76c",
+      "username": "AlphaSigma_959",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11295.68,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 191.1,
+    "total_volume": 191.1
+  },
+  "updated_at": "2026-09-22T22:52:13Z"
+}

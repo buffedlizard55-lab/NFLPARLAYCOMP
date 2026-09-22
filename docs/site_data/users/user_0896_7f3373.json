@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0896_7f3373",
+    "username": "ValueAlphaX_5140",
+    "strategy_id": "STRAT_WIN_STREAK_FADE_018_VAR896",
+    "strategy_name": "Win Streak Fade v896",
+    "strategy_description": "Fade teams on 4+ win streak vs market (variation)",
+    "strategy_long_explanation": "Uses win streak, KXNFLGAME. Entry team 4+ win streak, moneyline >0.70, bet NO. Position 1%. Why work: market overvalues streak, regression. Why fail: good teams keep winning. Evidence: 4+ streak teams win next 58% vs 70% implied (fade profitable).",
+    "starting_bankroll": 10668.27,
+    "current_bankroll": 10668.27,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 821,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10668.27,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ValueAlphaX_5140 uses Win Streak Fade v896: Fade teams on 4+ win streak vs market (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10668.27,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

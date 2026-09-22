@@ -1,0 +1,71 @@
+name: Competition simulation cycle
+
+# Paper-trading competition cycle: runs strategies over verified market data,
+# simulates execution, settles trades, updates leaderboard, builds site data.
+# No real money, no order placement, read-only market data + simulated trades.
+
+on:
+  workflow_dispatch:
+    inputs:
+      users:
+        description: "Number of users (5..1000)"
+        required: false
+        default: "100"
+      clear:
+        description: "Clear ledger and users first (true/false)"
+        required: false
+        default: "false"
+  schedule:
+    # Run after data collection cycles
+    - cron: "22 6,12,18 * * *"
+    - cron: "52 22 * * 4,6,7,1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: simulate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run competition cycle
+        run: |
+          USERS="${{ github.event.inputs.users || '100' }}"
+          CLEAR_FLAG=""
+          if [ "${{ github.event.inputs.clear }}" = "true" ]; then
+            CLEAR_FLAG="--clear"
+          fi
+          python3 scripts/simulate.py --users "$USERS" $CLEAR_FLAG
+
+      - name: Verify ledger and data integrity
+        run: |
+          python3 scripts/verify.py
+          python3 -m unittest discover -s tests -v
+
+      - name: Build site data and docs site
+        run: |
+          python3 scripts/build_site.py
+
+      - name: Commit competition state and site data
+        run: |
+          git config user.name "parlaycomp-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/competition site_data docs
+          if git diff --cached --quiet; then
+            echo "No new competition data to commit"
+          else
+            git commit -m "competition: simulation cycle $(date -u +%Y%m%dT%H%M%SZ) [simulator]"
+            git push
+          fi

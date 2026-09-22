@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0714_ef8850",
+    "username": "SecondSigma_2337",
+    "strategy_id": "STRAT_INJURY_FADE_005_VAR714",
+    "strategy_name": "Injury Impact Fade v714",
+    "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+    "starting_bankroll": 11131.0,
+    "current_bankroll": 10708.08,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_a74d0b22c3a0"
+    ],
+    "total_pnl": -422.92,
+    "roi_percent": -3.8,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 982,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11131.0,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:21Z",
+        "bankroll": 10708.08,
+        "pnl": -422.92
+      }
+    ],
+    "explanation": "User SecondSigma_2337 uses Injury Impact Fade v714: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 30.9414,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b9101cae4f34de25c2aa4e010f42d9674f46c1e01e5087c4e91af4940923d5de",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.62,
+          "quantity": 834,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.9198,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 391.98,
+      "prev_hash": "ff545a7537476002e3d8d7d8ba52d31796a585ad3164fa5bf2bf47c4d675cd42",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.9198,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR714",
+      "trade_id": "trade_a74d0b22c3a0",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0714_ef8850",
+      "username": "SecondSigma_2337",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.12,
+      "fees": 30.9414,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "3639e5f694417547b616d988b49336ab07deccaf3774234c9a9f16d020c04dc8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.62,
+          "quantity": 834,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.9198,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": -422.9214,
+      "position_size_dollars": 391.98,
+      "prev_hash": "7ef69a10383af07851b0403316ebe2f86d84d6230ba954f90ef764232c45bff6",
+      "result": "LOSS",
+      "roi_percent": -107.89,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.9198,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR714",
+      "trade_id": "trade_a74d0b22c3a0",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0714_ef8850",
+      "username": "SecondSigma_2337",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.12,
+      "fees": 30.9414,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "b9101cae4f34de25c2aa4e010f42d9674f46c1e01e5087c4e91af4940923d5de",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.62,
+          "quantity": 834,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.9198,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 391.98,
+      "prev_hash": "ff545a7537476002e3d8d7d8ba52d31796a585ad3164fa5bf2bf47c4d675cd42",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.9198,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR714",
+      "trade_id": "trade_a74d0b22c3a0",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0714_ef8850",
+      "username": "SecondSigma_2337",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.47,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:21Z",
+      "expected_value": 0.12,
+      "fees": 30.9414,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "3639e5f694417547b616d988b49336ab07deccaf3774234c9a9f16d020c04dc8",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.7,
+          "bid_at_entry": 0.53,
+          "entry_price": 0.4,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP27GBARI",
+          "exec_price": 0.47,
+          "implied_prob": 0.4,
+          "liquidity_at_entry": 4012.657549388407,
+          "market_ticker": "KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "model_prob": 0.62,
+          "quantity": 834,
+          "reason": "QB1 OUT, market hasn't moved",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 3.9198,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP27GBARI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP27GBARI-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP27GBARI-O45.5"
+      ],
+      "pnl_dollars": -422.9214,
+      "position_size_dollars": 391.98,
+      "prev_hash": "7ef69a10383af07851b0403316ebe2f86d84d6230ba954f90ef764232c45bff6",
+      "result": "LOSS",
+      "roi_percent": -107.89,
+      "settlement_price": 0.0,
+      "slippage_assumed": 3.9198,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_INJURY_FADE_005_VAR714",
+      "trade_id": "trade_a74d0b22c3a0",
+      "updated_at": "2026-09-22T22:52:21Z",
+      "user_id": "user_0714_ef8850",
+      "username": "SecondSigma_2337",
+      "verification_notes": "",
+      "why_entered": "QB OUT not fully priced",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11131.0,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:21Z",
+      "bankroll": 10708.08,
+      "pnl": -422.92
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -3.8,
+    "pnl": -422.92,
+    "open_exposure": 391.98,
+    "total_volume": 783.96
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

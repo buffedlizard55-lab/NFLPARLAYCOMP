@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0476_8c068f",
+    "username": "OverEagle_2081",
+    "strategy_id": "STRAT_ALT_LINE_VALUE_024_VAR476",
+    "strategy_name": "Alt Line Value v476",
+    "strategy_description": "Alt spread lines mispriced vs main (variation)",
+    "strategy_long_explanation": "Uses KXNFLSPREAD alt lines, compares to main line price. Entry alt line -2.5 vs main -6.5 with price diff > implied. Position 1%. Why work: alt lines less liquid, mispriced. Why fail: correlation. Evidence: alt line arb 3% of time 2025.",
+    "starting_bankroll": 9725.13,
+    "current_bankroll": 9725.13,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 474,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9725.13,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User OverEagle_2081 uses Alt Line Value v476: Alt spread lines mispriced vs main (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9725.13,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

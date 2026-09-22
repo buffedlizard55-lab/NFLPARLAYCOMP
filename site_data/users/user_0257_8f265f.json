@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0257_8f265f",
+    "username": "DvoaTrader_4905",
+    "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR257",
+    "strategy_name": "Implied Probability Value v257",
+    "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+    "starting_bankroll": 8751.34,
+    "current_bankroll": 8289.79,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_00e62c2ea077"
+    ],
+    "total_pnl": -461.55,
+    "roi_percent": -5.27,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 983,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8751.34,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 8289.79,
+        "pnl": -461.55
+      }
+    ],
+    "explanation": "User DvoaTrader_4905 uses Implied Probability Value v257: Buys YES when market implied prob < model prob by 5%+ edge (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.13017945052218943,
+      "fees": 12.8296,
+      "flags": [],
+      "hash": "142c2d469ecaa2e3861e53381ee23b23d6700cd03bc6ab84638e284ccab749f7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5801794505221894,
+          "quantity": 632,
+          "reason": "Edge 13.02% model 58.02% vs market 45.00%",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 4.4872000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 448.72,
+      "prev_hash": "c54e8d4f6fdc622126543b753b6070f7dd9ecd24d70de7e8097637450b19315c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.4872,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR257",
+      "trade_id": "trade_00e62c2ea077",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0257_8f265f",
+      "username": "DvoaTrader_4905",
+      "verification_notes": "",
+      "why_entered": "Edge 13.02% model 58.02% vs market 45.00%",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.13017945052218943,
+      "fees": 12.8296,
+      "flags": [],
+      "hash": "b0681a2dd385412522a961803af4771e46f304e4a0e20e5c0acc3d126e49ed08",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5801794505221894,
+          "quantity": 632,
+          "reason": "Edge 13.02% model 58.02% vs market 45.00%",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 4.4872000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": -461.5496,
+      "position_size_dollars": 448.72,
+      "prev_hash": "64ce5a47b0e42bbaee1c8aa5e30abd7894403f45d23345d716a8cbf11804988e",
+      "result": "LOSS",
+      "roi_percent": -102.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.4872,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR257",
+      "trade_id": "trade_00e62c2ea077",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0257_8f265f",
+      "username": "DvoaTrader_4905",
+      "verification_notes": "",
+      "why_entered": "Edge 13.02% model 58.02% vs market 45.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.13017945052218943,
+      "fees": 12.8296,
+      "flags": [],
+      "hash": "142c2d469ecaa2e3861e53381ee23b23d6700cd03bc6ab84638e284ccab749f7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5801794505221894,
+          "quantity": 632,
+          "reason": "Edge 13.02% model 58.02% vs market 45.00%",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 4.4872000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 448.72,
+      "prev_hash": "c54e8d4f6fdc622126543b753b6070f7dd9ecd24d70de7e8097637450b19315c",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 4.4872,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR257",
+      "trade_id": "trade_00e62c2ea077",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0257_8f265f",
+      "username": "DvoaTrader_4905",
+      "verification_notes": "",
+      "why_entered": "Edge 13.02% model 58.02% vs market 45.00%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.13017945052218943,
+      "fees": 12.8296,
+      "flags": [],
+      "hash": "b0681a2dd385412522a961803af4771e46f304e4a0e20e5c0acc3d126e49ed08",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.45,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP24CLENYJ",
+          "exec_price": 0.71,
+          "implied_prob": 0.45,
+          "liquidity_at_entry": 6174.491940797606,
+          "market_ticker": "KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "model_prob": 0.5801794505221894,
+          "quantity": 632,
+          "reason": "Edge 13.02% model 58.02% vs market 45.00%",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 4.4872000000000005,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24CLENYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP24CLENYJ-O45.5"
+      ],
+      "pnl_dollars": -461.5496,
+      "position_size_dollars": 448.72,
+      "prev_hash": "64ce5a47b0e42bbaee1c8aa5e30abd7894403f45d23345d716a8cbf11804988e",
+      "result": "LOSS",
+      "roi_percent": -102.86,
+      "settlement_price": 0.0,
+      "slippage_assumed": 4.4872,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001_VAR257",
+      "trade_id": "trade_00e62c2ea077",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0257_8f265f",
+      "username": "DvoaTrader_4905",
+      "verification_notes": "",
+      "why_entered": "Edge 13.02% model 58.02% vs market 45.00%",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8751.34,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 8289.79,
+      "pnl": -461.55
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -5.27,
+    "pnl": -461.55,
+    "open_exposure": 448.72,
+    "total_volume": 897.44
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

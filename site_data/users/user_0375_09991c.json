@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0375_09991c",
+    "username": "InjuryKappa_4781",
+    "strategy_id": "STRAT_FIRST_TD_LONGSHOT_035_VAR375",
+    "strategy_name": "First TD Longshot Value v375",
+    "strategy_description": "First TD market longshots overvalued (variation)",
+    "strategy_long_explanation": "Uses KXNFLFIRSTTD, longshot >0.15. Entry first TD market with 10+ players, longshot 15%+ but usage suggests 18%. Position 0.5%. Why work: public bets big names, value on role players. Why fail: variance. Evidence: longshot first TD 17% actual vs 13% implied.",
+    "starting_bankroll": 9556.81,
+    "current_bankroll": 9556.81,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 389,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9556.81,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User InjuryKappa_4781 uses First TD Longshot Value v375: First TD market longshots overvalued (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9556.81,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0269_b4ef3d",
+    "username": "ParlayEagle_4028",
+    "strategy_id": "STRAT_REST_003_VAR269",
+    "strategy_name": "Rest & Schedule Difficulty v269",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 11688.03,
+    "current_bankroll": 11436.57,
+    "open_trades": [
+      "trade_cdc5dd7bc623"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 256,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 11688.03,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ParlayEagle_4028 uses Rest & Schedule Difficulty v269: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.66,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.0678,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 19.00% for KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ec97d317e99e6c86b388d6fb648068a4ad6457dec4fd93610f7899e9727e331c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.66,
+          "bid_at_entry": 0.47,
+          "entry_price": 0.46,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.66,
+          "implied_prob": 0.46,
+          "liquidity_at_entry": 19254.78533981367,
+          "market_ticker": "KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "model_prob": 0.58,
+          "quantity": 381,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.5146,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "spread": 0.19000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20DETNO-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20DETNO-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20DETNO-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 251.46,
+      "prev_hash": "8eaae047bf1d4c01918b147e95b3dbbf419ca8d14ea79054e2464a2602c51f54",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5146,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR269",
+      "trade_id": "trade_cdc5dd7bc623",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0269_b4ef3d",
+      "username": "ParlayEagle_4028",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.66,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.0678,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 19.00% for KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "ec97d317e99e6c86b388d6fb648068a4ad6457dec4fd93610f7899e9727e331c",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.66,
+          "bid_at_entry": 0.47,
+          "entry_price": 0.46,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP20DETNO",
+          "exec_price": 0.66,
+          "implied_prob": 0.46,
+          "liquidity_at_entry": 19254.78533981367,
+          "market_ticker": "KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "model_prob": 0.58,
+          "quantity": 381,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.5146,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20DETNO.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20DETNO-O45.5",
+          "spread": 0.19000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP20DETNO-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP20DETNO-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP20DETNO-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 251.46,
+      "prev_hash": "8eaae047bf1d4c01918b147e95b3dbbf419ca8d14ea79054e2464a2602c51f54",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.5146,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR269",
+      "trade_id": "trade_cdc5dd7bc623",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0269_b4ef3d",
+      "username": "ParlayEagle_4028",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 11688.03,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 251.46,
+    "total_volume": 251.46
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

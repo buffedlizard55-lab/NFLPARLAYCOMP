@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0622_8468e2",
+    "username": "QuantWolf_4379",
+    "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR622",
+    "strategy_name": "Short Week Under v622",
+    "strategy_description": "Thursday games under due to short prep (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, TNF games. Entry Thursday game total >45, bet under. Position 1.5%. Why work: short week hurts offense more. Why fail: totals already lower. Evidence: TNF under 54% 2018-2024.",
+    "starting_bankroll": 9502.1,
+    "current_bankroll": 9373.59,
+    "open_trades": [
+      "trade_423970d35eb3"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 595,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9502.1,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User QuantWolf_4379 uses Short Week Under v622: Thursday games under due to short prep (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.012137264944563464,
+      "fees": 3.6743,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "47ef92eaae3160c6285463131ac4aabc2b811e2df9a6d22b8150ee8760dfc88b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6221372649445635,
+          "quantity": 181,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2851000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 128.51,
+      "prev_hash": "9f4146a34ae01c4718b2933e97931e28402ba6c7108c95882a0d97a82c5bee35",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2851,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR622",
+      "trade_id": "trade_423970d35eb3",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0622_8468e2",
+      "username": "QuantWolf_4379",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.71,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.012137264944563464,
+      "fees": 3.6743,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:17Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 17.00% for KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "47ef92eaae3160c6285463131ac4aabc2b811e2df9a6d22b8150ee8760dfc88b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.71,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.61,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP23DALPHI",
+          "exec_price": 0.71,
+          "implied_prob": 0.61,
+          "liquidity_at_entry": 9911.31752180285,
+          "market_ticker": "KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "model_prob": 0.6221372649445635,
+          "quantity": 181,
+          "reason": "Short Week Under signal",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.2851000000000001,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23DALPHI.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+          "spread": 0.16999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP23DALPHI-PHI-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 128.51,
+      "prev_hash": "9f4146a34ae01c4718b2933e97931e28402ba6c7108c95882a0d97a82c5bee35",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.2851,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR622",
+      "trade_id": "trade_423970d35eb3",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0622_8468e2",
+      "username": "QuantWolf_4379",
+      "verification_notes": "",
+      "why_entered": "Short Week Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9502.1,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 128.51,
+    "total_volume": 128.51
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

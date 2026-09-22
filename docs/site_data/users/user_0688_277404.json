@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0688_277404",
+    "username": "RookieWolf_2723",
+    "strategy_id": "STRAT_SHORT_WEEK_UNDER_019_VAR688",
+    "strategy_name": "Short Week Under v688",
+    "strategy_description": "Thursday games under due to short prep (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, TNF games. Entry Thursday game total >45, bet under. Position 1.5%. Why work: short week hurts offense more. Why fail: totals already lower. Evidence: TNF under 54% 2018-2024.",
+    "starting_bankroll": 9322.89,
+    "current_bankroll": 9322.89,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 653,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 9322.89,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User RookieWolf_2723 uses Short Week Under v688: Thursday games under due to short prep (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 9322.89,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

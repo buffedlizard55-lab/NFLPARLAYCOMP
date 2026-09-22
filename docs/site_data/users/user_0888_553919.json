@@ -1,0 +1,457 @@
+{
+  "user": {
+    "user_id": "user_0888_553919",
+    "username": "UnderSigma_9418",
+    "strategy_id": "STRAT_TOTAL_DOG_007_VAR888",
+    "strategy_name": "Total + Underdog Correlation v888",
+    "strategy_description": "Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline (underdog) + KXNFLTOTAL under\nEntry: underdog with top-10 defense vs top offense, total >48, underdog price 0.30-0.45\nAvoid: high total already underpriced, indoor shootouts\nPosition size: 1% bankroll\nEV: defensive underdogs win + under hits 31% vs market 26% implied\nWhy work: Defensive game script favors underdog keeping it low scoring\nWhy fail: Underdog may need shootout to win\nEvidence: 2018-2023, 67 games matching, 31% hit\nSources: ESPN team stats, Kalshi totals\n            ",
+    "starting_bankroll": 11290.57,
+    "current_bankroll": 11224.1,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_18245f6e7952"
+    ],
+    "total_pnl": -66.47,
+    "roi_percent": -0.59,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 930,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11290.57,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:22Z",
+        "bankroll": 11224.1,
+        "pnl": -66.47
+      }
+    ],
+    "explanation": "User UnderSigma_9418 uses Total + Underdog Correlation v888: Underdog moneyline + Under total when underdog is defensive team (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.2139,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 15.1324,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "726d0003aeea848d925451bef8fddd19393ee739501056ddc82b9cd8ecdedaf7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.38,
+          "quantity": 275,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.8975,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.57,
+          "quantity": 205,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.6355000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 253.3,
+      "prev_hash": "08eda3b47489711915b22e46c1fed65823ecdc543b7220cca2d2e5288abbd101",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.533,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR888",
+      "trade_id": "trade_18245f6e7952",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0888_553919",
+      "username": "UnderSigma_9418",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.2139,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.04,
+      "fees": 15.1324,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9517773df03ff4f21726fc619096247d9be6d285affd01368b0ef80cc5701d8b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.38,
+          "quantity": 275,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.8975,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.57,
+          "quantity": 205,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.6355000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": -66.4684,
+      "position_size_dollars": 253.3,
+      "prev_hash": "365339e9154513ede0dd0046b3a573968d90be9b0edd9ddec9506caaef3377e0",
+      "result": "LOSS",
+      "roi_percent": -129.48,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.533,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR888",
+      "trade_id": "trade_18245f6e7952",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0888_553919",
+      "username": "UnderSigma_9418",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.2139,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.04,
+      "fees": 15.1324,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "726d0003aeea848d925451bef8fddd19393ee739501056ddc82b9cd8ecdedaf7",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.38,
+          "quantity": 275,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.8975,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.57,
+          "quantity": 205,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.6355000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 253.3,
+      "prev_hash": "08eda3b47489711915b22e46c1fed65823ecdc543b7220cca2d2e5288abbd101",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.533,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR888",
+      "trade_id": "trade_18245f6e7952",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0888_553919",
+      "username": "UnderSigma_9418",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.2139,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:22Z",
+      "expected_value": 0.04,
+      "fees": 15.1324,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Cross-market correlation: underdog + under",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:18Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP21LACWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9517773df03ff4f21726fc619096247d9be6d285affd01368b0ef80cc5701d8b",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.54,
+          "entry_price": 0.41,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.69,
+          "implied_prob": 0.41,
+          "liquidity_at_entry": 6749.699239672899,
+          "market_ticker": "KXNFLGAME-26SEP21LACWAS-WAS",
+          "model_prob": 0.38,
+          "quantity": 275,
+          "reason": "Defensive underdog",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.8975,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+          "spread": 0.1499999999999999,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS"
+        },
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.69,
+          "entry_price": 0.55,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP21LACWAS",
+          "exec_price": 0.31000000000000005,
+          "implied_prob": 0.55,
+          "liquidity_at_entry": 6589.2165815249855,
+          "market_ticker": "KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "model_prob": 0.57,
+          "quantity": 205,
+          "reason": "Under in defensive game",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "NO",
+          "slippage": 0.6355000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP21LACWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+          "spread": 0.039999999999999925,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP21LACWAS-WAS",
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP21LACWAS-O45.5"
+      ],
+      "pnl_dollars": -66.4684,
+      "position_size_dollars": 253.3,
+      "prev_hash": "365339e9154513ede0dd0046b3a573968d90be9b0edd9ddec9506caaef3377e0",
+      "result": "LOSS",
+      "roi_percent": -129.48,
+      "settlement_price": 0.0,
+      "slippage_assumed": 2.533,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TOTAL_DOG_007_VAR888",
+      "trade_id": "trade_18245f6e7952",
+      "updated_at": "2026-09-22T22:52:22Z",
+      "user_id": "user_0888_553919",
+      "username": "UnderSigma_9418",
+      "verification_notes": "",
+      "why_entered": "Defensive underdog + under correlation",
+      "why_exited": "Settled: LOSS"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11290.57,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:22Z",
+      "bankroll": 11224.1,
+      "pnl": -66.47
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": -0.59,
+    "pnl": -66.47,
+    "open_exposure": 253.3,
+    "total_volume": 506.6
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

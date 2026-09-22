@@ -1,0 +1,329 @@
+{
+  "user": {
+    "user_id": "user_0146_354a46",
+    "username": "EpsilonBettor_9319",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR146",
+    "strategy_name": "Blowout Reversion v146",
+    "strategy_description": "Team blown out last week bounces back ATS (variation)",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 10898.32,
+    "current_bankroll": 11117.06,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_49eb2711d227"
+    ],
+    "total_pnl": 218.74,
+    "roi_percent": 2.01,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 9,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:13Z",
+        "bankroll": 10898.32,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:14Z",
+        "bankroll": 11117.06,
+        "pnl": 218.74
+      }
+    ],
+    "explanation": "User EpsilonBettor_9319 uses Blowout Reversion v146: Team blown out last week bounces back ATS (variation)",
+    "created_at": "2026-09-22T22:52:13Z",
+    "last_trade_at": "2026-09-22T22:52:14Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11597389517821616,
+      "fees": 16.464,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "92c8df3d6683fab215e60b6d09c24dc2887db5da8f83377e3c46c3f02eba55fe",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.5359738951782161,
+          "quantity": 560,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.2479999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 324.8,
+      "prev_hash": "5ff84804c8c2b5e0c1a1b5d51d531cecab6db80451f2da0ad9bbaa7d802aa60b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.248,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR146",
+      "trade_id": "trade_49eb2711d227",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0146_354a46",
+      "username": "EpsilonBettor_9319",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.11597389517821616,
+      "fees": 16.464,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c27ae2370bdae4d74a880e71925a941d12d945fb4997f7b797df8e826be49d30",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.5359738951782161,
+          "quantity": 560,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.2479999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": 218.736,
+      "position_size_dollars": 324.8,
+      "prev_hash": "b54914da20d184923b8e0d1b009ecf5427ac629dc12d32630b2b4da723a440a3",
+      "result": "WIN",
+      "roi_percent": 67.34,
+      "settlement_price": 1.0,
+      "slippage_assumed": 3.248,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR146",
+      "trade_id": "trade_49eb2711d227",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0146_354a46",
+      "username": "EpsilonBettor_9319",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.11597389517821616,
+      "fees": 16.464,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "92c8df3d6683fab215e60b6d09c24dc2887db5da8f83377e3c46c3f02eba55fe",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.5359738951782161,
+          "quantity": 560,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.2479999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 324.8,
+      "prev_hash": "5ff84804c8c2b5e0c1a1b5d51d531cecab6db80451f2da0ad9bbaa7d802aa60b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.248,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR146",
+      "trade_id": "trade_49eb2711d227",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0146_354a46",
+      "username": "EpsilonBettor_9319",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:14Z",
+      "entry_price_combined": 0.58,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:14Z",
+      "expected_value": 0.11597389517821616,
+      "fees": 16.464,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:14Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 15.00% for KXNFLGAME-26SEP23CHIWAS-WAS",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c27ae2370bdae4d74a880e71925a941d12d945fb4997f7b797df8e826be49d30",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.58,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.42,
+          "entry_timestamp": "2026-09-22T22:52:14Z",
+          "event_ticker": "KXNFLGAME-26SEP23CHIWAS",
+          "exec_price": 0.58,
+          "implied_prob": 0.42,
+          "liquidity_at_entry": 13296.600804476222,
+          "market_ticker": "KXNFLGAME-26SEP23CHIWAS-WAS",
+          "model_prob": 0.5359738951782161,
+          "quantity": 560,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.2479999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23CHIWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+          "spread": 0.14999999999999997,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP23CHIWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP23CHIWAS-WAS"
+      ],
+      "pnl_dollars": 218.736,
+      "position_size_dollars": 324.8,
+      "prev_hash": "b54914da20d184923b8e0d1b009ecf5427ac629dc12d32630b2b4da723a440a3",
+      "result": "WIN",
+      "roi_percent": 67.34,
+      "settlement_price": 1.0,
+      "slippage_assumed": 3.248,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR146",
+      "trade_id": "trade_49eb2711d227",
+      "updated_at": "2026-09-22T22:52:14Z",
+      "user_id": "user_0146_354a46",
+      "username": "EpsilonBettor_9319",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:13Z",
+      "bankroll": 10898.32,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:14Z",
+      "bankroll": 11117.06,
+      "pnl": 218.74
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 2.01,
+    "pnl": 218.74,
+    "open_exposure": 324.8,
+    "total_volume": 649.6
+  },
+  "updated_at": "2026-09-22T22:52:15Z"
+}

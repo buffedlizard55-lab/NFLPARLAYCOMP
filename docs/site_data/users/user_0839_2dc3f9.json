@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0839_2dc3f9",
+    "username": "TDTrader_3800",
+    "strategy_id": "STRAT_TD_ANYTIME_011_VAR839",
+    "strategy_name": "Anytime TD Value v839",
+    "strategy_description": "Player anytime TD market when odds > model (variation)",
+    "strategy_long_explanation": "Uses KXNFLANYTD markets, player usage, red zone opportunities. Entry when model prob > market +7%. Position 1% bankroll. Why work: public overvalues big names, undervalues role players. Why fail: variance high. Evidence: 2023 anytime TD 52% model edge n=200.",
+    "starting_bankroll": 11438.97,
+    "current_bankroll": 11438.97,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 775,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11438.97,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User TDTrader_3800 uses Anytime TD Value v839: Player anytime TD market when odds > model (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11438.97,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0058_0b7620",
+    "username": "PrimetimeLambda_899",
+    "strategy_id": "STRAT_HOME_ADV_002_VAR58",
+    "strategy_name": "Home Field Momentum vR58",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games (variation)",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 11697.05,
+    "current_bankroll": 11391.77,
+    "open_trades": [
+      "trade_41d2441b29cf"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 57,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 11697.05,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User PrimetimeLambda_899 uses Home Field Momentum vR58: Favors home teams with >65% home win rate last 8 games (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": "2026-09-22T22:52:12Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.16000000000000003,
+      "fees": 12.0204,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 20.00% for KXNFLGAME-26SEP25ARICAR-CAR",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9ee8ecc58223e0f07763c54deeb3c57bcfc3a91b2738267ab38711f98dba47b4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25ARICAR",
+          "exec_price": 0.64,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4215.594219643764,
+          "market_ticker": "KXNFLGAME-26SEP25ARICAR-CAR",
+          "model_prob": 0.65,
+          "quantity": 477,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.0528,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25ARICAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25ARICAR-CAR",
+          "spread": 0.2,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25ARICAR-CAR"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25ARICAR-CAR",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25ARICAR-CAR"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 305.28,
+      "prev_hash": "576662eb61d7ecbc5bda82c6dc1551c362a7a514d900793fbb1e2a0dd1c63ef2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.0528,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR58",
+      "trade_id": "trade_41d2441b29cf",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0058_0b7620",
+      "username": "PrimetimeLambda_899",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.64,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.16000000000000003,
+      "fees": 12.0204,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 20.00% for KXNFLGAME-26SEP25ARICAR-CAR",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9ee8ecc58223e0f07763c54deeb3c57bcfc3a91b2738267ab38711f98dba47b4",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.64,
+          "bid_at_entry": 0.44,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP25ARICAR",
+          "exec_price": 0.64,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 4215.594219643764,
+          "market_ticker": "KXNFLGAME-26SEP25ARICAR-CAR",
+          "model_prob": 0.65,
+          "quantity": 477,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 3.0528,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25ARICAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25ARICAR-CAR",
+          "spread": 0.2,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25ARICAR-CAR"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25ARICAR-CAR",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25ARICAR-CAR"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 305.28,
+      "prev_hash": "576662eb61d7ecbc5bda82c6dc1551c362a7a514d900793fbb1e2a0dd1c63ef2",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 3.0528,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002_VAR58",
+      "trade_id": "trade_41d2441b29cf",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0058_0b7620",
+      "username": "PrimetimeLambda_899",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 11697.05,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 305.28,
+    "total_volume": 305.28
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

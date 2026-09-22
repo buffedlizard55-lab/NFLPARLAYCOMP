@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0959_33748d",
+    "username": "WeatherKappa_9307",
+    "strategy_id": "STRAT_WEATHER_OVER_030_VAR959",
+    "strategy_name": "Indoor Over v959",
+    "strategy_description": "Indoor/dome games over due to perfect conditions (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, indoor flag from ESPN venue. Entry indoor game, total <48, bet over. Position 1.5%. Why work: no wind, fast track. Why fail: defensive indoor teams. Evidence: indoor over 53% when total <48.",
+    "starting_bankroll": 11625.47,
+    "current_bankroll": 11513.33,
+    "open_trades": [
+      "trade_57416a998d8d"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 874,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11625.47,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User WeatherKappa_9307 uses Indoor Over v959: Indoor/dome games over due to perfect conditions (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:18Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05471324287361379,
+      "fees": 10.8402,
+      "flags": [],
+      "hash": "4cbe4c29f59818405cffcad8b7ad0eef37218d908ac514342521f772d0c4d751",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.42000000000000004,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.5352867571263862,
+          "quantity": 267,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.1214000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 112.14,
+      "prev_hash": "fba7e1986e5a37d05d56378a22ad55545f652e997e3545d3fbc6611fca0a89d4",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1214,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR959",
+      "trade_id": "trade_57416a998d8d",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0959_33748d",
+      "username": "WeatherKappa_9307",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:18Z",
+      "entry_price_combined": 0.42,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.05471324287361379,
+      "fees": 10.8402,
+      "flags": [],
+      "hash": "4cbe4c29f59818405cffcad8b7ad0eef37218d908ac514342521f772d0c4d751",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:18Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.42000000000000004,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.5352867571263862,
+          "quantity": 267,
+          "reason": "Indoor Over signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.1214000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 112.14,
+      "prev_hash": "fba7e1986e5a37d05d56378a22ad55545f652e997e3545d3fbc6611fca0a89d4",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.1214,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_WEATHER_OVER_030_VAR959",
+      "trade_id": "trade_57416a998d8d",
+      "updated_at": "2026-09-22T22:52:18Z",
+      "user_id": "user_0959_33748d",
+      "username": "WeatherKappa_9307",
+      "verification_notes": "",
+      "why_entered": "Indoor Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11625.47,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 112.14,
+    "total_volume": 112.14
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

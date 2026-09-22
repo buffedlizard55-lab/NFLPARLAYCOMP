@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0287_2cf453",
+    "username": "EpsilonFalcon_2036",
+    "strategy_id": "STRAT_RIVALRY_OVER_021_VAR287",
+    "strategy_name": "Rivalry Game Over v287",
+    "strategy_description": "High-scoring rivalries over trend (variation)",
+    "strategy_long_explanation": "Uses KXNFLTOTAL, historic rivalry totals. Entry rivalry game with avg 50+ pts last 5 meetings, total price under >0.52. Position 1%. Why work: familiarity breeds offensive success late. Why fail: defensive adjustments. Evidence: rivalry over 54% when avg 50+.",
+    "starting_bankroll": 10522.43,
+    "current_bankroll": 10522.43,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 316,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10522.43,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User EpsilonFalcon_2036 uses Rivalry Game Over v287: High-scoring rivalries over trend (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10522.43,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

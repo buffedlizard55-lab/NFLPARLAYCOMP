@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0450_5db9d2",
+    "username": "MoneylineBetaX_4813",
+    "strategy_id": "STRAT_CROSS_MARKET_ARB_032_VAR450",
+    "strategy_name": "Cross-Market Arb v450",
+    "strategy_description": "Moneyline vs spread vs total arb when misaligned (variation)",
+    "strategy_long_explanation": "Uses KXNFLGAME, KXNFLSPREAD, KXNFLTOTAL same event. Entry implied win prob from spread vs moneyline diff >8%. Position 0.5% arb. Why work: different market makers, lag. Why fail: fees, correlation. Evidence: arb exists 1-2% of time.",
+    "starting_bankroll": 11287.27,
+    "current_bankroll": 11287.27,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 450,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11287.27,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User MoneylineBetaX_4813 uses Cross-Market Arb v450: Moneyline vs spread vs total arb when misaligned (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11287.27,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

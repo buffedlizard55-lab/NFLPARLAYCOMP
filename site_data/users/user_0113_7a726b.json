@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0113_7a726b",
+    "username": "CoachFalcon_5208",
+    "strategy_id": "STRAT_REST_003_VAR113",
+    "strategy_name": "Rest & Schedule Difficulty v113",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 11936.08,
+    "current_bankroll": 11739.13,
+    "open_trades": [
+      "trade_53060b0b1c2b"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 177,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11936.08,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User CoachFalcon_5208 uses Rest & Schedule Difficulty v113: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.4235,
+      "flags": [],
+      "hash": "f15579062afb613fa98d01cd7f3fcd92b99bcdf1500c0cd73d40c4b0e494a4d1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.58,
+          "quantity": 303,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.9694999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 196.95,
+      "prev_hash": "fdc46719210ff8f3c34136414414959e72af41c2c66bac92435a1084f1fdf431",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.9695,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR113",
+      "trade_id": "trade_53060b0b1c2b",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0113_7a726b",
+      "username": "CoachFalcon_5208",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.65,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.4235,
+      "flags": [],
+      "hash": "f15579062afb613fa98d01cd7f3fcd92b99bcdf1500c0cd73d40c4b0e494a4d1",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.65,
+          "bid_at_entry": 0.58,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP22DENDAL",
+          "exec_price": 0.65,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 18723.024757786687,
+          "market_ticker": "KXNFLGAME-26SEP22DENDAL-DAL",
+          "model_prob": 0.58,
+          "quantity": 303,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.9694999999999998,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP22DENDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+          "spread": 0.07000000000000006,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP22DENDAL-DAL",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP22DENDAL-DAL"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 196.95,
+      "prev_hash": "fdc46719210ff8f3c34136414414959e72af41c2c66bac92435a1084f1fdf431",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.9695,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR113",
+      "trade_id": "trade_53060b0b1c2b",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0113_7a726b",
+      "username": "CoachFalcon_5208",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11936.08,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 196.95,
+    "total_volume": 196.95
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

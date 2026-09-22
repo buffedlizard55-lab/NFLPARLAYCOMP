@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0328_190ef3",
+    "username": "GammaAlphaX_3006",
+    "strategy_id": "STRAT_REST_003_VAR328",
+    "strategy_name": "Rest & Schedule Difficulty v328",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 8359.16,
+    "current_bankroll": 8491.77,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_d0d6c8fe0080"
+    ],
+    "total_pnl": 132.61,
+    "roi_percent": 1.59,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 44,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 8359.16,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 8491.77,
+        "pnl": 132.61
+      }
+    ],
+    "explanation": "User GammaAlphaX_3006 uses Rest & Schedule Difficulty v328: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.9813,
+      "flags": [],
+      "hash": "5ee2d56075ed7c603c0328a0c1cd4564e02a67fdf846d380cf104f2e0674e4c6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.58,
+          "quantity": 291,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.4841000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 148.41,
+      "prev_hash": "c70646635c28d956b717810394f837db3cb686d42239a67e91a258217e7038f7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.4841,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR328",
+      "trade_id": "trade_d0d6c8fe0080",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0328_190ef3",
+      "username": "GammaAlphaX_3006",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 9.9813,
+      "flags": [],
+      "hash": "45618e0d6ae5bb36f91a48844b9db9025797c6e83613c90cdb879296b8c4942f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.58,
+          "quantity": 291,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.4841000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 132.6087,
+      "position_size_dollars": 148.41,
+      "prev_hash": "1cedc8dc27c8661e6e41ce49df768ad4fdcdc0bb0c6dcb390e4d4afff943a4e6",
+      "result": "WIN",
+      "roi_percent": 89.35,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.4841,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR328",
+      "trade_id": "trade_d0d6c8fe0080",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0328_190ef3",
+      "username": "GammaAlphaX_3006",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 9.9813,
+      "flags": [],
+      "hash": "5ee2d56075ed7c603c0328a0c1cd4564e02a67fdf846d380cf104f2e0674e4c6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.58,
+          "quantity": 291,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.4841000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 148.41,
+      "prev_hash": "c70646635c28d956b717810394f837db3cb686d42239a67e91a258217e7038f7",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.4841,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR328",
+      "trade_id": "trade_d0d6c8fe0080",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0328_190ef3",
+      "username": "GammaAlphaX_3006",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.51,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.08,
+      "fees": 9.9813,
+      "flags": [],
+      "hash": "45618e0d6ae5bb36f91a48844b9db9025797c6e83613c90cdb879296b8c4942f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.51,
+          "bid_at_entry": 0.56,
+          "entry_price": 0.43,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP20PITWAS",
+          "exec_price": 0.51,
+          "implied_prob": 0.43,
+          "liquidity_at_entry": 5390.850860653378,
+          "market_ticker": "KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "model_prob": 0.58,
+          "quantity": 291,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.4841000000000002,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20PITWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+          "spread": 0.050000000000000044,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP20PITWAS-WAS-3.5"
+      ],
+      "pnl_dollars": 132.6087,
+      "position_size_dollars": 148.41,
+      "prev_hash": "1cedc8dc27c8661e6e41ce49df768ad4fdcdc0bb0c6dcb390e4d4afff943a4e6",
+      "result": "WIN",
+      "roi_percent": 89.35,
+      "settlement_price": 1.0,
+      "slippage_assumed": 1.4841,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_REST_003_VAR328",
+      "trade_id": "trade_d0d6c8fe0080",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0328_190ef3",
+      "username": "GammaAlphaX_3006",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 8359.16,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 8491.77,
+      "pnl": 132.61
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 1.59,
+    "pnl": 132.61,
+    "open_exposure": 148.41,
+    "total_volume": 296.82
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

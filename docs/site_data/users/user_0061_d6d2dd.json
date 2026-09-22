@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0061_d6d2dd",
+    "username": "QuantAlphaX_3221",
+    "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR61",
+    "strategy_name": "Contrarian Public Fade vR61",
+    "strategy_description": "Fade heavy public side >70% tickets (variation)",
+    "strategy_long_explanation": "Uses public betting % (estimated from volume), KXNFLGAME. Entry public >70% on favorite, bet underdog. Position 2%. Why work: public overbets favorites. Why fail: public sometimes right. Evidence: contrarian 52.5% 2018-2024 (small edge).",
+    "starting_bankroll": 8895.88,
+    "current_bankroll": 8713.56,
+    "open_trades": [
+      "trade_01d89f2d5974"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 60,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:12Z",
+        "bankroll": 8895.88,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User QuantAlphaX_3221 uses Contrarian Public Fade vR61: Fade heavy public side >70% tickets (variation)",
+    "created_at": "2026-09-22T22:52:12Z",
+    "last_trade_at": "2026-09-22T22:52:12Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10610775714071496,
+      "fees": 16.9176,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c1ddf4a82f42e91cef118c1b62e73819f27c7ba21f7d41f268407c57d247235f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP23PHIDAL",
+          "exec_price": 0.43,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 18402.05731424211,
+          "market_ticker": "KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "model_prob": 0.596107757140715,
+          "quantity": 424,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.8232,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23PHIDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "spread": 0.12000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 182.32,
+      "prev_hash": "9ee8ecc58223e0f07763c54deeb3c57bcfc3a91b2738267ab38711f98dba47b4",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.8232,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR61",
+      "trade_id": "trade_01d89f2d5974",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0061_d6d2dd",
+      "username": "QuantAlphaX_3221",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:12Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.10610775714071496,
+      "fees": 16.9176,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:12Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 12.00% for KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "c1ddf4a82f42e91cef118c1b62e73819f27c7ba21f7d41f268407c57d247235f",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.55,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:12Z",
+          "event_ticker": "KXNFLGAME-26SEP23PHIDAL",
+          "exec_price": 0.43,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 18402.05731424211,
+          "market_ticker": "KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "model_prob": 0.596107757140715,
+          "quantity": 424,
+          "reason": "Contrarian Public Fade signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 1.8232,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP23PHIDAL.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+          "spread": 0.12000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP23PHIDAL-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 182.32,
+      "prev_hash": "9ee8ecc58223e0f07763c54deeb3c57bcfc3a91b2738267ab38711f98dba47b4",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.8232,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CONTRARIAN_PUBLIC_027_VAR61",
+      "trade_id": "trade_01d89f2d5974",
+      "updated_at": "2026-09-22T22:52:12Z",
+      "user_id": "user_0061_d6d2dd",
+      "username": "QuantAlphaX_3221",
+      "verification_notes": "",
+      "why_entered": "Contrarian Public Fade triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:12Z",
+      "bankroll": 8895.88,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 182.32,
+    "total_volume": 182.32
+  },
+  "updated_at": "2026-09-22T22:52:12Z"
+}

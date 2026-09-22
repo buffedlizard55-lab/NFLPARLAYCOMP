@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0435_6088da",
+    "username": "MomentumModel_3502",
+    "strategy_id": "STRAT_REST_003_VAR435",
+    "strategy_name": "Rest & Schedule Difficulty v435",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 10874.99,
+    "current_bankroll": 10704.99,
+    "open_trades": [
+      "trade_743f50259360"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 437,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 10874.99,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User MomentumModel_3502 uses Rest & Schedule Difficulty v435: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.68,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.6,
+      "flags": [],
+      "hash": "004b478434a5cdf082079fcf6a889a3978d5c46639913b08a99a998cfba600b2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.68,
+          "bid_at_entry": 0.66,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.68,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 15495.111621834923,
+          "market_ticker": "KXNFLGAME-26SEP26ARIIND-IND",
+          "model_prob": 0.58,
+          "quantity": 250,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.7,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26ARIIND-IND",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26ARIIND-IND"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26ARIIND-IND",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26ARIIND-IND"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 170.0,
+      "prev_hash": "3abca896974cc1879869fdaf026c2e0270848e7522b8a33d309ee523531689a1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.7,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR435",
+      "trade_id": "trade_743f50259360",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0435_6088da",
+      "username": "MomentumModel_3502",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.68,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 5.6,
+      "flags": [],
+      "hash": "004b478434a5cdf082079fcf6a889a3978d5c46639913b08a99a998cfba600b2",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.68,
+          "bid_at_entry": 0.66,
+          "entry_price": 0.65,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.68,
+          "implied_prob": 0.65,
+          "liquidity_at_entry": 15495.111621834923,
+          "market_ticker": "KXNFLGAME-26SEP26ARIIND-IND",
+          "model_prob": 0.58,
+          "quantity": 250,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.7,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26ARIIND-IND",
+          "spread": 0.020000000000000018,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP26ARIIND-IND"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP26ARIIND-IND",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP26ARIIND-IND"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 170.0,
+      "prev_hash": "3abca896974cc1879869fdaf026c2e0270848e7522b8a33d309ee523531689a1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.7,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR435",
+      "trade_id": "trade_743f50259360",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0435_6088da",
+      "username": "MomentumModel_3502",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 10874.99,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 170.0,
+    "total_volume": 170.0
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}

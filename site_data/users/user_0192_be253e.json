@@ -1,0 +1,293 @@
+{
+  "user": {
+    "user_id": "user_0192_be253e",
+    "username": "DeltaSystem_597",
+    "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR192",
+    "strategy_name": "Team Total Over v192",
+    "strategy_description": "Team total over when implied < model based on offensive efficiency (variation)",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL, offensive EPA/play. Entry team EPA top 10 vs bottom 10 defense and total price <0.50. Position 1.5%. Why work: efficiency metrics lead totals. Why fail: game script. Evidence: EPA-based totals 54% 2022-2024.",
+    "starting_bankroll": 11682.54,
+    "current_bankroll": 11777.68,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_ca5441eeee35"
+    ],
+    "total_pnl": 95.14,
+    "roi_percent": 0.81,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 57,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:17Z",
+        "bankroll": 11682.54,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:19Z",
+        "bankroll": 11777.68,
+        "pnl": 95.14
+      }
+    ],
+    "explanation": "User DeltaSystem_597 uses Team Total Over v192: Team total over when implied < model based on offensive efficiency (variation)",
+    "created_at": "2026-09-22T22:52:17Z",
+    "last_trade_at": "2026-09-22T22:52:17Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.025754575780302935,
+      "fees": 7.161,
+      "flags": [],
+      "hash": "069455408fbca22746fa894cdd4b65ee45f68ce1db49e14db4d6cc52abfb5692",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.64,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.69,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 4244.957312335197,
+          "market_ticker": "KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "model_prob": 0.6457545757803029,
+          "quantity": 330,
+          "reason": "Team Total Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.277,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 227.7,
+      "prev_hash": "c28872f04d096db8eff2a17fe399894ab3c4856cf94841ce3c1208c9f012c559",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.277,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR192",
+      "trade_id": "trade_ca5441eeee35",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0192_be253e",
+      "username": "DeltaSystem_597",
+      "verification_notes": "",
+      "why_entered": "Team Total Over triggered",
+      "why_exited": ""
+    },
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.025754575780302935,
+      "fees": 7.161,
+      "flags": [],
+      "hash": "a2fa9bfd0b21485ec8450d30290b044545cb72769665e3dc7f7ef7417e2da226",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.64,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.69,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 4244.957312335197,
+          "market_ticker": "KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "model_prob": 0.6457545757803029,
+          "quantity": 330,
+          "reason": "Team Total Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.277,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+      ],
+      "pnl_dollars": 95.139,
+      "position_size_dollars": 227.7,
+      "prev_hash": "e132df2f8c89eabacc1fa819d2afa64d47ae403ef236b94dc48c5a323fcfbd47",
+      "result": "WIN",
+      "roi_percent": 41.78,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.277,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR192",
+      "trade_id": "trade_ca5441eeee35",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0192_be253e",
+      "username": "DeltaSystem_597",
+      "verification_notes": "",
+      "why_entered": "Team Total Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.025754575780302935,
+      "fees": 7.161,
+      "flags": [],
+      "hash": "069455408fbca22746fa894cdd4b65ee45f68ce1db49e14db4d6cc52abfb5692",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.64,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.69,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 4244.957312335197,
+          "market_ticker": "KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "model_prob": 0.6457545757803029,
+          "quantity": 330,
+          "reason": "Team Total Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.277,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 227.7,
+      "prev_hash": "c28872f04d096db8eff2a17fe399894ab3c4856cf94841ce3c1208c9f012c559",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.277,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR192",
+      "trade_id": "trade_ca5441eeee35",
+      "updated_at": "2026-09-22T22:52:17Z",
+      "user_id": "user_0192_be253e",
+      "username": "DeltaSystem_597",
+      "verification_notes": "",
+      "why_entered": "Team Total Over triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [
+    {
+      "created_at": "2026-09-22T22:52:17Z",
+      "entry_price_combined": 0.69,
+      "exit_price_combined": null,
+      "exit_timestamp": "2026-09-22T22:52:19Z",
+      "expected_value": 0.025754575780302935,
+      "fees": 7.161,
+      "flags": [],
+      "hash": "a2fa9bfd0b21485ec8450d30290b044545cb72769665e3dc7f7ef7417e2da226",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.69,
+          "bid_at_entry": 0.64,
+          "entry_price": 0.62,
+          "entry_timestamp": "2026-09-22T22:52:17Z",
+          "event_ticker": "KXNFLGAME-26SEP26ARIIND",
+          "exec_price": 0.69,
+          "implied_prob": 0.62,
+          "liquidity_at_entry": 4244.957312335197,
+          "market_ticker": "KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "model_prob": 0.6457545757803029,
+          "quantity": 330,
+          "reason": "Team Total Over signal",
+          "series_ticker": "KXNFLTOTAL",
+          "side": "YES",
+          "slippage": 2.277,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP26ARIIND.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+          "spread": 0.04999999999999993,
+          "verification_url": "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLTOTAL-26SEP26ARIIND-O45.5"
+      ],
+      "pnl_dollars": 95.139,
+      "position_size_dollars": 227.7,
+      "prev_hash": "e132df2f8c89eabacc1fa819d2afa64d47ae403ef236b94dc48c5a323fcfbd47",
+      "result": "WIN",
+      "roi_percent": 41.78,
+      "settlement_price": 1.0,
+      "slippage_assumed": 2.277,
+      "status": "SETTLED",
+      "strategy_id": "STRAT_TEAM_TOTAL_OVER_012_VAR192",
+      "trade_id": "trade_ca5441eeee35",
+      "updated_at": "2026-09-22T22:52:19Z",
+      "user_id": "user_0192_be253e",
+      "username": "DeltaSystem_597",
+      "verification_notes": "",
+      "why_entered": "Team Total Over triggered",
+      "why_exited": "Settled: WIN"
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:17Z",
+      "bankroll": 11682.54,
+      "pnl": 0
+    },
+    {
+      "t": "2026-09-22T22:52:19Z",
+      "bankroll": 11777.68,
+      "pnl": 95.14
+    }
+  ],
+  "stats": {
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "roi": 0.81,
+    "pnl": 95.14,
+    "open_exposure": 227.7,
+    "total_volume": 455.4
+  },
+  "updated_at": "2026-09-22T22:52:23Z"
+}
