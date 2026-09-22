@@ -107,7 +107,7 @@ scripts/             collect, simulate, generate_users, verify, build_site,
 data/raw/            verbatim API snapshots + fetch manifest (shared, never per-user)
 data/competition/    users.json + ledger.jsonl (single source of truth for trades)
 docs/                GitHub Pages site; bundles are written to docs/site_data/
-tests/               86 unit tests + a Node front-end smoke test
+tests/               103 unit tests + a Node front-end smoke test
 ```
 
 ### Design decisions that make 1,000+ users cheap
@@ -290,6 +290,10 @@ The competition is deterministic given stored data and a fixed clock:
   between cycles is not observed.
 - Competition history is preserved in the ledger, but no season has yet completed, so
   cross-season comparison has no data behind it.
+- **Deployment:** GitHub Pages is configured as a legacy root-path build, so the
+  site currently lives at `/docs/` and the root forwards there. The intended setting
+  (Settings → Pages → Source: **GitHub Actions**) cannot be applied by this project's
+  token (`403 Resource not accessible by integration`). See `docs/OPERATIONS.md`.
 
 ---
 
