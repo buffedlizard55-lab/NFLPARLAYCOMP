@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0080_b91815",
+    "username": "TDTrader_7494",
+    "strategy_id": "STRAT_REST_003_VAR80",
+    "strategy_name": "Rest & Schedule Difficulty vR80",
+    "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+    "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+    "starting_bankroll": 9542.83,
+    "current_bankroll": 9328.33,
+    "open_trades": [
+      "trade_2b52108d2a44"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 77,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 9542.83,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User TDTrader_7494 uses Rest & Schedule Difficulty vR80: Teams with 3+ extra rest days vs opponent (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.66,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.735,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLGAME-26SEP20SEALAR-LAR",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9a6ba875c442d2ec05b64a1264550f01276901ba2f6edbe216778434cf0988b6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.66,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP20SEALAR",
+          "exec_price": 0.66,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 5482.321364589616,
+          "market_ticker": "KXNFLGAME-26SEP20SEALAR-LAR",
+          "model_prob": 0.58,
+          "quantity": 325,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.145,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20SEALAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20SEALAR-LAR",
+          "spread": 0.18000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20SEALAR-LAR"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20SEALAR-LAR",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20SEALAR-LAR"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 214.5,
+      "prev_hash": "111e2e9e042b9ca2fc64f8e870617627c88ba8ace1200600b6586f912239e282",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.145,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR80",
+      "trade_id": "trade_2b52108d2a44",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0080_b91815",
+      "username": "TDTrader_7494",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.66,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.08,
+      "fees": 7.735,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 18.00% for KXNFLGAME-26SEP20SEALAR-LAR",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "9a6ba875c442d2ec05b64a1264550f01276901ba2f6edbe216778434cf0988b6",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.66,
+          "bid_at_entry": 0.48,
+          "entry_price": 0.44,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP20SEALAR",
+          "exec_price": 0.66,
+          "implied_prob": 0.44,
+          "liquidity_at_entry": 5482.321364589616,
+          "market_ticker": "KXNFLGAME-26SEP20SEALAR-LAR",
+          "model_prob": 0.58,
+          "quantity": 325,
+          "reason": "Rest advantage +3 days",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 2.145,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP20SEALAR.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20SEALAR-LAR",
+          "spread": 0.18000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP20SEALAR-LAR"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP20SEALAR-LAR",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP20SEALAR-LAR"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 214.5,
+      "prev_hash": "111e2e9e042b9ca2fc64f8e870617627c88ba8ace1200600b6586f912239e282",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.145,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_REST_003_VAR80",
+      "trade_id": "trade_2b52108d2a44",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0080_b91815",
+      "username": "TDTrader_7494",
+      "verification_notes": "",
+      "why_entered": "Rest diff 3 days",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 9542.83,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 214.5,
+    "total_volume": 214.5
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL Parlay Trading Competition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>NFL Parlay Trading Competition</h1>
+<p>Auditable paper-trading competition using real verified Kalshi NFL markets. No real money traded.</p>
+<nav>
+<a href="#overview">Overview</a>
+<a href="#leaderboard">Leaderboard</a>
+<a href="#upcoming">Upcoming Trades</a>
+<a href="#recent">Recent Trades</a>
+<a href="#markets">Markets</a>
+<a href="#strategies">Strategies</a>
+<a href="#users">Users</a>
+<a href="#verification">Verification</a>
+<a href="#history">History</a>
+</nav>
+</header>
+
+<main>
+<section id="overview">
+<h2>Competition Overview</h2>
+<div id="overview-content">Loading...</div>
+</section>
+
+<section id="leaderboard">
+<h2>Leaderboard</h2>
+<div class="controls">
+<input type="text" id="search" placeholder="Search username or strategy">
+<select id="sort">
+<option value="rank">Rank</option>
+<option value="pnl">PnL</option>
+<option value="roi">ROI</option>
+<option value="win_rate">Win Rate</option>
+<option value="trades">Trades</option>
+</select>
+<select id="pageSize">
+<option value="25">25 per page</option>
+<option value="50">50 per page</option>
+<option value="100">100 per page</option>
+</select>
+</div>
+<div id="leaderboard-content">Loading...</div>
+<div id="pagination"></div>
+</section>
+
+<section id="upcoming">
+<h2>Upcoming Trades</h2>
+<p>Candidate → Signal → Order → Executed → Closed → Settled lifecycle. Only EXECUTED trades affect bankroll.</p>
+<div id="upcoming-content">Loading...</div>
+</section>
+
+<section id="recent">
+<h2>Recent Trades</h2>
+<div id="recent-content">Loading...</div>
+</section>
+
+<section id="markets">
+<h2>Markets</h2>
+<p>Real verified Kalshi NFL markets. Prices from official Trade API v2. Synthetic fixtures flagged when real data unavailable.</p>
+<div id="markets-content">Loading...</div>
+</section>
+
+<section id="strategies">
+<h2>Strategy Library</h2>
+<div id="strategies-content">Loading...</div>
+</section>
+
+<section id="users">
+<h2>User Profiles</h2>
+<p>Click a user on leaderboard to view profile. Scalable to 1000+ users.</p>
+<div id="user-profile">Select a user to view profile</div>
+</section>
+
+<section id="verification">
+<h2>Trade Verification</h2>
+<p>Every trade: Leaderboard → User → Trade → Official Source. Real verified data vs simulated trades clearly distinguished.</p>
+<div id="verification-content">Loading...</div>
+<div id="data-sources-content"></div>
+</section>
+
+<section id="history">
+<h2>History & Scalability</h2>
+<p>Competition supports 5 → 1000 users without redesign. Shared market data, hash-chained ledger.</p>
+<div id="history-content"></div>
+</section>
+</main>
+
+<footer>
+<p>NFL Parlay Trading Competition — Paper trading only. No real money. Data from Kalshi official API, ESPN keyless, NWS. <a href="https://github.com/buffedlizard55-lab/NFLPARLAYCOMP">Repo</a></p>
+<p>Verification: Every price, timestamp, market, settlement from official sources with SHA-256 manifest. Simulated trades clearly labeled.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

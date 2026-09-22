@@ -1,0 +1,113 @@
+{
+  "updated_at": "2026-09-22T22:52:57Z",
+  "season": "2026",
+  "status": "ACTIVE",
+  "total_users": 100,
+  "total_trades": 32,
+  "total_pnl": 135.04,
+  "avg_roi": 0.02,
+  "top_performer": {
+    "user_id": "user_0000_317567",
+    "username": "AlphaDeltaX_3637",
+    "strategy_id": "STRAT_IMPLIED_VALUE_001",
+    "strategy_name": "Implied Probability Value",
+    "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge",
+    "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+    "starting_bankroll": 8556.16,
+    "current_bankroll": 9005.91,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_1e7ead5ab243"
+    ],
+    "total_pnl": 449.75,
+    "roi_percent": 5.26,
+    "wins": 1,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_trades": 1,
+    "rank": 1,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8556.16,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 9005.91,
+        "pnl": 449.75
+      }
+    ],
+    "explanation": "User AlphaDeltaX_3637 uses Implied Probability Value: Buys YES when market implied prob < model prob by 5%+ edge",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "worst_performer": {
+    "user_id": "user_0041_93a25e",
+    "username": "LiquidityTraderX_4021",
+    "strategy_id": "STRAT_2H_COMEBACK_025_VAR41",
+    "strategy_name": "Second Half Comeback vR41",
+    "strategy_description": "Team down at half but strong 2H team (variation)",
+    "strategy_long_explanation": "Uses KXNFL2H markets, halftime score. Entry team down 1-7 at half, 2H moneyline >0.50 but team top 10 2H scoring. Position 1%. Why work: adjustments. Why fail: game script. Evidence: 2H comeback 52% for top 2H teams.",
+    "starting_bankroll": 10632.96,
+    "current_bankroll": 10467.6,
+    "open_trades": [],
+    "closed_trades": [
+      "trade_811ecf5953f4"
+    ],
+    "total_pnl": -165.36,
+    "roi_percent": -1.56,
+    "wins": 0,
+    "losses": 1,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 100,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 10632.96,
+        "pnl": 0
+      },
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 10467.6,
+        "pnl": -165.36
+      }
+    ],
+    "explanation": "User LiquidityTraderX_4021 uses Second Half Comeback vR41: Team down at half but strong 2H team (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "by_status": {
+    "CANDIDATE": 0,
+    "SIGNAL": 0,
+    "ORDER": 0,
+    "EXECUTED": 25,
+    "CLOSED": 0,
+    "SETTLED": 7,
+    "CANCELLED": 0,
+    "REJECTED": 0
+  },
+  "scalability_test": {
+    "supported": [
+      5,
+      10,
+      15,
+      25,
+      30,
+      50,
+      70,
+      100,
+      250,
+      500,
+      750,
+      1000
+    ],
+    "current": 100,
+    "architecture": "Shared market data + hash-chained ledger, no per-user duplication"
+  }
+}

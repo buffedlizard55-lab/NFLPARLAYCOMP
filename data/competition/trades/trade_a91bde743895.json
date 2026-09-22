@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-09-22T22:52:42Z",
+  "entry_price_combined": 0.43,
+  "exit_price_combined": null,
+  "exit_timestamp": null,
+  "expected_value": 0.06000000000000005,
+  "fees": 14.763,
+  "flags": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "flag_type": "LIQUIDITY_PROBLEM",
+      "market_ticker": null,
+      "message": "Wide spread 24.00% for KXNFLGAME-26SEP29MINCIN-CIN",
+      "severity": "low",
+      "trade_id": null
+    }
+  ],
+  "hash": "cfd44775e377379614669e8a71027023fa65663fc45b18f1645f77fc1b3f6462",
+  "is_native_kalshi_combo": false,
+  "legs": [
+    {
+      "ask_at_entry": 0.43,
+      "bid_at_entry": 0.67,
+      "entry_price": 0.59,
+      "entry_timestamp": "2026-09-22T22:52:42Z",
+      "event_ticker": "KXNFLGAME-26SEP29MINCIN",
+      "exec_price": 0.43,
+      "implied_prob": 0.59,
+      "liquidity_at_entry": 19909.70055403853,
+      "market_ticker": "KXNFLGAME-26SEP29MINCIN-CIN",
+      "model_prob": 0.65,
+      "quantity": 370,
+      "reason": "Home team 65% home win last 8",
+      "series_ticker": "KXNFLGAME",
+      "side": "YES",
+      "slippage": 1.591,
+      "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29MINCIN.json",
+      "source_sha256": "pending_manifest_lookup",
+      "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+      "spread": 0.24000000000000005,
+      "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+    }
+  ],
+  "market_type": "SINGLE",
+  "official_sources": [
+    "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+    "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+  ],
+  "pnl_dollars": null,
+  "position_size_dollars": 159.1,
+  "prev_hash": "f3e7b4da5a43fe5effd2ad042287342ec8128ece083575307793a89064316b64",
+  "result": "PENDING",
+  "roi_percent": null,
+  "settlement_price": null,
+  "slippage_assumed": 1.591,
+  "status": "EXECUTED",
+  "strategy_id": "STRAT_HOME_ADV_002",
+  "trade_id": "trade_a91bde743895",
+  "updated_at": "2026-09-22T22:52:42Z",
+  "user_id": "user_0001_d1af42",
+  "username": "AlphaRho_1380",
+  "verification_notes": "",
+  "why_entered": "Home win rate 65% vs market 57%",
+  "why_exited": ""
+}

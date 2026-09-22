@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0047_3accbc",
+    "username": "OverBetaX_3091",
+    "strategy_id": "STRAT_DVOA_VALUE_029_VAR47",
+    "strategy_name": "DVOA Value vR47",
+    "strategy_description": "DVOA efficiency vs market (variation)",
+    "strategy_long_explanation": "Uses FTN DVOA, KXNFLGAME. Entry DVOA top 5 vs bottom 5, market <60%. Position 2%. Why work: DVOA more predictive than record. Why fail: DVOA lag. Evidence: DVOA top vs bottom 62% win 2020-2024.",
+    "starting_bankroll": 8129.12,
+    "current_bankroll": 8129.12,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 44,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8129.12,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User OverBetaX_3091 uses DVOA Value vR47: DVOA efficiency vs market (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8129.12,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0058_8bd3bf",
+    "username": "PropRho_9086",
+    "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR58",
+    "strategy_name": "Blowout Reversion vR58",
+    "strategy_description": "Team blown out last week bounces back ATS (variation)",
+    "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+    "starting_bankroll": 11262.97,
+    "current_bankroll": 11081.47,
+    "open_trades": [
+      "trade_2f8bd07e8faf"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 55,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 11262.97,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User PropRho_9086 uses Blowout Reversion vR58: Team blown out last week bounces back ATS (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.5,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06377267008972409,
+      "fees": 12.705,
+      "flags": [],
+      "hash": "498a6bbd7c29c4259f594e5a181b68bd2ebf68cee4a1033b623ecb57a72aa875",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.41,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP24KCWAS",
+          "exec_price": 0.5,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 19353.025134515836,
+          "market_ticker": "KXNFLGAME-26SEP24KCWAS-WAS",
+          "model_prob": 0.5762273299102759,
+          "quantity": 363,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.815,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24KCWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 181.5,
+      "prev_hash": "3853bcdfe246ccde3a4bfe454676e219be8b6bdf2e264110cfa978f35cd6d84b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.815,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR58",
+      "trade_id": "trade_2f8bd07e8faf",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0058_8bd3bf",
+      "username": "PropRho_9086",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.5,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.06377267008972409,
+      "fees": 12.705,
+      "flags": [],
+      "hash": "498a6bbd7c29c4259f594e5a181b68bd2ebf68cee4a1033b623ecb57a72aa875",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.41,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP24KCWAS",
+          "exec_price": 0.5,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 19353.025134515836,
+          "market_ticker": "KXNFLGAME-26SEP24KCWAS-WAS",
+          "model_prob": 0.5762273299102759,
+          "quantity": 363,
+          "reason": "Blowout Reversion signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 1.815,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24KCWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 181.5,
+      "prev_hash": "3853bcdfe246ccde3a4bfe454676e219be8b6bdf2e264110cfa978f35cd6d84b",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.815,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017_VAR58",
+      "trade_id": "trade_2f8bd07e8faf",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0058_8bd3bf",
+      "username": "PropRho_9086",
+      "verification_notes": "",
+      "why_entered": "Blowout Reversion triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 11262.97,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 181.5,
+    "total_volume": 181.5
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

@@ -1,0 +1,252 @@
+{
+  "user": {
+    "user_id": "user_0005_dc7cac",
+    "username": "BetaLion_9045",
+    "strategy_id": "STRAT_CORR_SPREAD_ML_006",
+    "strategy_name": "Spread + Moneyline Correlation",
+    "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5",
+    "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+    "starting_bankroll": 8357.53,
+    "current_bankroll": 8148.43,
+    "open_trades": [
+      "trade_446e9e791d65"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 7,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8357.53,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User BetaLion_9045 uses Spread + Moneyline Correlation: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.378,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 7.4018,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 20.00% for KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "41f986e4a8b145679e27ab1bfa4f67b8bab3b72f9babf8589fe35ed98d26e155",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.6,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP25PITNYJ",
+          "exec_price": 0.6,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 19424.490430082602,
+          "market_ticker": "KXNFLGAME-26SEP25PITNYJ-NYJ",
+          "model_prob": 0.71,
+          "quantity": 170,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.02,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25PITNYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25PITNYJ-NYJ",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25PITNYJ-NYJ"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP25PITNYJ",
+          "exec_price": 0.63,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 18920.215222961917,
+          "market_ticker": "KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "model_prob": 0.65,
+          "quantity": 170,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.071,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25PITNYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "spread": 0.2,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25PITNYJ-NYJ",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25PITNYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 209.1,
+      "prev_hash": "83098547240af2ed3e0acbaffb844e19b32655c93e03046b6cf100f19d2f0826",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.091,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006",
+      "trade_id": "trade_446e9e791d65",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0005_dc7cac",
+      "username": "BetaLion_9045",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.378,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.05,
+      "fees": 7.4018,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "SYNTHETIC_PARLAY",
+          "market_ticker": null,
+          "message": "Same-game correlation: spread + moneyline highly correlated",
+          "severity": "medium",
+          "trade_id": null
+        },
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 20.00% for KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "41f986e4a8b145679e27ab1bfa4f67b8bab3b72f9babf8589fe35ed98d26e155",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.6,
+          "bid_at_entry": 0.68,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP25PITNYJ",
+          "exec_price": 0.6,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 19424.490430082602,
+          "market_ticker": "KXNFLGAME-26SEP25PITNYJ-NYJ",
+          "model_prob": 0.71,
+          "quantity": 170,
+          "reason": "Favorite win",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.02,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25PITNYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25PITNYJ-NYJ",
+          "spread": 0.08000000000000007,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP25PITNYJ-NYJ"
+        },
+        {
+          "ask_at_entry": 0.63,
+          "bid_at_entry": 0.43,
+          "entry_price": 0.49,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP25PITNYJ",
+          "exec_price": 0.63,
+          "implied_prob": 0.49,
+          "liquidity_at_entry": 18920.215222961917,
+          "market_ticker": "KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "model_prob": 0.65,
+          "quantity": 170,
+          "reason": "Favorite cover -3.5 to -6.5",
+          "series_ticker": "KXNFLSPREAD",
+          "side": "YES",
+          "slippage": 1.071,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP25PITNYJ.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+          "spread": 0.2,
+          "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5"
+        }
+      ],
+      "market_type": "SYNTHETIC_PARLAY",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+        "https://kalshi.com/markets/KXNFLSPREAD-26SEP25PITNYJ-NYJ-3.5",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP25PITNYJ-NYJ",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP25PITNYJ-NYJ"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 209.1,
+      "prev_hash": "83098547240af2ed3e0acbaffb844e19b32655c93e03046b6cf100f19d2f0826",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 2.091,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006",
+      "trade_id": "trade_446e9e791d65",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0005_dc7cac",
+      "username": "BetaLion_9045",
+      "verification_notes": "",
+      "why_entered": "Correlation: favorite win + cover",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8357.53,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 209.1,
+    "total_volume": 209.1
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

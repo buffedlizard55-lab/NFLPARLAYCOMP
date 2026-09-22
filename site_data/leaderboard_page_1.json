@@ -1,0 +1,809 @@
+{
+  "page": 1,
+  "page_size": 25,
+  "total": 100,
+  "total_pages": 4,
+  "users": [
+    {
+      "user_id": "user_0000_317567",
+      "username": "AlphaDeltaX_3637",
+      "strategy_id": "STRAT_IMPLIED_VALUE_001",
+      "strategy_name": "Implied Probability Value",
+      "strategy_description": "Buys YES when market implied prob < model prob by 5%+ edge",
+      "strategy_long_explanation": "\nWhat info uses: Kalshi last_price (implied prob), simple Elo-based model prob (placeholder), volume.\nEntry: model_prob - implied_prob > 0.05 and volume > $1000 and spread < $0.05\nAvoid: low liquidity, spread > 10c, close_time < 2h away\nPosition size: Kelly fraction * 0.25 (quarter Kelly) capped at 5% bankroll\nEV: (model_prob * payout - price) / price\nWhy might work: Market may lag on news, slow incorporation of injury info\nWhy might fail: Model may be worse than market; transaction costs eat edge\nEvidence: Backtest on 2023 NFL moneyline markets shows 2.1% edge vs closing line (paper only, needs forward test)\nSources: Academic research on prediction market efficiency (Wolfers & Zitzewitz 2004), Reddit r/sportsbook value discussion\n            ",
+      "starting_bankroll": 8556.16,
+      "current_bankroll": 9005.91,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_1e7ead5ab243"
+      ],
+      "total_pnl": 449.75,
+      "roi_percent": 5.26,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "rank": 1,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8556.16,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9005.91,
+          "pnl": 449.75
+        }
+      ],
+      "explanation": "User AlphaDeltaX_3637 uses Implied Probability Value: Buys YES when market implied prob < model prob by 5%+ edge",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0043_1dcd88",
+      "username": "MomentumGammaX_8904",
+      "strategy_id": "STRAT_REST_003_VAR43",
+      "strategy_name": "Rest & Schedule Difficulty vR43",
+      "strategy_description": "Teams with 3+ extra rest days vs opponent (variation)",
+      "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+      "starting_bankroll": 11913.4,
+      "current_bankroll": 12118.93,
+      "open_trades": [],
+      "closed_trades": [
+        "trade_d4f61a91dae1"
+      ],
+      "total_pnl": 205.53,
+      "roi_percent": 1.73,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "rank": 2,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11913.4,
+          "pnl": 0
+        },
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 12118.93,
+          "pnl": 205.53
+        }
+      ],
+      "explanation": "User MomentumGammaX_8904 uses Rest & Schedule Difficulty vR43: Teams with 3+ extra rest days vs opponent (variation)",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0001_d1af42",
+      "username": "AlphaRho_1380",
+      "strategy_id": "STRAT_HOME_ADV_002",
+      "strategy_name": "Home Field Momentum",
+      "strategy_description": "Favors home teams with >65% home win rate last 8 games",
+      "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+      "starting_bankroll": 10934.89,
+      "current_bankroll": 10775.79,
+      "open_trades": [
+        "trade_a91bde743895"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 3,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10934.89,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User AlphaRho_1380 uses Home Field Momentum: Favors home teams with >65% home win rate last 8 games",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0002_b854b7",
+      "username": "ArbLambda_7317",
+      "strategy_id": "STRAT_REST_003",
+      "strategy_name": "Rest & Schedule Difficulty",
+      "strategy_description": "Teams with 3+ extra rest days vs opponent",
+      "strategy_long_explanation": "\nUses: NFL schedule (days since last game), Kalshi moneyline\nEntry: rest differential >=3 days and opponent played on short week\nAvoid: both teams same rest, TNF games already priced\nPosition size: 1.5% bankroll\nEV: teams with +3 rest win 58% vs 52% baseline (2020-2024)\nWhy work: Fatigue and prep time underpriced\nWhy fail: Modern recovery, market efficient on rest\nEvidence: Reddit r/nfl analysis 2023, 124 games +3 rest diff\nSources: ESPN schedule, NFL schedule difficulty public analysis\n            ",
+      "starting_bankroll": 8177.71,
+      "current_bankroll": 8177.71,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 4,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8177.71,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ArbLambda_7317 uses Rest & Schedule Difficulty: Teams with 3+ extra rest days vs opponent",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0003_56e88f",
+      "username": "ArbSignal_8562",
+      "strategy_id": "STRAT_WEATHER_UNDER_004",
+      "strategy_name": "Bad Weather Under",
+      "strategy_description": "Under on game totals when wind >20mph or temp <25F",
+      "strategy_long_explanation": "\nUses: NWS forecast (wind, temp), Kalshi KXNFLTOTAL markets\nEntry: wind >20mph or temp <25F or heavy snow/rain forecast\nAvoid: indoor stadiums, dome games\nPosition size: 2% bankroll\nEV: historical under hits 57% in 20+mph wind games (n=89, 2015-2023)\nWhy work: Passing and kicking degraded, market slow to adjust to late forecast shifts\nWhy fail: Totals already adjust; weather forecasts change\nEvidence: NWS api.weather.gov + ESPN indoor flag; backtest 2015-2023\nSources: https://api.weather.gov, https://www.weather.gov\n            ",
+      "starting_bankroll": 9306.41,
+      "current_bankroll": 9306.41,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 5,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9306.41,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ArbSignal_8562 uses Bad Weather Under: Under on game totals when wind >20mph or temp <25F",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0004_ee1770",
+      "username": "BetaEagle_51",
+      "strategy_id": "STRAT_INJURY_FADE_005",
+      "strategy_name": "Injury Impact Fade",
+      "strategy_description": "Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c",
+      "strategy_long_explanation": "\nUses: ESPN injuries API (official nfl.com designations), Kalshi KXNFLGAME\nEntry: starting QB OUT or 2+ offensive starters OUT and market price moved <3c since injury report\nAvoid: questionable tags, market already moved >5c\nPosition size: 3% bankroll (higher conviction)\nEV: QB OUT drops win prob ~18% but market sometimes moves only 8-10%\nWhy work: Market slow on late injury news, especially Friday/Saturday\nWhy fail: Backup may be competent, market may already price\nEvidence: 2022-2024 QB OUT games, 62% fade win rate (n=34)\nSources: ESPN injuries https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries, NFL Injury Report project https://buffedlizard55-lab.github.io/NFLInjuryReport/\n            ",
+      "starting_bankroll": 9252.19,
+      "current_bankroll": 8964.54,
+      "open_trades": [
+        "trade_6abfd9f23579"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 6,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9252.19,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User BetaEagle_51 uses Injury Impact Fade: Fade teams with QB1 or 2+ starters OUT vs market that hasn't moved >3c",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0005_dc7cac",
+      "username": "BetaLion_9045",
+      "strategy_id": "STRAT_CORR_SPREAD_ML_006",
+      "strategy_name": "Spread + Moneyline Correlation",
+      "strategy_description": "Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5",
+      "strategy_long_explanation": "\nUses: KXNFLGAME moneyline and KXNFLSPREAD spread markets for same game\nEntry: favorite spread -3.5 to -6.5, moneyline price <0.70, spread price <0.60\nAvoid: large spreads >10, correlated too highly (product overstates)\nPosition size: 1% bankroll (parlay risk)\nEV: correlation ~0.85, but product pricing assumes independence, so need discount; historical 2-leg hits 58%\nWhy work: Spread cover highly correlated with win, but combo pricing may not fully account\nWhy fail: Correlation makes parlay less valuable than product; fees compound\nEvidence: Backtest 2020-2024: favorite -3.5 to -6.5 covers and wins 71% but parlay priced at 42% implied (edge?)\nSources: Kalshi KXNFLGAME + KXNFLSPREAD, Reddit r/sportsbook correlation discussion\n            ",
+      "starting_bankroll": 8357.53,
+      "current_bankroll": 8148.43,
+      "open_trades": [
+        "trade_446e9e791d65"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 7,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8357.53,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User BetaLion_9045 uses Spread + Moneyline Correlation: Parlay favorite spread cover + moneyline win when spread -3.5 to -6.5",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0006_41e648",
+      "username": "BlowoutGammaX_4045",
+      "strategy_id": "STRAT_TOTAL_DOG_007",
+      "strategy_name": "Total + Underdog Correlation",
+      "strategy_description": "Underdog moneyline + Under total when underdog is defensive team",
+      "strategy_long_explanation": "\nUses: KXNFLGAME moneyline (underdog) + KXNFLTOTAL under\nEntry: underdog with top-10 defense vs top offense, total >48, underdog price 0.30-0.45\nAvoid: high total already underpriced, indoor shootouts\nPosition size: 1% bankroll\nEV: defensive underdogs win + under hits 31% vs market 26% implied\nWhy work: Defensive game script favors underdog keeping it low scoring\nWhy fail: Underdog may need shootout to win\nEvidence: 2018-2023, 67 games matching, 31% hit\nSources: ESPN team stats, Kalshi totals\n            ",
+      "starting_bankroll": 9194.51,
+      "current_bankroll": 9194.51,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 8,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9194.51,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User BlowoutGammaX_4045 uses Total + Underdog Correlation: Underdog moneyline + Under total when underdog is defensive team",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0007_dfb738",
+      "username": "CoachSignal_5693",
+      "strategy_id": "STRAT_LINE_MOVE_008",
+      "strategy_name": "Line Movement Momentum",
+      "strategy_description": "Follow sharp money: if price moved 5c+ in last 2h toward favorite, follow",
+      "strategy_long_explanation": "\nUses: Kalshi candlesticks hourly, last_price vs 2h ago\nEntry: price moved >=5c in direction of favorite in last 2 hours, volume spike >2x avg\nAvoid: news-driven move (injury), close_time <1h\nPosition size: 1.5% bankroll\nEV: momentum persists 54% next hour in NFL markets (n=1,200 moves)\nWhy work: Informed money moves line, retail lags\nWhy fail: Mean reversion after overreaction\nEvidence: Kalshi candle archive analysis (if available)\nSources: Kalshi candlesticks API, trading community momentum research\n            ",
+      "starting_bankroll": 10971.89,
+      "current_bankroll": 10971.89,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 9,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10971.89,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User CoachSignal_5693 uses Line Movement Momentum: Follow sharp money: if price moved 5c+ in last 2h toward favorite, follow",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0008_68d866",
+      "username": "CoachTrader_6459",
+      "strategy_id": "STRAT_MEAN_REVERT_009",
+      "strategy_name": "Mean Reversion Fade",
+      "strategy_description": "Fade large moves >8c in last hour without news",
+      "strategy_long_explanation": "\nUses: Kalshi candlesticks, news flag (injury/weather)\nEntry: price moved >8c in last hour, no injury/weather news, spread >6c (overreaction)\nAvoid: news-driven moves, low liquidity\nPosition size: 1% bankroll\nEV: 56% reversion within next 2h after >8c move with no news (n=340)\nWhy work: Retail overreaction, market maker inventory\nWhy fail: Move may be informed, not overreaction\nEvidence: Kalshi candle analysis\nSources: Academic mean reversion in prediction markets\n            ",
+      "starting_bankroll": 11844.89,
+      "current_bankroll": 11844.89,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 10,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11844.89,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User CoachTrader_6459 uses Mean Reversion Fade: Fade large moves >8c in last hour without news",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0009_da0fef",
+      "username": "ComboModel_8307",
+      "strategy_id": "STRAT_1H_DIVERGE_010",
+      "strategy_name": "1H vs Full Game Divergence",
+      "strategy_description": "When 1H price diverges >10% from full game price, arbitrage or value",
+      "strategy_long_explanation": "\nUses: KXNFL1H and KXNFLGAME markets same event\nEntry: abs(1H implied - full game implied) >10% and both liquid\nAvoid: low liquidity 1H markets, close_time mismatch\nPosition size: 1% bankroll\nEV: 1H and full game correlated ~0.78, divergence >10% reverts 60% (n=120)\nWhy work: 1H markets less liquid, slower to update\nWhy fail: Different game scripts (team starts slow)\nEvidence: Kalshi 1H markets 2025 season\nSources: Kalshi KXNFL1H series\n            ",
+      "starting_bankroll": 8958.79,
+      "current_bankroll": 8958.79,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 11,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8958.79,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboModel_8307 uses 1H vs Full Game Divergence: When 1H price diverges >10% from full game price, arbitrage or value",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0010_b3effb",
+      "username": "ComboOmega_6852",
+      "strategy_id": "STRAT_TD_ANYTIME_011",
+      "strategy_name": "Anytime TD Value",
+      "strategy_description": "Player anytime TD market when odds > model",
+      "strategy_long_explanation": "Uses KXNFLANYTD markets, player usage, red zone opportunities. Entry when model prob > market +7%. Position 1% bankroll. Why work: public overvalues big names, undervalues role players. Why fail: variance high. Evidence: 2023 anytime TD 52% model edge n=200.",
+      "starting_bankroll": 9329.8,
+      "current_bankroll": 9216.96,
+      "open_trades": [
+        "trade_2503bddfd06c"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 12,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9329.8,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboOmega_6852 uses Anytime TD Value: Player anytime TD market when odds > model",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0011_911ff9",
+      "username": "ComboQuantX_1617",
+      "strategy_id": "STRAT_TEAM_TOTAL_OVER_012",
+      "strategy_name": "Team Total Over",
+      "strategy_description": "Team total over when implied < model based on offensive efficiency",
+      "strategy_long_explanation": "Uses KXNFLTEAMTOTAL, offensive EPA/play. Entry team EPA top 10 vs bottom 10 defense and total price <0.50. Position 1.5%. Why work: efficiency metrics lead totals. Why fail: game script. Evidence: EPA-based totals 54% 2022-2024.",
+      "starting_bankroll": 9576.38,
+      "current_bankroll": 9471.88,
+      "open_trades": [
+        "trade_7afa94630a0d"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 13,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9576.38,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboQuantX_1617 uses Team Total Over: Team total over when implied < model based on offensive efficiency",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0012_9a72dc",
+      "username": "ComboShark_1142",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013",
+      "strategy_name": "Team Total Under",
+      "strategy_description": "Team total under when wind/bad weather or strong opposing D",
+      "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+      "starting_bankroll": 8274.21,
+      "current_bankroll": 8190.71,
+      "open_trades": [
+        "trade_693be3424b70"
+      ],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "rank": 14,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 8274.21,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboShark_1142 uses Team Total Under: Team total under when wind/bad weather or strong opposing D",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": "2026-09-22T22:52:42Z",
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0013_5e2002",
+      "username": "ComboZeta_721",
+      "strategy_id": "STRAT_Q1_UNDER_014",
+      "strategy_name": "First Quarter Under",
+      "strategy_description": "Q1 under in low-scoring divisional games",
+      "strategy_long_explanation": "Uses KXNFL1QTOTAL, divisional games historically start slow. Entry divisional matchup, total Q1 >7.5 points price over >0.55. Position 1%. Why work: feeling out period. Why fail: early TD. Evidence: Q1 under 54% divisional 2019-2024.",
+      "starting_bankroll": 11331.04,
+      "current_bankroll": 11331.04,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 15,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11331.04,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboZeta_721 uses First Quarter Under: Q1 under in low-scoring divisional games",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0014_2fcacb",
+      "username": "ComboZeta_7322",
+      "strategy_id": "STRAT_PRIMETIME_FAVE_015",
+      "strategy_name": "Primetime Favorite Fade",
+      "strategy_description": "Fade large primetime favorites >7.5",
+      "strategy_long_explanation": "Uses KXNFLGAME, primetime games (SNF/MNF) favorites >7.5 cover only 42%. Entry favorite >7.5 primetime, bet underdog spread. Position 2%. Why work: primetime underdogs motivated, public overbets favorite. Why fail: talent gap. Evidence: 42% cover rate 2020-2024 n=68.",
+      "starting_bankroll": 9434.36,
+      "current_bankroll": 9434.36,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 16,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9434.36,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ComboZeta_7322 uses Primetime Favorite Fade: Fade large primetime favorites >7.5",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0015_ebe26c",
+      "username": "ContrarianEdge_5335",
+      "strategy_id": "STRAT_DIVISIONAL_DOG_016",
+      "strategy_name": "Divisional Underdog Value",
+      "strategy_description": "Divisional underdogs cover 53%+",
+      "strategy_long_explanation": "Uses KXNFLSPREAD, divisional games underdog +3 to +7. Entry divisional underdog +3 to +7, price <0.52. Position 2%. Why work: familiarity reduces blowouts. Why fail: market knows. Evidence: 53.2% cover 2015-2024.",
+      "starting_bankroll": 11222.69,
+      "current_bankroll": 11222.69,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 17,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11222.69,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User ContrarianEdge_5335 uses Divisional Underdog Value: Divisional underdogs cover 53%+",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0016_13cb5e",
+      "username": "DeltaAlphaX_4613",
+      "strategy_id": "STRAT_BLOWOUT_REVERSION_017",
+      "strategy_name": "Blowout Reversion",
+      "strategy_description": "Team blown out last week bounces back ATS",
+      "strategy_long_explanation": "Uses previous week margin, KXNFLSPREAD. Entry team lost by 20+ last week, next spread <+7. Position 1.5%. Why work: overreaction to blowout, motivation. Why fail: team may be bad. Evidence: 55% ATS bounce back 2010-2023.",
+      "starting_bankroll": 9420.77,
+      "current_bankroll": 9420.77,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 18,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9420.77,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DeltaAlphaX_4613 uses Blowout Reversion: Team blown out last week bounces back ATS",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0017_301eb5",
+      "username": "DeltaEagle_182",
+      "strategy_id": "STRAT_WIN_STREAK_FADE_018",
+      "strategy_name": "Win Streak Fade",
+      "strategy_description": "Fade teams on 4+ win streak vs market",
+      "strategy_long_explanation": "Uses win streak, KXNFLGAME. Entry team 4+ win streak, moneyline >0.70, bet NO. Position 1%. Why work: market overvalues streak, regression. Why fail: good teams keep winning. Evidence: 4+ streak teams win next 58% vs 70% implied (fade profitable).",
+      "starting_bankroll": 9307.09,
+      "current_bankroll": 9307.09,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 19,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9307.09,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DeltaEagle_182 uses Win Streak Fade: Fade teams on 4+ win streak vs market",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0018_19db2c",
+      "username": "DeltaGammaX_8894",
+      "strategy_id": "STRAT_SHORT_WEEK_UNDER_019",
+      "strategy_name": "Short Week Under",
+      "strategy_description": "Thursday games under due to short prep",
+      "strategy_long_explanation": "Uses KXNFLTOTAL, TNF games. Entry Thursday game total >45, bet under. Position 1.5%. Why work: short week hurts offense more. Why fail: totals already lower. Evidence: TNF under 54% 2018-2024.",
+      "starting_bankroll": 10129.23,
+      "current_bankroll": 10129.23,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 20,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10129.23,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DeltaGammaX_8894 uses Short Week Under: Thursday games under due to short prep",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0019_5fdec0",
+      "username": "DeltaModel_83",
+      "strategy_id": "STRAT_COACH_CHALLENGE_020",
+      "strategy_name": "Coaching Mismatch",
+      "strategy_description": "Top 5 coaching vs bottom 5 per DVOA",
+      "strategy_long_explanation": "Uses coaching rankings, KXNFLGAME. Entry top 5 coach vs bottom 5, moneyline <0.65. Position 2%. Why work: coaching matters in close games. Why fail: subjective ranking. Evidence: top vs bottom coach win 62% vs 55% baseline.",
+      "starting_bankroll": 9250.21,
+      "current_bankroll": 9250.21,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 21,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9250.21,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DeltaModel_83 uses Coaching Mismatch: Top 5 coaching vs bottom 5 per DVOA",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0020_9ddc49",
+      "username": "DeltaQuantX_9190",
+      "strategy_id": "STRAT_RIVALRY_OVER_021",
+      "strategy_name": "Rivalry Game Over",
+      "strategy_description": "High-scoring rivalries over trend",
+      "strategy_long_explanation": "Uses KXNFLTOTAL, historic rivalry totals. Entry rivalry game with avg 50+ pts last 5 meetings, total price under >0.52. Position 1%. Why work: familiarity breeds offensive success late. Why fail: defensive adjustments. Evidence: rivalry over 54% when avg 50+.",
+      "starting_bankroll": 10115.98,
+      "current_bankroll": 10115.98,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 22,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 10115.98,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DeltaQuantX_9190 uses Rivalry Game Over: High-scoring rivalries over trend",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0021_d8f7b4",
+      "username": "DivisionalKappa_3831",
+      "strategy_id": "STRAT_ROOKIE_QB_UNDER_022",
+      "strategy_name": "Rookie QB Under",
+      "strategy_description": "Under when rookie QB starting",
+      "strategy_long_explanation": "Uses KXNFLTOTAL, rookie QB starts. Entry rookie QB first 3 starts, total >43, bet under. Position 1.5%. Why work: rookie mistakes, conservative play. Why fail: rookie may be good. Evidence: rookie QB unders 57% first 3 starts 2020-2024.",
+      "starting_bankroll": 11920.91,
+      "current_bankroll": 11920.91,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 23,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 11920.91,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DivisionalKappa_3831 uses Rookie QB Under: Under when rookie QB starting",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0022_00956b",
+      "username": "DivisionalWolf_8051",
+      "strategy_id": "STRAT_VETERAN_QB_SPREAD_023",
+      "strategy_name": "Veteran QB Spread Cover",
+      "strategy_description": "Veteran QB >10y exp covers as underdog",
+      "strategy_long_explanation": "Uses KXNFLSPREAD, QB experience. Entry veteran QB 10+ years as underdog +3 to +7. Position 1.5%. Why work: experience in close games. Why fail: declining physical. Evidence: veteran underdogs 54% ATS 2015-2024.",
+      "starting_bankroll": 9473.77,
+      "current_bankroll": 9473.77,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 24,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9473.77,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DivisionalWolf_8051 uses Veteran QB Spread Cover: Veteran QB >10y exp covers as underdog",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    },
+    {
+      "user_id": "user_0023_47a05f",
+      "username": "DvoaHawk_9828",
+      "strategy_id": "STRAT_ALT_LINE_VALUE_024",
+      "strategy_name": "Alt Line Value",
+      "strategy_description": "Alt spread lines mispriced vs main",
+      "strategy_long_explanation": "Uses KXNFLSPREAD alt lines, compares to main line price. Entry alt line -2.5 vs main -6.5 with price diff > implied. Position 1%. Why work: alt lines less liquid, mispriced. Why fail: correlation. Evidence: alt line arb 3% of time 2025.",
+      "starting_bankroll": 9258.19,
+      "current_bankroll": 9258.19,
+      "open_trades": [],
+      "closed_trades": [],
+      "total_pnl": 0.0,
+      "roi_percent": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0.0,
+      "total_trades": 0,
+      "rank": 25,
+      "performance_history": [
+        {
+          "t": "2026-09-22T22:52:42Z",
+          "bankroll": 9258.19,
+          "pnl": 0
+        }
+      ],
+      "explanation": "User DvoaHawk_9828 uses Alt Line Value: Alt spread lines mispriced vs main",
+      "created_at": "2026-09-22T22:52:42Z",
+      "last_trade_at": null,
+      "competition_status": "ACTIVE",
+      "flags": []
+    }
+  ]
+}

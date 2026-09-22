@@ -1,0 +1,648 @@
+{
+  "timestamp": "2026-09-22T22:52:42Z",
+  "chain": {
+    "valid": true,
+    "count": 32,
+    "errors": []
+  },
+  "manifest": {
+    "exists": false,
+    "rows": 0,
+    "malformed": 0,
+    "flags": [
+      {
+        "flag_type": "MISSING_DATA",
+        "message": "manifest.jsonl missing",
+        "trade_id": null,
+        "market_ticker": null,
+        "severity": "medium",
+        "created_at": "2026-09-22T22:52:42Z"
+      }
+    ]
+  },
+  "trades": {
+    "total_trades": 32,
+    "errors": [],
+    "flags": [
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_1e7ead5ab243",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP29MINCIN, may be synthetic fixture",
+        "trade_id": "trade_a91bde743895",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_6abfd9f23579",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP25PITNYJ, may be synthetic fixture",
+        "trade_id": "trade_446e9e791d65",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP25PITNYJ, may be synthetic fixture",
+        "trade_id": "trade_446e9e791d65",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP27HOUCHI, may be synthetic fixture",
+        "trade_id": "trade_2503bddfd06c",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP27HOUCHI, may be synthetic fixture",
+        "trade_id": "trade_7afa94630a0d",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_693be3424b70",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_ffc1d106bfe4",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_7b7558f60e7c",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_a263e7b212d0",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21CINDEN, may be synthetic fixture",
+        "trade_id": "trade_bc786e460965",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_811ecf5953f4",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_d4f61a91dae1",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP23NOLAC, may be synthetic fixture",
+        "trade_id": "trade_eb9411fc5d32",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFLAR, may be synthetic fixture",
+        "trade_id": "trade_658fb612a95b",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_2f8bd07e8faf",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_44fd8d994499",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_0de6382cfa44",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_5fe400be3aef",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_5fe400be3aef",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP23NOLAC, may be synthetic fixture",
+        "trade_id": "trade_9a034739a142",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+        "trade_id": "trade_2b52108d2a44",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_8f762a771952",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+        "trade_id": "trade_8139169d0c02",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+        "trade_id": "trade_8139169d0c02",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+        "trade_id": "trade_152e49b94863",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+        "trade_id": "trade_152e49b94863",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP28INDCLE, may be synthetic fixture",
+        "trade_id": "trade_55fa71041144",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP28INDCLE, may be synthetic fixture",
+        "trade_id": "trade_55fa71041144",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_1e7ead5ab243",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_ffc1d106bfe4",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_7b7558f60e7c",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+        "trade_id": "trade_a263e7b212d0",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+        "trade_id": "trade_811ecf5953f4",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+        "trade_id": "trade_d4f61a91dae1",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+        "trade_id": "trade_8139169d0c02",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      },
+      {
+        "flag_type": "UNVERIFIED_DATA",
+        "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+        "trade_id": "trade_8139169d0c02",
+        "market_ticker": null,
+        "severity": "low",
+        "created_at": "2026-09-22T22:52:42Z"
+      }
+    ],
+    "suspicious_prices": 0,
+    "missing_timestamps": 0,
+    "duplicate_count": 0
+  },
+  "users": {
+    "exists": true,
+    "count": 100,
+    "errors": []
+  },
+  "flags": [
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_1e7ead5ab243",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP29MINCIN, may be synthetic fixture",
+      "trade_id": "trade_a91bde743895",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_6abfd9f23579",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP25PITNYJ, may be synthetic fixture",
+      "trade_id": "trade_446e9e791d65",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP25PITNYJ, may be synthetic fixture",
+      "trade_id": "trade_446e9e791d65",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP27HOUCHI, may be synthetic fixture",
+      "trade_id": "trade_2503bddfd06c",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP27HOUCHI, may be synthetic fixture",
+      "trade_id": "trade_7afa94630a0d",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_693be3424b70",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_ffc1d106bfe4",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_7b7558f60e7c",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_a263e7b212d0",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21CINDEN, may be synthetic fixture",
+      "trade_id": "trade_bc786e460965",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_811ecf5953f4",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_d4f61a91dae1",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP23NOLAC, may be synthetic fixture",
+      "trade_id": "trade_eb9411fc5d32",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFLAR, may be synthetic fixture",
+      "trade_id": "trade_658fb612a95b",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_2f8bd07e8faf",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_44fd8d994499",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_0de6382cfa44",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_5fe400be3aef",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_5fe400be3aef",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP23NOLAC, may be synthetic fixture",
+      "trade_id": "trade_9a034739a142",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+      "trade_id": "trade_2b52108d2a44",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_8f762a771952",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+      "trade_id": "trade_8139169d0c02",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+      "trade_id": "trade_8139169d0c02",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+      "trade_id": "trade_152e49b94863",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP20SEALAR, may be synthetic fixture",
+      "trade_id": "trade_152e49b94863",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP28INDCLE, may be synthetic fixture",
+      "trade_id": "trade_55fa71041144",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP28INDCLE, may be synthetic fixture",
+      "trade_id": "trade_55fa71041144",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_1e7ead5ab243",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_ffc1d106bfe4",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_7b7558f60e7c",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP24KCWAS, may be synthetic fixture",
+      "trade_id": "trade_a263e7b212d0",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP21BUFIND, may be synthetic fixture",
+      "trade_id": "trade_811ecf5953f4",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP22SFKC, may be synthetic fixture",
+      "trade_id": "trade_d4f61a91dae1",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+      "trade_id": "trade_8139169d0c02",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    },
+    {
+      "flag_type": "UNVERIFIED_DATA",
+      "message": "Market file missing for KXNFLGAME-26SEP26DENJAX, may be synthetic fixture",
+      "trade_id": "trade_8139169d0c02",
+      "market_ticker": null,
+      "severity": "low",
+      "created_at": "2026-09-22T22:52:42Z"
+    }
+  ],
+  "valid": true
+}

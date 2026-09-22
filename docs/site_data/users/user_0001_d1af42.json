@@ -1,0 +1,188 @@
+{
+  "user": {
+    "user_id": "user_0001_d1af42",
+    "username": "AlphaRho_1380",
+    "strategy_id": "STRAT_HOME_ADV_002",
+    "strategy_name": "Home Field Momentum",
+    "strategy_description": "Favors home teams with >65% home win rate last 8 games",
+    "strategy_long_explanation": "\nUses: ESPN team home/away records, Kalshi KXNFLGAME moneyline\nEntry: home team win pct last 8 home games >65% and away team road win pct <40%\nAvoid: indoor vs outdoor mismatch, division rivalry (higher variance)\nPosition size: 2% bankroll flat\nEV: historical home win rate 57% vs market implied\nWhy work: Home field still underpriced after travel/rest factors\nWhy fail: Market already prices home advantage; 2020-2021 showed reduced edge\nEvidence: NFL 2000-2023 home win 57.2% (n=4,200 games)\nSources: ESPN scoreboard API, academic HFA studies\n            ",
+    "starting_bankroll": 10934.89,
+    "current_bankroll": 10775.79,
+    "open_trades": [
+      "trade_a91bde743895"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 3,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 10934.89,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User AlphaRho_1380 uses Home Field Momentum: Favors home teams with >65% home win rate last 8 games",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06000000000000005,
+      "fees": 14.763,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 24.00% for KXNFLGAME-26SEP29MINCIN-CIN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "cfd44775e377379614669e8a71027023fa65663fc45b18f1645f77fc1b3f6462",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP29MINCIN",
+          "exec_price": 0.43,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 19909.70055403853,
+          "market_ticker": "KXNFLGAME-26SEP29MINCIN-CIN",
+          "model_prob": 0.65,
+          "quantity": 370,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.591,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29MINCIN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+          "spread": 0.24000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 159.1,
+      "prev_hash": "f3e7b4da5a43fe5effd2ad042287342ec8128ece083575307793a89064316b64",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.591,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002",
+      "trade_id": "trade_a91bde743895",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0001_d1af42",
+      "username": "AlphaRho_1380",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.43,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": 0.06000000000000005,
+      "fees": 14.763,
+      "flags": [
+        {
+          "created_at": "2026-09-22T22:52:42Z",
+          "flag_type": "LIQUIDITY_PROBLEM",
+          "market_ticker": null,
+          "message": "Wide spread 24.00% for KXNFLGAME-26SEP29MINCIN-CIN",
+          "severity": "low",
+          "trade_id": null
+        }
+      ],
+      "hash": "cfd44775e377379614669e8a71027023fa65663fc45b18f1645f77fc1b3f6462",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.43,
+          "bid_at_entry": 0.67,
+          "entry_price": 0.59,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP29MINCIN",
+          "exec_price": 0.43,
+          "implied_prob": 0.59,
+          "liquidity_at_entry": 19909.70055403853,
+          "market_ticker": "KXNFLGAME-26SEP29MINCIN-CIN",
+          "model_prob": 0.65,
+          "quantity": 370,
+          "reason": "Home team 65% home win last 8",
+          "series_ticker": "KXNFLGAME",
+          "side": "YES",
+          "slippage": 1.591,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP29MINCIN.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+          "spread": 0.24000000000000005,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP29MINCIN-CIN",
+        "https://kalshi.com/markets/KXNFLGAME-26SEP29MINCIN-CIN"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 159.1,
+      "prev_hash": "f3e7b4da5a43fe5effd2ad042287342ec8128ece083575307793a89064316b64",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 1.591,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_HOME_ADV_002",
+      "trade_id": "trade_a91bde743895",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0001_d1af42",
+      "username": "AlphaRho_1380",
+      "verification_notes": "",
+      "why_entered": "Home win rate 65% vs market 57%",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 10934.89,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 159.1,
+    "total_volume": 159.1
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

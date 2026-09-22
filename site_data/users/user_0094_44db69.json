@@ -1,0 +1,54 @@
+{
+  "user": {
+    "user_id": "user_0094_44db69",
+    "username": "VeteranTheta_2843",
+    "strategy_id": "STRAT_LIQUIDITY_PROVISION_033_VAR94",
+    "strategy_name": "Liquidity Provision vR94",
+    "strategy_description": "Place both sides near mid when spread wide (variation)",
+    "strategy_long_explanation": "Uses orderbook bid/ask spread. Entry spread >8c, place both sides at mid +/-2c. Position market making 0.5% per side. Why work: collect spread. Why fail: adverse selection. Evidence: market making 51% win rate but positive EV from spread.",
+    "starting_bankroll": 10267.9,
+    "current_bankroll": 10267.9,
+    "open_trades": [],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "rank": 90,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 10267.9,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User VeteranTheta_2843 uses Liquidity Provision vR94: Place both sides near mid when spread wide (variation)",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": null,
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [],
+  "open_trades": [],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 10267.9,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 0,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 0,
+    "total_volume": 0
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

@@ -1,0 +1,170 @@
+{
+  "user": {
+    "user_id": "user_0012_9a72dc",
+    "username": "ComboShark_1142",
+    "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013",
+    "strategy_name": "Team Total Under",
+    "strategy_description": "Team total under when wind/bad weather or strong opposing D",
+    "strategy_long_explanation": "Uses KXNFLTEAMTOTAL + weather + defensive DVOA. Entry wind >15mph or vs top 5 D and price over >0.55. Position 1.5%. Why work: defense + weather suppresses scoring. Why fail: shootout. Evidence: under hits 56% in wind games.",
+    "starting_bankroll": 8274.21,
+    "current_bankroll": 8190.71,
+    "open_trades": [
+      "trade_693be3424b70"
+    ],
+    "closed_trades": [],
+    "total_pnl": 0.0,
+    "roi_percent": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "rank": 14,
+    "performance_history": [
+      {
+        "t": "2026-09-22T22:52:42Z",
+        "bankroll": 8274.21,
+        "pnl": 0
+      }
+    ],
+    "explanation": "User ComboShark_1142 uses Team Total Under: Team total under when wind/bad weather or strong opposing D",
+    "created_at": "2026-09-22T22:52:42Z",
+    "last_trade_at": "2026-09-22T22:52:42Z",
+    "competition_status": "ACTIVE",
+    "flags": []
+  },
+  "trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.5,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.001141520291901621,
+      "fees": 5.845,
+      "flags": [],
+      "hash": "f2bcd5ad362c0803a077b631331e52b860dfd3f11a77d3a925c06ee670069588",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.41,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP24KCWAS",
+          "exec_price": 0.5,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 19353.025134515836,
+          "market_ticker": "KXNFLGAME-26SEP24KCWAS-WAS",
+          "model_prob": 0.6388584797080984,
+          "quantity": 167,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.835,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24KCWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 83.5,
+      "prev_hash": "c7e9f9115ae0c7bba470ab99b546f948099f71ce75853ff48333b544513fa1f1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.835,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013",
+      "trade_id": "trade_693be3424b70",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0012_9a72dc",
+      "username": "ComboShark_1142",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "open_trades": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "entry_price_combined": 0.5,
+      "exit_price_combined": null,
+      "exit_timestamp": null,
+      "expected_value": -0.001141520291901621,
+      "fees": 5.845,
+      "flags": [],
+      "hash": "f2bcd5ad362c0803a077b631331e52b860dfd3f11a77d3a925c06ee670069588",
+      "is_native_kalshi_combo": false,
+      "legs": [
+        {
+          "ask_at_entry": 0.41,
+          "bid_at_entry": 0.5,
+          "entry_price": 0.64,
+          "entry_timestamp": "2026-09-22T22:52:42Z",
+          "event_ticker": "KXNFLGAME-26SEP24KCWAS",
+          "exec_price": 0.5,
+          "implied_prob": 0.64,
+          "liquidity_at_entry": 19353.025134515836,
+          "market_ticker": "KXNFLGAME-26SEP24KCWAS-WAS",
+          "model_prob": 0.6388584797080984,
+          "quantity": 167,
+          "reason": "Team Total Under signal",
+          "series_ticker": "KXNFLGAME",
+          "side": "NO",
+          "slippage": 0.835,
+          "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24KCWAS.json",
+          "source_sha256": "pending_manifest_lookup",
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+          "spread": 0.09000000000000002,
+          "verification_url": "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+        }
+      ],
+      "market_type": "SINGLE",
+      "official_sources": [
+        "https://kalshi.com/markets/KXNFLGAME-26SEP24KCWAS-WAS",
+        "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLGAME-26SEP24KCWAS-WAS"
+      ],
+      "pnl_dollars": null,
+      "position_size_dollars": 83.5,
+      "prev_hash": "c7e9f9115ae0c7bba470ab99b546f948099f71ce75853ff48333b544513fa1f1",
+      "result": "PENDING",
+      "roi_percent": null,
+      "settlement_price": null,
+      "slippage_assumed": 0.835,
+      "status": "EXECUTED",
+      "strategy_id": "STRAT_TEAM_TOTAL_UNDER_013",
+      "trade_id": "trade_693be3424b70",
+      "updated_at": "2026-09-22T22:52:42Z",
+      "user_id": "user_0012_9a72dc",
+      "username": "ComboShark_1142",
+      "verification_notes": "",
+      "why_entered": "Team Total Under triggered",
+      "why_exited": ""
+    }
+  ],
+  "closed_trades": [],
+  "equity_curve": [
+    {
+      "t": "2026-09-22T22:52:42Z",
+      "bankroll": 8274.21,
+      "pnl": 0
+    }
+  ],
+  "stats": {
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_trades": 1,
+    "roi": 0.0,
+    "pnl": 0.0,
+    "open_exposure": 83.5,
+    "total_volume": 83.5
+  },
+  "updated_at": "2026-09-22T22:52:57Z"
+}

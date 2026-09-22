@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-09-22T22:52:42Z",
+  "entry_price_combined": 0.36,
+  "exit_price_combined": null,
+  "exit_timestamp": null,
+  "expected_value": 0.12,
+  "fees": 25.8496,
+  "flags": [
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "flag_type": "LIQUIDITY_PROBLEM",
+      "market_ticker": null,
+      "message": "Position $357.74 >10% of liquidity $1808.0613952673864 for KXNFLSPREAD-26SEP24KCWAS-WAS-3.5",
+      "severity": "medium",
+      "trade_id": null
+    },
+    {
+      "created_at": "2026-09-22T22:52:42Z",
+      "flag_type": "LIQUIDITY_PROBLEM",
+      "market_ticker": null,
+      "message": "Wide spread 11.00% for KXNFLSPREAD-26SEP24KCWAS-WAS-3.5",
+      "severity": "low",
+      "trade_id": null
+    }
+  ],
+  "hash": "15b1b9421dff05c4fae96c1b59133a2ca1390c3064517ba5ff59bad93d6f63f1",
+  "is_native_kalshi_combo": false,
+  "legs": [
+    {
+      "ask_at_entry": 0.53,
+      "bid_at_entry": 0.64,
+      "entry_price": 0.62,
+      "entry_timestamp": "2026-09-22T22:52:42Z",
+      "event_ticker": "KXNFLGAME-26SEP24KCWAS",
+      "exec_price": 0.36,
+      "implied_prob": 0.62,
+      "liquidity_at_entry": 1808.0613952673864,
+      "market_ticker": "KXNFLSPREAD-26SEP24KCWAS-WAS-3.5",
+      "model_prob": 0.62,
+      "quantity": 577,
+      "reason": "QB1 OUT, market hasn't moved",
+      "series_ticker": "KXNFLSPREAD",
+      "side": "NO",
+      "slippage": 2.0772,
+      "source_file": "data/raw/kalshi/markets/KXNFLGAME-26SEP24KCWAS.json",
+      "source_sha256": "pending_manifest_lookup",
+      "source_url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24KCWAS-WAS-3.5",
+      "spread": 0.10999999999999999,
+      "verification_url": "https://kalshi.com/markets/KXNFLSPREAD-26SEP24KCWAS-WAS-3.5"
+    }
+  ],
+  "market_type": "SINGLE",
+  "official_sources": [
+    "https://api.elections.kalshi.com/trade-api/v2/markets/KXNFLSPREAD-26SEP24KCWAS-WAS-3.5",
+    "https://kalshi.com/markets/KXNFLSPREAD-26SEP24KCWAS-WAS-3.5"
+  ],
+  "pnl_dollars": null,
+  "position_size_dollars": 207.72,
+  "prev_hash": "9a6ba875c442d2ec05b64a1264550f01276901ba2f6edbe216778434cf0988b6",
+  "result": "PENDING",
+  "roi_percent": null,
+  "settlement_price": null,
+  "slippage_assumed": 2.0772,
+  "status": "EXECUTED",
+  "strategy_id": "STRAT_INJURY_FADE_005_VAR82",
+  "trade_id": "trade_8f762a771952",
+  "updated_at": "2026-09-22T22:52:42Z",
+  "user_id": "user_0082_542890",
+  "username": "TotalLambda_415",
+  "verification_notes": "",
+  "why_entered": "QB OUT not fully priced",
+  "why_exited": ""
+}
