@@ -178,5 +178,59 @@ class TestScheduledJobsAreUsable(unittest.TestCase):
                                  "client is read-only and unauthenticated by design")
 
 
+
+
+class TestPagesDeployment(unittest.TestCase):
+    """The Pages site must actually be reachable, not just "deployed".
+
+    A successful deploy workflow does not guarantee visitors see the site: if the
+    repository's Pages setting is the legacy root-path build, GitHub's legacy
+    pipeline publishes the repository root and the workflow artifact is ignored.
+    These checks pin the pieces that make the site reachable under either setting.
+    """
+
+    def test_root_forwarder_exists(self):
+        """Under the legacy root-path build, '/' needs an index.html at the root."""
+        root_index = os.path.join(sys_path_root, "index.html")
+        self.assertTrue(os.path.exists(root_index),
+                        "root index.html is the bridge that reaches docs/ while Pages "
+                        "uses the legacy root-path build; see docs/OPERATIONS.md")
+        html = read_text(root_index)
+        self.assertIn("docs/", html, "root forwarder must point at docs/")
+
+    def test_docs_index_exists_and_is_the_real_site(self):
+        docs_index = os.path.join(sys_path_root, "docs", "index.html")
+        self.assertTrue(os.path.exists(docs_index))
+        html = read_text(docs_index)
+        self.assertIn("app.js", html)
+        self.assertIn("site_data", html + read_text(
+            os.path.join(sys_path_root, "docs", "app.js")))
+
+    def test_nojekyll_present(self):
+        """Without .nojekyll, Pages' Jekyll pass skips files it should serve."""
+        self.assertTrue(os.path.exists(os.path.join(sys_path_root, "docs", ".nojekyll")))
+
+    def test_bundles_resolve_relative_to_docs(self):
+        """Relative fetch paths must work whether docs/ is the artifact root or not."""
+        js = read_text(os.path.join(sys_path_root, "docs", "app.js"))
+        self.assertIn("site_data/", js)
+        self.assertNotIn("/site_data/", js,
+                         "absolute bundle paths would break when Pages serves from /docs")
+
+    def test_pages_workflow_uploads_docs(self):
+        path = os.path.join(WORKFLOWS_DIR, "pages.yml")
+        text = read_text(path)
+        self.assertIn("upload-pages-artifact", text)
+        self.assertIn("'./docs'", text)
+        self.assertNotIn('"site_data/**"', text,
+                         "pages.yml should trigger on docs/** only; bundles live in docs/")
+
+    def test_operations_documents_the_pages_setting(self):
+        """The required Settings change must stay documented, since automation cannot apply it."""
+        text = read_text(os.path.join(sys_path_root, "docs", "OPERATIONS.md"))
+        self.assertIn("GitHub Actions", text)
+        self.assertIn("legacy", text.lower())
+
+
 if __name__ == "__main__":
     unittest.main()

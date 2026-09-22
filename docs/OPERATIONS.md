@@ -25,10 +25,59 @@
 - Verification: python3 scripts/verify.py + python3 -m unittest discover -s tests -v
 - Site build: python3 scripts/build_site.py (site_data/ + docs/site_data + docs/index.html)
 
-## Pages Deployment
+## Pages Deployment — READ THIS FIRST
+
+### Current state (flagged, needs an owner action)
+
+The repository's Pages setting is:
+
+```json
+{"build_type": "legacy", "source": {"branch": "main", "path": "/"}}
+```
+
+That is the **legacy root-path build**, not the GitHub Actions deployment that
+`.github/workflows/pages.yml` implements. Consequences:
+
+- The Pages deploy workflow **succeeds**, but the published site is built by GitHub's
+  legacy pipeline from the repository root, so the workflow's artifact is not what
+  visitors receive.
+- With no `index.html` at the repository root, Jekyll renders `README.md` as the
+  landing page and the competition site under `docs/` is never reached.
+- `docs/.nojekyll` only disables Jekyll *inside* `docs/`; it has no effect on the
+  root-path build.
+
+**Required fix (one click, repository owner):**
+
+> Settings → Pages → Build and deployment → Source: **GitHub Actions**
+
+After that, `pages.yml` publishes `docs/` as the artifact root and `/` serves the
+competition site directly. The automatic token available to this project cannot make
+this change (`PUT /repos/{owner}/{repo}/pages` returns `403 Resource not accessible by
+integration`), which is why it is documented rather than applied.
+
+### Interim bridge
+
+A root-level `index.html` forwards `/` to `docs/`, so the competition is reachable
+today under the legacy build. It is safe to delete once the Pages source is switched.
+Both paths work either way, because `docs/index.html` fetches `site_data/...` relative
+to itself:
+
+| Pages configuration | `/` serves | `site_data/...` resolves to |
+| --- | --- | --- |
+| Legacy root-path (current) | root `index.html` → forwards to `docs/` | `/docs/site_data/...` |
+| GitHub Actions (intended) | `docs/index.html` | `/site_data/...` |
+
+### Deployment workflow
+
+- Workflow: `.github/workflows/pages.yml`
+- Trigger: push to `main` touching `docs/**`
+- Serves the `docs/` folder as the Pages artifact
+- Site: https://buffedlizard55-lab.github.io/NFLPARLAYCOMP/
+
+## Pages Deployment (workflow reference)
 
 - Workflow: .github/workflows/pages.yml
-- Trigger: push to main with docs/** or site_data/** changes
+- Trigger: push to `main` touching `docs/**` (the bundles live inside docs/)
 - Serves docs/ folder via GitHub Pages
 - Site: https://buffedlizard55-lab.github.io/NFLPARLAYCOMP/
 

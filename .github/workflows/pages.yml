@@ -4,8 +4,9 @@ on:
   push:
     branches: [main]
     paths:
+      # Bundles are written inside docs/, so docs/** covers them. The old
+      # top-level site_data/** path no longer exists (it committed every byte twice).
       - "docs/**"
-      - "site_data/**"
   workflow_dispatch:
 
 permissions:
