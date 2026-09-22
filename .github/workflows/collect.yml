@@ -1,12 +1,75 @@
 name: Data collection cycle
 
+# Automated, read-only collection of verified market data for the paper-trading
+# competition. Every cycle reads ONLY public endpoints (Kalshi Trade API v2,
+# ESPN keyless APIs, NWS) and commits raw snapshots + the fetch manifest back to
+# the repository. Nothing here can place a real order: no credentials exist
+# anywhere in this project and the client is strictly read-only.
+#
+# Notes
+#  * GitHub runs `schedule` triggers only on the default branch and may delay
+#    them under load; every cycle records its own wall-clock time in
+#    data/raw/runs/<run_id>.json and in the manifest.
+#  * `push` is a manual hook for development branches: include [runcollect] in
+#    the head commit message to run a cycle from a push (the scheduled/merged
+#    data commits are tagged [collector] and use GITHUB_TOKEN, which never
+#    re-triggers workflows).
+#  * NOTE: this repo's workflow validator rejects comma lists in the cron
+#    day-of-week field (verified by bisection 2026-09-22), so per-day schedules
+#    must be written as separate cron entries.
+
 on:
+  push:
+    branches: ["arena/**"]
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "universe | events | candles | live | nfl | weather | full"
+        required: false
+        default: "full"
   schedule:
-    - cron: "42 22 * * 1,4,6,7"
+    # Forward-desk cadence (UTC). Games settle late Sunday / Monday-night US
+    # time; the 06:12 cycle picks up Monday-morning results.
+    - cron: "12 6,12,18 * * *"
+    - cron: "42 22 * * *"   # extra cycle around NFL game windows (US evening)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   collect:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[runcollect]')
     runs-on: ubuntu-latest
+    timeout-minutes: 50
     steps:
-      - run: echo hello
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run collector
+        run: |
+          MODE="${{ github.event.inputs.mode || 'full' }}"
+          python3 scripts/collect.py --mode "$MODE"
+
+      - name: Verify manifest integrity (every fetch must be logged with a hash)
+        run: python3 scripts/check_manifest.py
+
+      - name: Commit collected data
+        run: |
+          git config user.name "parlaycomp-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/raw
+          if git diff --cached --quiet; then
+            echo "No new data to commit"
+          else
+            git commit -m "data: collection cycle $(date -u +%Y%m%dT%H%M%SZ) [collector]"
+            git push
+          fi
