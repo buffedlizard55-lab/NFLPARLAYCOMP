@@ -10,7 +10,7 @@ on:
       users:
         description: "Number of users (5..1000)"
         required: false
-        default: "100"
+        default: "1000"
       clear:
         description: "Clear ledger and users first (true/false)"
         required: false
@@ -40,9 +40,13 @@ jobs:
         with:
           python-version: "3.11"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Run competition cycle
         run: |
-          USERS="${{ github.event.inputs.users || '100' }}"
+          USERS="${{ github.event.inputs.users || '1000' }}"
           CLEAR_FLAG=""
           if [ "${{ github.event.inputs.clear }}" = "true" ]; then
             CLEAR_FLAG="--clear"
@@ -50,9 +54,9 @@ jobs:
           python3 scripts/simulate.py --users "$USERS" $CLEAR_FLAG
 
       - name: Verify ledger and data integrity
-        run: |
-          python3 scripts/verify.py
-          python3 -m unittest discover -s tests -v
+        # Runs every gate in one command: unit tests, hash-chain + verification audit,
+        # fetch-manifest audit, and the front-end smoke test. Non-zero exit fails CI.
+        run: python3 scripts/test_all.py
 
       - name: Build site data and docs site
         run: |
@@ -62,7 +66,7 @@ jobs:
         run: |
           git config user.name "parlaycomp-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/competition site_data docs
+          git add data/competition docs
           if git diff --cached --quiet; then
             echo "No new competition data to commit"
           else

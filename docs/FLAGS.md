@@ -21,6 +21,9 @@ Every irregularity is flagged, never hidden.
 - CANDLE_MISSING: no candlestick history for market
 - COMBO_NOT_NATIVE: native combo pricing RFQ-driven, not continuous
 - SYNTHETIC_PARLAY: synthetic parlay not native Kalshi combo, correlation warning
+- SIMULATED_SETTLEMENT: no official Kalshi result stored; outcome drawn from market-implied probability (medium — always shown next to the trade)
+- OFFICIAL_SETTLEMENT: outcome read from the settled market's official `result` field
+- DATA_PROVENANCE: which class of data a field came from — real / derived / simulated
 
 ## Severity
 
@@ -47,3 +50,23 @@ Flags displayed in verification section with color coding:
 ## No silent substitution
 
 If required information unavailable, flag limitation instead of inventing it.
+
+## Provenance rules used by the simulator
+
+- A price is only used if it came from a verified snapshot. Where a value is missing,
+  the trade is rejected or the limitation is flagged — never filled in with an estimate.
+- Settlement is stamped `OFFICIAL` or `SIMULATED` per trade, with the per-leg source
+  recorded in `settlement_leg_sources`. A simulated settlement is never presented as a
+  result.
+- Order-book depth that was not available is disclosed via `ORDERBOOK_MISSING` rather
+  than assumed.
+
+## Where flags surface
+
+| Location | Contents |
+| --- | --- |
+| `data/competition/ledger.jsonl` | flags array on each chained trade entry |
+| `data/competition/verification_report.json` | full audit, written by `scripts/verify.py` |
+| `site_data/verification.json` | the same audit, consumed by the site's Verification page |
+| User record | per-user `flags` array (e.g. strategy evaluation errors) |
+| Competition cycle result | `market_flags` (e.g. synthetic-fixture warning) |

@@ -18,7 +18,7 @@ import os
 import time
 from typing import Any, Dict, List
 
-from .ledger import verify_chain, read_ledger
+from .ledger import verify_chain, read_ledger, latest_trades
 from .utils import make_flag, safe_float, iso_now
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,7 +49,14 @@ def verify_manifest() -> dict:
     return {"exists": True, "rows": rows, "malformed": bad, "status_counts": statuses, "valid": bad == 0}
 
 def verify_trades() -> dict:
-    trades = read_ledger()
+    """Verify every ledger entry (all state transitions), and separately audit the
+    current state of each distinct trade.
+
+    `total_trades` counts DISTINCT trades (latest state per trade_id) so the number
+    reported to the UI matches the number of {users x trades} readers expect.
+    """
+    entries = read_ledger()
+    trades = latest_trades(entries)
     errors = []
     flags = []
     suspicious_prices = 0
@@ -57,7 +64,7 @@ def verify_trades() -> dict:
     seen_hashes = set()
     seen_trade_status = set()
 
-    for trade in trades:
+    for trade in entries:
         tid = trade.get("trade_id")
         status = trade.get("status")
         h = trade.get("hash")
@@ -102,9 +109,38 @@ def verify_trades() -> dict:
             roi = trade.get("roi_percent")
             if roi is None:
                 flags.append(make_flag("CALCULATION_ERROR", f"Missing ROI for settled trade {tid}", trade_id=tid, severity="low"))
+            # Reproducibility: PnL must be reconstructible from stored inputs.
+            pos = safe_float(trade.get("position_size_dollars"))
+            entry = safe_float(trade.get("entry_price_combined"))
+            fees = safe_float(trade.get("fees"), 0.0)
+            if pos is not None and entry is not None and entry > 0:
+                qty = pos / entry
+                expected = (qty * 1.0 - pos - fees) if trade.get("result") == "WIN" else (-pos - fees)
+                if abs(expected - (pnl or 0)) > 0.02:
+                    flags.append(make_flag(
+                        "CALCULATION_ERROR",
+                        f"PnL not reproducible for {tid}: stored {pnl}, recomputed {round(expected,4)} "
+                        f"(pos={pos}, entry={entry}, fees={fees}, result={trade.get('result')})",
+                        trade_id=tid, severity="medium"))
+
+    # Status/state audit on the collapsed (latest) records
+    status_counts = {}
+    for trade in trades:
+        st = trade.get("status")
+        status_counts[st] = status_counts.get(st, 0) + 1
+        if st in ("SETTLED", "CLOSED") and trade.get("pnl_dollars") is None:
+            errors.append({"trade_id": trade.get("trade_id"), "error": f"{st} trade missing PnL"})
+        if st in ("CANDIDATE", "SIGNAL", "ORDER") and trade.get("position_size_dollars"):
+            flags.append(make_flag(
+                "CALCULATION_ERROR",
+                f"Pre-execution trade {trade.get('trade_id')} carries a position size; "
+                "signals must not be treated as executed",
+                trade_id=trade.get("trade_id"), severity="medium"))
 
     return {
         "total_trades": len(trades),
+        "ledger_entries": len(entries),
+        "by_status": status_counts,
         "errors": errors,
         "flags": flags,
         "suspicious_prices": suspicious_prices,

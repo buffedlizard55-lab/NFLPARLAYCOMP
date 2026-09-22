@@ -8,7 +8,7 @@ Key findings (verified 2026-09-22 via docs and live API observation):
 - Kalshi COMBO feature (introduced Dec 2025) allows bundling multiple YES contracts
   into a single position via RFQ. Combo pays $1 only if ALL legs resolve YES, else $0.
   Combos are native markets with their own ticker (KXNFLCOMBO-...) and orderbook is
-  RFQ-driven, not continuous. Availability is limited close to event start.
+  RFQ-driven, not continuous. Availability limited close to event start.
 - Synthetic parlay: combining independent single markets in a paper portfolio.
   This is NOT a native Kalshi order, but a strategy-level construction. Its payoff
   is product of legs if all win, else loss of stake, minus fees. We must clearly
@@ -26,26 +26,25 @@ import math
 import time
 from typing import Any, Literal
 
-from .utils import iso_now, make_flag, price_to_cents, implied_prob_from_price
+from .utils import iso_now, make_flag, price_to_cents, implied_prob_from_price, safe_float
+from .fees import kalshi_fee, entry_fees
 
-# Kalshi fee model (verified from docs: https://docs.kalshi.com/getting_started/fee_rounding)
-# Fee = 7% of profit? Actually Kalshi fee is 7% of profit? Let's verify via docs.
-# According to Kalshi docs, fees are 7% of profit for most markets, capped.
-# We use documented 7% fee on profit, 0 fee on loss, per trade.
-# If docs unavailable, we flag fee as estimated.
-KALSHI_FEE_RATE = 0.07  # 7% of profit
 
-def calculate_fees(entry_price: float, exit_price: float, quantity: int) -> float:
-    """Kalshi fee: 7% of profit per contract. Verified from fee docs."""
-    profit_per_contract = max(0.0, exit_price - entry_price) if exit_price is not None else 0.0
-    # Actually fee is 7% of notional? Let's use profit-based: fee = 0.07 * profit
-    # For YES side: if you buy YES at 0.65 and it settles at 1.00, profit 0.35, fee 0.07*0.35
-    # This is simplified but documented as 7% of profit.
-    return round(profit_per_contract * KALSHI_FEE_RATE * quantity, 4)
+def calculate_fees(entry_price: float, exit_price: float | None, quantity: int) -> float:
+    """Kalshi taker fee for one leg, from the official schedule.
+
+    fees = round up(M x 0.07 x C x P x (1-P))
+    Source: https://kalshi.com/docs/kalshi-fee-schedule.pdf (effective 2026-07-07)
+
+    `exit_price` is accepted for call-site compatibility but does NOT change the
+    entry fee: the schedule charges on execution, not on the outcome.
+    """
+    return kalshi_fee(entry_price, quantity)
 
 def combined_probability(legs: list[dict]) -> float:
     """Product of implied probabilities assuming independence.
-    Flag: independence assumption may not hold (correlation)."""
+    Flag: independence assumption may not hold (correlation).
+    """
     prob = 1.0
     for leg in legs:
         p = leg.get("implied_prob") or leg.get("entry_price") or 0.5
@@ -54,32 +53,39 @@ def combined_probability(legs: list[dict]) -> float:
 
 def combined_price_from_legs(legs: list[dict]) -> float:
     """Naive product pricing for synthetic parlay. Real combo pricing is RFQ-driven
-    and may differ; we flag this."""
+    and may differ; we flag this.
+    """
     return combined_probability(legs)
 
 def validate_leg_against_market(leg: dict, market: dict) -> tuple[bool, list[dict]]:
     """Check that a leg's market actually existed with given ticker/status."""
     flags = []
     if not market:
-        flags.append(make_flag("MISSING_DATA", f"Market {leg.get('market_ticker')} not found in verified data", severity="high"))
+        flags.append(make_flag("MISSING_DATA",
+                               f"Market {leg.get('market_ticker')} not found in verified data",
+                               severity="high"))
         return False, flags
     # Check ticker match
     if market.get("ticker") != leg.get("market_ticker"):
-        flags.append(make_flag("DATA_SOURCE_CONFLICT", f"Ticker mismatch: leg {leg.get('market_ticker')} vs market {market.get('ticker')}"))
+        flags.append(make_flag("DATA_SOURCE_CONFLICT",
+                               f"Ticker mismatch: leg {leg.get('market_ticker')} vs market {market.get('ticker')}"))
         return False, flags
     # Check status
     status = market.get("status")
     if status not in ("active", "open", "closed", "settled"):
-        flags.append(make_flag("UNVERIFIED_DATA", f"Market status {status} unexpected for {leg.get('market_ticker')}"))
+        flags.append(make_flag("UNVERIFIED_DATA",
+                               f"Market status {status} unexpected for {leg.get('market_ticker')}"))
     # Check price bounds
     price = leg.get("entry_price")
     if price is None or not (0.01 <= float(price) <= 0.99):
-        flags.append(make_flag("SUSPICIOUS_PRICE", f"Entry price {price} out of bounds [0.01,0.99]"))
+        flags.append(make_flag("SUSPICIOUS_PRICE",
+                               f"Entry price {price} out of bounds [0.01,0.99]"))
         return False, flags
     # Check liquidity
     liq = market.get("liquidity") or market.get("volume")
     if liq is None or float(liq) < 1:
-        flags.append(make_flag("LIQUIDITY_PROBLEM", f"Low/unknown liquidity for {leg.get('market_ticker')}", severity="low"))
+        flags.append(make_flag("LIQUIDITY_PROBLEM",
+                               f"Low/unknown liquidity for {leg.get('market_ticker')}", severity="low"))
     return True, flags
 
 def price_parlay_synthetic(legs: list[dict], quantity: int, slippage_bps: int = 10) -> dict:
@@ -102,13 +108,15 @@ def price_parlay_synthetic(legs: list[dict], quantity: int, slippage_bps: int = 
     same_game = len(set(event_tickers)) < len(event_tickers)
     flags = []
     if same_game:
-        flags.append(make_flag("SYNTHETIC_PARLAY", "Legs from same event_ticker may be correlated; product pricing overstates independence", severity="medium"))
+        flags.append(make_flag("SYNTHETIC_PARLAY",
+                               "Legs from same event_ticker may be correlated; product pricing overstates independence",
+                               severity="medium"))
     if len(legs) > 1:
-        flags.append(make_flag("SYNTHETIC_PARLAY", f"{len(legs)}-leg synthetic parlay: not a native Kalshi combo order, simulated as portfolio of independent markets", severity="low"))
+        flags.append(make_flag("SYNTHETIC_PARLAY",
+                               f"{len(legs)}-leg synthetic parlay: not a native Kalshi combo order, simulated as portfolio of independent markets",
+                               severity="low"))
 
     # Expected value calculation (requires model prob vs market prob)
-    # EV = (model_prob * payout - cost) ; simplified
-    # If no model prob provided, EV = 0 (cannot compute)
     model_prob = None
     if all("model_prob" in leg for leg in legs):
         model_prob = 1.0
@@ -118,7 +126,8 @@ def price_parlay_synthetic(legs: list[dict], quantity: int, slippage_bps: int = 
         ev = model_prob * payout - total_cost
     else:
         ev = None
-        flags.append(make_flag("UNVERIFIED_DATA", "No model probability provided for EV calc", severity="low"))
+        flags.append(make_flag("UNVERIFIED_DATA",
+                               "No model probability provided for EV calc", severity="low"))
 
     return {
         "combined_price": round(combined_price, 4),
@@ -145,14 +154,11 @@ def price_parlay_native_combo(combo_market: dict, legs: list[dict], quantity: in
     yes_ask = combo_market.get("yes_ask")
     last = combo_market.get("last_price") or combo_market.get("yes_bid_dollars") or combo_market.get("price")
 
-    # Normalize price to dollars
     def to_dollars(v):
         if v is None:
             return None
         try:
             fv = float(v)
-            # Kalshi API sometimes returns dollars as float 0-100? Actually dollars 0.01-0.99
-            # Some endpoints return cents? We assume dollars if <2 else cents/100
             return fv / 100.0 if fv > 2 else fv
         except:
             return None
@@ -169,7 +175,6 @@ def price_parlay_native_combo(combo_market: dict, legs: list[dict], quantity: in
     slippage = (ask - bid) / 2 if (ask and bid) else 0.01
 
     flags = [make_flag("COMBO_NOT_NATIVE", "Native combo pricing is RFQ-driven, not continuous orderbook; execution depends on market maker quote", severity="low")]
-    # If legs don't match combo's underlying, flag
     flags.append(make_flag("COMBO_NOT_NATIVE", "Verify combo market's rules_primary lists exact legs", severity="medium"))
 
     return {
@@ -187,7 +192,7 @@ def price_parlay_native_combo(combo_market: dict, legs: list[dict], quantity: in
 def settle_parlay(trade: dict, market_results: dict[str, str]) -> dict:
     """Settle a parlay trade given market results (ticker -> 'yes'/'no').
 
-    Returns updated PnL fields.
+    Returns updated PnL fields INCLUDING position_size_dollars for bankroll accounting.
     """
     legs = trade.get("legs", [])
     all_win = True
@@ -202,19 +207,23 @@ def settle_parlay(trade: dict, market_results: dict[str, str]) -> dict:
             all_win = False
             break
 
-    quantity = sum(leg.get("quantity", 1) for leg in legs) // max(1, len(legs)) if legs else 0
-    entry_combined = trade.get("entry_price_combined") or combined_price_from_legs(legs)
-    fees = trade.get("fees", 0)
-
-    if all_win:
-        payout = quantity * 1.0  # $1 per contract
-        pnl = payout - (entry_combined * quantity) - fees
-        result = "WIN"
+    # Contracts held. `position_size_dollars` is the COST (entry price x contracts);
+    # fees are tracked separately so a reader can reconcile
+    #   cash out = cost + fees   ->   cash in = payout
+    entry_combined = safe_float(trade.get("entry_price_combined"), 0) or combined_price_from_legs(legs)
+    position_size = safe_float(trade.get("position_size_dollars"), 0)
+    fees = safe_float(trade.get("fees"), 0) or 0.0
+    if entry_combined > 0 and position_size > 0:
+        quantity = position_size / entry_combined
     else:
-        pnl = - (entry_combined * quantity) - fees
-        result = "LOSS"
+        quantity = sum(leg.get("quantity", 1) for leg in legs) // max(1, len(legs)) if legs else 0
 
-    roi = (pnl / (entry_combined * quantity)) * 100 if entry_combined and quantity else 0
+    # Official schedule: no settlement fee. The only fee is the one already paid on
+    # entry (recorded in trade["fees"]), whichever way the contract resolves.
+    payout = quantity * 1.0 if all_win else 0.0
+    pnl = payout - position_size - fees
+    result = "WIN" if all_win else "LOSS"
+    roi = (pnl / position_size) * 100 if position_size else 0
 
     return {
         "pnl_dollars": round(pnl, 4),
@@ -222,4 +231,12 @@ def settle_parlay(trade: dict, market_results: dict[str, str]) -> dict:
         "result": result,
         "settlement_price": 1.0 if all_win else 0.0,
         "status": "SETTLED",
+        # Passed through so the competition runner can credit the bankroll with the
+        # exact cash flows it debited: cost (+fees) out, payout in.
+        "position_size_dollars": round(position_size, 4),
+        "fees": round(fees, 6),
+        "payout_dollars": round(payout, 4),
+        "contracts": round(quantity, 6),
+        "cash_out_dollars": round(position_size + fees, 4),
+        "cash_in_dollars": round(payout, 4),
     }
