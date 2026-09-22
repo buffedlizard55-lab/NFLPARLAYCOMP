@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL Parlay Trading Competition</title>
+<!--
+  Why this file exists
+  --------------------
+  GitHub Pages for this repository is configured as a *legacy* build serving the
+  repository root (`build_type: legacy`, `source.path: "/"`). Under that setting
+  "/" has no index.html at the root, so Jekyll renders README.md as the landing
+  page and the competition site under docs/ is never reached.
+
+  The intended configuration is Settings -> Pages -> Source: "GitHub Actions",
+  which deploys the docs/ folder directly via .github/workflows/pages.yml. Until
+  an owner switches that setting, this file forwards "/" to the site so the
+  competition is reachable.
+
+  Both paths work once the site loads: docs/index.html fetches `site_data/...`
+  relative to itself, which resolves to /docs/site_data/ under the legacy
+  root-path build and to /site_data/ when docs/ is deployed as the artifact root.
+
+  No repository owner action is required for this file; removing it is safe the
+  moment the Pages source is switched to "GitHub Actions".
+-->
+<link rel="canonical" href="docs/">
+<meta http-equiv="refresh" content="0; url=docs/">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         max-width: 40rem; margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; }
+  code { background: rgba(127,127,127,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+  .note { border-left: 3px solid #94a3b8; padding-left: 1rem; color: #64748b; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>NFL Parlay Trading Competition</h1>
+<p>An auditable paper-trading competition using real, verified Kalshi NFL markets.
+   <strong>No real money is traded.</strong></p>
+<p>Opening the competition site&hellip; if you are not redirected,
+   <a href="docs/">continue to the site</a>.</p>
+<p class="note">
+  GitHub Pages for this repository is set to the legacy root-path build, so this
+  forwarder is needed to reach <code>docs/</code>. Setting
+  <em>Settings &rarr; Pages &rarr; Source: GitHub Actions</em> deploys
+  <code>docs/</code> directly and makes this file unnecessary.
+  See <code>docs/OPERATIONS.md</code>.
+</p>
+<p><a href="https://github.com/buffedlizard55-lab/NFLPARLAYCOMP">Source repository</a></p>
+</body>
+</html>
