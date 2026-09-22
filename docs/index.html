@@ -11,16 +11,37 @@
   <div class="header-content">
     <h1>🏈 NFL Parlay Trading Competition</h1>
     <p>Auditable paper-trading competition using real verified Kalshi NFL markets. No real money traded.</p>
-    <nav>
-      <a href="#" data-section="overview" class="nav-link active">Overview</a>
-      <a href="#" data-section="leaderboard" class="nav-link">Leaderboard</a>
-      <a href="#" data-section="upcoming" class="nav-link">Upcoming Trades</a>
-      <a href="#" data-section="recent" class="nav-link">Recent Trades</a>
-      <a href="#" data-section="markets" class="nav-link">Markets</a>
-      <a href="#" data-section="strategies" class="nav-link">Strategies</a>
-      <a href="#" data-section="users" class="nav-link">Users</a>
-      <a href="#" data-section="verification" class="nav-link">Verification</a>
-      <a href="#" data-section="history" class="nav-link">History</a>
+    <nav class="main-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Competition</span>
+        <a href="#" data-section="overview" class="nav-link active">Overview</a>
+        <a href="#" data-section="leaderboard" class="nav-link">Leaderboard</a>
+        <a href="#" data-section="upcoming" class="nav-link">Upcoming Trades</a>
+        <a href="#" data-section="candidates" class="nav-link">Candidate Signals</a>
+        <a href="#" data-section="recent" class="nav-link">Recent Trades</a>
+        <a href="#" data-section="markets" class="nav-link">Markets</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Strategies</span>
+        <a href="#" data-section="strategies" class="nav-link">Strategy Library</a>
+        <a href="#" data-section="strategy_perf" class="nav-link">Performance</a>
+        <a href="#" data-section="strategy_research" class="nav-link">Research</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Users</span>
+        <a href="#" data-section="users" class="nav-link">User Profiles</a>
+        <a href="#" data-section="trade_history" class="nav-link">Trade History</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Verification</span>
+        <a href="#" data-section="verification" class="nav-link">Trade Verification</a>
+        <a href="#" data-section="data_sources" class="nav-link">Data Sources</a>
+        <a href="#" data-section="flags" class="nav-link">Flags</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">History</span>
+        <a href="#" data-section="history" class="nav-link">History & Scalability</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -43,6 +64,15 @@
         <option value="trades">Trades</option>
         <option value="bankroll">Bankroll</option>
       </select>
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="MARKET_BASED">Market Based</option>
+        <option value="GAME_BASED">Game Based</option>
+        <option value="SITUATIONAL">Situational</option>
+        <option value="STATISTICAL">Statistical</option>
+        <option value="CORRELATION">Correlation</option>
+        <option value="PROP_BASED">Prop Based</option>
+      </select>
       <select id="pageSize">
         <option value="25">25/page</option>
         <option value="50">50/page</option>
@@ -55,8 +85,14 @@
 
   <section id="upcoming" class="page">
     <h2>Upcoming / Open Trades</h2>
-    <p class="subtitle">Lifecycle: Candidate → Signal → Order → Executed → Closed → Settled</p>
+    <p class="subtitle">Lifecycle: Candidate → Signal → Order → Executed → Closed → Settled. Signals are NOT executed trades.</p>
     <div id="upcoming-content"><div class="loading">Loading...</div></div>
+  </section>
+
+  <section id="candidates" class="page">
+    <h2>Candidate Trade Signals</h2>
+    <p class="subtitle">What every strategy currently wants to trade BEFORE simulated execution. Distinguishes: Candidate → Signal → Order → Executed → Closed → Settled</p>
+    <div id="candidates-content"><div class="loading">Loading...</div></div>
   </section>
 
   <section id="recent" class="page">
@@ -66,7 +102,7 @@
 
   <section id="markets" class="page">
     <h2>Markets</h2>
-    <p class="subtitle">Real verified Kalshi NFL markets. Prices from official Trade API v2.</p>
+    <p class="subtitle">Real verified Kalshi NFL markets. Prices from official Trade API v2. Each trade records market ticker, event ticker, contract, side, price, timestamps, liquidity, bid/ask, spread, fees, PnL, ROI, result, official source, verification info.</p>
     <div id="markets-content"><div class="loading">Loading...</div></div>
   </section>
 
@@ -75,17 +111,46 @@
     <div id="strategies-content"><div class="loading">Loading...</div></div>
   </section>
 
+  <section id="strategy_perf" class="page">
+    <h2>Strategy Performance</h2>
+    <p class="subtitle">Comparison across strategy categories and individual programs</p>
+    <div id="strategy-perf-content"><div class="loading">Loading...</div></div>
+  </section>
+
+  <section id="strategy_research" class="page">
+    <h2>Strategy Research</h2>
+    <p class="subtitle">Research sources for strategy discovery (not price sources). Actual pricing from verified Kalshi data.</p>
+    <div id="strategy-research-content"><div class="loading">Loading...</div></div>
+  </section>
+
   <section id="users" class="page">
     <h2>User Profiles</h2>
-    <p class="subtitle">Click a username on the leaderboard to view their full profile.</p>
+    <p class="subtitle">Click a username on leaderboard to view full profile: overview, performance (equity curve, PnL over time, ROI over time, win/loss distribution, trade frequency, drawdown, open exposure), trade history with verification links.</p>
     <div id="user-profile" class="profile-container"></div>
+  </section>
+
+  <section id="trade_history" class="page">
+    <h2>Trade History & Ledger</h2>
+    <p class="subtitle">Immutable-style ledger: every trade ever placed, upcoming, cancelled, rejected, closed, settled, with sources and calculations.</p>
+    <div id="trade-history-content"><div class="loading">Loading...</div></div>
   </section>
 
   <section id="verification" class="page">
     <h2>Trade Verification</h2>
-    <p class="subtitle">Every trade: Leaderboard → User → Trade → Official Source</p>
+    <p class="subtitle">Every trade: Leaderboard → User → Trade → Official Source. Manual verification path preserved.</p>
     <div id="verification-content"><div class="loading">Loading...</div></div>
-    <div id="data-sources-content"></div>
+  </section>
+
+  <section id="data_sources" class="page">
+    <h2>Data Sources & Provenance</h2>
+    <p class="subtitle">Real verified market data vs simulated trades — clearly distinguished</p>
+    <div id="data-sources-content"><div class="loading">Loading...</div></div>
+  </section>
+
+  <section id="flags" class="page">
+    <h2>Data Integrity / Flags</h2>
+    <p class="subtitle">Missing data, unverified data, suspicious prices, liquidity problems, impossible executions, API errors, settlement inconsistencies — flagged, never hidden</p>
+    <div id="flags-content"><div class="loading">Loading...</div></div>
   </section>
 
   <section id="history" class="page">
@@ -99,7 +164,9 @@
      Data from Kalshi official API, ESPN keyless, NWS.
      <a href="https://github.com/buffedlizard55-lab/NFLPARLAYCOMP">GitHub Repo</a></p>
   <p class="small">Every price, timestamp, market, settlement from official sources with SHA-256 manifest.
-     Simulated trades clearly labeled. <a href="#" data-section="verification" class="nav-link">Verification</a></p>
+     Simulated trades clearly labeled. <a href="#" data-section="verification" class="nav-link">Verification</a> |
+     <a href="https://buffedlizard55-lab.github.io/MasterSite/">MasterSite</a> |
+     Supports 5→1000+ users without redesign</p>
 </footer>
 
 <script src="app.js"></script>
