@@ -3,7 +3,8 @@ name: Data collection cycle
 on:
   workflow_dispatch:
   schedule:
-    - cron: "12 6 * * *"
+    - cron: "12 6,12,18 * * *"
+    - cron: "42 22 * * 1,4,6,7"
 
 jobs:
   collect:
