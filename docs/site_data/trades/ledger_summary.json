@@ -1,14 +1,1 @@
-{
-  "updated_at": "2026-09-22T22:52:57Z",
-  "total": 32,
-  "by_status": {
-    "CANDIDATE": 0,
-    "SIGNAL": 0,
-    "ORDER": 0,
-    "EXECUTED": 25,
-    "CLOSED": 0,
-    "SETTLED": 7,
-    "CANCELLED": 0,
-    "REJECTED": 0
-  }
-}
+{"updated_at": "2026-09-22T23:24:57Z", "total": 1623, "ledger_entries": 2705, "by_status": {"CANDIDATE": 0, "SIGNAL": 0, "ORDER": 0, "EXECUTED": 541, "CLOSED": 0, "SETTLED": 1082, "CANCELLED": 0, "REJECTED": 0}, "note": "`total` counts distinct trades (latest state per trade_id). `ledger_entries` counts every hash-chained state transition, including the full audit trail."}

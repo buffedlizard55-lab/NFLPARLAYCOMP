@@ -73,11 +73,56 @@ Example: KXNFLGAME-26SEP20CLETB-TB (Tampa Bay wins)
   - NATIVE_COMBO: when KXNFLCOMBO market exists, use its own bid/ask
   - SYNTHETIC_PARLAY: portfolio of independent markets, flagged, correlation warning, product pricing with discount
 
-## Fees
+## Fees (verified against the official fee schedule)
 
-- 7% of profit (verified from docs: https://docs.kalshi.com/getting_started/fee_rounding)
-- Fee rounding rules per docs
-- Our simulator: fee = 7% * profit per contract, estimated, flagged if docs unavailable
+Source: **Kalshi Fee Schedule, "Last updated and effective: July 7, 2026"**
+https://kalshi.com/docs/kalshi-fee-schedule.pdf  (landing page: https://kalshi.com/fee-schedule)
+
+Official formulas, quoted from the schedule:
+
+| Order type | Formula | Charged when |
+| --- | --- | --- |
+| Taker (immediately matched) | `fees = round up(M x 0.07 x C x P x (1-P))` | On execution |
+| Maker (rests on the book) | `fees = round up(M x 0.0175 x C x P x (1-P))` | When ultimately executed |
+| Settlement | *"There is no settlement fee."* | — |
+| Membership | *"There is no membership fee."* | — |
+
+Where `P` = contract price in dollars, `C` = contracts, `M` = per-series multiplier
+(default 1). Rounding is up, so that fee + positionCost lands on a centicent.
+
+Verified rows of the published "General Trading Fees Table" (100 contracts), which
+`tests/test_fees.py` asserts against:
+
+| Price | Published fee / 100 | | Price | Published fee / 100 |
+| --- | --- | --- | --- | --- |
+| $0.01 | $0.07 | | $0.50 | $1.75 |
+| $0.10 | $0.63 | | $0.60 | $1.68 |
+| $0.25 | $1.32 | | $0.75 | $1.32 |
+| $0.45 | $1.74 | | $0.99 | $0.07 |
+
+The fee is symmetric around $0.50 and peaks there ($1.75 per 100 contracts).
+
+**Per-series multipliers** (same schedule, "Non-Standard Fees" table):
+
+| Series | Description | Maker M | Taker M |
+| --- | --- | --- | --- |
+| KXNFLGAME | Professional Football Game | 1 | 1 |
+| KXNFLCOMBO | Combos (excluding uncorrelated NFL Championship combos) | 2 | 1 |
+
+**Consequences applied in this project (`engine/fees.py`):**
+
+- Fees are charged **on execution and are not contingent on the outcome** — a losing
+  trade still pays its entry fee. (An earlier revision of this project charged
+  "7% of profit at settlement", which charged losers nothing and mis-stated winners.
+  That model was wrong and has been replaced.)
+- A synthetic N-leg parlay is N separate orders, so it pays **N fees**. This is the
+  real source of the "fees compound per leg" effect described in the strategy notes.
+- Arithmetic is done in `decimal.Decimal`. In binary floating point
+  `0.07 * 100 * 0.6 * 0.4 == 1.6800000000000002`, which would round **up** to $1.69
+  and contradict the published $1.68.
+- Our simulated orders are marketable (they cross the spread), so they are takers.
+- Fees scale with `P x (1-P)`: cheap longshots and deep favourites are cheap to
+  trade, mid-priced contracts are the most expensive.
 
 ## Verification
 
@@ -85,3 +130,4 @@ Example: KXNFLGAME-26SEP20CLETB-TB (Tampa Bay wins)
 - Official links:
   - API: https://api.elections.kalshi.com/trade-api/v2/markets/{ticker}
   - Web: https://kalshi.com/markets/{ticker}
+  - Fee schedule (PDF): https://kalshi.com/docs/kalshi-fee-schedule.pdf

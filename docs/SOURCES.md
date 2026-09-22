@@ -50,6 +50,44 @@
   - Commodities: https://buffedlizard55-lab.github.io/Commodities/ — evidence-first paper-trading lab for Kalshi event contracts, hash-chained ledger, execution-realism checks vs trade tape. Use: ledger design reference.
   - Sports Pred, NFL Scoreboard, Weather: similar
 
+## Kalshi fee schedule (primary source for cost modelling)
+
+- PDF: https://kalshi.com/docs/kalshi-fee-schedule.pdf
+- Landing page: https://kalshi.com/fee-schedule
+- Schedule in force: "Last updated and effective: July 7, 2026"
+- Taker: `fees = round up(M x 0.07 x C x P x (1-P))`
+- Maker: `fees = round up(M x 0.0175 x C x P x (1-P))`
+- "There is no settlement fee." / "There is no membership fee."
+- Per-series multipliers: KXNFLGAME=1 (both), NFL combos maker 2 / taker 1
+- Transcription lives in `engine/fees.py`; all 21 published rows of the
+  "General Trading Fees Table" are asserted in `tests/test_fees.py`. If the schedule
+  is republished and those tests fail, re-read the PDF before changing either side.
+
+### Fee arithmetic note
+
+The formula is evaluated in `decimal.Decimal`. In binary floating point
+`0.07 * 100 * 0.6 * 0.4 == 1.6800000000000002`, which under a round-up rule becomes
+$1.69 instead of the published $1.68. This is the kind of silent error the test
+suite exists to catch.
+
+## Verification status of claims used in this repository
+
+| Source | Used for | Status |
+| --- | --- | --- |
+| Kalshi Trade API v2 (read-only) | all market prices, liquidity, results | primary; every response logged with SHA-256 |
+| Kalshi fee schedule PDF | fee model | primary; transcription asserted by tests |
+| ESPN keyless NFL APIs | schedule, venue, indoor flag, injuries | official/public; metadata only, never a price |
+| NWS api.weather.gov | weather forecasts | official; forward-only, no historical archive |
+| Academic efficiency literature (Wolfers & Zitzewitz 2004) | framing the implied-value hypothesis | cited for context only; it argues markets are hard to beat |
+| Sports betting community discussion (Reddit and similar) | strategy *discovery* only | never a price source; no numeric claim from these is presented as evidence |
+
+**Removed claims.** Earlier drafts of this project cited specific performance figures
+("2.1% edge vs the closing line", "under hits 57% in wind games", "62% fade win rate
+(n=34)", "53.2% ATS", "42% cover rate", "88% both teams score", and others). None had
+a primary source and none could be reproduced from stored data, so they were deleted
+rather than repeated. Strategies that previously leaned on them now record
+`Evidence: none established in this repository`.
+
 ## Strategy discovery sources (not price sources)
 
 - Academic: Wolfers & Zitzewitz 2004 on prediction market efficiency, other sports betting efficiency studies

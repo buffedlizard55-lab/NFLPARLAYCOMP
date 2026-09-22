@@ -34,44 +34,83 @@
 
 ## Scalability Testing
 
-Tested scaling:
-- 5 users: 4 trades, 1 settled
-- 10 users: 5 trades, 1 settled
-- 100 users: 22 trades, 6 settled
-- 250 users: 72 trades, 33 settled
-- 500 users: 122 trades, 74 settled
-- 1000 users: 237 trades, 177 settled (verified chain valid)
+Measured on the offline synthetic fixture (one cycle creating trades, one settling):
 
-Architecture supports 1000+ without redesign:
-- Shared market data (not duplicated per user)
-- Lightweight users.json
-- Hash-chained ledger.jsonl (append-only)
-- Pre-aggregated site_data JSON with pagination
+| Users | Cycle 1 (create) | Cycle 2 (settle) | Trades created |
+| --- | --- | --- | --- |
+| 5 | 0.01s | 0.01s | 1 |
+| 10 | 0.01s | 0.01s | 6 |
+| 15 | 0.01s | 0.01s | 9 |
+| 25 | 0.01s | 0.01s | 16 |
+| 30 | 0.01s | 0.01s | 19 |
+| 50 | 0.01s | 0.01s | 27 |
+| 70 | 0.02s | 0.02s | 40 |
+| 100 | 0.02s | 0.03s | 56 |
+| 250 | 0.05s | 0.06s | 138 |
+| 500 | 0.15s | 0.13s | 272 |
+| 750 | 0.15s | 0.26s | 406 |
+| 1,000 | 0.20s | 0.23s | 541 |
 
-To test 1000:
+Site output at 1,000 users: ~6.8 MB across ~1,050 files. The largest bundle is
+`docs/site_data/trades/index.json` at ~2 MB.
+
+Architecture supports 1,000+ without redesign:
+- Shared market data loaded once per cycle (not duplicated per user)
+- Ledger tail cached in memory so appends are O(1)
+- One shared trade index filtered by `user_id` in the browser (no per-user copies)
+- Strategy explanations served once, not per user
+- Bounded bundles with pagination; per-view trade lists capped at 200
+- Verification flags aggregated by type instead of listed individually
+
+To test 1,000:
 ```
 python3 scripts/simulate.py --users 1000 --clear
 python3 scripts/build_site.py
+python3 scripts/test_all.py
 ```
 
 ## Paper Trading Realism
 
-- Bid/ask: use yes_bid/yes_ask if available, else last_price
-- Liquidity: reject if position >50% liquidity, flag if >10%
-- Spread: flag if >10c, slippage bps = spread*0.5
-- Slippage: default 10 bps, max 100 bps
-- Fees: 7% of profit (Kalshi documented)
-- Market status: only active/open executable
-- Orderbook: when available from live snapshots
-- Settlement: from settled markets, else simulated for testing
+- Quotes: buying YES pays the YES ask; buying NO pays `1 - yes_bid`.
+  Crossing the spread is already in the price and is NOT charged again as slippage.
+- Depth: with an order-book snapshot the order walks real levels
+  (`engine/orderbook.py`); `slippage_vs_best` is measured, not assumed.
+- No snapshot: fill modelled at top of book and flagged `ORDERBOOK_MISSING`.
+- Partial fills: a leg larger than resting depth is partially filled and flagged.
+- Liquidity limits: reject above 50% of traded liquidity, flag above 10%.
+- Fees: official Kalshi schedule, charged ON EXECUTION per leg —
+  `round up(M x 0.07 x C x P x (1-P))`, no settlement fee (`engine/fees.py`).
+  A synthetic N-leg parlay pays N fees.
+- Market status: only `active`/`open` markets are executable.
+- Settlement: official results are read from each settled market's `result` field and
+  stamped `OFFICIAL`; when none is stored, the outcome is drawn from the
+  market-implied probability and stamped `SIMULATED` with a `SIMULATED_SETTLEMENT`
+  flag on the trade.
+
+## Running the gates
+
+```
+python3 scripts/test_all.py
+```
+
+Runs, in order: the Python unit tests, the ledger + verification audit, the fetch
+manifest audit, and (when node is present) the front-end smoke test that executes
+`docs/app.js` against the real bundles. Non-zero exit on any failure. This is what
+CI runs.
 
 ## Verification
 
-- Hash chain: verify_chain() recomputes SHA-256(prev_hash + canonical_json(trade))
-- Manifest: every fetch logged with URL, status, bytes, SHA-256, time
-- Trades: price bounds [0.01,0.99], timestamps, market file existence, PnL calc
-- Users: username, bankroll, rank
-- Full report: data/competition/verification_report.json + site_data/verification.json
+- Hash chain: `verify_chain()` recomputes SHA-256(prev_hash + canonical_json(entry))
+  for every entry, checks `prev_hash` linkage, and checks `ledger_seq` ordering.
+- Manifest: every fetch logged with URL, status, bytes, SHA-256, time.
+- Trades: price bounds [0.01,0.99], timestamps, market file existence.
+- Reproducibility: every settled trade's stored PnL is re-derived as
+  `payout - cost - fees`; a mismatch raises `CALCULATION_ERROR`.
+- State: a `CANDIDATE`/`SIGNAL`/`ORDER` record carrying a position size is flagged,
+  because a signal must never be treated as an executed trade.
+- Users: username, bankroll, rank.
+- Full report: `data/competition/verification_report.json`, served (aggregated) at
+  `docs/site_data/verification.json`.
 
 ## Flags
 
@@ -81,10 +120,20 @@ See docs/FLAGS.md
 
 All autonomous via APIs. If external source cannot be automatically verified, flag for review.
 
+## Bundle layout
+
+Site bundles are written **only** to `docs/site_data/`, because GitHub Pages serves
+`docs/`. A second copy at the repository root was removed: it committed every byte
+twice, and `tests/test_site.py` fails if it reappears.
+
 ## Limitations
 
-- Kalshi API may be blocked in sandbox, synthetic fixtures used flagged as UNVERIFIED for offline testing. Real collection works in GitHub Actions.
-- Historical weather unavailable from NWS (forward-only)
-- Trade tape only recent few hours, candles used for historical
-- Combo markets rare, RFQ pricing, synthetic model used with flags
-- Need more real data collection cycles for full 2026 season
+- Kalshi API may be blocked in the sandbox; synthetic fixtures are used, flagged
+  UNVERIFIED, purely for offline testing. Real collection runs in GitHub Actions.
+- Historical weather is unavailable from NWS (forward-only), so weather strategies
+  are forward-only by construction.
+- The public trade tape only covers the last few hours; candlesticks are the
+  historical price source.
+- Combo markets are rare and RFQ-priced, so parlays are modelled as synthetic
+  portfolios with a `SYNTHETIC_PARLAY` flag rather than as native combos.
+- More real collection cycles are needed to populate a full 2026 season.

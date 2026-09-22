@@ -1,4 +1,18 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+
+# Editors / OS
 .DS_Store
+.idea/
+.vscode/
+
+# Node (only used to syntax-check the GitHub Pages JavaScript)
 node_modules/
+
+# Legacy duplicate of the GitHub Pages bundles. The site is served from docs/, so the
+# bundles live at docs/site_data/ and a root-level copy would commit every byte twice.
+/site_data/

@@ -53,8 +53,6 @@ def safe_int(v: Any, default: int | None = None) -> int | None:
 # Verification link builders (official sources only)
 
 def kalshi_market_url(ticker: str) -> str:
-    # Official Kalshi market page
-    # Verified: https://kalshi.com/markets/<ticker> resolves, but trade API is canonical
     return f"https://kalshi.com/markets/{ticker}"
 
 def kalshi_api_market_url(ticker: str) -> str:
@@ -122,6 +120,10 @@ FLAG_TYPES = {
     "CANDLE_MISSING",
     "COMBO_NOT_NATIVE",
     "SYNTHETIC_PARLAY",
+    # Settlement provenance
+    "SIMULATED_SETTLEMENT",   # outcome drawn from market-implied probability, not an official result
+    "OFFICIAL_SETTLEMENT",    # outcome read from Kalshi's settled market `result` field
+    "DATA_PROVENANCE",        # which class of data a field came from (real / derived / simulated)
 }
 
 def make_flag(flag_type: str, message: str, trade_id: str | None = None,
@@ -135,3 +137,14 @@ def make_flag(flag_type: str, message: str, trade_id: str | None = None,
         "severity": severity,
         "created_at": iso_now(),
     }
+
+def kelly_fraction(edge: float, odds_decimal: float) -> float:
+    """Kelly criterion for bet sizing. edge = model_prob - market_prob.
+    odds_decimal = 1/price for YES side.
+    Returns fraction 0-1 of bankroll.
+    """
+    if odds_decimal <= 1 or edge <= 0:
+        return 0.0
+    b = odds_decimal - 1
+    f = (b * (1 + edge) - 1) / b if b > 0 else 0
+    return max(0.0, min(0.25, f))  # cap at 25% (quarter Kelly safety)

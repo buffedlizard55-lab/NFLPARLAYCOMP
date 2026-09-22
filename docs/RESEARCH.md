@@ -64,10 +64,23 @@ Each discovered strategy documented with source and independently tested forward
 
 ## Evidence Standards
 
-- Never assume strategy works because someone claims it works
-- Document source, independently test forward
-- Flag if historical data unavailable (e.g., weather forward-only)
-- Provide win rates, sample sizes, time periods
+- Never assume a strategy works because someone claims it works.
+- Document the source, then independently test it forward.
+- Flag the limitation when the data needed to test a hypothesis is unavailable
+  (e.g. weather is forward-only; weekday and division are not stored).
+- State sample sizes and time periods. A figure with no sample size is not evidence.
+- **No unsourced performance numbers.** Any statistic in a strategy description must
+  either be reproducible from this repository's stored data or be explicitly labelled
+  as an unverified claim pending test. Numbers that could not meet that bar were
+  removed from the library rather than reworded.
+- **Premise-implementation gaps are recorded, not hidden.** Where a strategy's code
+  does not test the hypothesis its text describes, the entry says so and the strategy
+  is retained as a falsification target. Examples currently in the library:
+  `STRAT_PRIMETIME_FAVE_015` (cites a spread-cover statistic, trades the moneyline),
+  `STRAT_DIVISIONAL_DOG_016` and `STRAT_SHORT_WEEK_UNDER_019` (no slot/division
+  filter available), `STRAT_LIQUIDITY_033` (models resting orders but is priced as a
+  taker), `STRAT_ELO_MODEL_028` and `STRAT_DVOA_VALUE_029` (no rating data; the
+  "model" is derived from the market price it is trying to beat).
 
 ## Parlay Construction Research
 
