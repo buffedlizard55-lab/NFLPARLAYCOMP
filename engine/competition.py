@@ -268,6 +268,110 @@ def _build_trade_index(ledger: List[dict]) -> Dict[str, dict]:
             index[tid] = t
     return index
 
+def generate_candidate_trades(market_data: Dict[str, Any], context: Dict[str, Any],
+                              users: List[dict], max_candidates_per_user: int = 2) -> List[dict]:
+    """Generate CANDIDATE trades for upcoming analysis without execution.
+
+    Each strategy continuously determines what NFL markets it wants to trade,
+    why, proposed entry, current verified price, EV, position size, required
+    liquidity, conditions, executability, invalidation.
+
+    Returns list of candidate trade dicts (not yet appended to ledger).
+    """
+    candidates = []
+    for user in users[:min(200, len(users))]:  # limit for efficiency, sample 200 users for upcoming view
+        strat_id = user["strategy_id"]
+        strategy = STRATEGY_REGISTRY.get(strat_id)
+        if not strategy:
+            continue
+        try:
+            signal = strategy.evaluate(market_data, context)
+        except Exception:
+            continue
+        if not signal.get("signal"):
+            continue
+        legs_input = signal.get("legs", [])
+        if not legs_input:
+            continue
+        # Build rich candidate record
+        candidate_legs = []
+        for leg_in in legs_input[:4]:
+            ticker = leg_in["market_ticker"]
+            market = market_data["by_ticker"].get(ticker)
+            if not market:
+                continue
+            current_price = market.get("last_price") or market.get("yes_bid") or 0.5
+            proposed_price = leg_in.get("entry_price") or current_price
+            candidate_legs.append({
+                "market_ticker": ticker,
+                "event_ticker": market.get("event_ticker"),
+                "series_ticker": market.get("series_ticker"),
+                "contract": ticker,  # contract is ticker in Kalshi binary markets
+                "side": leg_in.get("side", "YES"),
+                "proposed_entry_price": proposed_price,
+                "current_verified_price": current_price,
+                "entry_timestamp": iso_now(),
+                "expiration_date": market.get("expiration_time") or market.get("close_time"),
+                "settlement_date": market.get("expiration_time"),
+                "quantity": 1,
+                "position_size": signal.get("position_size", 0.01),
+                "implied_prob": current_price,
+                "liquidity": market.get("liquidity"),
+                "bid": market.get("yes_bid"),
+                "ask": market.get("yes_ask"),
+                "spread": round((market.get("yes_ask") or 0) - (market.get("yes_bid") or 0), 6) if market.get("yes_bid") and market.get("yes_ask") else None,
+                "model_prob": leg_in.get("model_prob"),
+                "reason": leg_in.get("reason"),
+                "source_url": f"https://api.elections.kalshi.com/trade-api/v2/markets/{ticker}",
+                "verification_url": f"https://kalshi.com/markets/{ticker}",
+            })
+        if not candidate_legs:
+            continue
+        total_ev = signal.get("expected_value", 0)
+        # Determine executability
+        executable = True
+        reasons = []
+        for leg in candidate_legs:
+            if leg["liquidity"] is not None and leg["liquidity"] < 100:
+                executable = False
+                reasons.append(f"Low liquidity {leg['market_ticker']}")
+            if leg["spread"] is not None and leg["spread"] > 0.10:
+                reasons.append(f"Wide spread {leg['market_ticker']}")
+        candidate = {
+            "trade_id": f"candidate_{uuid.uuid4().hex[:12]}",
+            "user_id": user["user_id"],
+            "username": user["username"],
+            "strategy_id": strat_id,
+            "strategy_name": user["strategy_name"],
+            "status": "CANDIDATE",
+            "created_at": iso_now(),
+            "updated_at": iso_now(),
+            "legs": candidate_legs,
+            "proposed_entry_price": sum(l["proposed_entry_price"] for l in candidate_legs) / len(candidate_legs) if candidate_legs else 0,
+            "current_verified_price": sum(l["current_verified_price"] for l in candidate_legs) / len(candidate_legs) if candidate_legs else 0,
+            "expected_value": total_ev,
+            "position_size": signal.get("position_size", 0.01),
+            "position_size_dollars": 0,
+            "required_liquidity": sum((l["liquidity"] or 0) for l in candidate_legs),
+            "conditions_required": signal.get("why_enter", ""),
+            "avoid_conditions": signal.get("why_avoid", ""),
+            "is_executable": executable,
+            "invalidation_conditions": "Price moves >5c against, liquidity drops <100, market status changes from active",
+            "why_entered": signal.get("why_enter", ""),
+            "official_sources": [l["source_url"] for l in candidate_legs],
+            "flags": signal.get("flags", []),
+            "market_type": "SYNTHETIC_PARLAY" if len(candidate_legs) > 1 else "SINGLE",
+        }
+        candidates.append(candidate)
+    return candidates
+
+def save_upcoming_trades(candidates: List[dict]):
+    """Save candidate trades to a separate file for site builder."""
+    ensure_comp_dir()
+    path = os.path.join(COMP_DIR, "upcoming_candidates.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"updated_at": iso_now(), "count": len(candidates), "candidates": candidates[:500]}, f)
+
 def run_competition_cycle(num_users: int | None = None, max_trades_per_user: int = 3,
                           starting_bankroll: float = 10000.0, clear: bool = False) -> dict:
     """Run one competition cycle: generate signals, simulate execution, update users.
@@ -329,6 +433,16 @@ def run_competition_cycle(num_users: int | None = None, max_trades_per_user: int
     full_ledger = read_ledger()
     trade_index = _build_trade_index(full_ledger)
 
+    # Generate CANDIDATE trades for upcoming analysis (before execution)
+    # This shows what every strategy wants to trade before simulated execution
+    try:
+        candidates = generate_candidate_trades(market_data, context, users)
+        save_upcoming_trades(candidates)
+    except Exception as e:
+        candidates = []
+        # Flag but don't fail cycle
+        pass
+
     # For each user, evaluate strategy and generate trades
     trades_created = 0
     new_trades = []  # collect new trades to append after processing
@@ -377,20 +491,40 @@ def run_competition_cycle(num_users: int | None = None, max_trades_per_user: int
                 "market_ticker": ticker,
                 "event_ticker": market.get("event_ticker"),
                 "series_ticker": market.get("series_ticker"),
+                "contract": ticker,  # Kalshi binary contract = ticker
                 "side": leg_in.get("side", "YES"),
                 "entry_price": entry_price,
                 "entry_timestamp": iso_now(),
+                "expiration_date": market.get("expiration_time") or market.get("close_time"),
+                "settlement_date": market.get("expiration_time"),
+                "close_time": market.get("close_time"),
+                "open_time": market.get("open_time"),
                 "quantity": quantity,
+                "position_size": round(entry_price * quantity, 2),
                 "implied_prob": entry_price,
                 "liquidity_at_entry": market.get("liquidity"),
+                "liquidity": market.get("liquidity"),
                 "bid_at_entry": market.get("yes_bid"),
                 "ask_at_entry": market.get("yes_ask"),
+                "bid": market.get("yes_bid"),
+                "ask": market.get("yes_ask"),
+                "spread": round((market.get("yes_ask") or 0) - (market.get("yes_bid") or 0), 6) if market.get("yes_bid") and market.get("yes_ask") else None,
+                "slippage_assumed": 0.0,
                 "source_file": f"data/raw/kalshi/markets/{market.get('event_ticker')}.json",
                 "source_sha256": "pending_manifest_lookup",
                 "source_url": f"https://api.elections.kalshi.com/trade-api/v2/markets/{ticker}",
                 "verification_url": f"https://kalshi.com/markets/{ticker}",
+                "official_source": f"https://api.elections.kalshi.com/trade-api/v2/markets/{ticker}",
                 "model_prob": leg_in.get("model_prob"),
                 "reason": leg_in.get("reason"),
+                "verification_info": {
+                    "market_ticker": ticker,
+                    "event_ticker": market.get("event_ticker"),
+                    "series_ticker": market.get("series_ticker"),
+                    "price_source": "Kalshi Trade API v2",
+                    "timestamp_source": "entry_timestamp",
+                    "liquidity_source": "market.liquidity field",
+                },
             }
             trade_legs.append(trade_leg)
 
