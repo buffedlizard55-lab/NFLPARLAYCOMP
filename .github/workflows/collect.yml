@@ -2,6 +2,17 @@ name: Data collection cycle
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "universe | events | candles | live | nfl | weather | full"
+        required: false
+        default: "full"
+  schedule:
+    # Forward-desk cadence: four cycles a day (times UTC, offset from round
+    # minutes to reduce GitHub's scheduler congestion). Games settle late
+    # Sunday/Monday-night US time; the 06:12 cycle picks up Monday results.
+    - cron: "12 6,12,18 * * *"
+    - cron: "42 22 * * 4,6,7,1"   # extra cycles around NFL game windows (Thu/Sat/Sun/Mon)
 
 jobs:
   collect:
