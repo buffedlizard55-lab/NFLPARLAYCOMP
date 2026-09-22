@@ -18,7 +18,11 @@ on:
     # minutes to reduce GitHub's scheduler congestion). Games settle late
     # Sunday/Monnight US time; the 06:12 cycle picks up Monday results.
     - cron: "12 6,12,18 * * *"
-    - cron: "42 22 * * 4,6,7,1"   # extra cycles around NFL game windows (Thu/Sat/Sun/Mon)
+    - cron: "42 22 * * 0,1,4,6"   # extra cycles around NFL game windows (Sun/Mon/Thu/Sat).
+    # NOTE: GitHub's day-of-week field is 0-6 (Sunday is 0). POSIX also accepts
+    # 7 for Sunday, but GitHub rejects the ENTIRE workflow file if a 7 appears
+    # here, and the only symptom is a run that fails in 0s with no jobs and no
+    # logs. Do not use 7.
 
 permissions:
   contents: write

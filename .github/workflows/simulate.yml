@@ -16,9 +16,13 @@ on:
         required: false
         default: "false"
   schedule:
-    # Run after data collection cycles
+    # Run after data collection cycles.
+    # NOTE: GitHub's day-of-week field is 0-6 (Sunday is 0). POSIX also accepts
+    # 7 for Sunday, but GitHub rejects the ENTIRE workflow file if a 7 appears
+    # here, and the only symptom is a run that fails in 0s with no jobs and no
+    # logs. Do not use 7.
     - cron: "22 6,12,18 * * *"
-    - cron: "52 22 * * 4,6,7,1"
+    - cron: "52 22 * * 0,1,4,6"
 
 permissions:
   contents: write

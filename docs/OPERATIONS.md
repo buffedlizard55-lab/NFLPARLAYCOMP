@@ -120,6 +120,21 @@ See docs/FLAGS.md
 
 All autonomous via APIs. If external source cannot be automatically verified, flag for review.
 
+## Workflow cron constraint (important)
+
+GitHub's `schedule` cron dialect is **stricter than POSIX**: the day-of-week field
+is `0-6` with `0` = Sunday. POSIX also accepts `7` for Sunday — but if a `7` appears
+in a workflow's cron, **GitHub rejects the entire workflow file**. The workflow then
+cannot run at all, including via `workflow_dispatch`, and the only symptom is a run
+that is created and fails in 0 seconds with **no jobs, no logs and no check runs**.
+That looks like a permissions or policy problem rather than a typo, which is why it
+went unnoticed here: both scheduled workflows were non-functional while appearing
+perfectly valid to standard cron tools and YAML parsers.
+
+`tests/test_workflows.py` now validates every cron entry against GitHub's dialect,
+so this class of failure is caught by `scripts/test_all.py` instead of in the
+Actions tab.
+
 ## Bundle layout
 
 Site bundles are written **only** to `docs/site_data/`, because GitHub Pages serves
