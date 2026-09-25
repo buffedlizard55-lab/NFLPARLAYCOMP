@@ -1,1 +1,1 @@
-{"updated_at": "2026-09-24T21:37:09Z", "total": 3500, "ledger_entries": 6500, "by_status": {"CANDIDATE": 0, "SIGNAL": 0, "ORDER": 0, "EXECUTED": 500, "CLOSED": 0, "SETTLED": 3000, "CANCELLED": 0, "REJECTED": 0}, "note": "`total` distinct trades, `ledger_entries` includes full audit trail"}
+{"updated_at": "2026-09-25T00:56:30Z", "total": 4000, "ledger_entries": 7500, "by_status": {"CANDIDATE": 0, "SIGNAL": 0, "ORDER": 0, "EXECUTED": 500, "CLOSED": 0, "SETTLED": 3500, "CANCELLED": 0, "REJECTED": 0}, "note": "`total` distinct trades, `ledger_entries` includes full audit trail"}
